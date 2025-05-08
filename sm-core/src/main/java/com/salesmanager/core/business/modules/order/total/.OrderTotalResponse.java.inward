@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/OrderTotalResponse.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/OrderTotalResponse.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateProductPiceVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.m",
+                "to_name": "getDiscount() return java.lang.Double",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "caculateProductPiceVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.m",
+                "to_name": "OrderTotalResponse()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PromoCodeCalculatorModule",
+                "to_name": "OrderTotalResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

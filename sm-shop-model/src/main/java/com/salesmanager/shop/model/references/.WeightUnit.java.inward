@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/references/WeightUnit.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/references/WeightUnit.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/store/ReadableMerchantStorePopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ReadableMerchantStorePopulator",
+                "to_name": "WeightUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.store.ReadableMerchantStore,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.mo",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.shop.model.references.WeightUnit",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/references/ReferencesApi.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ReferencesApi",
+                "to_name": "WeightUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "measures() return com.salesmanager.shop.model.references.SizeReferences",
+                "to_name": "values() return com.salesmanager.shop.model.references.WeightUnit[]",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

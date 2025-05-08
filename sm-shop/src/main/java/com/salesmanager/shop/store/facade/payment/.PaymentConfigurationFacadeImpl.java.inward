@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/payment/PaymentConfigurationFacadeImpl.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/payment/PaymentConfigurationFacadeImpl.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Method",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "configuration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.configuration.ReadableConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Method",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "configurations(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.shop.model.configuration.ReadableConfiguration\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "JWTTokenUtil",
+                "to_name": "PaymentConfigurationFacadeImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "configuration$lambda$1(com.salesmanager.core.model.payments.PaymentMethod) return R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "configurations$lambda$0(com.salesmanager.core.model.payments.PaymentMethod) return R",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

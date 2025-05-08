@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/history/OrderStatusHistory.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/history/OrderStatusHistory.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mapToReadbleOrderStatusHistory(com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return com.salesmanager.shop.model.order.history.ReadableOrderStatusHistory",
+                "to_name": "setComments(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mapToReadbleOrderStatusHistory(com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return com.salesmanager.shop.model.order.history.ReadableOrderStatusHistory",
+                "to_name": "setOrderStatus(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mapToReadbleOrderStatusHistory(com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return com.salesmanager.shop.model.order.history.ReadableOrderStatusHistory",
+                "to_name": "setOrderId(long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "OrderStatusHistory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

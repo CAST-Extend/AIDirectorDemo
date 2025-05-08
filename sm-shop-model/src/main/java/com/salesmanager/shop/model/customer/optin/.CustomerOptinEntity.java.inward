@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/optin/CustomerOptinEntity.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/optin/CustomerOptinEntity.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "optinCustomer(com.salesmanager.shop.model.customer.optin.PersistableCustomerOptin,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getEmail() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "optinCustomer(com.salesmanager.shop.model.customer.optin.PersistableCustomerOptin,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getLastName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "optinCustomer(com.salesmanager.shop.model.customer.optin.PersistableCustomerOptin,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getFirstName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "CustomerOptinEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertUserToReadableUser(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.user.User) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convertUserToReadableUser(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.user.User) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "ReadableUserPopulator()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "ReadableUserPopulator",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

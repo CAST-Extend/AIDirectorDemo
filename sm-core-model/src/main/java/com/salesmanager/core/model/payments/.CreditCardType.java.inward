@@ -1,0 +1,138 @@
+{
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/CreditCardType.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/CreditCardType.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "DISCOVERY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "DISCOVERY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "DINERS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "DINERS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "MASTERCARD",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "MASTERCARD",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "VISA",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "VISA",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "validateOrder(com.salesmanager.shop.model.order.ShopOrder,org.springframework.validation.BindingResult,java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "AMEX",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "AMEX",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 14
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "validateCreditCardNumber(java.lang.String,com.salesmanager.core.model.payments.CreditCardType) return void",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PaymentServiceImpl",
+                "to_name": "CreditCardType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

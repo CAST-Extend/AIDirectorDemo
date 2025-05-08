@@ -1,0 +1,82 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ProductOptionEntity.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ProductOptionEntity.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductOptionMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.attribute.api.PersistableProductOptionEntity,com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "getType() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.attribute.api.PersistableProductOptionEntity,com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "getOrder() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductOptionMapper",
+                "to_name": "ProductOptionEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductOptionMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductOptionEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "setType(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProductOptionMapper",
+                "to_name": "ProductOptionEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductOptionPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.catalog.product.attribute.PersistableProductOption,com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.L",
+                "to_name": "getOrder() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductOptionPopulator",
+                "to_name": "ProductOptionEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

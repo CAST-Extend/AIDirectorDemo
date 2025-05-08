@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/payments/TransactionRepository.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/TransactionServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listTransactions(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "to_name": "findByDates(java.util.Date,java.util.Date) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "lastTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+                "to_name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getRefundableTransaction(com.salesmanager.core.model.order.Order) return com.salesmanager.core.model.payments.Transaction",
+                "to_name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCapturableTransaction(com.salesmanager.core.model.order.Order) return com.salesmanager.core.model.payments.Transaction",
+                "to_name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listTransactions(com.salesmanager.core.model.order.Order) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "to_name": "findByOrder(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.payments.Transaction\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "TransactionServiceImpl",
+                "to_name": "TransactionRepository",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

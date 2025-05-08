@@ -1,0 +1,117 @@
+{
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingPackageType.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingPackageType.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingConfiguration.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "setShipPackageType(java.lang.String) return void",
+                "to_name": "ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingConfiguration",
+                "to_name": "ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingConfiguration",
+                "to_name": "ShippingPackageType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "setShipPackageType(java.lang.String) return void",
+                "to_name": "BOX",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "setShipPackageType(java.lang.String) return void",
+                "to_name": "ITEM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Enum Item",
+                "from_name": "shippingPackageType",
+                "to_name": "ITEM",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "to_name": "ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingServiceImpl",
+                "to_name": "ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingServiceImpl",
+                "to_name": "ShippingPackageType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "to_name": "ITEM",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingFacadeImpl",
+                "to_name": "ShippingPackageType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.shipping.ShippingPackageType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

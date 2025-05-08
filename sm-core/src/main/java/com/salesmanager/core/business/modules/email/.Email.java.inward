@@ -1,0 +1,614 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/EmailTemplatesUtils.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 43
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.user.User,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setFromEmail(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setTemplateTokens(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setTemplateName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setSubject(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setTo(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setFrom(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "resetPassword(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "Email()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/DefaultEmailSenderImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getFromEmail() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTemplateTokens() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTemplateName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTo() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getSubject() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getFrom() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/SESEmailSenderImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getFromEmail() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "getTemplateTokens() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareHtml(com.salesmanager.core.business.modules.email.Email) return java.lang.String",
+                "to_name": "getTemplateName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTo() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getSubject() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SESEmailSenderImpl",
+                "to_name": "Email",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 6
+      }
+    ]
+  }
+}

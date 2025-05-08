@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createZones() return void",
+                "to_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createZones() return void",
+                "to_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "InitializationDatabaseImpl()",
+                "to_name": "ZonesLoader()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "ZonesLoader",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "ZonesLoader",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

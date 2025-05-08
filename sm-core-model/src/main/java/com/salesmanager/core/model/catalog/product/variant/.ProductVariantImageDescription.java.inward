@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImageDescription.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImageDescription.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImage.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantImageDescription\u003e) return void",
+                "to_name": "ProductVariantImageDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantImageDescription\u003e",
+                "to_name": "ProductVariantImageDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantImage",
+                "to_name": "ProductVariantImageDescription",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

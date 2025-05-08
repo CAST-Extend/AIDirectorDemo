@@ -1,0 +1,138 @@
+{
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/system/SystemConfiguration.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/system/SystemConfiguration.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuditListener",
+                "to_name": "SystemConfiguration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableAuditAspect",
+                "to_name": "SystemConfiguration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/system/SystemConfigurationRepository.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "SystemConfigurationRepository",
+                "to_name": "SystemConfiguration",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findByKey(java.lang.String) return com.salesmanager.core.model.system.SystemConfiguration",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "SystemConfigurationRepository",
+                "to_name": "SystemConfiguration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/SystemConfigurationService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "SystemConfigurationService",
+                "to_name": "SystemConfiguration",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/SystemConfigurationServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SystemConfigurationServiceImpl",
+                "to_name": "SystemConfiguration",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 5
+      }
+    ]
+  }
+}

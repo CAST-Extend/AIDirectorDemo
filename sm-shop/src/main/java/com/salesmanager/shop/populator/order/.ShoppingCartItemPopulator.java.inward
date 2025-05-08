@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "setShoppingCartService(com.salesmanager.core.business.services.shoppingcart.ShoppingCartService) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "setProductAttributeService(com.salesmanager.core.business.services.catalog.product.attribute.ProductAttributeService) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "ShoppingCartItemPopulator()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "ShoppingCartItemPopulator",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/security/SecurityApi.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/security/SecurityApi.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "groups",
+                "to_name": "ArrayList\u003cReadableGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "permissions",
+                "to_name": "ArrayList\u003cReadablePermission\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/ReadableCustomer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "groups",
+                "to_name": "ArrayList\u003cReadableGroup\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

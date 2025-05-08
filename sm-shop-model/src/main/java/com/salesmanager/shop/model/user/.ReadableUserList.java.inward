@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUserList.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUserList.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "setData(java.util.List.List\u003ccom.salesmanager.shop.model.user.ReadableUser\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCriteria(com.salesmanager.core.model.reference.language.Language,java.lang.String,com.salesmanager.core.model.common.Criteria) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "getData() return java.util.List.List\u003ccom.salesmanager.shop.model.user.ReadableUser\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "ReadableUserList()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getByCriteria(com.salesmanager.core.model.reference.language.Language,java.lang.String,com.salesmanager.core.model.common.Criteria) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "ReadableUserList()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "ReadableUserList",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

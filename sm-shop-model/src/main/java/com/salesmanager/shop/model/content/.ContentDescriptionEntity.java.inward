@@ -1,0 +1,110 @@
+{
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentDescriptionEntity.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentDescriptionEntity.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity",
+                "to_name": "ContentDescriptionEntity()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentFacadeImpl",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createContentDescriptionEntitys(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentD",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "convertContentToReadableContentFull(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentFull",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ContentFacadeImpl",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ReadableContentFull.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentDescriptionEntity\u003e",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentDescriptionEntity\u003e) return void",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableContentFull",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/content/PersistableContentEntity.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentDescriptionEntity\u003e) return void",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentDescriptionEntity\u003e",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableContentEntity",
+                "to_name": "ContentDescriptionEntity",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

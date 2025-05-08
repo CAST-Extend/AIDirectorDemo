@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableZonePopulator.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableZonePopulator.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/zone/facade/ZoneFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertToReadableZone(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableZone",
+                "to_name": "populate(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.shop.model.references.ReadableZone,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.ref",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convertToReadableZone(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableZone",
+                "to_name": "ReadableZonePopulator()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZoneFacadeImpl",
+                "to_name": "ReadableZonePopulator",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

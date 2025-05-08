@@ -1,0 +1,103 @@
+{
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/order/payment/CreditCard.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/order/payment/CreditCard.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "setCardType(com.salesmanager.core.model.payments.CreditCardType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "setCcCvv(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "setCcExpires(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "setCcNumber(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "setCcOwner(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "getCcNumber() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "CreditCard()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "CreditCard",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderPopulator.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.Ord",
+                "to_name": "setCcNumber(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.Ord",
+                "to_name": "getCcNumber() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableOrderPopulator",
+                "to_name": "CreditCard",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

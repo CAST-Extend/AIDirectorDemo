@@ -1,0 +1,33 @@
+{
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepositoryCustom.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepositoryCustom.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "listByCriteria(com.salesmanager.core.model.common.Criteria) return com.salesmanager.core.model.common.GenericEntityList.GenericEntityList\u003ccom.salesmanager.core.model.user.User\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UserServiceImpl",
+                "to_name": "UserRepositoryCustom",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

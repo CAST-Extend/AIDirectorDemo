@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableCountryPopulator.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/references/ReadableCountryPopulator.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/country/facade/CountryFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertToReadableCountry(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableCountry",
+                "to_name": "populate(com.salesmanager.core.model.reference.country.Country,com.salesmanager.shop.model.references.ReadableCountry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convertToReadableCountry(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableCountry",
+                "to_name": "ReadableCountryPopulator()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryFacadeImpl",
+                "to_name": "ReadableCountryPopulator",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convert(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.references.ReadableCountry",
+                "to_name": "ReadableCountryPopulator()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingFacadeImpl",
+                "to_name": "ReadableCountryPopulator",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}
