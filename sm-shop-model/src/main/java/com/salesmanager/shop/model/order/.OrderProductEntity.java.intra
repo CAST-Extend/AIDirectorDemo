@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,13 +13,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setProduct(com.salesmanager.shop.model.catalog.product.ReadableProduct) return void",
+            "to_name": "product",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getOrderedQuantity() return int",
             "to_name": "orderedQuantity",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrderedQuantity(int) return void",
+            "to_name": "orderedQuantity",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 2
+        "nb_calls_between_elements": 4
       }
     ]
   }

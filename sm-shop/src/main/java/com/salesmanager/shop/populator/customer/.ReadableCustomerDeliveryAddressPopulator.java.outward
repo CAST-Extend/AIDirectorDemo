@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerDeliveryAddressPopulator.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerDeliveryAddressPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerDeliveryAddressPopulator.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerDeliveryAddressPopulator.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 16,
+        "nb_files_with_called_elements": 14,
         "files": [
           {
             "calls_between_elements": [
@@ -107,7 +107,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +198,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
           },
           {
             "calls_between_elements": [
@@ -207,14 +207,14 @@
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -235,14 +235,14 @@
                 "to_type": "Java Class",
                 "from_name": "ReadableCustomerDeliveryAddressPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableCustomerDeliveryAddressPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -254,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +296,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -338,7 +338,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -366,7 +366,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/DeliveryEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/DeliveryEntity.java"
           },
           {
             "calls_between_elements": [
@@ -387,28 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
-                "to_name": "isNotBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableCustomerDeliveryAddressPopulator",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -429,7 +408,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
+                "to_name": "isNotBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableCustomerDeliveryAddressPopulator",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -450,7 +450,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
           },
           {
             "calls_between_elements": [
@@ -471,7 +471,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
           },
           {
             "calls_between_elements": [
@@ -492,49 +492,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/AddressLocation.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
-                "to_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableCustomerDeliveryAddressPopulator",
-                "to_name": "ZoneServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.common.Delivery,com.salesmanager.shop.model.customer.ReadableDelivery,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.custo",
-                "to_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableCustomerDeliveryAddressPopulator",
-                "to_name": "CountryServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/AddressLocation.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +506,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +520,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/ReadableDelivery.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/ReadableDelivery.java"
           }
         ],
         "files_list_comment": ""

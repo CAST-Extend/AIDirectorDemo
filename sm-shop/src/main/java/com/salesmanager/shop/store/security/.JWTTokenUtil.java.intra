@@ -1,8 +1,15 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "canTokenBeRefreshedWithGrace(java.lang.String,java.util.Date) return java.lang.Boolean",
+            "to_name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -48,14 +55,14 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
+            "from_name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
             "to_name": "addSeconds(java.util.Date,java.lang.Integer) return java.util.Date",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
+            "from_name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
             "to_name": "addSeconds(java.util.Date,java.lang.Integer) return java.util.Date",
             "calling_type": "CALL"
           },
@@ -78,13 +85,6 @@
             "to_type": "Java Method",
             "from_name": "canTokenBeRefreshed(java.lang.String,java.util.Date) return java.lang.Boolean",
             "to_name": "isCreatedBeforeLastPasswordReset(java.util.Date,java.util.Date) return java.lang.Boolean",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "canTokenBeRefreshedWithGrace(java.lang.String,java.util.Date) return java.lang.Boolean",
-            "to_name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
             "calling_type": "CALL"
           },
           {
@@ -167,6 +167,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "calculateExpirationDate(java.util.Date) return java.util.Date",
+            "to_name": "expiration",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "refreshToken(java.lang.String) return java.lang.String",
             "to_name": "secret",
             "calling_type": "READ"
@@ -195,13 +202,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
-            "to_name": "GRACE_PERIOD",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "isTokenExpiredWithGrace(java.lang.String) return java.lang.Boolean",
             "to_name": "GRACE_PERIOD",
             "calling_type": "READ"
@@ -209,8 +209,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "calculateExpirationDate(java.util.Date) return java.util.Date",
-            "to_name": "expiration",
+            "from_name": "isCreatedBeforeLastPasswordResetWithGrace(java.util.Date,java.util.Date) return java.lang.Boolean",
+            "to_name": "GRACE_PERIOD",
             "calling_type": "READ"
           },
           {

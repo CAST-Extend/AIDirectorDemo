@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 16,
         "files": [
@@ -38,13 +38,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildProductUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
-                "to_name": "SHOP_URI",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "buildProductUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
                 "to_name": "URL_EXTENSION",
                 "calling_type": "READ"
               },
@@ -59,6 +52,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildProductUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
+                "to_name": "SHOP_URI",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "buildProductUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
                 "to_name": "SLASH",
                 "calling_type": "READ"
               },
@@ -66,7 +66,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildCategoryUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
-                "to_name": "SHOP_URI",
+                "to_name": "CATEGORY_URI",
                 "calling_type": "READ"
               },
               {
@@ -80,7 +80,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildCategoryUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return java.lang.String",
-                "to_name": "CATEGORY_URI",
+                "to_name": "SHOP_URI",
                 "calling_type": "READ"
               },
               {
@@ -101,13 +101,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildOrderDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.ReadableOrderProductDownload,java.lang.Long) return java.lang.String",
-                "to_name": "SHOP_URI",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "buildOrderDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.ReadableOrderProductDownload,java.lang.Long) return java.lang.String",
                 "to_name": "URL_EXTENSION",
                 "calling_type": "READ"
               },
@@ -122,7 +115,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildOrderDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.ReadableOrderProductDownload,java.lang.Long) return java.lang.String",
+                "to_name": "SHOP_URI",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "buildOrderDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.ReadableOrderProductDownload,java.lang.Long) return java.lang.String",
                 "to_name": "SLASH",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "buildAdminDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.file.DigitalProduct) return java.lang.String",
+                "to_name": "FILES_URI",
                 "calling_type": "READ"
               },
               {
@@ -136,13 +143,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "buildAdminDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.file.DigitalProduct) return java.lang.String",
-                "to_name": "FILES_URI",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "buildAdminDownloadProductFilePath(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.file.DigitalProduct) return java.lang.String",
                 "to_name": "SLASH",
                 "calling_type": "READ"
               },
@@ -151,13 +151,6 @@
                 "to_type": "Java Field",
                 "from_name": "buildStaticFilePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "to_name": "FILES_URI",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "buildStaticFilePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "to_name": "SLASH",
                 "calling_type": "READ"
               },
               {
@@ -165,6 +158,13 @@
                 "to_type": "Java Field",
                 "from_name": "buildStaticFilePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "to_name": "STATIC_URI",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "buildStaticFilePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "to_name": "SLASH",
                 "calling_type": "READ"
               },
               {
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 29,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +261,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -270,6 +270,13 @@
                 "to_type": "Java Method",
                 "from_name": "validUrl(java.lang.String) return java.lang.String",
                 "to_name": "startsWith(java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getScheme(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "to_name": "substring(int,int) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -289,13 +296,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getScheme(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "to_name": "substring(int,int) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "normalizePath(java.lang.String) return java.lang.String",
                 "to_name": "equals(java.lang.Object) return boolean",
                 "calling_type": "CALL"
@@ -310,7 +310,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -366,14 +366,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "from_name": "buildRelativeStoreUri(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "to_name": "getContextPath() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildRelativeStoreUri(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "from_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "to_name": "getContextPath() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -387,77 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildStaticFileAbsolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-                "to_name": "getBasePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "FilePathUtils()",
-                "to_name": "ImageFilePathUtils()",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FilePathUtils",
-                "to_name": "ImageFilePathUtils",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FilePathUtils",
-                "to_name": "ImageFilePathUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildStaticFileAbsolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-                "to_name": "getBasePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "FilePathUtils()",
-                "to_name": "CloudFilePathUtils()",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FilePathUtils",
-                "to_name": "CloudFilePathUtils",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FilePathUtils",
-                "to_name": "CloudFilePathUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletRequest_2598.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +422,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildStaticFileAbsolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
+                "to_name": "getBasePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "FilePathUtils()",
+                "to_name": "ImageFilePathUtils()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FilePathUtils",
+                "to_name": "ImageFilePathUtils",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FilePathUtils",
+                "to_name": "ImageFilePathUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildStaticFileAbsolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
+                "to_name": "getBasePath(com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "FilePathUtils()",
+                "to_name": "CloudFilePathUtils()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FilePathUtils",
+                "to_name": "CloudFilePathUtils",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FilePathUtils",
+                "to_name": "CloudFilePathUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -520,7 +520,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/net/URL_e09ae4604842582f.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/net/URL_e09ae4604842582f.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
           },
           {
             "calls_between_elements": [
@@ -569,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -590,7 +590,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/DigitalProduct.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/DigitalProduct.java"
           },
           {
             "calls_between_elements": [
@@ -611,7 +611,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -632,7 +632,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
           },
           {
             "calls_between_elements": [
@@ -653,7 +653,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
           },
           {
             "calls_between_elements": [
@@ -667,7 +667,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           }
         ],
         "files_list_comment": ""

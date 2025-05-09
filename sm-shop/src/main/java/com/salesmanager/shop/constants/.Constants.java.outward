@@ -1,11 +1,18 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 5,
+        "nb_files_with_called_elements": 6,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CATEGORY_URI",
+                "to_name": "category",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Field",
                 "to_type": "PostgreSQL Table",
@@ -25,6 +32,13 @@
                 "to_type": "PostgreSQL Table",
                 "from_name": "CONTENT_CACHE_KEY",
                 "to_name": "content",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PRODUCT_URI",
+                "to_name": "product",
                 "calling_type": "USE"
               },
               {
@@ -71,36 +85,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 9,
-            "to_file": "Salesmanager.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Property Mapping",
-                "from_name": "HOME_MENU_KEY",
-                "to_name": "menu.home",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/resources/bundles/shopizer.properties"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Property Mapping",
-                "from_name": "HOME_MENU_KEY",
-                "to_name": "menu.home",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+            "nb_calls_between_elements": 11,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -114,7 +100,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/resources/shopizer-properties.properties"
+            "to_file": "/sm-shop/src/main/resources/shopizer-properties.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Property Mapping",
+                "from_name": "SHOP_SCHEME",
+                "to_name": "SHOP_SCHEME",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-core/src/test/resources/shopizer-properties.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Property Mapping",
+                "from_name": "HOME_MENU_KEY",
+                "to_name": "menu.home",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Property Mapping",
+                "from_name": "HOME_MENU_KEY",
+                "to_name": "menu.home",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer.properties"
           },
           {
             "calls_between_elements": [
@@ -128,7 +156,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LanguageUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LanguageUtils.java"
           }
         ],
         "files_list_comment": ""

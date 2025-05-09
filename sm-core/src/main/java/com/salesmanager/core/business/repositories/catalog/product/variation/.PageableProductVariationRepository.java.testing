@@ -1,22 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variation/PageableProductVariationRepository.java]": {
-    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variation/PageableProductVariationRepository.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variation/PageableProductVariationRepository.java]": {
+    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variation/PageableProductVariationRepository.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 2,
         "impacting_elements": [
           {
-            "name": "list(int,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.variation.ProductVariation\u003e",
+            "name": "select distinct p from",
             "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v2/private/product/variations/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -68,31 +62,11 @@
             ]
           },
           {
-            "name": "PageableProductVariationRepository",
+            "name": "list(int,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.variation.ProductVariation\u003e",
             "comment": "",
-            "type": "Java Interface",
-            "nb_impacted_elements": 1,
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v2/private/product/variations/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "select distinct p from",
-            "comment": "",
-            "type": "Spring Data JPQL Query",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v2/private/product/variations/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",

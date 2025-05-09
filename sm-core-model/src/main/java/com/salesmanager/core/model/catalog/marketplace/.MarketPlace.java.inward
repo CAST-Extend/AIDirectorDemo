@@ -1,95 +1,37 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/marketplace/MarketPlace.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onUpdate(java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onSave(java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onUpdate(java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onSave(java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AuditListener",
-                "to_name": "MarketPlace",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableAuditAspect",
-                "to_name": "MarketPlace",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/marketplace/MarketPlaceService.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "MarketPlaceService",
-                "to_name": "MarketPlace",
-                "calling_type": "USE"
-              }
-            ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/marketplace/MarketPlaceService.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }
         ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 3
+        "nb_files_with_calling_elements": 2
       }
     ]
   }

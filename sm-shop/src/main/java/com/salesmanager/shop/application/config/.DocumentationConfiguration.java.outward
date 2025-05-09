@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/DocumentationConfiguration.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 18,
         "files": [
@@ -10,7 +10,28 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "globalResponseMessage(org.springframework.web.bind.annotation.RequestMethod,java.util.List.List\u003cspringfox.documentation.service.ResponseMessage\u003e) return springfox.documentation.spring.web.plugins.Docket",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
                 "to_name": "securityContexts(java.util.List.List\u003cspringfox.documentation.spi.service.contexts.SecurityContext\u003e) return springfox.documentation.spring.web.plugins.Docket",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "securitySchemes(java.util.List.List\u003c? extends\u003e) return springfox.documentation.spring.web.plugins.Docket",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "select() return springfox.documentation.spring.web.plugins.ApiSelectorBuilder",
                 "calling_type": "CALL"
               },
               {
@@ -36,27 +57,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "globalResponseMessage(org.springframework.web.bind.annotation.RequestMethod,java.util.List.List\u003cspringfox.documentation.service.ResponseMessage\u003e) return springfox.documentation.spring.web.plugins.Docket",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "securitySchemes(java.util.List.List\u003c? extends\u003e) return springfox.documentation.spring.web.plugins.Docket",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "select() return springfox.documentation.spring.web.plugins.ApiSelectorBuilder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
                 "to_name": "Docket(springfox.documentation.spi.DocumentationType)",
@@ -72,10 +72,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Docket_9464.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Docket_14708.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "securitySchemes() return java.util.ArrayList.ArrayList\u003c? extends\u003e",
+                "to_name": "collect\u003cR,A\u003e(java.util.stream.Collector.Collector\u003cReadableImage\u003e) return java.lang.Object",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Generic Java Method",
@@ -88,13 +95,6 @@
                 "to_type": "Generic Java Method",
                 "from_name": "securitySchemes() return java.util.ArrayList.ArrayList\u003c? extends\u003e",
                 "to_name": "of\u003cT\u003e(java.lang.Object) return java.util.stream.Stream.Stream\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Generic Java Method",
-                "from_name": "securitySchemes() return java.util.ArrayList.ArrayList\u003c? extends\u003e",
-                "to_name": "collect\u003cR,A\u003e(java.util.stream.Collector.Collector\u003cReadableImage\u003e) return java.lang.Object",
                 "calling_type": "CALL"
               },
               {
@@ -114,7 +114,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -142,7 +142,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -170,7 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +198,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Predicates_15615.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Predicates_21293.java"
           },
           {
             "calls_between_elements": [
@@ -226,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SecurityContextBuilder_330.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SecurityContextBuilder_7958.java"
           },
           {
             "calls_between_elements": [
@@ -254,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ApiSelectorBuilder_17469.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ApiSelectorBuilder_16439.java"
           },
           {
             "calls_between_elements": [
@@ -275,28 +275,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/RequestMethod_15075.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "builder() return springfox.documentation.spi.service.contexts.SecurityContextBuilder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DocumentationConfiguration",
-                "to_name": "SecurityContext",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SecurityContext_905.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/RequestMethod_26809.java"
           },
           {
             "calls_between_elements": [
@@ -317,7 +296,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "builder() return springfox.documentation.spi.service.contexts.SecurityContextBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DocumentationConfiguration",
+                "to_name": "SecurityContext",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SecurityContext_25345.java"
           },
           {
             "calls_between_elements": [
@@ -338,35 +338,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collections_b8f4114a0df501a.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "SWAGGER_2",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DocumentationType_12570.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
-                "to_name": "AUTHORIZATION",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpHeaders_27663.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collections_b8f4114a0df501a.java"
           },
           {
             "calls_between_elements": [
@@ -380,7 +352,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "SWAGGER_2",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DocumentationType_1054.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "api() return springfox.documentation.spring.web.plugins.Docket",
+                "to_name": "AUTHORIZATION",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpHeaders_24114.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -408,7 +408,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
           },
           {
             "calls_between_elements": [
@@ -422,7 +422,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -436,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
           }
         ],
         "files_list_comment": ""

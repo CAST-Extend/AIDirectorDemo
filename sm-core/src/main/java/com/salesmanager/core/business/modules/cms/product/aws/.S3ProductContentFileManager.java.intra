@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/aws/S3ProductContentFileManager.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/aws/S3ProductContentFileManager.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/aws/S3ProductContentFileManager.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/aws/S3ProductContentFileManager.java]": [
       {
         "calls_between_elements": [
           {
@@ -188,6 +188,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setCmsManager(com.salesmanager.core.business.modules.cms.impl.CMSManager) return void",
+            "to_name": "cmsManager",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "nodePath(java.lang.String,java.lang.String,com.salesmanager.core.model.content.ImageContentFile) return java.lang.String",
             "to_name": "LARGE",
             "calling_type": "READ"
@@ -243,6 +250,13 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getInstance() return com.salesmanager.core.business.modules.cms.product.aws.S3ProductContentFileManager",
+            "to_name": "fileManager",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Constructor",
             "from_name": "getInstance() return com.salesmanager.core.business.modules.cms.product.aws.S3ProductContentFileManager",
             "to_name": "S3ProductContentFileManager()",
@@ -250,7 +264,7 @@
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 35
+        "nb_calls_between_elements": 37
       }
     ]
   }

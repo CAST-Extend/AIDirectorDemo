@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java]": {
-    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java]": {
+    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 3,
@@ -9,80 +9,8 @@
             "name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 20,
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/cart/{}/total/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/total/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -108,6 +36,12 @@
                 "nature": "data entity"
               },
               {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -116,134 +50,12 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
                 "name": "zone",
                 "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 18,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/cart/{}/total/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/total/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -274,6 +86,12 @@
                 "nature": "data entity"
               },
               {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -284,10 +102,48 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
                 "name": "merchant_configuration",
                 "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }

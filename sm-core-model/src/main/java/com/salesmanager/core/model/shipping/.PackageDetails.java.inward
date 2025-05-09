@@ -1,796 +1,252 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java]": [
       {
         "files": [
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setType(java.lang.String) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 9
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getType() return java.lang.String",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 8
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setCode(java.lang.String) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setTreshold(int) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getTreshold() return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setShippingMaxWeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getShippingMaxWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setShippingWidth(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getShippingWidth() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setShippingHeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getShippingHeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setShippingLength(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getShippingLength() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "setShippingWeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updatePackage(java.lang.String,com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "packageExists(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.shipping.PackageDetails) return boolean",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "packageExists$lambda$0(com.salesmanager.core.model.shipping.Package) return boolean",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
-                "to_name": "PackageDetails()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingFacadeImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingFacadeImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 24
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingWidth(double) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 6
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingWidth(double) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 7
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingHeight(double) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingHeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingLength(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingLength(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingWeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingWeight(double) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setShippingQuantity(int) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setItemName(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "setItemName(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultPackagingImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultPackagingImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java",
             "comment": "",
             "nb_calls_between_elements": 17
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWidth() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingHeight() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingLength() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "USPSShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "USPSShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java",
             "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWidth() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingHeight() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingLength() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java",
             "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/ShippingDecisionPreProcessorImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "getShippingWidth() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "getShippingHeight() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "getShippingLength() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingDecisionPreProcessorImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingDecisionPreProcessorImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/ShippingDecisionPreProcessorImpl.java",
             "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomShippingQuoteRules.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWidth() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingHeight() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingLength() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomShippingQuoteRules",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomShippingQuoteRules",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomShippingQuoteRules.java",
             "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomWeightBasedShippingQuote.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getShippingWeight() return double",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomWeightBasedShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomWeightBasedShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/CustomWeightBasedShippingQuote.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/Packaging.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getItemPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getBoxPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "Packaging",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/Packaging.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuote(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.common.Delivery,java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.reference.language.Languag",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingServiceImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/StorePickupShippingQuote.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "StorePickupShippingQuote",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/StorePickupShippingQuote.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/ShippingQuotePrePostProcessModule.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "ShippingQuotePrePostProcessModule",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/ShippingQuotePrePostProcessModule.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/ShippingQuoteModule.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "ShippingQuoteModule",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/shipping/model/ShippingQuoteModule.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/ShippingDistancePreProcessorImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prePostProcessShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingDistancePreProcessorImpl",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingConfigurationApi.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingConfigurationApi.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingConfigurationApi",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/ShippingDistancePreProcessorImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacade.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "ShippingFacade",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacade.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "ShippingService",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/PriceByDistanceShippingQuoteRules.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/PriceByDistanceShippingQuoteRules.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PriceByDistanceShippingQuoteRules",
-                "to_name": "PackageDetails",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

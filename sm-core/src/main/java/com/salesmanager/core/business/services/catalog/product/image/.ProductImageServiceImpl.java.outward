@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 29,
+        "nb_files_with_called_elements": 30,
         "files": [
           {
             "calls_between_elements": [
@@ -17,13 +17,6 @@
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
                 "from_name": "updateProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
-                "to_name": "Update",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage",
                 "to_name": "Update",
                 "calling_type": "CALL"
               },
@@ -85,6 +78,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage",
+                "to_name": "Update",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
@@ -96,13 +96,6 @@
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "getImageType() return int",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "ProductImage",
-                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
@@ -140,6 +133,13 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "ProductImage",
+                "calling_type": "USE"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductImageServiceImpl",
@@ -163,17 +163,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 22,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -205,7 +198,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -215,6 +208,13 @@
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -235,14 +235,14 @@
                 "to_type": "Java Class",
                 "from_name": "addProductImages(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addProductImages(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -256,14 +256,14 @@
                 "to_type": "Java Class",
                 "from_name": "ProductImageServiceImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductImageServiceImpl",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -275,7 +275,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 15,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -316,7 +316,7 @@
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class Rich Client",
+                "to_type": "Java Class",
                 "from_name": "ProductImageServiceImpl",
                 "to_name": "ProductFileManagerImpl",
                 "calling_type": "CALL"
@@ -324,7 +324,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +359,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -394,42 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImageGet.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Generic Java Class",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "Optional\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Instantiated Method",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "of\u003cProductImage\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Instantiated Method",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "empty\u003cProductImage\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Class",
-                "from_name": "ProductImageServiceImpl",
-                "to_name": "Optional\u003cT\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImageGet.java"
           },
           {
             "calls_between_elements": [
@@ -464,7 +429,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImageDescription.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImageDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Class",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "of\u003cProductImage\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "empty\u003cProductImage\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ProductImageServiceImpl",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +492,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ApplicationEventPublisher_4833.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ApplicationEventPublisher_4833.java"
           },
           {
             "calls_between_elements": [
@@ -520,7 +520,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/ProductImageSize.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/ProductImageSize.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Assert_5049.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Assert_5049.java"
           },
           {
             "calls_between_elements": [
@@ -576,22 +576,22 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "finById(java.lang.Long,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.image.ProductImage",
+                "from_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage",
+                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage",
-                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "finById(java.lang.Long,java.lang.Long,java.lang.String) return com.salesmanager.core.model.catalog.product.image.ProductImage",
                 "calling_type": "CALL"
               },
               {
@@ -604,7 +604,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/image/ProductImageRepository.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/image/ProductImageRepository.java"
           },
           {
             "calls_between_elements": [
@@ -625,7 +625,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CrudRepository_21098.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "updateProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductImageServiceImpl",
+                "to_name": "product",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -646,7 +667,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -667,7 +688,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImageRemove.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImageRemove.java"
           },
           {
             "calls_between_elements": [
@@ -688,7 +709,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/DeleteProductImageEvent.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/DeleteProductImageEvent.java"
           },
           {
             "calls_between_elements": [
@@ -709,7 +730,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -730,7 +751,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -751,7 +772,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
           },
           {
             "calls_between_elements": [
@@ -772,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImagePut.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductImagePut.java"
           },
           {
             "calls_between_elements": [
@@ -793,28 +814,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/SaveProductImageEvent.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductImageServiceImpl",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/configuration/events/products/SaveProductImageEvent.java"
           },
           {
             "calls_between_elements": [
@@ -835,7 +835,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -856,7 +856,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -877,7 +877,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
           },
           {
             "calls_between_elements": [
@@ -898,7 +898,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -919,7 +919,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -940,7 +940,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ImageContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ImageContentFile.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductImageServiceImpl",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -954,7 +975,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

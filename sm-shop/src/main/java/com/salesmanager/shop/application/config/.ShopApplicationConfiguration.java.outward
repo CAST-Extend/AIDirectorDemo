@@ -1,24 +1,17 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/ShopApplicationConfiguration.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 25,
+        "nb_files_with_called_elements": 26,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
+                "to_type": "Java Class",
                 "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
-                "to_name": "IMAGE_GIF",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
-                "to_name": "APPLICATION_OCTET_STREAM",
-                "calling_type": "READ"
+                "to_name": "MediaType",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
@@ -36,13 +29,20 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
+                "to_type": "Java Field",
                 "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
-                "to_name": "MediaType",
-                "calling_type": "USE"
+                "to_name": "IMAGE_GIF",
+                "calling_type": "READ"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
+                "to_name": "APPLICATION_OCTET_STREAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "MediaType",
@@ -51,7 +51,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MediaType_8419.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MediaType_13851.java"
           },
           {
             "calls_between_elements": [
@@ -70,14 +70,14 @@
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "XssFilter",
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "XssFilter",
@@ -86,17 +86,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/filter/XssFilter.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/filter/XssFilter.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "messageSource() return org.springframework.context.support.ReloadableResourceBundleMessageSource",
-                "to_name": "setDefaultEncoding(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -105,7 +98,14 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "messageSource() return org.springframework.context.support.ReloadableResourceBundleMessageSource",
+                "to_name": "setDefaultEncoding(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "AbstractResourceBasedMessageSource",
@@ -114,7 +114,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractResourceBasedMessageSource_25391.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractResourceBasedMessageSource_905.java"
           },
           {
             "calls_between_elements": [
@@ -133,7 +133,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Generic Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "FilterRegistrationBean\u003cT extends javax.servlet.Filter\u003e",
@@ -142,7 +142,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/FilterRegistrationBean_7585.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/FilterRegistrationBean_4449.java"
           },
           {
             "calls_between_elements": [
@@ -154,7 +154,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "LabelUtils",
@@ -163,7 +163,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
           },
           {
             "calls_between_elements": [
@@ -175,7 +175,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "ReloadableResourceBundleMessageSource",
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ReloadableResourceBundleMessageSource_1615.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ReloadableResourceBundleMessageSource_229.java"
           },
           {
             "calls_between_elements": [
@@ -196,7 +196,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "AbstractLocaleResolver",
@@ -205,7 +205,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractLocaleResolver_30910.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractLocaleResolver_20528.java"
           },
           {
             "calls_between_elements": [
@@ -217,7 +217,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "Locale",
@@ -226,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
           },
           {
             "calls_between_elements": [
@@ -238,7 +238,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "SessionLocaleResolver",
@@ -247,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SessionLocaleResolver_9573.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SessionLocaleResolver_22361.java"
           },
           {
             "calls_between_elements": [
@@ -259,8 +259,8 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
-                "to_type": "Java Class MVC",
+                "from_type": "Java Class",
+                "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "CorsFilter",
                 "calling_type": "CALL"
@@ -268,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/filter/CorsFilter.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/filter/CorsFilter.java"
           },
           {
             "calls_between_elements": [
@@ -280,7 +280,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "LocaleChangeInterceptor",
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LocaleChangeInterceptor_30300.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LocaleChangeInterceptor_20675.java"
           },
           {
             "calls_between_elements": [
@@ -301,7 +301,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Generic Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "AbstractHttpMessageConverter\u003cT extends java.lang.Object\u003e",
@@ -310,7 +310,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractHttpMessageConverter_19426.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractHttpMessageConverter_15075.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
+                "to_name": "Arrays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShopApplicationConfiguration",
+                "to_name": "Arrays",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
           },
           {
             "calls_between_elements": [
@@ -322,7 +343,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "ByteArrayHttpMessageConverter",
@@ -331,28 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ByteArrayHttpMessageConverter_2609.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "byteArrayHttpMessageConverter() return org.springframework.http.converter.ByteArrayHttpMessageConverter",
-                "to_name": "Arrays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class MVC",
-                "to_type": "Java Class",
-                "from_name": "ShopApplicationConfiguration",
-                "to_name": "Arrays",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ByteArrayHttpMessageConverter_24520.java"
           },
           {
             "calls_between_elements": [
@@ -364,7 +364,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "InterceptorRegistration",
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/InterceptorRegistration_26122.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/InterceptorRegistration_22925.java"
           },
           {
             "calls_between_elements": [
@@ -385,7 +385,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "InterceptorRegistry",
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/InterceptorRegistry_16893.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/InterceptorRegistry_15147.java"
           },
           {
             "calls_between_elements": [
@@ -406,7 +406,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "ViewControllerRegistration",
@@ -415,7 +415,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ViewControllerRegistration_26821.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ViewControllerRegistration_14333.java"
           },
           {
             "calls_between_elements": [
@@ -427,7 +427,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "ViewControllerRegistry",
@@ -436,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ViewControllerRegistry_16074.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ViewControllerRegistry_25162.java"
           },
           {
             "calls_between_elements": [
@@ -448,7 +448,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Generic Java Interface",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "List\u003cE\u003e",
@@ -457,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -469,7 +469,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "MappingJackson2HttpMessageConverter",
@@ -478,7 +478,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MappingJackson2HttpMessageConverter_9166.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MappingJackson2HttpMessageConverter_29560.java"
           },
           {
             "calls_between_elements": [
@@ -490,7 +490,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Generic Java Class",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "AbstractFilterRegistrationBean\u003cT extends javax.servlet.Filter\u003e",
@@ -499,7 +499,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractFilterRegistrationBean_31172.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractFilterRegistrationBean_8714.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "croseSiteFilter() return org.springframework.boot.web.servlet.FilterRegistrationBean.FilterRegistrationBean\u003ccom.salesmanager.shop.filter.XssFilter\u003e",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ShopApplicationConfiguration",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -511,7 +532,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class MVC",
+                "from_type": "Java Class",
                 "to_type": "Java Interface",
                 "from_name": "ShopApplicationConfiguration",
                 "to_name": "Log",
@@ -520,7 +541,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Log_24520.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Log_6064.java"
           },
           {
             "calls_between_elements": [
@@ -534,7 +555,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/System_c5178e292449fdc.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/System_c5178e292449fdc.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +583,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LogFactory_5565.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LogFactory_26816.java"
           }
         ],
         "files_list_comment": ""

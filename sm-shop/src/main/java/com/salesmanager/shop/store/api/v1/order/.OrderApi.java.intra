@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -74,16 +74,16 @@
             "calling_type": "PROTOTYPE"
           },
           {
-            "from_type": "Spring MVC Put Operation",
+            "from_type": "Spring MVC Any Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/orders/{}/status/",
+            "from_name": "api/v1/private/orders/{}/customer/",
             "to_name": "OrderApi",
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Post Operation",
+            "from_type": "Spring MVC Put Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/cart/{}/checkout/",
+            "from_name": "api/v1/private/orders/{}/status/",
             "to_name": "OrderApi",
             "calling_type": "CALL"
           },
@@ -95,9 +95,9 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Any Operation",
+            "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/orders/{}/customer/",
+            "from_name": "api/v1/cart/{}/checkout/",
             "to_name": "OrderApi",
             "calling_type": "CALL"
           },

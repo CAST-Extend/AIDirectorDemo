@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/ProductFileManagerImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -34,9 +34,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setConfiguration(com.salesmanager.core.business.utils.CoreConfiguration) return void",
+            "to_name": "configuration",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getRemoveImage() return com.salesmanager.core.business.modules.cms.product.ProductImageRemove",
             "to_name": "removeImage",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setRemoveImage(com.salesmanager.core.business.modules.cms.product.ProductImageRemove) return void",
+            "to_name": "removeImage",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -48,13 +62,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setGetImage(com.salesmanager.core.business.modules.cms.product.ProductImageGet) return void",
+            "to_name": "getImage",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getUploadImage() return com.salesmanager.core.business.modules.cms.product.ProductImagePut",
             "to_name": "uploadImage",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setUploadImage(com.salesmanager.core.business.modules.cms.product.ProductImagePut) return void",
+            "to_name": "uploadImage",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 7
+        "nb_calls_between_elements": 11
       }
     ]
   }

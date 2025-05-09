@@ -1,45 +1,21 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductAttributeMapper.java]": {
-    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductAttributeMapper.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductAttributeMapper.java]": {
+    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductAttributeMapper.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 2,
         "impacting_elements": [
           {
             "name": "merge(com.salesmanager.shop.model.catalog.product.attribute.PersistableProductAttribute,com.salesmanager.core.model.catalog.product.attribute.ProductAttribute,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.languag",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 12,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/private/product/{}/attribute/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/attribute/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v2/private/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/PUT/api/v2/private/product/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v2/private/product/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/POST/api/v2/private/product/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attributes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attributes/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attribute/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attribute/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
                 "name": "merchant_store",
@@ -48,14 +24,26 @@
                 "nature": "data entity"
               },
               {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -76,50 +64,6 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "PersistableProductAttributeMapper",
-            "comment": "",
-            "type": "Java Class",
-            "nb_impacted_elements": 5,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/{}/attribute/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/attribute/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v2/private/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/PUT/api/v2/private/product/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v2/private/product/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/POST/api/v2/private/product/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attributes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attributes/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attribute/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attribute/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
               }
             ]
           },
@@ -127,25 +71,13 @@
             "name": "convert(com.salesmanager.shop.model.catalog.product.attribute.PersistableProductAttribute,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.attrib",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 10,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
               {
-                "name": "api/v2/private/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/PUT/api/v2/private/product/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v2/private/product/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductApiV2.java/api/v2/PORT/POST/api/v2/private/product/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attributes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attributes/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               },
               {
                 "name": "merchant_store",
@@ -154,14 +86,26 @@
                 "nature": "data entity"
               },
               {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -180,12 +124,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }

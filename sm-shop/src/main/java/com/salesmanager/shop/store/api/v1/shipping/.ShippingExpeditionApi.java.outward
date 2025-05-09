@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingExpeditionApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingExpeditionApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingExpeditionApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingExpeditionApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 9,
+        "nb_files_with_called_elements": 8,
         "files": [
           {
             "calls_between_elements": [
@@ -10,14 +10,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveExpedition(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "GROUP_ADMIN_RETAIL",
+                "to_name": "GROUP_SHIPPING",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveExpedition(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "GROUP_SHIPPING",
+                "to_name": "GROUP_ADMIN_RETAIL",
                 "calling_type": "READ"
               },
               {
@@ -38,14 +38,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "expedition(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
-                "to_name": "GROUP_ADMIN_RETAIL",
+                "to_name": "GROUP_SHIPPING",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "expedition(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
-                "to_name": "GROUP_SHIPPING",
+                "to_name": "GROUP_ADMIN_RETAIL",
                 "calling_type": "READ"
               },
               {
@@ -65,7 +65,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -107,7 +107,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -149,7 +149,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -191,42 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/AuthorizationUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveExpedition(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "saveExpeditionConfiguration(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
-                "to_name": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "expedition(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
-                "to_name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingExpeditionApi",
-                "to_name": "ShippingFacadeImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/AuthorizationUtils.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacade.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacade.java"
           },
           {
             "calls_between_elements": [
@@ -282,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
           },
           {
             "calls_between_elements": [
@@ -303,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/references/ReadableCountry.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/references/ReadableCountry.java"
           },
           {
             "calls_between_elements": [
@@ -317,7 +282,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

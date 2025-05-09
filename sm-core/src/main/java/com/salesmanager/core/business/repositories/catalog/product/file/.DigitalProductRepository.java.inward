@@ -1,26 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/file/DigitalProductRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/file/DigitalProductRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/file/DigitalProductRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/file/DigitalProductRepository.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getByProduct(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.file.DigitalProduct",
-                "to_name": "findByProduct(java.lang.Integer,java.lang.Long) return com.salesmanager.core.model.catalog.product.file.DigitalProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "DigitalProductServiceImpl",
-                "to_name": "DigitalProductRepository",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/file/DigitalProductServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java]": {
-    "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java] defines following code elements": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java]": {
+    "00. file [/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,14 @@
             "nb_elements": 12,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "setCurrency",
+                "signature": "setCurrency(com.salesmanager.core.model.reference.currency.Currency) return void"
+              },
+              {
+                "name": "setTransactionType",
+                "signature": "setTransactionType(com.salesmanager.core.model.payments.TransactionType) return void"
+              },
               {
                 "name": "setAmount",
                 "signature": "setAmount(java.math.BigDecimal) return void"
@@ -25,12 +33,8 @@
                 "signature": "setPaymentType(com.salesmanager.core.model.payments.PaymentType) return void"
               },
               {
-                "name": "setCurrency",
-                "signature": "setCurrency(com.salesmanager.core.model.reference.currency.Currency) return void"
-              },
-              {
-                "name": "setTransactionType",
-                "signature": "setTransactionType(com.salesmanager.core.model.payments.TransactionType) return void"
+                "name": "getModuleName",
+                "signature": "getModuleName() return java.lang.String"
               },
               {
                 "name": "getAmount",
@@ -43,10 +47,6 @@
               {
                 "name": "getCurrency",
                 "signature": "getCurrency() return com.salesmanager.core.model.reference.currency.Currency"
-              },
-              {
-                "name": "getModuleName",
-                "signature": "getModuleName() return java.lang.String"
               },
               {
                 "name": "getTransactionType",
@@ -92,6 +92,17 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "Payment.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Java Constructor",
             "elements": [
               {
@@ -107,17 +118,6 @@
             "elements": [
               {
                 "name": "Payment",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "Payment.java",
                 "signature": ""
               }
             ]

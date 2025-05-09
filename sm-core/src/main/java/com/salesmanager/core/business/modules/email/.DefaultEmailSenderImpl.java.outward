@@ -1,25 +1,11 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/DefaultEmailSenderImpl.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/DefaultEmailSenderImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/email/DefaultEmailSenderImpl.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/email/DefaultEmailSenderImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 25,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "isSmtpAuth() return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "getPassword() return java.lang.String",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -32,6 +18,20 @@
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
                 "to_name": "getProtocol() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "isStarttls() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getPassword() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -52,7 +52,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "isStarttls() return boolean",
+                "to_name": "isSmtpAuth() return boolean",
                 "calling_type": "CALL"
               },
               {
@@ -65,7 +65,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java"
           },
           {
             "calls_between_elements": [
@@ -73,7 +73,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "setJavaMailProperties(java.util.Properties) return void",
+                "to_name": "setPort(int) return void",
                 "calling_type": "CALL"
               },
               {
@@ -94,13 +94,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "setPort(int) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
                 "to_name": "setHost(java.lang.String) return void",
                 "calling_type": "CALL"
               },
@@ -109,6 +102,13 @@
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
                 "to_name": "setProtocol(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "setJavaMailProperties(java.util.Properties) return void",
                 "calling_type": "CALL"
               },
               {
@@ -121,7 +121,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/JavaMailSenderImpl_28297.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/JavaMailSenderImpl_28297.java"
           },
           {
             "calls_between_elements": [
@@ -136,21 +136,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "getTemplateTokens() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
                 "to_name": "getTemplateName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "getTo() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -164,7 +150,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTo() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
                 "to_name": "getFrom() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTemplateTokens() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -177,56 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "IOException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "IOException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "IOException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "IOException",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
           },
           {
             "calls_between_elements": [
@@ -275,7 +226,56 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Message_9314.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Message_9314.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "IOException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "IOException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "IOException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "IOException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
           },
           {
             "calls_between_elements": [
@@ -317,7 +317,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/InternetAddress_25874.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/InternetAddress_25874.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MailPreparationException_28070.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MailPreparationException_28070.java"
           },
           {
             "calls_between_elements": [
@@ -387,63 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MimeMessage_20159.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "setContent(javax.mail.Multipart) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "setDataHandler(javax.activation.DataHandler) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "Part",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Part_3102.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "getTemplate(java.lang.String) return freemarker.template.Template",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "setClassForTemplateLoading(java.lang.Class\u003cT\u003e,java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "Configuration",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Configuration_8177.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MimeMessage_20159.java"
           },
           {
             "calls_between_elements": [
@@ -471,7 +415,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "setContent(javax.mail.Multipart) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "setDataHandler(javax.activation.DataHandler) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "Part",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Part_3102.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "getTemplate(java.lang.String) return freemarker.template.Template",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "setClassForTemplateLoading(java.lang.Class\u003cT\u003e,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "Configuration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Configuration_8177.java"
           },
           {
             "calls_between_elements": [
@@ -499,7 +499,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
           },
           {
             "calls_between_elements": [
@@ -527,49 +527,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/StringWriter_31a8cc657a9812ab.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "MessagingException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "MessagingException",
-                "calling_type": "THROW"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MessagingException_25824.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
-                "to_name": "TemplateException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DefaultEmailSenderImpl",
-                "to_name": "TemplateException",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/TemplateException_32270.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/StringWriter_31a8cc657a9812ab.java"
           },
           {
             "calls_between_elements": [
@@ -590,7 +548,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "TemplateException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "TemplateException",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/TemplateException_32270.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "send(com.salesmanager.core.business.modules.email.Email) return void",
+                "to_name": "MessagingException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DefaultEmailSenderImpl",
+                "to_name": "MessagingException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MessagingException_25824.java"
           },
           {
             "calls_between_elements": [
@@ -611,7 +611,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Template_17773.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Template_17773.java"
           },
           {
             "calls_between_elements": [
@@ -632,7 +632,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/JavaMailSender_7487.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/JavaMailSender_7487.java"
           },
           {
             "calls_between_elements": [
@@ -653,7 +653,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Multipart_29334.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Multipart_29334.java"
           },
           {
             "calls_between_elements": [
@@ -674,7 +674,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/ByteArrayInputStream_36c562e7cf9c7d5c.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/ByteArrayInputStream_36c562e7cf9c7d5c.java"
           },
           {
             "calls_between_elements": [
@@ -695,7 +695,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/javax/activation/DataHandler_3434d6a3aa7377e9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/javax/activation/DataHandler_3434d6a3aa7377e9.java"
           },
           {
             "calls_between_elements": [
@@ -716,7 +716,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MimeMultipart_11833.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MimeMultipart_11833.java"
           },
           {
             "calls_between_elements": [
@@ -737,7 +737,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MimeBodyPart_24372.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MimeBodyPart_24372.java"
           },
           {
             "calls_between_elements": [
@@ -751,7 +751,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -765,7 +765,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
         "files_list_comment": ""

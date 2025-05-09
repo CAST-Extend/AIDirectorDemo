@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/store/MerchantConfigEntity.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/store/MerchantConfigEntity.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/store/MerchantConfigEntity.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/store/MerchantConfigEntity.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setActive(boolean) return void",
+            "to_name": "active",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getValue() return java.lang.String",
             "to_name": "value",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setValue(java.lang.String) return void",
+            "to_name": "value",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,13 +41,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setType(com.salesmanager.core.model.system.MerchantConfigurationType) return void",
+            "to_name": "type",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getKey() return java.lang.String",
             "to_name": "key",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setKey(java.lang.String) return void",
+            "to_name": "key",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 4
+        "nb_calls_between_elements": 8
       }
     ]
   }

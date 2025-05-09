@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/manufacturer/ManufacturerFacadeImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -18,6 +18,13 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "getByProductInCategory(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.manufacturer.ReadableManufacturer\u003e",
+            "to_name": "getByProductInCategory$lambda$0(com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer) return R",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Java Lambda Expression",
             "to_type": "Java Method",
             "from_name": "getByProductInCategory$lambda$0(com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer) return R",
@@ -30,13 +37,6 @@
             "from_name": "saveOrUpdateManufacturer(com.salesmanager.shop.model.catalog.manufacturer.PersistableManufacturer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "to_name": "languageService",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "getByProductInCategory(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.manufacturer.ReadableManufacturer\u003e",
-            "to_name": "getByProductInCategory$lambda$0(com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer) return R",
-            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "",

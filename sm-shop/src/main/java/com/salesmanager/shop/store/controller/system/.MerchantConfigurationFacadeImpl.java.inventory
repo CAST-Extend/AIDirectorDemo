@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,20 +9,20 @@
             "type": "Java Method",
             "elements": [
               {
+                "name": "getMerchantConfiguration",
+                "signature": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e"
+              },
+              {
                 "name": "getConfigValue",
                 "signature": "getConfigValue(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003cjava.lang.String\u003e"
               },
               {
                 "name": "getMerchantConfig",
-                "signature": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs"
-              },
-              {
-                "name": "getMerchantConfiguration",
-                "signature": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e"
+                "signature": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig"
               },
               {
                 "name": "getMerchantConfig",
-                "signature": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig"
+                "signature": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs"
               }
             ]
           },
@@ -47,15 +47,11 @@
           },
           {
             "comment": "",
-            "nb_elements": 2,
-            "type": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Method",
             "elements": [
               {
-                "name": "merchantConfigurationService",
-                "signature": ""
-              },
-              {
-                "name": "MerchantConfigurationFacadeImpl.java",
+                "name": "ofNullable\u003cMerchantConfiguration\u003e",
                 "signature": ""
               }
             ]
@@ -63,10 +59,21 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring Bean",
+            "type": "Java Instantiated Class",
             "elements": [
               {
-                "name": "merchantConfigurationFacadeImpl",
+                "name": "Optional\u003cMerchantConfiguration\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "MerchantConfigurationFacadeImpl.java",
                 "signature": ""
               }
             ]
@@ -89,28 +96,6 @@
             "elements": [
               {
                 "name": "MerchantConfigurationFacadeImpl",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Class",
-            "elements": [
-              {
-                "name": "Optional\u003cMerchantConfiguration\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Method",
-            "elements": [
-              {
-                "name": "ofNullable\u003cMerchantConfiguration\u003e",
                 "signature": ""
               }
             ]

@@ -1,46 +1,26 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java]": {
-    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java]": {
+    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 44,
+        "nb_impacting_elements": 35,
         "impacting_elements": [
           {
-            "name": "saveShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+            "name": "readableCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 3,
+            "nb_impacted_elements": 11,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
+                "name": "api/v1/auth/customer/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
+                "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.Re",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 19,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
+                "name": "api/v1/auth/customer/{}/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
+                "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
@@ -58,24 +38,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -114,188 +76,24 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+            "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 19,
+            "nb_impacted_elements": 11,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getCartModel(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 18,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
+                "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
                 "type": "Spring MVC Delete Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -318,20 +116,96 @@
                 "nature": "data entity"
               },
               {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
+                "name": "country",
+                "full_name": "salesmanager.country",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "saveShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.Re",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -370,24 +244,100 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
+                "name": "product",
+                "full_name": "salesmanager.product",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getCartModel(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
@@ -395,17 +345,17 @@
             "name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 16,
+            "nb_impacted_elements": 11,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -428,18 +378,6 @@
                 "nature": "data entity"
               },
               {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "tax_class",
                 "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
@@ -472,24 +410,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -503,455 +423,21 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
                 "type": "Spring MVC Delete Operation",
                 "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "modifyCartMulti(java.lang.String,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 19,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 19,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "fetchProduct(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 14,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -963,7 +449,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -977,7 +463,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -987,11 +473,11 @@
             "name": "modifyCartMulti$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean",
             "comment": "",
             "type": "Java Lambda Expression",
-            "nb_impacted_elements": 19,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1010,24 +496,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1064,42 +532,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1109,11 +541,11 @@
             "name": "createCartItems$lambda$4(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem) return boolean",
             "comment": "",
             "type": "Java Lambda Expression",
-            "nb_impacted_elements": 15,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1132,18 +564,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1180,24 +600,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1211,7 +613,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -1221,11 +623,11 @@
             "name": "createCartItems$lambda$2(com.salesmanager.core.model.catalog.product.Product) return boolean",
             "comment": "",
             "type": "Java Lambda Expression",
-            "nb_impacted_elements": 15,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1244,18 +646,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1292,24 +682,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1319,11 +691,11 @@
             "name": "createCartItems$lambda$1(java.lang.String) return R",
             "comment": "",
             "type": "Java Lambda Expression",
-            "nb_impacted_elements": 15,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1342,18 +714,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1390,24 +750,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1421,21 +763,21 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/multi/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "name": "modifyCartMulti(java.lang.String,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 19,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/cart/{}/promo/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1454,24 +796,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1510,40 +834,222 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
+                "name": "product",
+                "full_name": "salesmanager.product",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
+                "name": "country",
+                "full_name": "salesmanager.country",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "fetchProduct(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "modifyCart(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/promo/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/promo/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1557,131 +1063,9 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 19,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -1689,11 +1073,11 @@
             "name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 19,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -1712,24 +1096,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -1768,40 +1134,72 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "addToCart(com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
+                "name": "product",
+                "full_name": "salesmanager.product",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
+                "name": "country",
+                "full_name": "salesmanager.country",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -1811,115 +1209,25 @@
             "name": "getShoppingCartModel(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 18,
+            "nb_impacted_elements": 3,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/shipping/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/POST/api/v1/cart/{}/shipping/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderShippingApi.java/api/v1/PORT/POST/api/v1/cart/{}/shipping/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/cart/{}/total/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderTotalApi.java/api/v1/PORT/GET/api/v1/cart/{}/total/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/auth/cart/{}/shipping/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderShippingApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/shipping/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderShippingApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/shipping/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -1931,259 +1239,15 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/auth/cart/{}/checkout/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "readableCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 18,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/auth/customer/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/auth/customer/{}/cart/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/auth/customer/{}/cart/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 20,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/GET/api/v1/cart/{}/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -2195,9 +1259,77 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/total/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderTotalApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/total/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderTotalApi.java/api/v1/PORT/GET/api/v1/auth/cart/{}/total/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "removeShoppingCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -2209,229 +1341,9 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
                 "type": "Spring MVC Delete Operation",
                 "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "removeShoppingCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 19,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/cart/{}/product/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
-                "type": "Spring MVC Delete Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "setOrderId(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -2439,7 +1351,7 @@
             "name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 16,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
               {
                 "name": "manufacturer",
@@ -2456,18 +1368,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -2504,250 +1404,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 18,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "deleteShoppingCart(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -2757,7 +1413,7 @@
             "name": "addToCart(com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 18,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
               {
                 "name": "manufacturer",
@@ -2774,24 +1430,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -2828,42 +1466,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -2873,7 +1475,7 @@
             "name": "getCart(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 18,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
               {
                 "name": "manufacturer",
@@ -2890,24 +1492,6 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -2944,140 +1528,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "zone",
-                "full_name": "salesmanager.zone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getShoppingCartModel(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -3087,14 +1537,8 @@
             "name": "getShoppingCartData(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 15,
+            "nb_impacted_elements": 5,
             "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -3102,44 +1546,8 @@
                 "nature": "data entity"
               },
               {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -3158,606 +1566,6 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "updateCartItems(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "updateCartItem(java.lang.Long,java.lang.String,long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "removeCartItem(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getShoppingCartData(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 14,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_attribute",
-                "full_name": "salesmanager.product_attribute",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "deleteShoppingCart(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 15,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option",
-                "full_name": "salesmanager.product_option",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variant_group",
-                "full_name": "salesmanager.product_variant_group",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_option_value",
-                "full_name": "salesmanager.product_option_value",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product_variation",
-                "full_name": "salesmanager.product_variation",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -3778,6 +1586,50 @@
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getShoppingCartData(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },

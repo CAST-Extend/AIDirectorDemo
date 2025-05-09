@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/store/PersistableMerchantStorePopulator.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/store/PersistableMerchantStorePopulator.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/store/PersistableMerchantStorePopulator.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/store/PersistableMerchantStorePopulator.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setCurrencyService(com.salesmanager.core.business.services.reference.currency.CurrencyService) return void",
+            "to_name": "currencyService",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getLanguageService() return com.salesmanager.core.business.services.reference.language.LanguageService",
             "to_name": "languageService",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLanguageService(com.salesmanager.core.business.services.reference.language.LanguageService) return void",
+            "to_name": "languageService",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,13 +41,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setZoneService(com.salesmanager.core.business.services.reference.zone.ZoneService) return void",
+            "to_name": "zoneService",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getCountryService() return com.salesmanager.core.business.services.reference.country.CountryService",
             "to_name": "countryService",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCountryService(com.salesmanager.core.business.services.reference.country.CountryService) return void",
+            "to_name": "countryService",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 4
+        "nb_calls_between_elements": 8
       }
     ]
   }

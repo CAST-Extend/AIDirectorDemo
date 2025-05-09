@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProduct.java]": {
-    "00. file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProduct.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProduct.java]": {
+    "00. file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProduct.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 8,
         "files": [
@@ -9,14 +9,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "setVariants(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.PersistableProductVariant\u003e) return void",
+                "from_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ProductDescription\u003e",
+                "to_name": "ProductDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ProductDescription\u003e) return void",
+                "to_name": "ProductDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProduct",
+                "to_name": "ProductDescription",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getVariants() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.PersistableProductVariant\u003e",
                 "to_name": "PersistableProductVariant",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getVariants() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.PersistableProductVariant\u003e",
+                "from_name": "setVariants(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.PersistableProductVariant\u003e) return void",
                 "to_name": "PersistableProductVariant",
                 "calling_type": "USE"
               },
@@ -30,7 +58,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variant/PersistableProductVariant.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variant/PersistableProductVariant.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCategories() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.Category\u003e",
+                "to_name": "Category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.Category\u003e) return void",
+                "to_name": "Category",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProduct",
+                "to_name": "Category",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/Category.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getImages() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.PersistableImage\u003e",
+                "to_name": "PersistableImage",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.PersistableImage\u003e) return void",
+                "to_name": "PersistableImage",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProduct",
+                "to_name": "PersistableImage",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/PersistableImage.java"
           },
           {
             "calls_between_elements": [
@@ -58,91 +142,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/PersistableProductAttribute.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.Category\u003e) return void",
-                "to_name": "Category",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getCategories() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.Category\u003e",
-                "to_name": "Category",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProduct",
-                "to_name": "Category",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/Category.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.PersistableImage\u003e) return void",
-                "to_name": "PersistableImage",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getImages() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.PersistableImage\u003e",
-                "to_name": "PersistableImage",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProduct",
-                "to_name": "PersistableImage",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/PersistableImage.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setDescriptions(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ProductDescription\u003e) return void",
-                "to_name": "ProductDescription",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ProductDescription\u003e",
-                "to_name": "ProductDescription",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProduct",
-                "to_name": "ProductDescription",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductDescription.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/PersistableProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -156,7 +156,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/PersistableProductDefinition.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/PersistableProductDefinition.java"
           },
           {
             "calls_between_elements": [
@@ -170,7 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/ReadableProductDefinition.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/definition/ReadableProductDefinition.java"
           },
           {
             "calls_between_elements": [
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/ReadableProductPopulator.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/ReadableProductPopulator.java"
           }
         ],
         "files_list_comment": ""

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableProduct.java]": {
-    "00. file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableProduct.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableProduct.java]": {
+    "00. file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableProduct.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 9,
         "files": [
@@ -9,10 +9,31 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "setProperties(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.ReadableProductProperty\u003e) return void",
-                "to_name": "ReadableProductProperty",
+                "from_name": "setVariants(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant\u003e) return void",
+                "to_name": "ReadableProductVariant",
                 "calling_type": "USE"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getVariants() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant\u003e",
+                "to_name": "ReadableProductVariant",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProduct",
+                "to_name": "ReadableProductVariant",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variant/ReadableProductVariant.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -21,6 +42,13 @@
                 "calling_type": "USE"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setProperties(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.ReadableProductProperty\u003e) return void",
+                "to_name": "ReadableProductProperty",
+                "calling_type": "USE"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableProduct",
@@ -30,17 +58,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductProperty.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductProperty.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getOptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.ReadableProductOption\u003e",
-                "to_name": "ReadableProductOption",
-                "calling_type": "USE"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -49,6 +70,13 @@
                 "calling_type": "USE"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getOptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.ReadableProductOption\u003e",
+                "to_name": "ReadableProductOption",
+                "calling_type": "USE"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableProduct",
@@ -58,21 +86,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductOption.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductOption.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getCategories() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e",
+                "from_name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e) return void",
                 "to_name": "ReadableCategory",
                 "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "setCategories(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e) return void",
+                "from_name": "getCategories() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e",
                 "to_name": "ReadableCategory",
                 "calling_type": "USE"
               },
@@ -86,7 +114,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e) return void",
+                "to_name": "ReadableImage",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getImages() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "ReadableImage",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableProduct",
+                "to_name": "ReadableImage",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
           },
           {
             "calls_between_elements": [
@@ -114,77 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductAttribute.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getImages() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "ReadableImage",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setImages(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e) return void",
-                "to_name": "ReadableImage",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableProduct",
-                "to_name": "ReadableImage",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getVariants() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant\u003e",
-                "to_name": "ReadableProductVariant",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setVariants(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant\u003e) return void",
-                "to_name": "ReadableProductVariant",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableProduct",
-                "to_name": "ReadableProductVariant",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variant/ReadableProductVariant.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Instantiated Constructor",
-                "from_name": "categories",
-                "to_name": "ArrayList\u003cReadableCategory\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/category/CategoryFacadeImpl.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/ReadableProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +184,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variantGroup/ReadableProductVariantGroup.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variantGroup/ReadableProductVariantGroup.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "categories",
+                "to_name": "ArrayList\u003cReadableCategory\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/category/CategoryFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java"
           }
         ],
         "files_list_comment": ""

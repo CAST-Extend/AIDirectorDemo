@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantGroupFacadeImpl.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantGroupFacadeImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantGroupFacadeImpl.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantGroupFacadeImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 32,
+        "nb_files_with_called_elements": 31,
         "files": [
           {
             "calls_between_elements": [
@@ -50,13 +50,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ServiceRuntimeException(java.lang.String)",
@@ -65,7 +58,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ServiceRuntimeException",
                 "calling_type": "RAISE"
               },
@@ -75,6 +68,13 @@
                 "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
                 "to_name": "ServiceRuntimeException(java.lang.String)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -93,7 +93,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -163,7 +163,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantGroup.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantGroup.java"
           },
           {
             "calls_between_elements": [
@@ -226,10 +226,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "removeImage$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariantImage) return boolean",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -271,18 +278,11 @@
                 "from_name": "ProductVariantGroupFacadeImpl",
                 "to_name": "ProductVariantImage",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "removeImage$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariantImage) return boolean",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImage.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariantImage.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -380,56 +380,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "group(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
-                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantGroup\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pro",
-                "to_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.variant.ProductV",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
-                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductVariantGroupFacadeImpl",
-                "to_name": "ProductVariantGroupServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupService.java"
           },
           {
             "calls_between_elements": [
@@ -471,7 +422,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -513,7 +464,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "group(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductVariantGroupFacadeImpl",
+                "to_name": "product",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -555,14 +548,14 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Method",
+                "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
-                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantGroup.ReadableProductVariantGroup",
+                "from_name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return R",
                 "to_name": "convert(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantG",
                 "calling_type": "CALL"
               },
@@ -574,58 +567,23 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantGroup.ReadableProductVariantGroup",
+                "to_name": "convert(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantG",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductVariantGroupFacadeImpl",
                 "to_name": "ReadableProductVariantGroupMapper",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "list$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return R",
-                "to_name": "convert(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantG",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getInputStream() return java.io.InputStream",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getContentType() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getOriginalFilename() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "ProductVariantGroupFacadeImpl",
-                "to_name": "MultipartFile",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MultipartFile_4084.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java"
           },
           {
             "calls_between_elements": [
@@ -660,7 +618,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -668,14 +626,49 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "setPath(java.lang.String) return void",
+                "to_name": "getInputStream() return java.io.InputStream",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getContentType() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getOriginalFilename() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductVariantGroupFacadeImpl",
+                "to_name": "MultipartFile",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MultipartFile_11333.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "setFile(java.io.InputStream) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setPath(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -695,7 +688,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -730,7 +723,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -758,7 +751,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
           },
           {
             "calls_between_elements": [
@@ -786,35 +779,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "addContentFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductVariantGroupFacadeImpl",
-                "to_name": "ContentServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentService.java"
           },
           {
             "calls_between_elements": [
@@ -842,7 +807,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -870,7 +835,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -898,7 +863,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -926,7 +891,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java"
           },
           {
             "calls_between_elements": [
@@ -947,7 +912,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -968,7 +933,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
           },
           {
             "calls_between_elements": [
@@ -989,7 +954,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -1010,7 +975,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1031,7 +996,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variantGroup/ReadableProductVariantGroup.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/variantGroup/ReadableProductVariantGroup.java"
           },
           {
             "calls_between_elements": [
@@ -1052,7 +1017,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Streamable_17546.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Streamable_17546.java"
           },
           {
             "calls_between_elements": [
@@ -1073,28 +1038,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "delete(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariant\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductVariantGroupFacadeImpl",
-                "to_name": "ProductVariantServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantService.java"
           },
           {
             "calls_between_elements": [
@@ -1115,7 +1059,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -1129,7 +1073,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "list(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pro",
+                "to_name": "createReadableList\u003cProductVariantGroup,ReadableProductVariantGroup\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/util/ReadableEntityUtil.java"
           }
         ],
         "files_list_comment": ""

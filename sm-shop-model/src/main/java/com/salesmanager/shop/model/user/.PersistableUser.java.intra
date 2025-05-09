@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java]": [
       {
         "calls_between_elements": [
           {
@@ -20,9 +20,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setGroups(java.util.List.List\u003ccom.salesmanager.shop.model.security.PersistableGroup\u003e) return void",
+            "to_name": "groups",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "isActive() return boolean",
             "to_name": "active",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setActive(boolean) return void",
+            "to_name": "active",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -34,9 +48,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setUserName(java.lang.String) return void",
+            "to_name": "userName",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getStore() return java.lang.String",
             "to_name": "store",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setStore(java.lang.String) return void",
+            "to_name": "store",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -48,13 +76,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setRepeatPassword(java.lang.String) return void",
+            "to_name": "repeatPassword",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getPassword() return java.lang.String",
             "to_name": "password",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPassword(java.lang.String) return void",
+            "to_name": "password",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 7
+        "nb_calls_between_elements": 13
       }
     ]
   }

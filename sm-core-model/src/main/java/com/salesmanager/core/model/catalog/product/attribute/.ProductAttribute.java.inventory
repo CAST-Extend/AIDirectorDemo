@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java]": {
-    "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java] defines following code elements": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java]": {
+    "00. file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,30 @@
             "nb_elements": 30,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "getProductAttributePrice",
+                "signature": "getProductAttributePrice() return java.math.BigDecimal"
+              },
+              {
+                "name": "getAttributeAdditionalWeight",
+                "signature": "getAttributeAdditionalWeight() return java.lang.String"
+              },
+              {
+                "name": "getProduct",
+                "signature": "getProduct() return com.salesmanager.core.model.catalog.product.Product"
+              },
+              {
+                "name": "getAttributeDefault",
+                "signature": "getAttributeDefault() return boolean"
+              },
+              {
+                "name": "getProductAttributeWeight",
+                "signature": "getProductAttributeWeight() return java.math.BigDecimal"
+              },
+              {
+                "name": "getId",
+                "signature": "getId() return java.lang.Long"
+              },
               {
                 "name": "setProductAttributePrice",
                 "signature": "setProductAttributePrice(java.math.BigDecimal) return void"
@@ -45,28 +69,20 @@
                 "signature": "setId(java.lang.Long) return void"
               },
               {
-                "name": "getProductAttributePrice",
-                "signature": "getProductAttributePrice() return java.math.BigDecimal"
+                "name": "setProductOptionValue",
+                "signature": "setProductOptionValue(com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue) return void"
               },
               {
-                "name": "getAttributeAdditionalWeight",
-                "signature": "getAttributeAdditionalWeight() return java.lang.String"
+                "name": "setProductOption",
+                "signature": "setProductOption(com.salesmanager.core.model.catalog.product.attribute.ProductOption) return void"
               },
               {
-                "name": "getProduct",
-                "signature": "getProduct() return com.salesmanager.core.model.catalog.product.Product"
+                "name": "getProductOptionValue",
+                "signature": "getProductOptionValue() return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue"
               },
               {
-                "name": "getAttributeDefault",
-                "signature": "getAttributeDefault() return boolean"
-              },
-              {
-                "name": "getProductAttributeWeight",
-                "signature": "getProductAttributeWeight() return java.math.BigDecimal"
-              },
-              {
-                "name": "getId",
-                "signature": "getId() return java.lang.Long"
+                "name": "getProductOption",
+                "signature": "getProductOption() return com.salesmanager.core.model.catalog.product.attribute.ProductOption"
               },
               {
                 "name": "setAttributeAdditionalWeight",
@@ -111,22 +127,6 @@
               {
                 "name": "getAttributePrice",
                 "signature": "getAttributePrice() return java.lang.String"
-              },
-              {
-                "name": "setProductOptionValue",
-                "signature": "setProductOptionValue(com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue) return void"
-              },
-              {
-                "name": "setProductOption",
-                "signature": "setProductOption(com.salesmanager.core.model.catalog.product.attribute.ProductOption) return void"
-              },
-              {
-                "name": "getProductOptionValue",
-                "signature": "getProductOptionValue() return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue"
-              },
-              {
-                "name": "getProductOption",
-                "signature": "getProductOption() return com.salesmanager.core.model.catalog.product.attribute.ProductOption"
               }
             ]
           },
@@ -230,6 +230,17 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "ProductAttribute.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Java Class",
             "elements": [
               {
@@ -245,28 +256,6 @@
             "elements": [
               {
                 "name": "ProductAttribute",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ProductAttribute.java",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Class",
-            "elements": [
-              {
-                "name": "SalesManagerEntity\u003cLong,ProductAttribute\u003e",
                 "signature": ""
               }
             ]

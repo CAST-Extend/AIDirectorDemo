@@ -1,130 +1,10 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/PersistableTaxRate.java]": {
-    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/PersistableTaxRate.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/PersistableTaxRate.java]": {
+    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/PersistableTaxRate.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 9,
+        "nb_impacting_elements": 1,
         "impacting_elements": [
-          {
-            "name": "ArrayList\u003cTaxRateDescription\u003e",
-            "comment": "",
-            "type": "Java Instantiated Constructor",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getTaxClass() return java.lang.String",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.tax.TaxRateDescription\u003e",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getCountry() return java.lang.String",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getZone() return java.lang.String",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getRate() return java.math.BigDecimal",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
           {
             "name": "PersistableTaxRate",
             "comment": "",
@@ -133,53 +13,13 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "List\u003cTaxRateDescription\u003e",
-            "comment": "",
-            "type": "Java Instantiated Interface",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "ArrayList\u003cTaxRateDescription\u003e",
-            "comment": "",
-            "type": "Java Instantiated Class",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/PUT/api/v1/private/tax/rate/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/rate/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java/api/v1/PORT/POST/api/v1/private/tax/rate/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }

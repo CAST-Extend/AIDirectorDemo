@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -18,15 +18,29 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
+            "to_name": "repository",
+            "calling_type": "WRITE"
+          },
+          {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "getObjectClass() return java.lang.Class.Class\u003cT\u003e",
             "to_name": "objectClass",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "SalesManagerEntityServiceImpl(org.springframework.data.jpa.repository.JpaRepository.JpaRepository\u003cT,ID\u003e)",
+            "to_name": "objectClass",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 3
+        "nb_calls_between_elements": 5
       }
     ]
   }

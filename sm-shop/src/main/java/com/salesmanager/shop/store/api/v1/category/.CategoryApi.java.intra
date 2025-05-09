@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/category/CategoryApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/category/CategoryApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/category/CategoryApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/category/CategoryApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -22,6 +22,13 @@
             "to_type": "Java Method",
             "from_name": "api/v1/private/category/{}/visible/",
             "to_name": "updateVisible(java.lang.Long,com.salesmanager.shop.model.catalog.category.PersistableCategory,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Put Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/private/category/{}/",
+            "to_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.category.PersistableCategory,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.category.PersistableCategory",
             "calling_type": "CALL"
           },
           {
@@ -67,13 +74,6 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Put Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/private/category/{}/",
-            "to_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.category.PersistableCategory,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.category.PersistableCategory",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "list(java.util.List.List\u003cjava.lang.String\u003e,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer) return com.salesmanager.shop.model.catalog.category",
@@ -88,9 +88,16 @@
             "calling_type": "PROTOTYPE"
           },
           {
-            "from_type": "Spring MVC Put Operation",
+            "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/category/{}/move/{}/",
+            "from_name": "api/v1/private/category/",
+            "to_name": "CategoryApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/category/{}/visible/",
             "to_name": "CategoryApi",
             "calling_type": "CALL"
           },
@@ -102,16 +109,9 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Post Operation",
+            "from_type": "Spring MVC Put Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/category/",
-            "to_name": "CategoryApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/category/{}/visible/",
+            "from_name": "api/v1/private/category/{}/move/{}/",
             "to_name": "CategoryApi",
             "calling_type": "CALL"
           },

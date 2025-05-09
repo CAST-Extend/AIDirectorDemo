@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,16 +9,16 @@
             "type": "Java Method",
             "elements": [
               {
+                "name": "imageDetails",
+                "signature": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
                 "name": "image",
                 "signature": "image(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage"
               },
               {
                 "name": "images",
                 "signature": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e"
-              },
-              {
-                "name": "imageDetails",
-                "signature": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
               },
               {
                 "name": "deleteImage",
@@ -31,33 +31,6 @@
               {
                 "name": "uploadImage",
                 "signature": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 6,
-            "type": "",
-            "elements": [
-              {
-                "name": "readableProductImageMapper",
-                "signature": ""
-              },
-              {
-                "name": "productService",
-                "signature": ""
-              },
-              {
-                "name": "productImageService",
-                "signature": ""
-              },
-              {
-                "name": "ProductImageApi.java",
-                "signature": ""
-              },
-              {
-                "name": "/api/v1",
-                "signature": ""
               }
             ]
           },
@@ -80,6 +53,21 @@
               },
               {
                 "name": "productImageService",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 3,
+            "type": "",
+            "elements": [
+              {
+                "name": "/api/v1",
+                "signature": ""
+              },
+              {
+                "name": "ProductImageApi.java",
                 "signature": ""
               }
             ]
@@ -121,21 +109,6 @@
           {
             "comment": "",
             "nb_elements": 2,
-            "type": "Spring MVC Post Operation",
-            "elements": [
-              {
-                "name": "api/v1/auth/product/{}/image/",
-                "signature": ""
-              },
-              {
-                "name": "api/v1/private/product/{}/image/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 2,
             "type": "Spring MVC Any Operation",
             "elements": [
               {
@@ -150,44 +123,15 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Spring Bean",
+            "nb_elements": 2,
+            "type": "Spring MVC Post Operation",
             "elements": [
               {
-                "name": "productImageApi",
+                "name": "api/v1/auth/product/{}/image/",
                 "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
-            "elements": [
+              },
               {
-                "name": "ProductImageApi",
-                "signature": "ProductImageApi()"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Class",
-            "elements": [
-              {
-                "name": "ProductImageApi",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Get Operation",
-            "elements": [
-              {
-                "name": "api/v1/product/{}/images/",
+                "name": "api/v1/private/product/{}/image/",
                 "signature": ""
               }
             ]
@@ -211,6 +155,39 @@
               {
                 "name": "images$lambda$0",
                 "signature": "images$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Get Operation",
+            "elements": [
+              {
+                "name": "api/v1/product/{}/images/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "ProductImageApi",
+                "signature": "ProductImageApi()"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Class",
+            "elements": [
+              {
+                "name": "ProductImageApi",
+                "signature": ""
               }
             ]
           }

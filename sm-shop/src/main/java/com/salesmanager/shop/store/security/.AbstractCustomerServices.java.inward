@@ -1,47 +1,31 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/AbstractCustomerServices.java]": [
       {
         "files": [
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "JWTCustomerServicesImpl(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
-                "to_name": "AbstractCustomerServices(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
-                "calling_type": "CALL"
+                "calling_type": "WRITE",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "JWTCustomerServicesImpl",
-                "to_name": "AbstractCustomerServices",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/customer/JWTCustomerServicesImpl.java",
             "comment": "",
-            "nb_calls_between_elements": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/CustomerServicesImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "CustomerServicesImpl(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
-                "to_name": "AbstractCustomerServices(com.salesmanager.core.business.services.customer.CustomerService,com.salesmanager.core.business.services.user.PermissionService,com.salesmanager.core.business.services.user.GroupService)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerServicesImpl",
-                "to_name": "AbstractCustomerServices",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/CustomerServicesImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

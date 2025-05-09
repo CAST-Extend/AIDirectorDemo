@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,10 +8,6 @@
             "nb_elements": 6,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "exists",
-                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e"
-              },
               {
                 "name": "list",
                 "signature": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.optionset.ReadableProductOptionSet\u003e"
@@ -29,6 +25,10 @@
                 "signature": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.optionset.ReadableProductOptionSet"
               },
               {
+                "name": "exists",
+                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e"
+              },
+              {
                 "name": "create",
                 "signature": "create(com.salesmanager.shop.model.catalog.product.attribute.optionset.PersistableProductOptionSet,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
               }
@@ -36,19 +36,15 @@
           },
           {
             "comment": "",
-            "nb_elements": 4,
+            "nb_elements": 3,
             "type": "",
             "elements": [
               {
-                "name": "productOptionSetFacade",
+                "name": "/api/v1",
                 "signature": ""
               },
               {
                 "name": "ProductPropertySetApi.java",
-                "signature": ""
-              },
-              {
-                "name": "/api/v1",
                 "signature": ""
               }
             ]
@@ -75,43 +71,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Field",
+            "type": "Java Instantiated Interface",
             "elements": [
               {
-                "name": "productOptionSetFacade",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring Bean",
-            "elements": [
-              {
-                "name": "productPropertySetApi",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
-            "elements": [
-              {
-                "name": "ProductPropertySetApi",
-                "signature": "ProductPropertySetApi()"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Class",
-            "elements": [
-              {
-                "name": "ProductPropertySetApi",
+                "name": "List\u003cReadableProductOptionSet\u003e",
                 "signature": ""
               }
             ]
@@ -141,10 +104,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring MVC Delete Operation",
+            "type": "Java Field",
             "elements": [
               {
-                "name": "api/v1/private/product/property/set/{}/",
+                "name": "productOptionSetFacade",
                 "signature": ""
               }
             ]
@@ -152,10 +115,32 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Interface",
+            "type": "Java Constructor",
             "elements": [
               {
-                "name": "List\u003cReadableProductOptionSet\u003e",
+                "name": "ProductPropertySetApi",
+                "signature": "ProductPropertySetApi()"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Class",
+            "elements": [
+              {
+                "name": "ProductPropertySetApi",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Delete Operation",
+            "elements": [
+              {
+                "name": "api/v1/private/product/property/set/{}/",
                 "signature": ""
               }
             ]

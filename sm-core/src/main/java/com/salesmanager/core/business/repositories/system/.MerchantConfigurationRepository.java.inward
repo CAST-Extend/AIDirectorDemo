@@ -1,54 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/system/MerchantConfigurationRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/system/MerchantConfigurationRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/system/MerchantConfigurationRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/system/MerchantConfigurationRepository.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByType(com.salesmanager.core.model.system.MerchantConfigurationType,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "to_name": "findByMerchantStoreAndType(java.lang.Integer,com.salesmanager.core.model.system.MerchantConfigurationType) return java.util.List.List\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMerchantConfig(com.salesmanager.core.model.system.MerchantConfig,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "findByMerchantStoreAndKey(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.system.MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig",
-                "to_name": "findByMerchantStoreAndKey(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.system.MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfiguration",
-                "to_name": "findByMerchantStoreAndKey(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.system.MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "to_name": "findByMerchantStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "MerchantConfigurationServiceImpl",
-                "to_name": "MerchantConfigurationRepository",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 6
           }

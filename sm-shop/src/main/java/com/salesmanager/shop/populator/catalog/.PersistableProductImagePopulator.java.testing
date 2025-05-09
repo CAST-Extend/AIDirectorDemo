@@ -1,10 +1,79 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductImagePopulator.java]": {
-    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductImagePopulator.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductImagePopulator.java]": {
+    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductImagePopulator.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 0,
-        "impacting_elements": []
+        "nb_impacting_elements": 1,
+        "impacting_elements": [
+          {
+            "name": "populate(com.salesmanager.shop.model.catalog.product.PersistableImage,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sal",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

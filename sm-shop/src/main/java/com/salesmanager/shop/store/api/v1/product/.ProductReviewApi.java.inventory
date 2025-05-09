@@ -1,35 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductReviewApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductReviewApi.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductReviewApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductReviewApi.java] defines following code elements": [
       {
         "types": [
-          {
-            "comment": "",
-            "nb_elements": 6,
-            "type": "",
-            "elements": [
-              {
-                "name": "productService",
-                "signature": ""
-              },
-              {
-                "name": "productReviewService",
-                "signature": ""
-              },
-              {
-                "name": "productCommonFacade",
-                "signature": ""
-              },
-              {
-                "name": "ProductReviewApi.java",
-                "signature": ""
-              },
-              {
-                "name": "/api/v1",
-                "signature": ""
-              }
-            ]
-          },
           {
             "comment": "",
             "nb_elements": 4,
@@ -50,6 +23,21 @@
               {
                 "name": "create",
                 "signature": "create(java.lang.Long,com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http."
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 4,
+            "type": "Spring MVC Post Operation",
+            "elements": [
+              {
+                "name": "api/v1/auth/products/{}/reviews/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/products/{}/reviews/",
+                "signature": ""
               }
             ]
           },
@@ -78,15 +66,15 @@
           },
           {
             "comment": "",
-            "nb_elements": 4,
-            "type": "Spring MVC Post Operation",
+            "nb_elements": 3,
+            "type": "",
             "elements": [
               {
-                "name": "api/v1/auth/products/{}/reviews/",
+                "name": "/api/v1",
                 "signature": ""
               },
               {
-                "name": "api/v1/private/products/{}/reviews/",
+                "name": "ProductReviewApi.java",
                 "signature": ""
               }
             ]
@@ -124,10 +112,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring Bean",
+            "type": "Spring MVC Get Operation",
             "elements": [
               {
-                "name": "productReviewApi",
+                "name": "api/v1/product/{}/reviews/",
                 "signature": ""
               }
             ]
@@ -150,28 +138,6 @@
             "elements": [
               {
                 "name": "ProductReviewApi",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Get Operation",
-            "elements": [
-              {
-                "name": "api/v1/product/{}/reviews/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Interface",
-            "elements": [
-              {
-                "name": "List\u003cReadableProductReview\u003e",
                 "signature": ""
               }
             ]

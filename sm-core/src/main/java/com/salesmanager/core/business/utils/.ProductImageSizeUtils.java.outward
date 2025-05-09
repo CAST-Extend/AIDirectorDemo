@@ -1,18 +1,11 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductImageSizeUtils.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductImageSizeUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductImageSizeUtils.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductImageSizeUtils.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 7,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
-                "to_name": "TYPE_INT_ARGB",
-                "calling_type": "READ"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -47,6 +40,13 @@
                 "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
                 "to_name": "BufferedImage(int,int,int)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
+                "to_name": "TYPE_INT_ARGB",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
@@ -87,14 +87,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "resizeWithHint(java.awt.image.BufferedImage,int,int,java.lang.Object,boolean) return java.awt.image.BufferedImage",
-                "to_name": "TYPE_INT_RGB",
+                "to_name": "TYPE_INT_ARGB",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "resizeWithHint(java.awt.image.BufferedImage,int,int,java.lang.Object,boolean) return java.awt.image.BufferedImage",
-                "to_name": "TYPE_INT_ARGB",
+                "to_name": "TYPE_INT_RGB",
                 "calling_type": "READ"
               },
               {
@@ -126,8 +126,8 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Class Rich Client",
-                "to_type": "Java Class Rich Client",
+                "from_type": "Java Class",
+                "to_type": "Java Class",
                 "from_name": "ProductImageSizeUtils",
                 "to_name": "BufferedImage",
                 "calling_type": "CALL"
@@ -135,10 +135,24 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 18,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/image/BufferedImage_7df357dd4d6a8a6.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/image/BufferedImage_7df357dd4d6a8a6.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
+                "to_name": "VALUE_INTERPOLATION_BILINEAR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
+                "to_name": "KEY_INTERPOLATION",
+                "calling_type": "READ"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
@@ -165,20 +179,6 @@
                 "to_type": "Java Field",
                 "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
                 "to_name": "KEY_ANTIALIASING",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
-                "to_name": "VALUE_INTERPOLATION_BILINEAR",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resizeWithRatio(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
-                "to_name": "KEY_INTERPOLATION",
                 "calling_type": "READ"
               },
               {
@@ -192,6 +192,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
+                "to_name": "VALUE_INTERPOLATION_BILINEAR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
+                "to_name": "KEY_INTERPOLATION",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
                 "to_name": "VALUE_RENDER_QUALITY",
                 "calling_type": "READ"
               },
@@ -214,26 +228,12 @@
                 "to_type": "Java Field",
                 "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
                 "to_name": "KEY_ANTIALIASING",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
-                "to_name": "VALUE_INTERPOLATION_BILINEAR",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resize(java.awt.image.BufferedImage,int,int) return java.awt.image.BufferedImage",
-                "to_name": "KEY_INTERPOLATION",
                 "calling_type": "READ"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 13,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/RenderingHints_748855559a1e71e9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/RenderingHints_748855559a1e71e9.java"
           },
           {
             "calls_between_elements": [
@@ -280,7 +280,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Rich Client",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductImageSizeUtils",
                 "to_name": "Graphics",
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/Graphics_cd0b090353875442.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/Graphics_cd0b090353875442.java"
           },
           {
             "calls_between_elements": [
@@ -329,7 +329,7 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Rich Client",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductImageSizeUtils",
                 "to_name": "Graphics2D",
@@ -338,7 +338,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/Graphics2D_9abd6fa8096b6ffc.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/Graphics2D_9abd6fa8096b6ffc.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +359,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/AlphaComposite_cd6001fd07a5cd78.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/AlphaComposite_cd6001fd07a5cd78.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Math_2f53a0a798fc26ef.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Math_2f53a0a798fc26ef.java"
           },
           {
             "calls_between_elements": [
@@ -387,7 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/awt/Transparency_4d37b099fe775771.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/awt/Transparency_4d37b099fe775771.java"
           }
         ],
         "files_list_comment": ""

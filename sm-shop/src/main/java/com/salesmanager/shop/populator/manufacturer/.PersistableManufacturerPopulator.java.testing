@@ -1,113 +1,21 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/manufacturer/PersistableManufacturerPopulator.java]": {
-    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/manufacturer/PersistableManufacturerPopulator.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/manufacturer/PersistableManufacturerPopulator.java]": {
+    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/manufacturer/PersistableManufacturerPopulator.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 5,
+        "nb_impacting_elements": 1,
         "impacting_elements": [
-          {
-            "name": "setLanguageService(com.salesmanager.core.business.services.reference.language.LanguageService) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/manufacturer/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/PUT/api/v1/private/manufacturer/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/manufacturer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/POST/api/v1/private/manufacturer/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
           {
             "name": "populate(com.salesmanager.shop.model.catalog.manufacturer.PersistableManufacturer,com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Langu",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 3,
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/manufacturer/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/PUT/api/v1/private/manufacturer/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/manufacturer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/POST/api/v1/private/manufacturer/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "PersistableManufacturerPopulator()",
-            "comment": "",
-            "type": "Java Constructor",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/manufacturer/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/PUT/api/v1/private/manufacturer/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/manufacturer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/POST/api/v1/private/manufacturer/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "PersistableManufacturerPopulator",
-            "comment": "",
-            "type": "Java Class",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/manufacturer/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/PUT/api/v1/private/manufacturer/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/manufacturer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/POST/api/v1/private/manufacturer/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "AbstractDataPopulator\u003cPersistableManufacturer,Manufacturer\u003e",
-            "comment": "",
-            "type": "Java Instantiated Class",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/manufacturer/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/PUT/api/v1/private/manufacturer/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/manufacturer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductManufacturerApi.java/api/v1/PORT/POST/api/v1/private/manufacturer/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
               }
             ]
           }

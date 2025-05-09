@@ -1,11 +1,18 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistablePaymentPopulator.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistablePaymentPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistablePaymentPopulator.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/transaction/PersistablePaymentPopulator.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 13,
+        "nb_files_with_called_elements": 12,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
+                "to_name": "setTransactionType(com.salesmanager.core.model.payments.TransactionType) return void",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -36,13 +43,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
-                "to_name": "setTransactionType(com.salesmanager.core.model.payments.TransactionType) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
                 "to_name": "Payment()",
@@ -65,7 +65,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java"
           },
           {
             "calls_between_elements": [
@@ -74,14 +74,14 @@
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -95,14 +95,14 @@
                 "to_type": "Java Class",
                 "from_name": "PersistablePaymentPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistablePaymentPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -114,7 +114,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
@@ -156,7 +156,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/transaction/PersistablePayment.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/transaction/PersistablePayment.java"
           },
           {
             "calls_between_elements": [
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/transaction/PaymentEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/transaction/PaymentEntity.java"
           },
           {
             "calls_between_elements": [
@@ -233,7 +233,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -254,28 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
-                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.payments.PaymentType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "PersistablePaymentPopulator",
-                "to_name": "PaymentType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +275,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.payments.PaymentType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PersistablePaymentPopulator",
+                "to_name": "PaymentType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
           },
           {
             "calls_between_elements": [
@@ -317,42 +317,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
-                "to_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistablePaymentPopulator",
-                "to_name": "PricingServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
           },
           {
             "calls_between_elements": [
@@ -366,7 +331,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.shop.model.order.transaction.PersistablePayment,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           }
         ],
         "files_list_comment": ""

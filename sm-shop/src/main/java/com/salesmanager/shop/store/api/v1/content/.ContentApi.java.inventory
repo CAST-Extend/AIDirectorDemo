@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,26 +8,6 @@
             "nb_elements": 24,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "updatePage",
-                "signature": "updatePage(java.lang.Long,com.salesmanager.shop.model.content.PersistableContentEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
-              },
-              {
-                "name": "addFolder",
-                "signature": "addFolder(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
-              },
-              {
-                "name": "pagesSummary",
-                "signature": "pagesSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.box.ReadableContentBox\u003e"
-              },
-              {
-                "name": "page",
-                "signature": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage"
-              },
-              {
-                "name": "images",
-                "signature": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con"
-              },
               {
                 "name": "deleteFile",
                 "signature": "deleteFile(com.salesmanager.shop.model.content.ContentName,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
@@ -37,12 +17,24 @@
                 "signature": "deleteContent(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void"
               },
               {
+                "name": "updatePage",
+                "signature": "updatePage(java.lang.Long,com.salesmanager.shop.model.content.PersistableContentEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
                 "name": "uploadMultipleFiles",
                 "signature": "uploadMultipleFiles(org.springframework.web.multipart.MultipartFile[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
               },
               {
                 "name": "upload",
                 "signature": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "images",
+                "signature": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con"
+              },
+              {
+                "name": "addFolder",
+                "signature": "addFolder(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
               },
               {
                 "name": "getBoxByCode",
@@ -97,8 +89,16 @@
                 "signature": "pageByName(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage"
               },
               {
+                "name": "page",
+                "signature": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage"
+              },
+              {
                 "name": "boxes",
                 "signature": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte"
+              },
+              {
+                "name": "pagesSummary",
+                "signature": "pagesSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.box.ReadableContentBox\u003e"
               },
               {
                 "name": "pages",
@@ -112,15 +112,15 @@
             "type": "Spring MVC Get Operation",
             "elements": [
               {
-                "name": "api/v1/content/images/",
+                "name": "api/v1/private/content/box/{}/exists/",
                 "signature": ""
               },
               {
-                "name": "api/v1/content/boxes/{}/",
+                "name": "api/v1/content/pages/name/{}/",
                 "signature": ""
               },
               {
-                "name": "api/v1/private/content/boxes/{}/",
+                "name": "api/v1/content/pages/{}/",
                 "signature": ""
               },
               {
@@ -132,19 +132,23 @@
                 "signature": ""
               },
               {
+                "name": "api/v1/private/content/pages/",
+                "signature": ""
+              },
+              {
                 "name": "api/v1/private/content/page/{}/exists/",
                 "signature": ""
               },
               {
-                "name": "api/v1/private/content/box/{}/exists/",
+                "name": "api/v1/content/images/",
                 "signature": ""
               },
               {
-                "name": "api/v1/content/pages/name/{}/",
+                "name": "api/v1/content/boxes/{}/",
                 "signature": ""
               },
               {
-                "name": "api/v1/content/pages/{}/",
+                "name": "api/v1/private/content/boxes/{}/",
                 "signature": ""
               },
               {
@@ -161,10 +165,6 @@
               },
               {
                 "name": "api/v1/content/pages/",
-                "signature": ""
-              },
-              {
-                "name": "api/v1/private/content/pages/",
                 "signature": ""
               }
             ]
@@ -253,6 +253,21 @@
           {
             "comment": "",
             "nb_elements": 3,
+            "type": "",
+            "elements": [
+              {
+                "name": "/api/v1",
+                "signature": ""
+              },
+              {
+                "name": "ContentApi.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 3,
             "type": "Spring MVC Put Operation",
             "elements": [
               {
@@ -271,28 +286,9 @@
           },
           {
             "comment": "",
-            "nb_elements": 3,
-            "type": "",
-            "elements": [
-              {
-                "name": "ContentApi.java",
-                "signature": ""
-              },
-              {
-                "name": "/api/v1",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 2,
+            "nb_elements": 1,
             "type": "Java Instantiated Interface",
             "elements": [
-              {
-                "name": "List\u003cReadableContentEntity\u003e",
-                "signature": ""
-              },
               {
                 "name": "List\u003cReadableContentBox\u003e",
                 "signature": ""
@@ -301,15 +297,11 @@
           },
           {
             "comment": "",
-            "nb_elements": 2,
-            "type": "Java Instantiated Class",
+            "nb_elements": 1,
+            "type": "Java Instantiated Method",
             "elements": [
               {
-                "name": "ReadableEntityList\u003cReadableContentBox\u003e",
-                "signature": ""
-              },
-              {
-                "name": "ReadableEntityList\u003cReadableContentPage\u003e",
+                "name": "empty\u003cString\u003e",
                 "signature": ""
               }
             ]
@@ -332,17 +324,6 @@
             "elements": [
               {
                 "name": "ContentApi",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Method",
-            "elements": [
-              {
-                "name": "empty\u003cString\u003e",
                 "signature": ""
               }
             ]

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java] defines following code elements": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/email/EmailConfig.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,8 +9,28 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "isSmtpAuth",
-                "signature": "isSmtpAuth() return boolean"
+                "name": "setUsername",
+                "signature": "setUsername(java.lang.String) return void"
+              },
+              {
+                "name": "setEmailTemplatesPath",
+                "signature": "setEmailTemplatesPath(java.lang.String) return void"
+              },
+              {
+                "name": "setStarttls",
+                "signature": "setStarttls(boolean) return void"
+              },
+              {
+                "name": "getUsername",
+                "signature": "getUsername() return java.lang.String"
+              },
+              {
+                "name": "getProtocol",
+                "signature": "getProtocol() return java.lang.String"
+              },
+              {
+                "name": "isStarttls",
+                "signature": "isStarttls() return boolean"
               },
               {
                 "name": "setPassword",
@@ -21,20 +41,8 @@
                 "signature": "getPassword() return java.lang.String"
               },
               {
-                "name": "setUsername",
-                "signature": "setUsername(java.lang.String) return void"
-              },
-              {
-                "name": "getUsername",
-                "signature": "getUsername() return java.lang.String"
-              },
-              {
                 "name": "setProtocol",
                 "signature": "setProtocol(java.lang.String) return void"
-              },
-              {
-                "name": "getProtocol",
-                "signature": "getProtocol() return java.lang.String"
               },
               {
                 "name": "setPort",
@@ -57,20 +65,12 @@
                 "signature": "getEmailTemplatesPath() return java.lang.String"
               },
               {
-                "name": "setEmailTemplatesPath",
-                "signature": "setEmailTemplatesPath(java.lang.String) return void"
-              },
-              {
-                "name": "setStarttls",
-                "signature": "setStarttls(boolean) return void"
-              },
-              {
-                "name": "isStarttls",
-                "signature": "isStarttls() return boolean"
-              },
-              {
                 "name": "setSmtpAuth",
                 "signature": "setSmtpAuth(boolean) return void"
+              },
+              {
+                "name": "isSmtpAuth",
+                "signature": "isSmtpAuth() return boolean"
               },
               {
                 "name": "toJSONString",
@@ -120,6 +120,17 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "EmailConfig.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Java Constructor",
             "elements": [
               {
@@ -135,17 +146,6 @@
             "elements": [
               {
                 "name": "EmailConfig",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "EmailConfig.java",
                 "signature": ""
               }
             ]

@@ -1,72 +1,9 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewServiceImpl.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewServiceImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewServiceImpl.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/customer/review/CustomerReviewServiceImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 10,
+        "nb_files_with_called_elements": 11,
         "files": [
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "getCustomer() return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "getReviewRating() return java.lang.Double",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "setReviewedCustomer(com.salesmanager.core.model.customer.Customer) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "getReviewedCustomer() return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getByReviewedCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
-                "to_name": "CustomerReview",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getByCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
-                "to_name": "CustomerReview",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerReviewServiceImpl",
-                "to_name": "CustomerReview",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerReviewServiceImpl",
-                "to_name": "CustomerReview",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java"
-          },
           {
             "calls_between_elements": [
               {
@@ -128,10 +65,80 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
+                "to_name": "getCustomer() return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
+                "to_name": "getReviewRating() return java.lang.Double",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
+                "to_name": "setReviewedCustomer(com.salesmanager.core.model.customer.Customer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
+                "to_name": "getReviewedCustomer() return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByReviewedCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
+                "to_name": "CustomerReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getByCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
+                "to_name": "CustomerReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewServiceImpl",
+                "to_name": "CustomerReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerReviewServiceImpl",
+                "to_name": "CustomerReview",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8,
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
+                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -148,9 +155,9 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Constructor",
                 "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
+                "to_name": "BigDecimal(double)",
                 "calling_type": "CALL"
               },
               {
@@ -158,13 +165,6 @@
                 "to_type": "Java Constructor",
                 "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
                 "to_name": "BigDecimal(int)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.customer.review.CustomerReview) return void",
-                "to_name": "BigDecimal(double)",
                 "calling_type": "CALL"
               },
               {
@@ -177,7 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
@@ -219,7 +219,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -254,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +289,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getByReviewerAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getByReviewedCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getByCustomer(com.salesmanager.core.model.customer.Customer) return java.util.List.List\u003ccom.salesmanager.core.model.customer.review.CustomerReview\u003e",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerReviewServiceImpl",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -317,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
@@ -345,7 +380,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -366,7 +401,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -380,7 +415,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

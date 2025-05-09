@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 38,
         "files": [
@@ -11,14 +11,14 @@
                 "to_type": "Java Class",
                 "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
                 "to_name": "IntegrationException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -43,10 +43,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
+                "to_type": "Java Method",
                 "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "to_name": "setErrorFields(java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "IntegrationException(int)",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -64,22 +71,8 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "setErrorFields(java.util.List.List\u003cjava.lang.String\u003e) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "IntegrationException(int)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -95,12 +88,19 @@
                 "to_type": "Java Class",
                 "from_name": "UPSShippingQuote",
                 "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UPSShippingQuote",
+                "to_name": "IntegrationException",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 13,
-            "to_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
+            "to_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
           },
           {
             "calls_between_elements": [
@@ -177,7 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingOption.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingOption.java"
           },
           {
             "calls_between_elements": [
@@ -187,6 +187,13 @@
                 "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
                 "to_name": "ModuleConfig",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "getHost() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -213,13 +220,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getHost() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
                 "to_name": "getScheme() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -240,7 +240,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/ModuleConfig.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/ModuleConfig.java"
           },
           {
             "calls_between_elements": [
@@ -296,63 +296,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "size() return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "get(int) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addOption(com.salesmanager.core.model.shipping.ShippingOption) return void",
-                "to_name": "add(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "size() return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "add(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "UPSParsedElements",
-                "to_name": "List\u003cE\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "UPSShippingQuote",
-                "to_name": "List\u003cE\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 7,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/PackageDetails.java"
           },
           {
             "calls_between_elements": [
@@ -408,7 +352,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Digester_29556.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Digester_29556.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "get(int) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "size() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOption(com.salesmanager.core.model.shipping.ShippingOption) return void",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "size() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "UPSParsedElements",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "UPSShippingQuote",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -464,11 +464,25 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
               {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "ClientProtocolException(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Class",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "ClientProtocolException",
+                "calling_type": "RAISE"
+              },
+              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
@@ -495,25 +509,11 @@
                 "from_name": "UPSShippingQuote",
                 "to_name": "ClientProtocolException",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Constructor",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "ClientProtocolException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "ClientProtocolException",
-                "calling_type": "RAISE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ClientProtocolException_31627.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ClientProtocolException_31627.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +562,91 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "getEntity() return org.apache.http.HttpEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "getStatusLine() return org.apache.http.StatusLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "getEntity() return org.apache.http.HttpEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "getStatusLine() return org.apache.http.StatusLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UPSShippingQuote",
+                "to_name": "HttpResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpResponse_18786.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "debug(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UPSShippingQuote",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -604,91 +688,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getEntity() return org.apache.http.HttpEntity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getStatusLine() return org.apache.http.StatusLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "UPSShippingQuote",
-                "to_name": "HttpResponse",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "getEntity() return org.apache.http.HttpEntity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "getStatusLine() return org.apache.http.StatusLine",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpResponse_18786.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "error(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "debug(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "UPSShippingQuote",
-                "to_name": "Logger",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "error(java.lang.String) return void",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
@@ -730,42 +730,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "keySet() return java.util.Set.Set\u003cE\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "get(java.lang.Object) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "get(java.lang.Object) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "UPSShippingQuote",
-                "to_name": "Map\u003cK,V\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
           },
           {
             "calls_between_elements": [
@@ -800,7 +765,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "keySet() return java.util.Set.Set\u003cE\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "get(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "get(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "UPSShippingQuote",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -835,7 +835,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "toString(org.apache.http.HttpEntity) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "toString(org.apache.http.HttpEntity) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UPSShippingQuote",
+                "to_name": "EntityUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/EntityUtils_6077.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+                "to_name": "getStatusCode() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "getStatusCode() return int",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UPSShippingQuote",
+                "to_name": "StatusLine",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StatusLine_15498.java"
           },
           {
             "calls_between_elements": [
@@ -863,35 +919,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "getStatusCode() return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "UPSShippingQuote",
-                "to_name": "StatusLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "getStatusCode() return int",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StatusLine_15498.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -919,35 +947,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "toString(org.apache.http.HttpEntity) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "EntityUtils",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-                "to_name": "toString(org.apache.http.HttpEntity) return java.lang.String",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/EntityUtils_6077.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -975,70 +975,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Generic Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "Validate",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "releaseConnection() return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "HttpRequestBase",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpRequestBase_8683.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "setEntity(org.apache.http.HttpEntity) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UPSShippingQuote",
-                "to_name": "HttpEntityEnclosingRequestBase",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpEntityEnclosingRequestBase_20215.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -1059,7 +996,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UPSShippingQuote",
+                "to_name": "Validate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -1080,7 +1038,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpClients_20601.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpClients_20601.java"
           },
           {
             "calls_between_elements": [
@@ -1101,7 +1059,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -1122,7 +1080,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/BufferedReader_5c292cb5faa31b49.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/BufferedReader_5c292cb5faa31b49.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "releaseConnection() return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UPSShippingQuote",
+                "to_name": "HttpRequestBase",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpRequestBase_8683.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "setEntity(org.apache.http.HttpEntity) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UPSShippingQuote",
+                "to_name": "HttpEntityEnclosingRequestBase",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpEntityEnclosingRequestBase_20215.java"
           },
           {
             "calls_between_elements": [
@@ -1143,7 +1143,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpPost_29541.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpPost_29541.java"
           },
           {
             "calls_between_elements": [
@@ -1164,7 +1164,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringEntity_27813.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringEntity_27813.java"
           },
           {
             "calls_between_elements": [
@@ -1185,7 +1185,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/StringReader_a6d9ba302591ccd7.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/StringReader_a6d9ba302591ccd7.java"
           },
           {
             "calls_between_elements": [
@@ -1206,7 +1206,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -1227,7 +1227,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -1248,21 +1248,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-                "to_name": "APPLICATION_ATOM_XML",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ContentType_26129.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java"
           },
           {
             "calls_between_elements": [
@@ -1276,7 +1262,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+                "to_name": "APPLICATION_ATOM_XML",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ContentType_26129.java"
           },
           {
             "calls_between_elements": [
@@ -1290,7 +1290,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CloseableHttpClient_29174.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CloseableHttpClient_29174.java"
           },
           {
             "calls_between_elements": [
@@ -1304,7 +1304,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

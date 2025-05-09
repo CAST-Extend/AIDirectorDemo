@@ -1,481 +1,150 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java]": [
       {
         "files": [
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestErrorHandler.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleRestApiException(com.salesmanager.shop.store.api.exception.RestApiException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.UnauthorizedException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ResourceNotFoundException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ConversionRuntimeException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ServiceRuntimeException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleRestApiException(com.salesmanager.shop.store.api.exception.RestApiException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.UnauthorizedException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ResourceNotFoundException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ConversionRuntimeException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "handleServiceException(com.salesmanager.shop.store.api.exception.ServiceRuntimeException) return com.salesmanager.shop.store.api.exception.ErrorEntity",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "RestErrorHandler",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestErrorHandler.java",
             "comment": "",
             "nb_calls_between_elements": 11
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ServiceRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ServiceRuntimeException(java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ServiceRuntimeException(java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ServiceRuntimeException(java.lang.String,java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ServiceRuntimeException",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestApiException.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "RestApiException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "RestApiException(java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "RestApiException(java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "RestApiException(java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "RestApiException(java.lang.String,java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "RestApiException",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestApiException.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConversionRuntimeException.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConversionRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConversionRuntimeException(java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConversionRuntimeException(java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConversionRuntimeException(java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConversionRuntimeException(java.lang.String,java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ConversionRuntimeException",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConversionRuntimeException.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "verifyUserLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "verifyUserLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserFacadeImpl",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserFacadeImpl",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "UnauthorizedException()",
-                "to_name": "GenericRuntimeException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "UnauthorizedException(java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "UnauthorizedException(java.lang.String,java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UnauthorizedException",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AuthenticateCustomerApi",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AuthenticateCustomerApi",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableInventoryMapper.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language",
-                "to_name": "getErrorMessage() return java.lang.String",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.inventory.PersistableInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableInventoryMapper",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/inventory/PersistableInventoryMapper.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConstraintException.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConstraintException(java.lang.String,java.lang.Throwable)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "ConstraintException(java.lang.String)",
-                "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ConstraintException",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConstraintException.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

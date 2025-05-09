@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/ProductAttributeEntity.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/ProductAttributeEntity.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/ProductAttributeEntity.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/ProductAttributeEntity.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,6 +13,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setAttributeDisplayOnly(boolean) return void",
+            "to_name": "attributeDisplayOnly",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "isAttributeDefault() return boolean",
             "to_name": "attributeDefault",
             "calling_type": "READ"
@@ -20,13 +27,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setAttributeDefault(boolean) return void",
+            "to_name": "attributeDefault",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getSortOrder() return int",
             "to_name": "sortOrder",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setSortOrder(int) return void",
+            "to_name": "sortOrder",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 3
+        "nb_calls_between_elements": 6
       }
     ]
   }

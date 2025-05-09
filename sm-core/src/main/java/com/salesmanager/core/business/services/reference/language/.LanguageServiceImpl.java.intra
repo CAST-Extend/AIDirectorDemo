@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -23,10 +23,17 @@
             "from_name": "defaultLanguage() return com.salesmanager.core.model.reference.language.Language",
             "to_name": "toLanguage(java.util.Locale) return com.salesmanager.core.model.reference.language.Language",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "LanguageServiceImpl(com.salesmanager.core.business.repositories.reference.language.LanguageRepository)",
+            "to_name": "languageRepository",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 3
+        "nb_calls_between_elements": 4
       }
     ]
   }

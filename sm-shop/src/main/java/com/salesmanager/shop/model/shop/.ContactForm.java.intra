@@ -1,14 +1,35 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java]": [
       {
         "calls_between_elements": [
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getName() return java.lang.String",
-            "to_name": "name",
+            "from_name": "getComment() return java.lang.String",
+            "to_name": "comment",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setComment(java.lang.String) return void",
+            "to_name": "comment",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getEmail() return java.lang.String",
+            "to_name": "email",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setEmail(java.lang.String) return void",
+            "to_name": "email",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,20 +41,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getComment() return java.lang.String",
-            "to_name": "comment",
+            "from_name": "setSubject(java.lang.String) return void",
+            "to_name": "subject",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getName() return java.lang.String",
+            "to_name": "name",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getEmail() return java.lang.String",
-            "to_name": "email",
-            "calling_type": "READ"
+            "from_name": "setName(java.lang.String) return void",
+            "to_name": "name",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 4
+        "nb_calls_between_elements": 8
       }
     ]
   }

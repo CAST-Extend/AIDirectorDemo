@@ -1,19 +1,19 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductApi.java]": [
       {
         "calls_between_elements": [
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/auth/product/{}/",
+            "from_name": "api/v1/private/product/{}/",
             "to_name": "changeProductOrder(java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/private/product/{}/",
+            "from_name": "api/v1/auth/product/{}/",
             "to_name": "changeProductOrder(java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
@@ -41,14 +41,14 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/product/friendly/{}/",
+            "from_name": "api/v1/product/{}/",
             "to_name": "getByfriendlyUrl(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readab",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/product/{}/",
+            "from_name": "api/v1/product/friendly/{}/",
             "to_name": "getByfriendlyUrl(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.catalog.product.Readab",
             "calling_type": "CALL"
           },
@@ -83,14 +83,14 @@
           {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/auth/product/{}/",
+            "from_name": "api/v1/private/product/{}/",
             "to_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.PersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/private/product/{}/",
+            "from_name": "api/v1/auth/product/{}/",
             "to_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.PersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
             "calling_type": "CALL"
           },
@@ -116,9 +116,16 @@
             "calling_type": "PROTOTYPE"
           },
           {
-            "from_type": "Spring MVC Put Operation",
+            "from_type": "Spring MVC Any Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/auth/product/{}/",
+            "from_name": "api/v1/private/product/{}/",
+            "to_name": "ProductApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/products/",
             "to_name": "ProductApi",
             "calling_type": "CALL"
           },
@@ -126,6 +133,20 @@
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/private/product/{}/",
+            "to_name": "ProductApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Put Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/product/{}/",
+            "to_name": "ProductApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/product/{}/",
             "to_name": "ProductApi",
             "calling_type": "CALL"
           },
@@ -151,30 +172,9 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/auth/product/{}/",
-            "to_name": "ProductApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/product/{}/",
-            "to_name": "ProductApi",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/private/product/unique/",
-            "to_name": "ProductApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/product/friendly/{}/",
             "to_name": "ProductApi",
             "calling_type": "CALL"
           },
@@ -188,7 +188,7 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/products/",
+            "from_name": "api/v1/product/friendly/{}/",
             "to_name": "ProductApi",
             "calling_type": "CALL"
           },

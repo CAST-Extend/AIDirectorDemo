@@ -1,29 +1,8 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.user.User",
-            "to_name": "select distinct u from",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
-            "to_name": "select distinct u from",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByUserId(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
-            "to_name": "select distinct u from",
-            "calling_type": "CALL"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
@@ -56,6 +35,27 @@
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
             "from_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+            "to_name": "select distinct u from",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.user.User",
+            "to_name": "select distinct u from",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+            "to_name": "select distinct u from",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByUserId(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
             "to_name": "select distinct u from",
             "calling_type": "CALL"
           }

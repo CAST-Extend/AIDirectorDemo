@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -22,6 +22,13 @@
             "to_type": "JPQL Query",
             "from_name": "getProductsListForLocale(com.salesmanager.core.model.merchant.MerchantStore,java.util.Set.Set\u003cE\u003e,com.salesmanager.core.model.reference.language.Language,java.util.Locale,int,int) return com.salesmanager.core.model.catalog.product.ProductList",
             "to_name": "select p from Product",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "getProductsListForLocale(com.salesmanager.core.model.merchant.MerchantStore,java.util.Set.Set\u003cE\u003e,com.salesmanager.core.model.reference.language.Language,java.util.Locale,int,int) return com.salesmanager.core.model.catalog.product.ProductList",
+            "to_name": "select count(p) from Product",
             "calling_type": "CALL"
           },
           {
@@ -69,13 +76,6 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "getProductsListForLocale(com.salesmanager.core.model.merchant.MerchantStore,java.util.Set.Set\u003cE\u003e,com.salesmanager.core.model.reference.language.Language,java.util.Locale,int,int) return com.salesmanager.core.model.catalog.product.ProductList",
-            "to_name": "select count(p) from Product",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
             "from_name": "getByFriendlyUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.util.Locale) return com.salesmanager.core.model.catalog.product.Product",
             "to_name": "select distinct p from",
             "calling_type": "CALL"
@@ -99,20 +99,6 @@
             "to_type": "JPQL Query",
             "from_name": "get(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product",
             "to_name": "select distinct p from",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPA Unknown SQL Query",
-            "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
-            "to_name": "Unknown SQL Query",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Class",
-            "to_type": "JPA Unknown SQL Query",
-            "from_name": "ProductRepositoryImpl",
-            "to_name": "Unknown SQL Query",
             "calling_type": "CALL"
           },
           {
@@ -152,7 +138,7 @@
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 22
+        "nb_calls_between_elements": 20
       }
     ]
   }

@@ -1,18 +1,7 @@
 {
   "main facts about type [Spring Data Query]": {
-    "00. samples of [Spring Data Query] element type in application [ShopizerBackend]": {
+    "00. samples of [Spring Data Query] element type in application [AIDirectorDemo]": {
       "elements": [
-        {
-          "full_name": "com.salesmanager.core.business.repositories.merchant.MerchantRepository.listByGroup/select * from MERCHANT_STORE",
-          "signature": "",
-          "name": "select * from MERCHANT_STORE",
-          "nb_callers": 1,
-          "main_properties": [
-            {}
-          ],
-          "used_in_graphs": 34,
-          "nb_callees": 30
-        },
         {
           "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepository.findBySku/select p.PRODUCT_ID from PRODUCT",
           "signature": "",
@@ -21,8 +10,19 @@
           "main_properties": [
             {}
           ],
-          "used_in_graphs": 40,
-          "nb_callees": 6
+          "used_in_graphs": 13,
+          "nb_callees": 3
+        },
+        {
+          "full_name": "com.salesmanager.core.business.repositories.merchant.MerchantRepository.listByGroup/select * from MERCHANT_STORE",
+          "signature": "",
+          "name": "select * from MERCHANT_STORE",
+          "nb_callers": 1,
+          "main_properties": [
+            {}
+          ],
+          "used_in_graphs": 5,
+          "nb_callees": 1
         },
         {
           "full_name": "com.salesmanager.core.business.repositories.merchant.PageableMerchantRepository.listByGroup/select * from MERCHANT_STORE",
@@ -32,8 +32,8 @@
           "main_properties": [
             {}
           ],
-          "used_in_graphs": 8,
-          "nb_callees": 30
+          "used_in_graphs": 5,
+          "nb_callees": 1
         }
       ],
       "total_nb": 3,

@@ -1,8 +1,15 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/UPSShippingQuote.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
+            "to_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
+            "calling_type": "READ"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -48,9 +55,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setErrorCode(java.lang.String) return void",
+            "to_name": "errorCode",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getError() return java.lang.String",
             "to_name": "error",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setError(java.lang.String) return void",
+            "to_name": "error",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -62,9 +83,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setStatusMessage(java.lang.String) return void",
+            "to_name": "statusMessage",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getStatusCode() return java.lang.String",
             "to_name": "statusCode",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setStatusCode(java.lang.String) return void",
+            "to_name": "statusCode",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -79,17 +114,10 @@
             "from_name": "UPSShippingQuote",
             "to_name": "UPSParsedElements",
             "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "getShippingQuotes(com.salesmanager.core.model.shipping.ShippingQuote,java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e,java.math.BigDecimal,com.salesmanager.core.model.common.Delivery,com.salesmanager.core.model.shipping.ShippingOri",
-            "to_name": "getShippingQuotes$lambda$0(org.apache.http.HttpResponse) return T",
-            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 12
+        "nb_calls_between_elements": 16
       }
     ]
   }

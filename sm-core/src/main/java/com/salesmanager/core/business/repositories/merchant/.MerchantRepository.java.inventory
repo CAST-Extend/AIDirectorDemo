@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java] defines following code elements": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java] defines following code elements": [
       {
         "types": [
           {
@@ -25,10 +25,6 @@
                 "signature": "findAllStoreNames(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e"
               },
               {
-                "name": "findAllStoreNames",
-                "signature": "findAllStoreNames() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e"
-              },
-              {
                 "name": "existsByCode",
                 "signature": "existsByCode(java.lang.String) return boolean"
               },
@@ -43,6 +39,10 @@
               {
                 "name": "findByCode",
                 "signature": "findByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore"
+              },
+              {
+                "name": "findAllStoreNames",
+                "signature": "findAllStoreNames() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e"
               }
             ]
           },
@@ -52,11 +52,11 @@
             "type": "Spring Data JPQL Query",
             "elements": [
               {
-                "name": "select m from MerchantStore",
+                "name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
                 "signature": ""
               },
               {
-                "name": "select new com.salesmanager.core.model.merchant.MerchantStore(m.id, m.code,",
+                "name": "SELECT COUNT(m) \u003e 0",
                 "signature": ""
               },
               {
@@ -64,18 +64,7 @@
                 "signature": ""
               },
               {
-                "name": "SELECT COUNT(m) \u003e 0",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Interface",
-            "elements": [
-              {
-                "name": "MerchantRepository",
+                "name": "select m from MerchantStore",
                 "signature": ""
               }
             ]
@@ -87,6 +76,17 @@
             "elements": [
               {
                 "name": "select * from MERCHANT_STORE",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Interface",
+            "elements": [
+              {
+                "name": "MerchantRepository",
                 "signature": ""
               }
             ]

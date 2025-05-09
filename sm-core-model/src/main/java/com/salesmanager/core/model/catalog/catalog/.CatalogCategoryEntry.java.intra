@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java]": {
-    "00. dependencies between elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java]": {
+    "00. dependencies between elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/catalog/CatalogCategoryEntry.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setVisible(boolean) return void",
+            "to_name": "visible",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getCatalog() return com.salesmanager.core.model.catalog.catalog.Catalog",
             "to_name": "catalog",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCatalog(com.salesmanager.core.model.catalog.catalog.Catalog) return void",
+            "to_name": "catalog",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,6 +41,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setCategory(com.salesmanager.core.model.catalog.category.Category) return void",
+            "to_name": "category",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getId() return java.lang.Long",
             "to_name": "id",
             "calling_type": "READ"
@@ -34,13 +55,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setId(java.lang.Long) return void",
+            "to_name": "id",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
             "to_name": "auditSection",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+            "to_name": "auditSection",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 5
+        "nb_calls_between_elements": 10
       }
     ]
   }

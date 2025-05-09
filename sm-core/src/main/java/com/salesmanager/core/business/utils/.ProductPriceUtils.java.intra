@@ -1,8 +1,22 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+            "to_name": "calculateFinalPrice$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return boolean",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+            "to_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -68,16 +82,30 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-            "to_name": "THOUSANDPOINT",
-            "calling_type": "READ"
+            "to_type": "Java Method",
+            "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+            "to_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+            "to_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
             "to_name": "DECIMALPOINT",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
+            "to_name": "THOUSANDPOINT",
             "calling_type": "READ"
           },
           {
@@ -111,44 +139,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
-            "to_name": "DECIMALCOUNT",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
             "to_name": "DECIMALCOUNT",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-            "to_name": "calculateFinalPrice$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return boolean",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
-            "to_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-            "to_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-            "to_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+            "to_name": "DECIMALCOUNT",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "",

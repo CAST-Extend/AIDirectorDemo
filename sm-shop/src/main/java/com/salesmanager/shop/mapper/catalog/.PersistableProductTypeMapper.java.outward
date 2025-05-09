@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 22,
+        "nb_files_with_called_elements": 20,
         "files": [
           {
             "calls_between_elements": [
@@ -10,6 +10,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
+                "to_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.type.ProductTypeDescription\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
                 "to_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.type.ProductTypeDescription\u003e",
                 "calling_type": "CALL"
               },
@@ -63,13 +70,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "getDescriptions() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.type.ProductTypeDescription\u003e",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableProductTypeMapper",
@@ -86,10 +86,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductType.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductType.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean",
+                "to_name": "getLanguage() return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -124,18 +131,11 @@
                 "from_name": "PersistableProductTypeMapper",
                 "to_name": "Description",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean",
-                "to_name": "getLanguage() return com.salesmanager.core.model.reference.language.Language",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -143,13 +143,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "ProductTypeDescription",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
                 "to_name": "ProductTypeDescription",
                 "calling_type": "USE"
               },
@@ -168,6 +161,13 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "ProductTypeDescription",
+                "calling_type": "USE"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableProductTypeMapper",
@@ -184,10 +184,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductTypeDescription.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductTypeDescription.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -203,30 +210,23 @@
                 "calling_type": "CATCH"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableProductTypeMapper",
                 "to_name": "ServiceException",
                 "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +261,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/type/ProductTypeEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/type/ProductTypeEntity.java"
           },
           {
             "calls_between_elements": [
@@ -296,35 +296,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConversionRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ConversionRuntimeException.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Method",
+                "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
-                "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
+                "from_name": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
+                "to_type": "Java Class",
                 "from_name": "PersistableProductTypeMapper",
-                "to_name": "Stream\u003cT\u003e",
+                "to_name": "Language",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -360,111 +360,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "getCode() return java.lang.String",
+                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
+                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Generic Java Interface",
                 "from_name": "PersistableProductTypeMapper",
-                "to_name": "Language",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean",
-                "to_name": "getCode() return java.lang.String",
+                "to_name": "Stream\u003cT\u003e",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "CollectionUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_5021.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
-                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.type.ProductTypeDescription\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "PersistableProductType",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "PersistableProductType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/type/PersistableProductType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
-                "to_name": "getLanguage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "getLanguage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "ShopEntity",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -492,28 +408,84 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/NamedEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/NamedEntity.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "equals(java.lang.Object) return boolean",
+                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
+                "to_name": "getLanguage() return java.lang.String",
                 "calling_type": "CALL"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "getLanguage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "ShopEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.type.ProductTypeDescription\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "PersistableProductType",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "PersistableProductType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/type/PersistableProductType.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
                 "from_name": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean",
                 "to_name": "equals(java.lang.Object) return boolean",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -534,70 +506,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
-                "to_name": "add(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "List\u003cE\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "Entity",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Generic Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return c",
-                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductTypeMapper",
-                "to_name": "Validate",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
           },
           {
             "calls_between_elements": [
@@ -618,28 +527,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableProductTypeMapper",
-                "to_name": "LanguageServiceImpl",
+                "to_name": "Entity",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return c",
+                "to_name": "notNull\u003cT extends java.lang.Object\u003e(java.lang.Object,java.lang.String,java.lang.Object[]) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductTypeMapper",
+                "to_name": "Validate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -653,7 +604,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -667,7 +618,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
           }
         ],
         "files_list_comment": ""

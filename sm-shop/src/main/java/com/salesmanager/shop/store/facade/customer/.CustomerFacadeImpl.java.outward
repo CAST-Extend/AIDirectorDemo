@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 35,
         "files": [
@@ -8,9 +8,86 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "getCredentialsResetRequest() return com.salesmanager.core.model.common.CredentialsReset",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
                 "to_name": "setPassword(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setCredentialsResetRequest(com.salesmanager.core.model.common.CredentialsReset) return void",
                 "calling_type": "CALL"
               },
               {
@@ -30,13 +107,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "getCredentialsResetRequest() return com.salesmanager.core.model.common.CredentialsReset",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
                 "to_name": "getBilling() return com.salesmanager.core.model.common.Billing",
                 "calling_type": "CALL"
@@ -49,13 +119,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "setCredentialsResetRequest(com.salesmanager.core.model.common.CredentialsReset) return void",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "CustomerFacadeImpl",
@@ -65,70 +128,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
-                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +191,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "PostgreSQL Table",
+                "from_name": "resetCustomerLink",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "customer",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -205,15 +261,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getStoreEmailAddress() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getStorename() return java.lang.String",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Integer",
                 "calling_type": "CALL"
               },
               {
@@ -226,8 +275,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getId() return java.lang.Integer",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getStorename() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getStoreEmailAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -240,7 +296,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -250,6 +306,27 @@
                 "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
                 "to_name": "Exception",
                 "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "Exception",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -260,36 +337,15 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "Exception",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
                 "to_name": "Exception(java.lang.String,java.lang.Throwable)",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -338,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -380,49 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "customerExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-                "to_name": "getByNick(java.lang.String,int) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "verifyCustomerLink(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "to_name": "getByPasswordResetToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "saveOrUpdate(com.salesmanager.core.model.customer.Customer) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getByNick(java.lang.String,int) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "CustomerServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerService.java"
           },
           {
             "calls_between_elements": [
@@ -464,7 +478,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/CredentialsReset.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/CredentialsReset.java"
           },
           {
             "calls_between_elements": [
@@ -506,7 +520,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
           },
           {
             "calls_between_elements": [
@@ -548,42 +562,91 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/EmailConstants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/EmailConstants.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
-                "to_name": "UnauthorizedException(java.lang.String)",
-                "calling_type": "CALL"
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "label.generic.hi",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
-                "to_name": "UnauthorizedException",
-                "calling_type": "RAISE"
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.reset.password.text",
+                "calling_type": "USE"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "UnauthorizedException",
-                "calling_type": "RAISE"
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.link.reset.password.title",
+                "calling_type": "USE"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "UnauthorizedException",
-                "calling_type": "CALL"
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.link",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.contactowner",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
+            "nb_calls_between_elements": 5,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "label.generic.hi",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.reset.password.text",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.link.reset.password.title",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.link",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "email.contactowner",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer.properties"
           },
           {
             "calls_between_elements": [
@@ -618,35 +681,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Constructor",
                 "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
-                "to_name": "equals(java.lang.Object) return boolean",
+                "to_name": "UnauthorizedException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "String",
-                "calling_type": "USE"
+                "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
+                "to_name": "UnauthorizedException",
+                "calling_type": "RAISE"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "UnauthorizedException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "UnauthorizedException",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
           },
           {
             "calls_between_elements": [
@@ -674,7 +744,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -702,35 +772,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "toString() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "randomUUID() return java.util.UUID",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "UUID",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/UUID_191f5d3ffe58af2e.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -758,91 +800,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
-                "to_name": "encode(java.lang.CharSequence) return java.lang.String",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "PasswordEncoder",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PasswordEncoder_10940.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
-                "to_name": "save(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "SalesManagerEntityService\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends com.salesmanager.core.model.generic.SalesManagerEntity\u003cK,?\u003e\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
-                "to_name": "ServiceException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "ServiceException",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
-                "to_name": "getName() return java.lang.String",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "randomUUID() return java.util.UUID",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "Java Class",
                 "from_name": "CustomerFacadeImpl",
-                "to_name": "Principal",
+                "to_name": "UUID",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/UUID_191f5d3ffe58af2e.java"
           },
           {
             "calls_between_elements": [
@@ -863,196 +877,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "put(java.lang.Object,java.lang.Object) return java.lang.Object",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "encode(java.lang.CharSequence) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "PasswordEncoder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PasswordEncoder_29309.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "save(com.salesmanager.core.model.generic.SalesManagerEntity) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Generic Java Interface",
                 "from_name": "CustomerFacadeImpl",
-                "to_name": "Map\u003cK,V\u003e",
+                "to_name": "SalesManagerEntityService\u003cK extends Serializable\u0026Comparable\u003cK\u003e,E extends com.salesmanager.core.model.generic.SalesManagerEntity\u003cK,?\u003e\u003e",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getFirstName() return java.lang.String",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "resetPassword(java.lang.String,java.lang.String,java.lang.String) return void",
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "CustomerFacadeImpl",
-                "to_name": "Billing",
-                "calling_type": "CALL"
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "EmailService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getContextPath() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "LocalImageFilePathUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getContextPath() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "ImageFilePathUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getContextPath() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "ImageFilePath",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "getContextPath() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "CloudFilePathUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "EmailUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
-                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerFacadeImpl",
-                "to_name": "EmailServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailServiceImpl.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -1073,7 +961,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
           },
           {
             "calls_between_elements": [
@@ -1094,28 +982,196 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "requestPasswordReset(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "toLocale(com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Locale",
+                "from_name": "authorize(com.salesmanager.core.model.customer.Customer,java.security.Principal) return void",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "Principal",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "put(java.lang.Object,java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "CustomerFacadeImpl",
-                "to_name": "LanguageServiceImpl",
+                "to_name": "Billing",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "EmailService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getContextPath() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "LocalImageFilePathUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getContextPath() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "ImageFilePathUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getContextPath() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "ImageFilePath",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "getContextPath() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "CloudFilePathUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
+                "to_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerFacadeImpl",
+                "to_name": "EmailUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java"
           }
         ],
         "files_list_comment": ""

@@ -1,22 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/PageableProductOptionValueRepository.java]": {
-    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/PageableProductOptionValueRepository.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/PageableProductOptionValueRepository.java]": {
+    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/PageableProductOptionValueRepository.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 2,
         "impacting_elements": [
           {
-            "name": "listOptionValues(int,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+            "name": "select distinct p from",
             "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/options/values/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/options/values/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -56,31 +50,11 @@
             ]
           },
           {
-            "name": "PageableProductOptionValueRepository",
+            "name": "listOptionValues(int,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
             "comment": "",
-            "type": "Java Interface",
-            "nb_impacted_elements": 1,
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/options/values/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/options/values/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "select distinct p from",
-            "comment": "",
-            "type": "Spring Data JPQL Query",
-            "nb_impacted_elements": 7,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/options/values/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/options/values/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",

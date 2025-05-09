@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java] defines following code elements": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -25,22 +25,6 @@
                 "signature": "getProductsForLocale(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
               },
               {
-                "name": "findOne",
-                "signature": "findOne(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product"
-              },
-              {
-                "name": "getProducts",
-                "signature": "getProducts(java.util.List.List\u003cjava.lang.Long\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
-              },
-              {
-                "name": "getProductWithOnlyMerchantStoreById",
-                "signature": "getProductWithOnlyMerchantStoreById(java.lang.Long) return com.salesmanager.core.model.catalog.product.Product"
-              },
-              {
-                "name": "exists",
-                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
-              },
-              {
                 "name": "getBySku",
                 "signature": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product"
               },
@@ -51,6 +35,10 @@
               {
                 "name": "listByStore",
                 "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.c"
+              },
+              {
+                "name": "findOne",
+                "signature": "findOne(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product"
               },
               {
                 "name": "update",
@@ -85,6 +73,14 @@
                 "signature": "getProductDescription(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.description.ProductDescription"
               },
               {
+                "name": "getProducts",
+                "signature": "getProducts(java.util.List.List\u003cjava.lang.Long\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
+              },
+              {
+                "name": "getProductWithOnlyMerchantStoreById",
+                "signature": "getProductWithOnlyMerchantStoreById(java.lang.Long) return com.salesmanager.core.model.catalog.product.Product"
+              },
+              {
                 "name": "getProductsByIds",
                 "signature": "getProductsByIds(java.util.List.List\u003cjava.lang.Long\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
               },
@@ -99,6 +95,10 @@
               {
                 "name": "retrieveById",
                 "signature": "retrieveById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
+              },
+              {
+                "name": "exists",
+                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
               }
             ]
           },
@@ -108,11 +108,11 @@
             "type": "Java Field",
             "elements": [
               {
-                "name": "productReviewService",
+                "name": "configuration",
                 "signature": ""
               },
               {
-                "name": "configuration",
+                "name": "productReviewService",
                 "signature": ""
               },
               {
@@ -159,74 +159,23 @@
           },
           {
             "comment": "",
-            "nb_elements": 11,
-            "type": "",
-            "elements": [
-              {
-                "name": "productReviewService",
-                "signature": ""
-              },
-              {
-                "name": "productRelationshipService",
-                "signature": ""
-              },
-              {
-                "name": "productPriceService",
-                "signature": ""
-              },
-              {
-                "name": "productOptionValueService",
-                "signature": ""
-              },
-              {
-                "name": "productOptionService",
-                "signature": ""
-              },
-              {
-                "name": "productImageService",
-                "signature": ""
-              },
-              {
-                "name": "productAvailabilityService",
-                "signature": ""
-              },
-              {
-                "name": "productAttributeService",
-                "signature": ""
-              },
-              {
-                "name": "configuration",
-                "signature": ""
-              },
-              {
-                "name": "categoryService",
-                "signature": ""
-              },
-              {
-                "name": "ProductServiceImpl.java",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring Bean",
-            "elements": [
-              {
-                "name": "productService",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
             "nb_elements": 1,
             "type": "Java Constructor",
             "elements": [
               {
                 "name": "ProductServiceImpl",
                 "signature": "ProductServiceImpl(com.salesmanager.core.business.repositories.catalog.product.ProductRepository)"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "ProductServiceImpl.java",
+                "signature": ""
               }
             ]
           },

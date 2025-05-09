@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductAvailabilityMapper.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductAvailabilityMapper.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductAvailabilityMapper.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductAvailabilityMapper.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 20,
+        "nb_files_with_called_elements": 21,
         "files": [
           {
             "calls_between_elements": [
@@ -79,7 +79,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java"
           },
           {
             "calls_between_elements": [
@@ -142,7 +142,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +198,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductPriceEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductPriceEntity.java"
           },
           {
             "calls_between_elements": [
@@ -240,42 +240,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPriceDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPriceDescription.java"
           },
           {
             "calls_between_elements": [
@@ -310,7 +275,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductPriceDescription.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ProductPriceDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -345,35 +345,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProductInventory.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/product/PersistableProductInventory.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Method",
+                "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
+                "from_name": "merge$lambda$0(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return boolean",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
+                "to_type": "Java Class",
                 "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "Stream\u003cT\u003e",
+                "to_name": "Language",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "merge$lambda$0(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return boolean",
+                "to_name": "getLanguage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "getLanguage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "ShopEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
           },
           {
             "calls_between_elements": [
@@ -401,7 +429,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -429,105 +485,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "Language",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "merge$lambda$0(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return boolean",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "getLanguage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "ShopEntity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "merge$lambda$0(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return boolean",
-                "to_name": "getLanguage() return java.lang.String",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "add(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "PersistableProductAvailabilityMapper",
-                "to_name": "Set\u003cE\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Lambda Expression",
                 "to_type": "Java Method",
                 "from_name": "merge$lambda$0(com.salesmanager.shop.model.catalog.product.ProductPriceDescription) return boolean",
                 "to_name": "equals(java.lang.Object) return boolean",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "product",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "PersistableProductAvailabilityMapper",
+                "to_name": "Set\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -569,7 +590,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/PersistableProductPrice.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/PersistableProductPrice.java"
           },
           {
             "calls_between_elements": [
@@ -590,7 +611,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -611,21 +632,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
-                "to_name": "ALL_REGIONS",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -639,7 +646,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.PersistableProductInventory,com.salesmanager.core.model.catalog.product.availability.ProductAvailability,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.lan",
+                "to_name": "ALL_REGIONS",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           }
         ],
         "files_list_comment": ""

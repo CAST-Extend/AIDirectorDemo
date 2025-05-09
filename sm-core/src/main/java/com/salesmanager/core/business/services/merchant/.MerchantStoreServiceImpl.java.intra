@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -23,10 +23,17 @@
             "from_name": "getParent(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
             "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "MerchantStoreServiceImpl(com.salesmanager.core.business.repositories.merchant.MerchantRepository)",
+            "to_name": "merchantRepository",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 3
+        "nb_calls_between_elements": 4
       }
     ]
   }

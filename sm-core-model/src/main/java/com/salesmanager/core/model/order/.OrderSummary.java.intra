@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java]": {
-    "00. dependencies between elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java]": {
+    "00. dependencies between elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java]": [
       {
         "calls_between_elements": [
           {
@@ -20,9 +20,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setProducts(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e) return void",
+            "to_name": "products",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getPromoCode() return java.lang.String",
             "to_name": "promoCode",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPromoCode(java.lang.String) return void",
+            "to_name": "promoCode",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -34,13 +48,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setShippingSummary(com.salesmanager.core.model.shipping.ShippingSummary) return void",
+            "to_name": "shippingSummary",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getOrderSummaryType() return com.salesmanager.core.model.order.OrderSummaryType",
             "to_name": "orderSummaryType",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrderSummaryType(com.salesmanager.core.model.order.OrderSummaryType) return void",
+            "to_name": "orderSummaryType",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 5
+        "nb_calls_between_elements": 9
       }
     ]
   }

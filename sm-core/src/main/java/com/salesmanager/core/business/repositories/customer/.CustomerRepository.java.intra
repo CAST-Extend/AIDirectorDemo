@@ -1,22 +1,8 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/CustomerRepository.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
-            "to_name": "select c from Customer",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByName(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
-            "to_name": "select distinct c from",
-            "calling_type": "CALL"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
@@ -49,6 +35,20 @@
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
             "from_name": "findByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
+            "to_name": "select c from Customer",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByName(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.customer.Customer\u003e",
+            "to_name": "select distinct c from",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
             "to_name": "select c from Customer",
             "calling_type": "CALL"
           }

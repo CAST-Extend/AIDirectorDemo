@@ -1,599 +1,158 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/tax/TaxRateRepository.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByMerchantAndProvinceAndCountryAndLanguage(java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByMerchantAndZoneAndCountryAndLanguage(java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "TaxRateRepository",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "JPA Entity",
-                "from_name": "TaxRateRepository",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByMerchantAndProvinceAndCountryAndLanguage(java.lang.Integer,java.lang.String,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByMerchantAndZoneAndCountryAndLanguage(java.lang.Integer,java.lang.Long,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByStoreAndId(java.lang.Integer,java.lang.Long) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByStoreAndCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Spring Data JPQL Query",
-                "to_type": "JPA Entity Operation",
-                "from_name": "select t from TaxRate",
-                "to_name": "Select",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/tax/TaxRateRepository.java",
             "comment": "",
             "nb_calls_between_elements": 20
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setCode(java.lang.String) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 9
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setStateProvince(java.lang.String) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setZone(com.salesmanager.core.model.reference.zone.Zone) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setCountry(com.salesmanager.core.model.reference.country.Country) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setTaxRate(java.math.BigDecimal) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setTaxPriority(java.lang.Integer) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.tax",
-                "to_name": "setId(java.lang.Long) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "taxRate(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "convert(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "TaxRate()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableTaxRateMapper",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableTaxRateMapper",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/PersistableTaxRateMapper.java",
             "comment": "",
             "nb_calls_between_elements": 13
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getZone() return com.salesmanager.core.model.reference.zone.Zone",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 7
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getTaxPriority() return java.lang.Integer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getTaxRate() return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.tax.taxrate.TaxRate,com.salesmanager.shop.model.tax.ReadableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.Readab",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableTaxRateMapper",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableTaxRateMapper",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java",
             "comment": "",
             "nb_calls_between_elements": 9
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.tax.taxrate.TaxRate) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxRateServiceImpl",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByCountryStateProvinceAndTaxClass(com.salesmanager.core.model.reference.country.Country,java.lang.String,com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.languag",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByCountryZoneAndTaxClass(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.m",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxRateServiceImpl",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "JPA Entity",
-                "from_name": "TaxRateServiceImpl",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "JPA Entity Operation",
-                "from_name": "delete(com.salesmanager.core.model.tax.taxrate.TaxRate) return void",
-                "to_name": "Remove",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 9
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getTaxRate() return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "isPiggyback() return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "taxRateByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
-                "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createTaxRate(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxFacadeImpl",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "taxRates(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxFacadeImpl",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onUpdate(java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onSave(java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onUpdate(java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "onSave(java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AuditListener",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByCountryStateProvinceAndTaxClass(com.salesmanager.core.model.reference.country.Country,java.lang.String,com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.languag",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByCountryZoneAndTaxClass(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.m",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "TaxRateService",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Field",
-                "to_type": "Java Instantiated Constructor",
-                "from_name": "taxRates",
-                "to_name": "ArrayList\u003cTaxRate\u003e",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setTaxRates(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e) return void",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getTaxRates() return java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRate\u003e",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxClass",
-                "to_name": "TaxRate",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java",
             "comment": "",
             "nb_calls_between_elements": 4
-          },
-          {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
-                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
-                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableAuditAspect",
-                "to_name": "TaxRate",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 10
+        "nb_files_with_calling_elements": 9
       }
     ]
   }

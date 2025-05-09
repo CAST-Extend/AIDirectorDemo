@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacadeImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 16,
+        "nb_files_with_called_elements": 15,
         "files": [
           {
             "calls_between_elements": [
@@ -10,14 +10,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
-                "to_name": "setPinterest(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
-                "to_name": "setFacebook(java.lang.String) return void",
+                "to_name": "setDisplayPagesMenu(boolean) return void",
                 "calling_type": "CALL"
               },
               {
@@ -87,7 +80,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
-                "to_name": "setDisplayPagesMenu(boolean) return void",
+                "to_name": "setPinterest(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
+                "to_name": "setFacebook(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -107,7 +107,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/system/Configs.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/system/Configs.java"
           },
           {
             "calls_between_elements": [
@@ -170,7 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfig.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfig.java"
           },
           {
             "calls_between_elements": [
@@ -219,17 +219,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getConfigValue(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003cjava.lang.String\u003e",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "READ"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -238,9 +231,9 @@
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "MerchantConfigurationFacadeImpl",
+                "from_name": "getConfigValue(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003cjava.lang.String\u003e",
                 "to_name": "MerchantConfiguration",
                 "calling_type": "READ"
               },
@@ -250,11 +243,18 @@
                 "from_name": "MerchantConfigurationFacadeImpl",
                 "to_name": "MerchantConfiguration",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantConfigurationFacadeImpl",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "READ"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -289,22 +289,22 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
-                "to_name": "ifPresent(java.util.function.Consumer.Consumer\u003cT\u003e) return void",
+                "to_type": "Generic Java Class",
+                "from_name": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
+                "to_name": "Optional\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Generic Java Class",
-                "from_name": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "to_name": "Optional\u003cT\u003e",
+                "to_type": "Java Method",
+                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
+                "to_name": "ifPresent(java.util.function.Consumer.Consumer\u003cT\u003e) return void",
                 "calling_type": "CALL"
               },
               {
@@ -317,7 +317,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -345,35 +345,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.system.MerchantConfiguration\u003e",
-                "to_name": "getMerchantConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig",
-                "to_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.MerchantConfig",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantConfigurationFacadeImpl",
-                "to_name": "MerchantConfigurationServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationService.java"
           },
           {
             "calls_between_elements": [
@@ -401,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -422,28 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
-                "to_name": "error(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "MerchantConfigurationFacadeImpl",
-                "to_name": "Logger",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -464,7 +415,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "MerchantConfigurationFacadeImpl",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -478,7 +450,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminAuthenticationManager.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminAuthenticationManager.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +464,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -506,7 +478,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Boolean_143a00ffcaeffdf.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Boolean_143a00ffcaeffdf.java"
           },
           {
             "calls_between_elements": [
@@ -520,7 +492,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

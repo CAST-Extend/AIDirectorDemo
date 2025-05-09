@@ -1,8 +1,19 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java] defines following code elements": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java] defines following code elements": [
       {
         "types": [
+          {
+            "comment": "",
+            "nb_elements": 2,
+            "type": "Spring Data JPQL Query",
+            "elements": [
+              {
+                "name": "select c from Content",
+                "signature": ""
+              }
+            ]
+          },
           {
             "comment": "",
             "nb_elements": 2,
@@ -15,17 +26,6 @@
               {
                 "name": "findByContentType",
                 "signature": "findByContentType(com.salesmanager.core.model.content.ContentType,java.lang.Integer,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.content.Content\u003e"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 2,
-            "type": "Spring Data JPQL Query",
-            "elements": [
-              {
-                "name": "select c from Content",
-                "signature": ""
               }
             ]
           },

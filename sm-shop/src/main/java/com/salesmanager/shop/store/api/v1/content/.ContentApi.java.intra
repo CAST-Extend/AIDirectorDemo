@@ -1,41 +1,13 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java]": [
       {
         "calls_between_elements": [
           {
-            "from_type": "Spring MVC Put Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/private/content/{}/",
-            "to_name": "updatePage(java.lang.Long,com.salesmanager.shop.model.content.PersistableContentEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Delete Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/content/folder/",
-            "to_name": "addFolder(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/content/summary/",
-            "to_name": "pagesSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.box.ReadableContentBox\u003e",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/content/pages/{}/",
-            "to_name": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/content/images/",
-            "to_name": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con",
+            "from_type": "Java Method",
+            "to_type": "Java Instantiated Method",
+            "from_name": "contents(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ReadableContentEntity\u003e",
+            "to_name": "empty\u003cString\u003e",
             "calling_type": "CALL"
           },
           {
@@ -53,6 +25,13 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Spring MVC Put Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/private/content/{}/",
+            "to_name": "updatePage(java.lang.Long,com.salesmanager.shop.model.content.PersistableContentEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/files/",
@@ -64,6 +43,20 @@
             "to_type": "Java Method",
             "from_name": "api/v1/private/file/",
             "to_name": "upload(org.springframework.web.multipart.MultipartFile,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/content/images/",
+            "to_name": "images(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.content.Con",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Delete Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/content/folder/",
+            "to_name": "addFolder(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
@@ -160,6 +153,13 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
+            "from_name": "api/v1/content/pages/{}/",
+            "to_name": "page(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Method",
             "from_name": "api/v1/private/content/boxes/",
             "to_name": "boxes(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.box.ReadableConte",
             "calling_type": "CALL"
@@ -174,14 +174,21 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
-            "from_name": "api/v1/content/pages/",
-            "to_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
+            "from_name": "api/v1/content/summary/",
+            "to_name": "pagesSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.box.ReadableContentBox\u003e",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/content/pages/",
+            "to_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/content/pages/",
             "to_name": "pages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.content.page.ReadableCont",
             "calling_type": "CALL"
           },
@@ -207,9 +214,23 @@
             "calling_type": "PROTOTYPE"
           },
           {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/content/box/{}/exists/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/private/content/{}/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/content/pages/name/{}/",
             "to_name": "ContentApi",
             "calling_type": "CALL"
           },
@@ -221,9 +242,44 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/content/pages/{}/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/private/content/page/{}/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/contents/any/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/content/any/{}/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/content/pages/",
+            "to_name": "ContentApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/content/page/{}/exists/",
             "to_name": "ContentApi",
             "calling_type": "CALL"
           },
@@ -279,48 +335,6 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/contents/any/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/content/any/{}/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/content/page/{}/exists/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/content/box/{}/exists/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/content/pages/name/{}/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/content/pages/{}/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
             "from_name": "api/v1/private/content/boxes/",
             "to_name": "ContentApi",
             "calling_type": "CALL"
@@ -336,20 +350,6 @@
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/content/summary/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/content/pages/",
-            "to_name": "ContentApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/content/pages/",
             "to_name": "ContentApi",
             "calling_type": "CALL"
           }

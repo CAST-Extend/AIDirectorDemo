@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -15,13 +15,6 @@
             "to_type": "Java Method",
             "from_name": "api/v1/private/product/{}/prices/",
             "to_name": "list(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/private/product/{}/inventory/{}/price/",
-            "to_name": "list(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e",
             "calling_type": "CALL"
           },
           {
@@ -53,6 +46,13 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/private/product/{}/inventory/{}/price/",
+            "to_name": "list(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "",
             "to_type": "Java Class",
             "from_name": "/api/v1",
@@ -69,14 +69,14 @@
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/product/{}/price/",
+            "from_name": "api/v1/private/product/{}/inventory/{}/price/",
             "to_name": "ProductPriceApi",
             "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/product/{}/inventory/{}/price/",
+            "from_name": "api/v1/private/product/{}/price/",
             "to_name": "ProductPriceApi",
             "calling_type": "CALL"
           },

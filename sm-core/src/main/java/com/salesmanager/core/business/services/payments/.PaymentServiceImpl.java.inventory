@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java] defines following code elements": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,14 +8,6 @@
             "nb_elements": 18,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "initTransaction",
-                "signature": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction"
-              },
-              {
-                "name": "initTransaction",
-                "signature": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction"
-              },
               {
                 "name": "processRefund",
                 "signature": "processRefund(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return com.salesmanager.core.model.payments.Transaction"
@@ -41,12 +33,16 @@
                 "signature": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e"
               },
               {
-                "name": "getAcceptedPaymentMethods",
-                "signature": "getAcceptedPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.payments.PaymentMethod\u003e"
-              },
-              {
                 "name": "getPaymentMethods",
                 "signature": "getPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.system.IntegrationModule\u003e"
+              },
+              {
+                "name": "initTransaction",
+                "signature": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction"
+              },
+              {
+                "name": "initTransaction",
+                "signature": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction"
               },
               {
                 "name": "luhnValidate",
@@ -79,6 +75,10 @@
               {
                 "name": "getPaymentMethodByType",
                 "signature": "getPaymentMethodByType(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule"
+              },
+              {
+                "name": "getAcceptedPaymentMethods",
+                "signature": "getAcceptedPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.payments.PaymentMethod\u003e"
               }
             ]
           },
@@ -123,62 +123,23 @@
           },
           {
             "comment": "",
-            "nb_elements": 8,
-            "type": "",
-            "elements": [
-              {
-                "name": "transactionService",
-                "signature": ""
-              },
-              {
-                "name": "paymentModules",
-                "signature": ""
-              },
-              {
-                "name": "orderService",
-                "signature": ""
-              },
-              {
-                "name": "moduleConfigurationService",
-                "signature": ""
-              },
-              {
-                "name": "merchantConfigurationService",
-                "signature": ""
-              },
-              {
-                "name": "encryption",
-                "signature": ""
-              },
-              {
-                "name": "coreConfiguration",
-                "signature": ""
-              },
-              {
-                "name": "PaymentServiceImpl.java",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring Bean",
-            "elements": [
-              {
-                "name": "paymentService",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
             "nb_elements": 1,
             "type": "Java Constructor",
             "elements": [
               {
                 "name": "PaymentServiceImpl",
                 "signature": "PaymentServiceImpl()"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "PaymentServiceImpl.java",
+                "signature": ""
               }
             ]
           },

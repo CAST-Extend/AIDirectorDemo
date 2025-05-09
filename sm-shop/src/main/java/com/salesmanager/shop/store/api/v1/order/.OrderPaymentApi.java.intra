@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -25,6 +25,20 @@
             "calling_type": "CALL"
           },
           {
+            "from_type": "Spring MVC Post Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/auth/cart/{}/payment/init/",
+            "to_name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Post Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/cart/{}/payment/init/",
+            "to_name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/payment/capturable/",
@@ -43,20 +57,6 @@
             "to_type": "Java Method",
             "from_name": "api/v1/private/orders/{}/payment/nextTransaction/",
             "to_name": "nextTransaction(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.String",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Post Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/auth/cart/{}/payment/init/",
-            "to_name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.Http",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Post Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/cart/{}/payment/init/",
-            "to_name": "init(com.salesmanager.shop.model.order.transaction.PersistablePayment,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.transaction.Readabl",
             "calling_type": "CALL"
           },
           {

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java]": {
-    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java]": {
+    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 9,
@@ -9,13 +9,111 @@
             "name": "createOptinCustomer(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.business.utils.ajax.AjaxResponse",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/{}/customer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "services/private/system/optin/{}/customer/",
+            "comment": "",
+            "type": "Spring MVC Post Operation",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "services/private/system/optin/{}/customer/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -27,40 +125,26 @@
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/{}/customer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "services/private/system/optin/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "services/private/system/module/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/module/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/module/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "services/private/system/optin/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
                 "type": "Spring MVC Delete Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "services/private/system/optin/{}/customer/",
-            "comment": "",
-            "type": "Spring MVC Post Operation",
-            "nb_impacted_elements": 1,
-            "impacted_elements_to_test": [
-              {
-                "name": "services/private/system/optin/{}/customer/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/{}/customer/",
-                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -69,13 +153,49 @@
             "name": "createOptin(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.business.utils.ajax.AjaxResponse",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -83,13 +203,49 @@
             "name": "services/private/system/optin/",
             "comment": "",
             "type": "Spring MVC Post Operation",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/optin/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -97,19 +253,13 @@
             "name": "createOrUpdateModule(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.business.utils.ajax.AjaxResponse",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 2,
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/module/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/module/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/module/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -117,19 +267,13 @@
             "name": "services/private/system/module/",
             "comment": "",
             "type": "Spring MVC Post Operation",
-            "nb_impacted_elements": 2,
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/module/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/POST/services/private/system/module/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/POST/services/private/system/module/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
@@ -137,13 +281,49 @@
             "name": "deleteOptin(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.core.business.utils.ajax.AjaxResponse",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
                 "type": "Spring MVC Delete Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -151,13 +331,49 @@
             "name": "services/private/system/optin/{}/",
             "comment": "",
             "type": "Spring MVC Delete Operation",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "services/private/system/optin/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v0\\system\\SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/system/SystemRESTController.java/services/PORT/DELETE/services/private/system/optin/{}/",
                 "type": "Spring MVC Delete Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "optin",
+                "full_name": "salesmanager.optin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           }

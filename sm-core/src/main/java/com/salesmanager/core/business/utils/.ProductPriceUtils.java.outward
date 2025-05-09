@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 41,
+        "nb_files_with_called_elements": 42,
         "files": [
           {
             "calls_between_elements": [
@@ -275,7 +275,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 38,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java"
           },
           {
             "calls_between_elements": [
@@ -283,13 +283,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal,java.util.Locale) return java.lang.String",
-                "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal,java.util.Locale) return java.lang.String",
                 "to_name": "setCurrency(java.util.Currency) return void",
                 "calling_type": "CALL"
               },
@@ -310,7 +303,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.reference.currency.Currency,java.math.BigDecimal) return java.lang.String",
+                "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal,java.util.Locale) return java.lang.String",
                 "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
                 "calling_type": "CALL"
               },
@@ -338,7 +331,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.reference.currency.Currency,java.math.BigDecimal) return java.lang.String",
                 "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
                 "calling_type": "CALL"
               },
@@ -361,6 +354,13 @@
                 "to_type": "Java Method",
                 "from_name": "getAdminFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "setMaximumFractionDigits(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAdminFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
                 "calling_type": "CALL"
               },
               {
@@ -415,7 +415,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+                "to_name": "setMinimumFractionDigits(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+                "to_name": "setMaximumFractionDigits(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
                 "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
                 "calling_type": "CALL"
               },
@@ -431,6 +445,13 @@
                 "to_type": "Java Method",
                 "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "setMaximumFractionDigits(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
                 "calling_type": "CALL"
               },
               {
@@ -439,44 +460,16 @@
                 "from_name": "ProductPriceUtils",
                 "to_name": "NumberFormat",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-                "to_name": "getInstance(java.util.Locale) return java.text.NumberFormat",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-                "to_name": "setMinimumFractionDigits(int) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-                "to_name": "setMaximumFractionDigits(int) return void",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 26,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/text/NumberFormat_1e6f3e7c0b9c022.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/text/NumberFormat_1e6f3e7c0b9c022.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ServiceException(int,java.lang.String)",
@@ -499,7 +492,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -519,17 +512,17 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ServiceException(int,java.lang.String)",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -555,9 +548,16 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "ServiceException(int,java.lang.String)",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -575,15 +575,8 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "ServiceException(int,java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -600,6 +593,13 @@
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -627,14 +627,14 @@
                 "to_type": "Java Class",
                 "from_name": "ProductPriceUtils",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductPriceUtils",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -646,7 +646,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 25,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -793,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 20,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/ProductPrice.java"
           },
           {
             "calls_between_elements": [
@@ -843,14 +843,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "doubleValue() return double",
+                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
+                "to_name": "doubleValue() return double",
                 "calling_type": "CALL"
               },
               {
@@ -864,14 +864,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "doubleValue() return double",
+                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
+                "to_name": "doubleValue() return double",
                 "calling_type": "CALL"
               },
               {
@@ -898,10 +898,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+                "to_name": "getPrices() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -985,28 +992,14 @@
                 "from_name": "ProductPriceUtils",
                 "to_name": "ProductAvailability",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
-                "to_name": "getPrices() return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.price.ProductPrice\u003e",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 13,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/availability/ProductAvailability.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -1020,6 +1013,13 @@
                 "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
                 "to_name": "Exception",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
+                "to_name": "Exception",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -1061,14 +1061,14 @@
                 "to_type": "Java Class",
                 "from_name": "getStoreFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "Exception",
-                "calling_type": "THROW"
+                "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getStoreFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "Exception",
-                "calling_type": "CATCH"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -1080,7 +1080,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -1129,6 +1129,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+                "to_name": "DEFAULT_LOCALE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "DEFAULT_LOCALE",
                 "calling_type": "READ"
@@ -1139,21 +1146,21 @@
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "ALL_REGIONS",
                 "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-                "to_name": "DEFAULT_LOCALE",
-                "calling_type": "READ"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "calculateFinalPrice$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return boolean",
+                "to_name": "isDefaultSelection() return boolean",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -1209,18 +1216,11 @@
                 "from_name": "ProductPriceUtils",
                 "to_name": "ProductVariant",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "calculateFinalPrice$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return boolean",
-                "to_name": "isDefaultSelection() return boolean",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
           },
           {
             "calls_between_elements": [
@@ -1283,7 +1283,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -1326,14 +1326,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getStoreFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
-                "to_name": "getCode() return java.lang.String",
+                "to_name": "getDefaultLanguage() return com.salesmanager.core.model.reference.language.Language",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getStoreFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
-                "to_name": "getDefaultLanguage() return com.salesmanager.core.model.reference.language.Language",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -1346,7 +1346,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -1402,7 +1402,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
@@ -1437,21 +1437,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
                 "to_name": "parseInt(java.lang.String) return int",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "parseInt(java.lang.String) return int",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           },
           {
             "calls_between_elements": [
@@ -1486,21 +1486,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
                 "to_name": "toString(char) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
+                "from_name": "getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
                 "to_name": "toString(char) return java.lang.String",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Character_cbe4c17e81330750.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Character_cbe4c17e81330750.java"
           },
           {
             "calls_between_elements": [
@@ -1522,6 +1522,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getAdminFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "to_name": "format(java.lang.Object) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
                 "to_name": "format(java.lang.Object) return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1538,18 +1545,11 @@
                 "from_name": "ProductPriceUtils",
                 "to_name": "Format",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAdminFormatedAmount(java.math.BigDecimal) return java.lang.String",
-                "to_name": "format(java.lang.Object) return java.lang.String",
-                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/text/Format_abfdafea9fbeee97.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/text/Format_abfdafea9fbeee97.java"
           },
           {
             "calls_between_elements": [
@@ -1598,7 +1598,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
           },
           {
             "calls_between_elements": [
@@ -1618,17 +1618,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "ProductAttribute",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
                 "to_name": "getProductAttributePrice() return java.math.BigDecimal",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFinalPrice(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductAttribute\u003e) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "ProductAttribute",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
@@ -1647,10 +1647,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
+                "to_name": "contains(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -1663,13 +1670,6 @@
                 "to_type": "Java Method",
                 "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
                 "to_name": "length() return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAmount(java.lang.String) return java.math.BigDecimal",
-                "to_name": "contains(java.lang.CharSequence) return boolean",
                 "calling_type": "CALL"
               },
               {
@@ -1689,7 +1689,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -1731,7 +1731,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Pattern_c8ed48e9985e85a4.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/regex/Pattern_c8ed48e9985e85a4.java"
           },
           {
             "calls_between_elements": [
@@ -1739,14 +1739,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
+                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "findFirst() return java.util.Optional.Optional\u003cT\u003e",
+                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -1773,7 +1773,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -1815,7 +1815,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -1850,7 +1850,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
           },
           {
             "calls_between_elements": [
@@ -1885,7 +1885,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -1920,7 +1920,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceUtils",
+                "to_name": "CollectionUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CollectionUtils_1588.java"
           },
           {
             "calls_between_elements": [
@@ -1955,42 +1990,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "applicableAvailabilities(java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e) return java.util.Set.Set\u003ccom.salesmanager.core.model.catalog.product.availability.ProductAvailability\u003e",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductPriceUtils",
-                "to_name": "CollectionUtils",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "applicableAvailabilities$lambda$0(com.salesmanager.core.model.catalog.product.availability.ProductAvailability) return boolean",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_1588.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -2018,35 +2018,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Matcher_f6408c04ae6a3694.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "isPresent() return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
-                "to_name": "get() return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Class",
-                "from_name": "ProductPriceUtils",
-                "to_name": "Optional\u003cT\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/regex/Matcher_f6408c04ae6a3694.java"
           },
           {
             "calls_between_elements": [
@@ -2074,7 +2046,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "isPresent() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateFinalPrice(com.salesmanager.core.model.catalog.product.Product) return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "to_name": "get() return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Class",
+                "from_name": "ProductPriceUtils",
+                "to_name": "Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -2102,7 +2102,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -2130,7 +2130,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProduct.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProduct.java"
           },
           {
             "calls_between_elements": [
@@ -2158,7 +2158,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getFormatedAmountWithCurrency(com.salesmanager.core.model.reference.currency.Currency,java.math.BigDecimal) return java.lang.String",
+                "to_name": "currency",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getStoreFormatedAmountWithCurrency(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return java.lang.String",
+                "to_name": "currency",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "ProductPriceUtils",
+                "to_name": "currency",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "/Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -2179,7 +2207,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CurrencyValidator_23318.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CurrencyValidator_23318.java"
           },
           {
             "calls_between_elements": [
@@ -2200,7 +2228,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BigDecimalValidator_14955.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BigDecimalValidator_14955.java"
           },
           {
             "calls_between_elements": [
@@ -2221,7 +2249,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Float_9a2f18c850f78fc5.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Float_9a2f18c850f78fc5.java"
           },
           {
             "calls_between_elements": [
@@ -2242,7 +2270,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
           },
           {
             "calls_between_elements": [
@@ -2263,7 +2291,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -2284,7 +2312,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -2305,7 +2333,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -2326,7 +2354,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -2340,7 +2368,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

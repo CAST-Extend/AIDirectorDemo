@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableOrderProductPopulator.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getimageUtils() return com.salesmanager.shop.utils.ImageFilePath",
-            "to_name": "imageUtils",
+            "from_name": "getProductService() return com.salesmanager.core.business.services.catalog.product.ProductService",
+            "to_name": "productService",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
+            "to_name": "productService",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
+            "to_name": "productService",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -23,6 +37,20 @@
             "from_name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
             "to_name": "imageUtils",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getimageUtils() return com.salesmanager.shop.utils.ImageFilePath",
+            "to_name": "imageUtils",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setimageUtils(com.salesmanager.shop.utils.ImageFilePath) return void",
+            "to_name": "imageUtils",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -41,20 +69,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getProductService() return com.salesmanager.core.business.services.catalog.product.ProductService",
-            "to_name": "productService",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "populate(com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.shop.model.order.ReadableOrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-            "to_name": "productService",
-            "calling_type": "READ"
+            "from_name": "setPricingService(com.salesmanager.core.business.services.catalog.pricing.PricingService) return void",
+            "to_name": "pricingService",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 7
+        "nb_calls_between_elements": 10
       }
     ]
   }

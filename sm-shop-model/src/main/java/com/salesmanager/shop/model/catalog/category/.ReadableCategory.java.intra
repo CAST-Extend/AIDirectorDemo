@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/category/ReadableCategory.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setChildren(java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e) return void",
+            "to_name": "children",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getStore() return java.lang.String",
             "to_name": "store",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setStore(java.lang.String) return void",
+            "to_name": "store",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,9 +41,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setProductCount(int) return void",
+            "to_name": "productCount",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getDescription() return com.salesmanager.shop.model.catalog.category.CategoryDescription",
             "to_name": "description",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setDescription(com.salesmanager.shop.model.catalog.category.CategoryDescription) return void",
+            "to_name": "description",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -47,7 +75,7 @@
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 6
+        "nb_calls_between_elements": 10
       }
     ]
   }

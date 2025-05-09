@@ -1,21 +1,21 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getRatingCount() return int",
-            "to_name": "ratingCount",
-            "calling_type": "READ"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "getRating() return java.lang.Double",
             "to_name": "rating",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setRating(java.lang.Double) return void",
+            "to_name": "rating",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,9 +27,37 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setUserName(java.lang.String) return void",
+            "to_name": "userName",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getRatingCount() return int",
+            "to_name": "ratingCount",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setRatingCount(int) return void",
+            "to_name": "ratingCount",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getStoreCode() return java.lang.String",
             "to_name": "storeCode",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setStoreCode(java.lang.String) return void",
+            "to_name": "storeCode",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -41,9 +69,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setProvider(java.lang.String) return void",
+            "to_name": "provider",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getLastName() return java.lang.String",
             "to_name": "lastName",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLastName(java.lang.String) return void",
+            "to_name": "lastName",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -55,9 +97,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setFirstName(java.lang.String) return void",
+            "to_name": "firstName",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getLanguage() return java.lang.String",
             "to_name": "language",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLanguage(java.lang.String) return void",
+            "to_name": "language",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -69,9 +125,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setGender(java.lang.String) return void",
+            "to_name": "gender",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getDelivery() return com.salesmanager.shop.model.customer.address.Address",
             "to_name": "delivery",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setDelivery(com.salesmanager.shop.model.customer.address.Address) return void",
+            "to_name": "delivery",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -83,13 +153,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setBilling(com.salesmanager.shop.model.customer.address.Address) return void",
+            "to_name": "billing",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getEmailAddress() return java.lang.String",
             "to_name": "emailAddress",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setEmailAddress(java.lang.String) return void",
+            "to_name": "emailAddress",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 12
+        "nb_calls_between_elements": 24
       }
     ]
   }

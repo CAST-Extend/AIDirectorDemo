@@ -1,131 +1,163 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ReadableEntityList.java]": {
-    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ReadableEntityList.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ReadableEntityList.java]": {
+    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ReadableEntityList.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 10,
         "impacting_elements": [
           {
-            "name": "setItems(java.util.List.List\u003cE\u003e) return void",
+            "name": "ReadableEntityList\u003cReadableTaxClass\u003e",
             "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/tax/class/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxClassApi.java/api/v1/PORT/GET/api/v1/private/tax/class/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableContentPage\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/content/pages/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/content/pages/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableProductVariation\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
                 "name": "api/v2/private/product/variations/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java/api/v2/PORT/GET/api/v2/private/product/variations/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
-              },
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableProductVariantGroup\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/{}/productVariantGroup/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java/api/v2/PORT/GET/api/v2/private/product/{}/productVariantGroup/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableProductVariant\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/{}/variants/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantApi.java/api/v2/PORT/GET/api/v2/private/product/{}/variants/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableTaxRate\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/tax/rates/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxRatesApi.java/api/v1/PORT/GET/api/v1/private/tax/rates/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/tax/class/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\tax\\TaxClassApi.java/api/v1/PORT/GET/api/v1/private/tax/class/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java/api/v1/PORT/GET/api/v1/private/tax/rates/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "ReadableEntityList\u003cT\u003e",
+            "name": "ReadableEntityList\u003cReadableInventory\u003e",
             "comment": "",
-            "type": "Generic Java Class",
-            "nb_impacted_elements": 5,
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/private/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "name": "api/v1/private/product/inventory/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/GET/api/v1/private/product/inventory/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
-                "name": "api/v1/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/catalog/{}/entry/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "name": "api/v1/private/product/{}/inventory/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/GET/api/v1/private/product/{}/inventory/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
           },
           {
-            "name": "ReadableEntityList()",
+            "name": "ReadableEntityList\u003cReadableContentBox\u003e",
             "comment": "",
-            "type": "Java Constructor",
-            "nb_impacted_elements": 5,
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/GET/api/v1/private/content/boxes/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/content/boxes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/GET/api/v1/content/boxes/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/content/pages/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/content/pages/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/content/pages/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableCatalogCategoryEntry\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/catalog/{}/entry/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/entry/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "ReadableEntityList\u003cReadableCatalog\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }

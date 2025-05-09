@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 50,
+        "nb_files_with_called_elements": 46,
         "files": [
           {
             "calls_between_elements": [
@@ -121,7 +121,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +296,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/AuthorizationUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/AuthorizationUtils.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacade.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacade.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +443,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -513,10 +513,80 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Re",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.",
+                "to_name": "orders",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "PostgreSQL Table",
+                "from_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderApi",
+                "to_name": "customer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "PostgreSQL Table",
+                "from_name": "OrderApi",
+                "to_name": "orders",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8,
+            "to_file": "/Salesmanager.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "to_name": "getEmailAddress() return java.lang.String",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -536,13 +606,6 @@
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
                 "to_name": "getNick() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "getEmailAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -576,7 +639,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -632,7 +695,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v0/ReadableOrder.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v0/ReadableOrder.java"
           },
           {
             "calls_between_elements": [
@@ -688,23 +751,23 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderCriteria.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderCriteria.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "GenericRuntimeException",
-                "calling_type": "RAISE"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "GenericRuntimeException(java.lang.String,java.lang.String)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "GenericRuntimeException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -737,7 +800,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -753,14 +816,14 @@
                 "to_type": "Java Class",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
                 "to_name": "Exception",
-                "calling_type": "THROW"
+                "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
                 "to_name": "Exception",
-                "calling_type": "CATCH"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -786,7 +849,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -835,10 +898,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -849,7 +919,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
                 "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
@@ -858,13 +928,6 @@
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
                 "to_name": "setId(java.lang.Long) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
@@ -877,7 +940,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
           },
           {
             "calls_between_elements": [
@@ -919,7 +982,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/order/OrderFacadeImpl.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/order/OrderFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -961,49 +1024,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletResponse_27830.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "getByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Re",
-                "to_name": "getByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.",
-                "to_name": "getByNick(java.lang.String) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
-                "to_name": "getById(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "CustomerServiceImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletResponse_3309.java"
           },
           {
             "calls_between_elements": [
@@ -1045,7 +1066,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerPopulator.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/ReadableCustomerPopulator.java"
           },
           {
             "calls_between_elements": [
@@ -1080,7 +1101,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
           },
           {
             "calls_between_elements": [
@@ -1115,7 +1136,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -1150,7 +1171,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/services/CredentialsServiceImpl.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/services/CredentialsServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1185,7 +1206,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/PersistableOrder.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/PersistableOrder.java"
           },
           {
             "calls_between_elements": [
@@ -1220,42 +1241,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Re",
-                "to_name": "error(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
-                "to_name": "error(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderApi",
-                "to_name": "Logger",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletRequest_2598.java"
           },
           {
             "calls_between_elements": [
@@ -1290,7 +1276,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
+                "to_name": "error(java.lang.String,java.lang.Throwable) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Re",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
+                "to_name": "error(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OrderApi",
+                "to_name": "Logger",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -1325,7 +1346,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerService.java"
           },
           {
             "calls_between_elements": [
@@ -1360,10 +1381,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v0/ReadableOrderList.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v0/ReadableOrderList.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -1374,13 +1402,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "getMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
                 "to_name": "getMessage() return java.lang.String",
                 "calling_type": "CALL"
@@ -1388,35 +1409,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "ShoppingCart",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
           },
           {
             "calls_between_elements": [
@@ -1444,7 +1437,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java"
           },
           {
             "calls_between_elements": [
@@ -1452,27 +1445,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "populateCustomerModel(com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "Java Class",
                 "from_name": "OrderApi",
-                "to_name": "CustomerFacade",
+                "to_name": "ShoppingCart",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java"
           },
           {
             "calls_between_elements": [
@@ -1500,7 +1493,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1508,27 +1501,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "orderConfirmation(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1",
+                "to_name": "populateCustomerModel(com.salesmanager.core.model.customer.Customer,com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "orderConfirmation(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1",
+                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
+                "to_name": "checkIfUserExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Interface",
                 "from_name": "OrderApi",
-                "to_name": "OrderFacade",
+                "to_name": "CustomerFacade",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/order/facade/v1/OrderFacade.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java"
           },
           {
             "calls_between_elements": [
@@ -1556,7 +1549,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -1584,7 +1577,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -1592,27 +1585,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "orderConfirmation(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServlet",
-                "to_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "orderConfirmation(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Interface",
                 "from_name": "OrderApi",
-                "to_name": "ShoppingCartServiceImpl",
+                "to_name": "OrderFacade",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartServiceImpl.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/order/facade/v1/OrderFacade.java"
           },
           {
             "calls_between_elements": [
@@ -1620,14 +1613,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "list(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "to_name": "setStartPage(int) return void",
+                "to_name": "setPageSize(int) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "list(java.lang.Integer,java.lang.Integer,java.lang.String,java.lang.Long,java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager",
-                "to_name": "setPageSize(int) return void",
+                "to_name": "setStartPage(int) return void",
                 "calling_type": "CALL"
               },
               {
@@ -1640,35 +1633,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "list(java.lang.Long,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.v0.Readable",
-                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "CollectionUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_5021.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
           },
           {
             "calls_between_elements": [
@@ -1696,28 +1661,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/ReadableCustomer.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.order.orderstatus.OrderStatus",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "OrderApi",
-                "to_name": "OrderStatus",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderstatus/OrderStatus.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/ReadableCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -1738,7 +1682,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java"
           },
           {
             "calls_between_elements": [
@@ -1746,20 +1690,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "updateOrderStatus(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getOrder(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.order.Order",
+                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.order.orderstatus.OrderStatus",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Enum",
                 "from_name": "OrderApi",
-                "to_name": "OrderServiceImpl",
+                "to_name": "OrderStatus",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/orderstatus/OrderStatus.java"
           },
           {
             "calls_between_elements": [
@@ -1780,7 +1724,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -1801,7 +1745,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocaleUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocaleUtils.java"
           },
           {
             "calls_between_elements": [
@@ -1822,28 +1766,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/services/CredentialsService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout(java.lang.String,com.salesmanager.shop.model.order.v1.PersistableAnonymousOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.order.v1.ReadableOrderC",
-                "to_name": "getPassword() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderApi",
-                "to_name": "SecuredCustomer",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/SecuredCustomer.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/services/CredentialsService.java"
           },
           {
             "calls_between_elements": [
@@ -1864,7 +1787,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/PersistableAnonymousOrder.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/PersistableAnonymousOrder.java"
           },
           {
             "calls_between_elements": [
@@ -1885,7 +1808,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           },
           {
             "calls_between_elements": [
@@ -1906,7 +1829,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
@@ -1920,7 +1843,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           },
           {
             "calls_between_elements": [
@@ -1934,7 +1857,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

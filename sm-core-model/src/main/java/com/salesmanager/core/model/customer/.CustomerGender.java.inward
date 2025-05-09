@@ -1,54 +1,28 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerGender.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerGender.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerGender.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/customer/CustomerGender.java]": [
       {
         "files": [
           {
-            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/customer/CustomerPopulator.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
-                "to_name": "CustomerGender",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "CustomerPopulator",
-                "to_name": "CustomerGender",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
-                "to_name": "CustomerGender",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "CustomerPopulator",
-                "to_name": "CustomerGender",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
-                "to_name": "valueOf(java.lang.String) return com.salesmanager.core.model.customer.CustomerGender",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.",
-                "to_name": "M",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/CustomerPopulator.java",
             "comment": "",
             "nb_calls_between_elements": 6
           }

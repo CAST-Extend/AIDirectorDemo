@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/Order.java]": {
-    "00. dependencies between elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/Order.java]": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/Order.java]": {
+    "00. dependencies between elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/v1/Order.java]": [
       {
         "calls_between_elements": [
           {
@@ -20,9 +20,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setAttributes(java.util.List.List\u003ccom.salesmanager.shop.model.order.OrderAttribute\u003e) return void",
+            "to_name": "attributes",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getCurrency() return java.lang.String",
             "to_name": "currency",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCurrency(java.lang.String) return void",
+            "to_name": "currency",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -34,13 +48,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setComments(java.lang.String) return void",
+            "to_name": "comments",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "isCustomerAgreement() return boolean",
             "to_name": "customerAgreement",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCustomerAgreement(boolean) return void",
+            "to_name": "customerAgreement",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 5
+        "nb_calls_between_elements": 9
       }
     ]
   }

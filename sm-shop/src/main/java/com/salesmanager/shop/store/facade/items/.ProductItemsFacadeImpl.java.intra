@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/items/ProductItemsFacadeImpl.java]": [
       {
         "calls_between_elements": [
           {
@@ -8,6 +8,13 @@
             "to_type": "Java Instantiated Constructor",
             "from_name": "listProductGroups(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.group.ProductGroup\u003e",
             "to_name": "ArrayList\u003cProductGroup\u003e",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "addItemToGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd",
+            "to_name": "addItemToGroup$lambda$0(com.salesmanager.core.model.catalog.product.relationship.ProductRelationship) return boolean",
             "calling_type": "CALL"
           },
           {
@@ -58,13 +65,6 @@
             "from_name": "listItemsByManufacturer(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,int,int) return com.salesmanager.shop.model.catalog.product.ReadableProductList",
             "to_name": "pricingService",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "addItemToGroup(com.salesmanager.core.model.catalog.product.Product,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd",
-            "to_name": "addItemToGroup$lambda$0(com.salesmanager.core.model.catalog.product.relationship.ProductRelationship) return boolean",
-            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "",

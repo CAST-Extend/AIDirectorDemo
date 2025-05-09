@@ -1,18 +1,11 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/user/ReadableUserPopulator.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 15,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "getLastName() return java.lang.String",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -45,6 +38,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "getLastName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
                 "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -52,14 +52,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "getAdminEmail() return java.lang.String",
+                "to_name": "getAdminName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "getAdminName() return java.lang.String",
+                "to_name": "getAdminEmail() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -86,7 +86,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
           },
           {
             "calls_between_elements": [
@@ -149,24 +149,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "setFirstName(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "setLastName(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -182,6 +168,20 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "setLastName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "setFirstName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableUserPopulator",
@@ -191,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/UserEntity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/UserEntity.java"
           },
           {
             "calls_between_elements": [
@@ -219,7 +219,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java"
           },
           {
             "calls_between_elements": [
@@ -247,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/security/ReadableGroup.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/security/ReadableGroup.java"
           },
           {
             "calls_between_elements": [
@@ -268,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -310,7 +310,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -331,28 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableUserPopulator",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -381,20 +360,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
-                "to_name": "setName(java.lang.String) return void",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableUserPopulator",
-                "to_name": "GroupEntity",
+                "to_name": "MerchantStore",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/security/GroupEntity.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -415,7 +394,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.user.User,com.salesmanager.shop.model.user.ReadableUser,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "setName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableUserPopulator",
+                "to_name": "GroupEntity",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/security/GroupEntity.java"
           },
           {
             "calls_between_elements": [
@@ -429,7 +429,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +443,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
         "files_list_comment": ""

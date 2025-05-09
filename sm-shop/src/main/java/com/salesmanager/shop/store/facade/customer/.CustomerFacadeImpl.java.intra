@@ -1,8 +1,15 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/customer/CustomerFacadeImpl.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Instantiated Method",
+            "from_name": "customerExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+            "to_name": "ofNullable\u003cCustomer\u003e",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -58,13 +65,6 @@
             "from_name": "resetPasswordRequest(com.salesmanager.core.model.customer.Customer,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale) return void",
             "to_name": "messages",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Instantiated Method",
-            "from_name": "customerExists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
-            "to_name": "ofNullable\u003cCustomer\u003e",
-            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "",

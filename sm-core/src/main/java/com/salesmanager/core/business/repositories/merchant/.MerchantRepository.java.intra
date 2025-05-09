@@ -1,22 +1,8 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
-    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
+    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
-            "to_name": "select m from MerchantStore",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "getById(int) return com.salesmanager.core.model.merchant.MerchantStore",
-            "to_name": "select m from MerchantStore",
-            "calling_type": "CALL"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data Query",
@@ -55,6 +41,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
+            "from_name": "existsByCode(java.lang.String) return boolean",
+            "to_name": "SELECT COUNT(m) \u003e 0",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
             "from_name": "getByParent(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
             "to_name": "select distinct m from",
             "calling_type": "CALL"
@@ -62,8 +55,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "existsByCode(java.lang.String) return boolean",
-            "to_name": "SELECT COUNT(m) \u003e 0",
+            "from_name": "getById(int) return com.salesmanager.core.model.merchant.MerchantStore",
+            "to_name": "select m from MerchantStore",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+            "to_name": "select m from MerchantStore",
             "calling_type": "CALL"
           }
         ],

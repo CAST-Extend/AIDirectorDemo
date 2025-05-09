@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/utils/CacheUtils.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/utils/CacheUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/utils/CacheUtils.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/utils/CacheUtils.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 9,
         "files": [
@@ -8,67 +8,18 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "removeFromCache(java.lang.String) return void",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getFromCache(java.lang.String) return java.lang.Object",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "putInCache(java.lang.Object,java.lang.String) return void",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
+                "to_type": "Java Method",
                 "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "Exception",
-                "calling_type": "THROW"
+                "to_name": "evict(java.lang.Object) return void",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
+                "to_type": "Java Method",
                 "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
+                "to_name": "getNativeCache() return java.lang.Object",
+                "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "shutDownCache() return void",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 8,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -100,20 +51,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "evict(java.lang.Object) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "getNativeCache() return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
                 "to_name": "getNativeCache() return java.lang.Object",
                 "calling_type": "CALL"
@@ -128,7 +65,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Cache_25629.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Cache_25629.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeFromCache(java.lang.String) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFromCache(java.lang.String) return java.lang.Object",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "putInCache(java.lang.Object,java.lang.String) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "shutDownCache() return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 8,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -157,14 +157,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "charAt(int) return char",
+                "to_name": "substring(int) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "substring(int) return java.lang.String",
+                "to_name": "charAt(int) return char",
                 "calling_type": "CALL"
               },
               {
@@ -177,7 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -205,28 +205,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Cache_11224.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Cache_11224.java"
           },
           {
             "calls_between_elements": [
@@ -247,7 +226,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Character_cbe4c17e81330750.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Character_cbe4c17e81330750.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeAllFromCache(com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCacheKeys(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
           },
           {
             "calls_between_elements": [
@@ -268,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -303,7 +303,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

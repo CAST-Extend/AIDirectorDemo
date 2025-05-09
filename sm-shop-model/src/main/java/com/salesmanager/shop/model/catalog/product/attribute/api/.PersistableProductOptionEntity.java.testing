@@ -1,86 +1,10 @@
 {
-  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/PersistableProductOptionEntity.java]": {
-    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/PersistableProductOptionEntity.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/PersistableProductOptionEntity.java]": {
+    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/api/PersistableProductOptionEntity.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 1,
         "impacting_elements": [
-          {
-            "name": "List\u003cProductOptionDescription\u003e",
-            "comment": "",
-            "type": "Java Instantiated Interface",
-            "nb_impacted_elements": 8,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/{}/attribute/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/attribute/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/option/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/option/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attribute/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/{}/attribute/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/option/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/option/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attribute/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/{}/attribute/{}/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/{}/attributes/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/{}/attributes/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/options/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/options/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/option/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/GET/api/v1/private/product/option/{}/",
-                "type": "Spring MVC Get Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "getDescriptions() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.attribute.ProductOptionDescription\u003e",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/product/option/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/option/{}/",
-                "type": "Spring MVC Put Operation",
-                "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "api/v1/private/product/option/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/option/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
           {
             "name": "PersistableProductOptionEntity",
             "comment": "",
@@ -89,13 +13,13 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/option/{}/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/option/{}/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductAttributeOptionApi.java/api/v1/PORT/PUT/api/v1/private/product/option/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/option/",
-                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/option/",
+                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductAttributeOptionApi.java/api/v1/PORT/POST/api/v1/private/product/option/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }

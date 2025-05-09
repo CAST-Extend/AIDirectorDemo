@@ -1,11 +1,25 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/configuration/DataConfiguration.java]": {
-    "00. file [sm-core/src/main/java/com/salesmanager/core/business/configuration/DataConfiguration.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/configuration/DataConfiguration.java]": {
+    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/configuration/DataConfiguration.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 13,
+        "nb_files_with_called_elements": 16,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "dataSource() return HikariDataSource",
+                "to_name": "create() return org.springframework.boot.jdbc.DataSourceBuilder.DataSourceBuilder\u003c? extends\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "dataSource() return HikariDataSource",
+                "to_name": "build() return javax.sql.DataSource",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -36,20 +50,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "dataSource() return HikariDataSource",
-                "to_name": "build() return javax.sql.DataSource",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "dataSource() return HikariDataSource",
-                "to_name": "create() return org.springframework.boot.jdbc.DataSourceBuilder.DataSourceBuilder\u003c? extends\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Instantiated Method",
                 "from_name": "dataSource() return HikariDataSource",
                 "to_name": "type\u003cHikariDataSource\u003e",
@@ -65,7 +65,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DataSourceBuilder_5436.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DataSourceBuilder_5436.java"
           },
           {
             "calls_between_elements": [
@@ -93,7 +93,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/JpaTransactionManager_3902.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/JpaTransactionManager_3902.java"
           },
           {
             "calls_between_elements": [
@@ -121,7 +121,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Properties_c636b5d27b5bee00.java"
           },
           {
             "calls_between_elements": [
@@ -129,14 +129,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "entityManagerFactory() return org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
-                "to_name": "setJpaVendorAdapter(org.springframework.orm.jpa.JpaVendorAdapter) return void",
+                "to_name": "setJpaProperties(java.util.Properties) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "entityManagerFactory() return org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
-                "to_name": "setJpaProperties(java.util.Properties) return void",
+                "to_name": "setJpaVendorAdapter(org.springframework.orm.jpa.JpaVendorAdapter) return void",
                 "calling_type": "CALL"
               },
               {
@@ -149,7 +149,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractEntityManagerFactoryBean_21726.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractEntityManagerFactoryBean_21726.java"
           },
           {
             "calls_between_elements": [
@@ -177,7 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LocalContainerEntityManagerFactoryBean_19718.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LocalContainerEntityManagerFactoryBean_19718.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +198,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/local/database.properties"
+            "to_file": "/sm-shop/src/main/resources/profiles/dependency/database.properties"
           },
           {
             "calls_between_elements": [
@@ -219,7 +219,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/docker/database.properties"
+            "to_file": "/sm-shop/src/main/resources/profiles/mysql/database.properties"
           },
           {
             "calls_between_elements": [
@@ -240,7 +240,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/dependency/database.properties"
+            "to_file": "/sm-shop/src/main/resources/profiles/cloud/database.properties"
           },
           {
             "calls_between_elements": [
@@ -261,7 +261,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/cloud/database.properties"
+            "to_file": "/sm-shop/src/main/resources/profiles/local/database.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "additionalProperties() return java.util.Properties",
+                "to_name": "hibernate.dialect",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "additionalProperties() return java.util.Properties",
+                "to_name": "hibernate.hbm2ddl.auto",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-shop/src/main/resources/profiles/gcp/database.properties"
           },
           {
             "calls_between_elements": [
@@ -282,7 +303,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/gcp/database.properties"
+            "to_file": "/sm-shop/src/main/resources/profiles/docker/database.properties"
           },
           {
             "calls_between_elements": [
@@ -303,7 +324,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/resources/profiles/mysql/database.properties"
+            "to_file": "/sm-shop/src/test/resources/database.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "additionalProperties() return java.util.Properties",
+                "to_name": "hibernate.hbm2ddl.auto",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "additionalProperties() return java.util.Properties",
+                "to_name": "hibernate.dialect",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "/sm-core/src/test/resources/database.properties"
           },
           {
             "calls_between_elements": [
@@ -324,7 +366,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractJpaVendorAdapter_17673.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractJpaVendorAdapter_17673.java"
           },
           {
             "calls_between_elements": [
@@ -345,7 +387,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HibernateJpaVendorAdapter_19895.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HibernateJpaVendorAdapter_19895.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "additionalProperties() return java.util.Properties",
+                "to_name": "hibernate.dialect",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "/sm-core/src/test/resources/hbm2dll.properties"
           }
         ],
         "files_list_comment": ""

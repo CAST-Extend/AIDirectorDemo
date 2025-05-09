@@ -1,8 +1,15 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderProductPopulator.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderProductPopulator.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderProductPopulator.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/PersistableOrderProductPopulator.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+            "to_name": "productAttributeService",
+            "calling_type": "READ"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
@@ -13,8 +20,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+            "from_name": "setProductAttributeService(com.salesmanager.core.business.services.catalog.product.attribute.ProductAttributeService) return void",
             "to_name": "productAttributeService",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+            "to_name": "digitalProductService",
             "calling_type": "READ"
           },
           {
@@ -27,9 +41,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+            "from_name": "setDigitalProductService(com.salesmanager.core.business.services.catalog.product.file.DigitalProductService) return void",
             "to_name": "digitalProductService",
-            "calling_type": "READ"
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -44,10 +58,17 @@
             "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
             "to_name": "productService",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
+            "to_name": "productService",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 6
+        "nb_calls_between_elements": 9
       }
     ]
   }

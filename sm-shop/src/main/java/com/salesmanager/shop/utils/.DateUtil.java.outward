@@ -1,11 +1,25 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 9,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "to_name": "Date()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "generateTimeStamp() return java.lang.String",
+                "to_name": "Date()",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -36,69 +50,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPresentYear() return java.lang.String",
-                "to_name": "getTime() return long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentYear() return java.lang.String",
-                "to_name": "Date(long)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentYear() return java.lang.String",
-                "to_name": "Date()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPresentDate() return java.lang.String",
-                "to_name": "getTime() return long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentDate() return java.lang.String",
-                "to_name": "Date(long)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentDate() return java.lang.String",
-                "to_name": "Date()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getDate() return java.util.Date",
-                "to_name": "getTime() return long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getDate() return java.util.Date",
-                "to_name": "Date(long)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getDate() return java.util.Date",
-                "to_name": "Date()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "addDaysToCurrentDate(int) return java.util.Date",
                 "to_name": "Date()",
@@ -106,15 +57,64 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "formatDate(java.util.Date) return java.lang.String",
-                "to_name": "Date()",
+                "to_type": "Java Method",
+                "from_name": "getPresentYear() return java.lang.String",
+                "to_name": "getTime() return long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "generateTimeStamp() return java.lang.String",
+                "from_name": "getPresentYear() return java.lang.String",
+                "to_name": "Date(long)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getPresentYear() return java.lang.String",
+                "to_name": "Date()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPresentDate() return java.lang.String",
+                "to_name": "getTime() return long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getPresentDate() return java.lang.String",
+                "to_name": "Date(long)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getPresentDate() return java.lang.String",
+                "to_name": "Date()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDate() return java.util.Date",
+                "to_name": "getTime() return long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getDate() return java.util.Date",
+                "to_name": "Date(long)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getDate() return java.util.Date",
                 "to_name": "Date()",
                 "calling_type": "CALL"
               },
@@ -170,29 +170,29 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 23,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "to_name": "format(java.util.Date) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateTimeStamp() return java.lang.String",
+                "to_name": "format(java.util.Date) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
                 "to_name": "parse(java.lang.String) return java.util.Date",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPresentYear() return java.lang.String",
-                "to_name": "format(java.util.Date) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPresentDate() return java.lang.String",
-                "to_name": "format(java.util.Date) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -226,14 +226,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "from_name": "getPresentYear() return java.lang.String",
                 "to_name": "format(java.util.Date) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "generateTimeStamp() return java.lang.String",
+                "from_name": "getPresentDate() return java.lang.String",
                 "to_name": "format(java.util.Date) return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -247,28 +247,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/text/DateFormat_dfbf82c1df476223.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/text/DateFormat_dfbf82c1df476223.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
+                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "to_name": "SimpleDateFormat(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "generateTimeStamp() return java.lang.String",
+                "to_name": "SimpleDateFormat(java.lang.String)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
                 "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
-                "to_name": "SimpleDateFormat(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentYear() return java.lang.String",
-                "to_name": "SimpleDateFormat(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getPresentDate() return java.lang.String",
                 "to_name": "SimpleDateFormat(java.lang.String)",
                 "calling_type": "CALL"
               },
@@ -303,14 +303,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "from_name": "getPresentYear() return java.lang.String",
                 "to_name": "SimpleDateFormat(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "generateTimeStamp() return java.lang.String",
+                "from_name": "getPresentDate() return java.lang.String",
                 "to_name": "SimpleDateFormat(java.lang.String)",
                 "calling_type": "CALL"
               },
@@ -324,21 +324,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/text/SimpleDateFormat_ecf1b3654bc7bbb1.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/text/SimpleDateFormat_ecf1b3654bc7bbb1.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
+                "from_name": "formatDate(java.util.Date) return java.lang.String",
                 "to_name": "DEFAULT_DATE_FORMAT",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "getPresentDate() return java.lang.String",
+                "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
                 "to_name": "DEFAULT_DATE_FORMAT",
                 "calling_type": "READ"
               },
@@ -366,14 +366,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "formatDate(java.util.Date) return java.lang.String",
+                "from_name": "getPresentDate() return java.lang.String",
                 "to_name": "DEFAULT_DATE_FORMAT",
                 "calling_type": "READ"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -422,7 +422,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Calendar_a757d32f4b0d70a3.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Calendar_a757d32f4b0d70a3.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +443,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ServletRequest_20448.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ServletRequest_26667.java"
           },
           {
             "calls_between_elements": [
@@ -464,7 +464,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -485,7 +485,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -499,7 +499,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java] defines following code elements": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -11,6 +11,14 @@
               {
                 "name": "createCustomerCriteria",
                 "signature": "createCustomerCriteria(java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.customer.CustomerCriteria"
+              },
+              {
+                "name": "delete",
+                "signature": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void"
+              },
+              {
+                "name": "updateAddress",
+                "signature": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void"
               },
               {
                 "name": "delete",
@@ -35,14 +43,6 @@
               {
                 "name": "list",
                 "signature": "list(java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.populator.customer.ReadableCustomerList"
-              },
-              {
-                "name": "delete",
-                "signature": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return void"
-              },
-              {
-                "name": "updateAddress",
-                "signature": "updateAddress(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.customer.PersistableCustomer) return void"
               },
               {
                 "name": "update",
@@ -80,18 +80,14 @@
           {
             "comment": "",
             "nb_elements": 3,
-            "type": "Java Field",
+            "type": "",
             "elements": [
               {
-                "name": "userFacade",
+                "name": "/api/v1",
                 "signature": ""
               },
               {
-                "name": "customerFacade",
-                "signature": ""
-              },
-              {
-                "name": "LOGGER",
+                "name": "CustomerApi.java",
                 "signature": ""
               }
             ]
@@ -118,14 +114,18 @@
           {
             "comment": "",
             "nb_elements": 3,
-            "type": "",
+            "type": "Java Field",
             "elements": [
               {
-                "name": "CustomerApi.java",
+                "name": "userFacade",
                 "signature": ""
               },
               {
-                "name": "/api/v1",
+                "name": "customerFacade",
+                "signature": ""
+              },
+              {
+                "name": "LOGGER",
                 "signature": ""
               }
             ]
@@ -148,28 +148,6 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Constructor",
-            "elements": [
-              {
-                "name": "CustomerApi",
-                "signature": "CustomerApi()"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Class",
-            "elements": [
-              {
-                "name": "CustomerApi",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
             "type": "Spring MVC Put Operation",
             "elements": [
               {
@@ -185,6 +163,28 @@
             "elements": [
               {
                 "name": "api/v1/private/customer/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "CustomerApi",
+                "signature": "CustomerApi()"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Class",
+            "elements": [
+              {
+                "name": "CustomerApi",
                 "signature": ""
               }
             ]

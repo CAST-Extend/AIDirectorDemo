@@ -1,25 +1,11 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java]": {
-    "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java]": {
+    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 13,
+        "nb_files_with_called_elements": 15,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
-                "to_name": "getStoreEmailAddress() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
-                "to_name": "getStoreLogo() return java.lang.String",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -35,6 +21,20 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "getStoreLogo() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "getStoreEmailAddress() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EmailUtils",
@@ -44,7 +44,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -79,7 +79,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.spam.disclaimer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.message.from",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.disclaimer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.copyright",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.spam.disclaimer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.message.from",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.disclaimer",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "createEmailObjectsMap(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.utils.LabelUtils,java.util.Locale) return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+                "to_name": "email.copyright",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "/sm-shop/src/main/resources/bundles/shopizer.properties"
           },
           {
             "calls_between_elements": [
@@ -107,7 +177,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -135,7 +205,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
           },
           {
             "calls_between_elements": [
@@ -156,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -177,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -198,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
           },
           {
             "calls_between_elements": [
@@ -219,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -240,7 +310,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/AbstractimageFilePath.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/AbstractimageFilePath.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -282,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +366,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -310,7 +380,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           }
         ],
         "files_list_comment": ""

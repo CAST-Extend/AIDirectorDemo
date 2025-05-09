@@ -1,75 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/manufacturer/ManufacturerRepository.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/manufacturer/ManufacturerServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByProductsInCategory(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.produ",
-                "to_name": "findByProductInCategoryId(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "count(com.salesmanager.core.model.merchant.MerchantStore) return int",
-                "to_name": "count(java.lang.Integer) return int",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
-                "to_name": "findByCodeAndMerchandStore(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByProductsByCategoriesId(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.Long\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacture",
-                "to_name": "findByCategoriesAndLanguage(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "to_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
-                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "to_name": "findByStoreAndLanguage(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCountManufAttachedProducts(com.salesmanager.core.model.catalog.product.manufacturer.Manufacturer) return java.lang.Long",
-                "to_name": "countByProduct(java.lang.Long) return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "ManufacturerServiceImpl",
-                "to_name": "ManufacturerRepository",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/manufacturer/ManufacturerServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 9
           }

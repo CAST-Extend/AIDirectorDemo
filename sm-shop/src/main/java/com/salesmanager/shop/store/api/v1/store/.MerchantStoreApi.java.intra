@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -22,6 +22,55 @@
             "to_type": "Java Method",
             "from_name": "addLogo(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) return void",
             "to_name": "createInputContentFile(org.springframework.web.multipart.MultipartFile) return com.salesmanager.core.model.content.InputContentFile",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "delete(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "deleteStoreLogo(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "addLogo(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "saveStoreMarketing(java.lang.String,com.salesmanager.shop.model.store.PersistableBrand,javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "children(java.lang.String,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getStoreMarketing(java.lang.String,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.store.ReadableBrand",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "update(java.lang.String,com.salesmanager.shop.model.store.PersistableMerchantStore,javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
             "calling_type": "CALL"
           },
           {
@@ -130,55 +179,6 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "delete(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "deleteStoreLogo(java.lang.String,javax.servlet.http.HttpServletRequest) return void",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "addLogo(java.lang.String,org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) return void",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "saveStoreMarketing(java.lang.String,com.salesmanager.shop.model.store.PersistableBrand,javax.servlet.http.HttpServletRequest) return void",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "children(java.lang.String,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.store.ReadableMerchantStoreList",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getStoreMarketing(java.lang.String,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.store.ReadableBrand",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "update(java.lang.String,com.salesmanager.shop.model.store.PersistableMerchantStore,javax.servlet.http.HttpServletRequest) return void",
-            "to_name": "validateUserPermission(java.lang.String,java.lang.String) return void",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Spring MVC Put Operation",
             "to_type": "Java Method",
             "from_name": "api/v1/private/store/{}/",
@@ -249,9 +249,9 @@
             "calling_type": "PROTOTYPE"
           },
           {
-            "from_type": "Spring MVC Put Operation",
+            "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/store/{}/",
+            "from_name": "api/v1/private/store/unique/",
             "to_name": "MerchantStoreApi",
             "calling_type": "CALL"
           },
@@ -279,35 +279,7 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/private/store/unique/",
-            "to_name": "MerchantStoreApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
             "from_name": "api/v1/store/unique/",
-            "to_name": "MerchantStoreApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/merchant/{}/children/",
-            "to_name": "MerchantStoreApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/store/{}/marketing/",
-            "to_name": "MerchantStoreApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/store/languages/",
             "to_name": "MerchantStoreApi",
             "calling_type": "CALL"
           },
@@ -328,7 +300,28 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
+            "from_name": "api/v1/private/merchant/{}/children/",
+            "to_name": "MerchantStoreApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
             "from_name": "api/v1/private/merchant/{}/stores/",
+            "to_name": "MerchantStoreApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/store/{}/marketing/",
+            "to_name": "MerchantStoreApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Get Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/store/languages/",
             "to_name": "MerchantStoreApi",
             "calling_type": "CALL"
           },
@@ -343,6 +336,13 @@
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/store/{}/",
+            "to_name": "MerchantStoreApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Put Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/store/{}/",
             "to_name": "MerchantStoreApi",
             "calling_type": "CALL"
           },

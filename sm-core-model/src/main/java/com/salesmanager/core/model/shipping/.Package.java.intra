@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Package.java]": {
-    "00. dependencies between elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Package.java]": [
+  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Package.java]": {
+    "00. dependencies between elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Package.java]": [
       {
         "calls_between_elements": [
           {
@@ -13,9 +13,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setDefaultPackaging(boolean) return void",
+            "to_name": "defaultPackaging",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getShipPackageType() return com.salesmanager.core.model.shipping.ShippingPackageType",
             "to_name": "shipPackageType",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setShipPackageType(com.salesmanager.core.model.shipping.ShippingPackageType) return void",
+            "to_name": "shipPackageType",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,9 +41,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setTreshold(int) return void",
+            "to_name": "treshold",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getMaxWeight() return double",
             "to_name": "maxWeight",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setMaxWeight(double) return void",
+            "to_name": "maxWeight",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -41,9 +69,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setBoxWeight(double) return void",
+            "to_name": "boxWeight",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getBoxLength() return double",
             "to_name": "boxLength",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setBoxLength(double) return void",
+            "to_name": "boxLength",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -55,6 +97,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setBoxHeight(double) return void",
+            "to_name": "boxHeight",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getBoxWidth() return double",
             "to_name": "boxWidth",
             "calling_type": "READ"
@@ -62,13 +111,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setBoxWidth(double) return void",
+            "to_name": "boxWidth",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getCode() return java.lang.String",
             "to_name": "code",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCode(java.lang.String) return void",
+            "to_name": "code",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 9
+        "nb_calls_between_elements": 18
       }
     ]
   }

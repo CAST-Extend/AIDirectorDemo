@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": {
-    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": [
+  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": {
+    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java]": [
       {
         "calls_between_elements": [
           {
@@ -20,13 +20,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "endDate",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getStartDate() return java.util.Date",
             "to_name": "startDate",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "processPostedDates(javax.servlet.http.HttpServletRequest) return void",
+            "to_name": "startDate",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 3
+        "nb_calls_between_elements": 5
       }
     ]
   }

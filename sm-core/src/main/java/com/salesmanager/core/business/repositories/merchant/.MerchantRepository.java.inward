@@ -1,61 +1,16 @@
 {
-  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": [
+  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/merchant/MerchantRepository.java]": [
       {
         "files": [
           {
-            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isStoreInGroup(java.lang.String) return boolean",
-                "to_name": "listByGroup(java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findAllStoreCodeNameEmail() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "to_name": "findAllStoreCodeNameEmail() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findAllStoreNames(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "to_name": "findAllStoreNames(java.lang.String) return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findAllStoreNames() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "to_name": "findAllStoreNames() return java.util.List.List\u003ccom.salesmanager.core.model.merchant.MerchantStore\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "existByCode(java.lang.String) return boolean",
-                "to_name": "existsByCode(java.lang.String) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
-                "to_name": "findByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "MerchantStoreServiceImpl",
-                "to_name": "MerchantRepository",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 7
           }
