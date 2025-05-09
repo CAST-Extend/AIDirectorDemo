@@ -202,7 +202,8 @@ public class OrderFacadeImpl implements OrderFacade {
 		Customer customer = customerFacade.getCustomerModel(order.getCustomer(), store, language);
 		OrderTotalSummary summary = calculateOrderTotal(store, customer, order, language);
 		this.setOrderTotals(order, summary);
-		return summary;
+		summary.setShip_ASAP(quote.isShipASAP());
+        return summary;
 	}
 
 	@Override
@@ -226,7 +227,8 @@ public class OrderFacadeImpl implements OrderFacade {
 
 		OrderTotalSummary summary = this.calculateOrderTotal(store, customer, order, language);
 
-		return summary;
+		summary.setShip_ASAP(quote.isShipASAP());
+        return summary;
 	}
 
 	private OrderTotalSummary calculateOrderTotal(MerchantStore store, Customer customer,
@@ -700,7 +702,8 @@ public class OrderFacadeImpl implements OrderFacade {
 
 		}
 
-		return summary;
+		summary.setShip_ASAP(quote.isShipASAP());
+        return summary;
 	}
 
 	@Override

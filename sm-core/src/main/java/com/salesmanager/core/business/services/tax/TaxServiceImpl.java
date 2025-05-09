@@ -209,7 +209,10 @@ public class TaxServiceImpl
 					amnt.setScale(2, RoundingMode.HALF_UP);
 				}
 				ShippingSummary shippingSummary = orderSummary.getShippingSummary();
-				if(shippingSummary!=null && shippingSummary.getShipping()!=null && shippingSummary.getShipping().doubleValue()>0) {
+				if(shippingSummary!=null && shippingSummary.isShip_ASAP()) {
+                    // Handle tax logic for ASAP shipping if needed
+                }
+                if(shippingSummary!=null && shippingSummary.getShipping()!=null && shippingSummary.getShipping().doubleValue()>0) {
 					amnt = amnt.add(shippingSummary.getShipping());
 					if(shippingSummary.getHandling()!=null && shippingSummary.getHandling().doubleValue()>0) {
 						amnt = amnt.add(shippingSummary.getHandling());

@@ -324,6 +324,9 @@ public class OrderServiceImpl  extends SalesManagerEntityServiceImpl<Long, Order
 
 	            orderTotals.add(shippingSubTotal);
 
+            if(summary.getShippingSummary().isShip_ASAP()) {
+                // Handle ASAP shipping logic here if needed
+            }
             if(!summary.getShippingSummary().isFreeShipping()) {
                 shippingSubTotal.setValue(summary.getShippingSummary().getShipping());
                 grandTotal=grandTotal.add(summary.getShippingSummary().getShipping());
