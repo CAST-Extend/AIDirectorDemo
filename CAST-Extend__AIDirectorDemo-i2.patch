@@ -1,0 +1,122 @@
+
+diff --git a/DependentRepositories.md b/DependentRepositories.md
+new file mode 100644
+index 0000000..bfb14b1
+--- /dev/null
++++ b/DependentRepositories.md
+@@ -0,0 +1,10 @@
++
++### Tasks for Dependent Repositories
++
++1. **Update API Consumers**:
++   - Ensure that any applications consuming the `api/v1/cart/{}/checkout/` endpoint are updated to handle the `ship_ASAP` field.
++   - Validate that these applications can process orders with the `ship_ASAP` option.
++
++2. **Testing and Validation**:
++   - Conduct integration tests to ensure that the changes in the `ShippingSummary` class do not break existing functionality in dependent applications.
++   - Verify that the data integrity is maintained across applications when processing orders with the `ship_ASAP` option.
+\ No newline at end of file
+diff --git a/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java b/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java
+index 4f73e65..377c8b6 100755
+--- a/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java
++++ b/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java
+@@ -24,6 +24,7 @@ public class ShippingSummary implements Serializable {
+ 	private boolean freeShipping;
+ 	private boolean taxOnShipping;
+ 	private boolean shippingQuote;
++    private boolean ship_ASAP;
+ 	
+ 	private Delivery deliveryAddress;
+ 	
+@@ -76,7 +77,14 @@ public class ShippingSummary implements Serializable {
+ 	public void setShippingOptionCode(String shippingOptionCode) {
+ 		this.shippingOptionCode = shippingOptionCode;
+ 	}
+-	public boolean isShippingQuote() {
++	public boolean isShip_ASAP() {
++        return ship_ASAP;
++    }
++    public void setShip_ASAP(boolean ship_ASAP) {
++        this.ship_ASAP = ship_ASAP;
++    }
++
++    public boolean isShippingQuote() {
+ 		return shippingQuote;
+ 	}
+ 	public void setShippingQuote(boolean shippingQuote) {
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java b/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java
+index 160eaaf..b857e3b 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingQuoteServiceImpl.java
+@@ -70,7 +70,8 @@ public class ShippingQuoteServiceImpl extends SalesManagerEntityServiceImpl<Long
+ 		}
+ 		
+ 		
+-		return quote;
++		quote.setShip_ASAP(false);
++        return quote;
+ 		
+ 	}
+ 
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java b/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java
+index 6d58fc3..b899d8a 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java
+@@ -367,7 +367,8 @@ public class ShippingServiceImpl implements ShippingService {
+ 		shippingSummary.setShippingModule(shippingQuote.getShippingModuleCode());
+ 		shippingSummary.setShippingOption(selectedShippingOption.getDescription());
+ 		
+-		return shippingSummary;
++		shippingSummary.setShip_ASAP(false);
++        return shippingSummary;
+ 	}
+ 
+ 	@Override
+diff --git a/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableShippingSummaryPopulator.java b/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableShippingSummaryPopulator.java
+index c6fe186..f3dcca9 100755
+--- a/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableShippingSummaryPopulator.java
++++ b/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ReadableShippingSummaryPopulator.java
+@@ -60,7 +60,8 @@ public class ReadableShippingSummaryPopulator extends
+ 			throw new ConversionException(e);
+ 		}
+ 		
+-		return target;
++		target.setShip_ASAP(source.isShip_ASAP());
++        return target;
+ 		
+ 		
+ 	}
+diff --git a/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java b/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java
+index 0da643b..4796d10 100755
+--- a/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java
++++ b/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java
+@@ -202,7 +202,8 @@ public class OrderFacadeImpl implements OrderFacade {
+ 		Customer customer = customerFacade.getCustomerModel(order.getCustomer(), store, language);
+ 		OrderTotalSummary summary = calculateOrderTotal(store, customer, order, language);
+ 		this.setOrderTotals(order, summary);
+-		return summary;
++		summary.setShip_ASAP(false);
++        return summary;
+ 	}
+ 
+ 	@Override
+@@ -226,7 +227,8 @@ public class OrderFacadeImpl implements OrderFacade {
+ 
+ 		OrderTotalSummary summary = this.calculateOrderTotal(store, customer, order, language);
+ 
+-		return summary;
++		summary.setShip_ASAP(false);
++        return summary;
+ 	}
+ 
+ 	private OrderTotalSummary calculateOrderTotal(MerchantStore store, Customer customer,
+@@ -700,7 +702,8 @@ public class OrderFacadeImpl implements OrderFacade {
+ 
+ 		}
+ 
+-		return summary;
++		summary.setShip_ASAP(false);
++        return summary;
+ 	}
+ 
+ 	@Override
