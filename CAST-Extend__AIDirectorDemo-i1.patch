@@ -1,0 +1,114 @@
+
+diff --git a/CodeModifications.md b/CodeModifications.md
+new file mode 100644
+index 0000000..25753e6
+--- /dev/null
++++ b/CodeModifications.md
+@@ -0,0 +1,19 @@
++# Code Modifications
++
++## Replaced Deprecated Method Calls
++
++1. **StripePayment.java**
++   - Replaced `getAdminFormatedAmount(store, amount)` with `getStoreFormatedAmountWithCurrency(store, amount)` at lines 143, 287, and 356.
++
++2. **Stripe3Payment.java**
++   - Replaced `getAdminFormatedAmount(store, amount)` with `getStoreFormatedAmountWithCurrency(store, amount)` at line 314.
++
++3. **BeanStreamPayment.java**
++   - Replaced `getAdminFormatedAmount(store, amount)` with `getStoreFormatedAmountWithCurrency(store, amount)` at lines 95, 184, and 501.
++
++## Updated Method to Static
++
++- Made `getStoreFormatedAmountWithCurrency` a static method in `ProductPriceUtils.java`.
++
++These changes ensure that the deprecated method is no longer used and the new method is utilized consistently across the codebase.
++
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+index 70f7230..aa0eaf1 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+@@ -92,7 +92,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
+ 
+ 				BigDecimal amount = order.getTotal();
+-				String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++				String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 				
+ 				/**
+ 				merchant_id=123456789&requestType=BACKEND
+@@ -181,7 +181,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRANSACTIONID");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			/**
+ 			merchant_id=123456789&requestType=BACKEND
+@@ -498,7 +498,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 			
+ 		String orderNumber = uniqueId;
+ 		
+-		String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++		String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 		
+ 		
+ 		StringBuilder messageString = new StringBuilder();
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+index d89a8a9..2d67ef1 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+@@ -311,7 +311,7 @@ public class Stripe3Payment implements PaymentModule {
+ 		Transaction transaction = new Transaction();
+ 		try {
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
+index eacc34c..f096699 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
+@@ -140,7 +140,7 @@ public class StripePayment implements PaymentModule {
+ 			}
+ 			
+ 
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+@@ -284,7 +284,7 @@ public class StripePayment implements PaymentModule {
+ 		Transaction transaction = new Transaction();
+ 		try {
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+@@ -353,7 +353,7 @@ public class StripePayment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRNORDERNUMBER");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			Stripe.apiKey = apiKey;
+ 			
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+index 63af24b..1d29a83 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+@@ -291,7 +291,7 @@ public class ProductPriceUtils {
+ 	 * @throws Exception
+ 	 */
+ 	// Utility
+-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
++	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+ 		if (amount == null) {
+ 			return "";
+ 		}
