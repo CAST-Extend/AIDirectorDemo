@@ -1,0 +1,69 @@
+
+diff --git a/ProductPriceUtils_Changes.md b/ProductPriceUtils_Changes.md
+new file mode 100644
+index 0000000..6955648
+--- /dev/null
++++ b/ProductPriceUtils_Changes.md
+@@ -0,0 +1,17 @@
++
++# Changes to ProductPriceUtils.java
++
++1. **Made `getStoreFormatedAmountWithCurrency` Method Static**
++   - The method `getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount)` was modified to be a static method to align with the task requirements.
++
++2. **Plan to Remove Deprecated Method Usage**
++   - The deprecated method `getAdminFormatedAmount(MerchantStore store, BigDecimal amount)` is planned to be removed. All internal and external calls to this method will be replaced with `getStoreFormatedAmountWithCurrency`.
++
++3. **Next Steps**
++   - Identify and replace all calls to the deprecated method in the codebase.
++   - Ensure all dependent code is updated to use the static method.
++   - Conduct testing to verify that changes do not break existing functionality.
++
++3. **Replaced Deprecated Method Calls in BeanStreamPayment.java**
++   - Replaced all occurrences of `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `BeanStreamPayment.java` file.
++   - Ensured that the new static method is used correctly in the context of the file.
+\ No newline at end of file
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+index 70f7230..cafe5f7 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+@@ -92,7 +92,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
+ 
+ 				BigDecimal amount = order.getTotal();
+-				String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++				String amnt = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 				
+ 				/**
+ 				merchant_id=123456789&requestType=BACKEND
+@@ -181,7 +181,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRANSACTIONID");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			/**
+ 			merchant_id=123456789&requestType=BACKEND
+@@ -498,7 +498,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 			
+ 		String orderNumber = uniqueId;
+ 		
+-		String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++		String amnt = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 		
+ 		
+ 		StringBuilder messageString = new StringBuilder();
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+index 63af24b..1d29a83 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+@@ -291,7 +291,7 @@ public class ProductPriceUtils {
+ 	 * @throws Exception
+ 	 */
+ 	// Utility
+-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
++	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+ 		if (amount == null) {
+ 			return "";
+ 		}
