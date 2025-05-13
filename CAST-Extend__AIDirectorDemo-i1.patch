@@ -1,0 +1,34 @@
+
+diff --git a/ProductPriceUtils_Changes.md b/ProductPriceUtils_Changes.md
+new file mode 100644
+index 0000000..742e1be
+--- /dev/null
++++ b/ProductPriceUtils_Changes.md
+@@ -0,0 +1,13 @@
++
++# ProductPriceUtils Changes
++
++## Modifications Made
++
++1. **Made Method Static**: The `getStoreFormatedAmountWithCurrency` method in `ProductPriceUtils.java` was made static to align with the task requirements.
++
++2. **Deprecated Method Usage**: The usage of the deprecated method `getAdminFormatedAmount(MerchantStore, BigDecimal)` was identified for removal, although no direct calls were found in the current repository search.
++
++## Next Steps
++
++- Ensure that any future calls to `getAdminFormatedAmount(MerchantStore, BigDecimal)` are replaced with `getStoreFormatedAmountWithCurrency`.
++- Conduct tests to verify that the static method change does not impact existing functionality.
+\ No newline at end of file
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+index 63af24b..1d29a83 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+@@ -291,7 +291,7 @@ public class ProductPriceUtils {
+ 	 * @throws Exception
+ 	 */
+ 	// Utility
+-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
++	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+ 		if (amount == null) {
+ 			return "";
+ 		}
