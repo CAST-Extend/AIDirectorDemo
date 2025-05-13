@@ -170,7 +170,7 @@ public class ProductPriceUtils {
 
 		finalPrice.setStringPrice(getStringAmount(finalPrice.getFinalPrice()));
 		if (finalPrice.isDiscounted()) {
-			finalPrice.setStringDiscountedPrice(getAdminFormatedAmount(finalPrice.getDiscountedPrice()));
+			finalPrice.setStringDiscountedPrice(getStoreFormatedAmountWithCurrency(store, finalPrice.getDiscountedPrice()));
 		}
 		return finalPrice;
 
@@ -233,7 +233,7 @@ public class ProductPriceUtils {
 
 		finalPrice.setStringPrice(getStringAmount(finalPrice.getFinalPrice()));
 		if (finalPrice.isDiscounted()) {
-			finalPrice.setStringDiscountedPrice(getAdminFormatedAmount(finalPrice.getDiscountedPrice()));
+			finalPrice.setStringDiscountedPrice(getStoreFormatedAmountWithCurrency(store, finalPrice.getDiscountedPrice()));
 		}
 		return finalPrice;
 
@@ -291,7 +291,7 @@ public class ProductPriceUtils {
 	 * @throws Exception
 	 */
 	// Utility
-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
 		if (amount == null) {
 			return "";
 		}
