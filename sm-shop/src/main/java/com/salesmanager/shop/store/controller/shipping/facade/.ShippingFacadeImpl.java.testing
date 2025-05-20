@@ -1,16 +1,48 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 27,
         "impacting_elements": [
           {
-            "name": "shipToCountry$lambda$0(com.salesmanager.core.model.reference.country.Country) return R",
+            "name": "toPackage(com.salesmanager.core.model.shipping.PackageDetails) return com.salesmanager.core.model.shipping.Package",
             "comment": "",
-            "type": "Java Lambda Expression",
+            "type": "Java Method",
             "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "updatePackage(java.lang.String,com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
@@ -18,22 +50,114 @@
                 "nature": "data entity"
               },
               {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
             ]
           },
           {
-            "name": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
+            "name": "packageDetails(com.salesmanager.core.model.shipping.ShippingConfiguration,java.lang.String) return com.salesmanager.core.model.shipping.Package",
             "comment": "",
             "type": "Java Method",
             "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getDbConfig(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingConfiguration",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 13,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/POST/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/packages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/packages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/DELETE/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "country",
                 "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -42,6 +166,340 @@
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "saveShippingConfiguration(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/POST/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/DELETE/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ShippingFacadeImpl",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/POST/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/origin/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/origin/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/packages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/packages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/DELETE/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "updatePackage$lambda$0(com.salesmanager.core.model.shipping.Package) return boolean",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "packageDetails$lambda$0(com.salesmanager.core.model.shipping.Package) return boolean",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/PUT/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "saveExpeditionConfiguration(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/POST/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "packageExists(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.shipping.PackageDetails) return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "packageExists$lambda$0(com.salesmanager.core.model.shipping.Package) return boolean",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/package/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
@@ -49,8 +507,20 @@
             "name": "saveShippingOrigin(com.salesmanager.shop.model.references.PersistableAddress,com.salesmanager.core.model.merchant.MerchantStore) return void",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 2,
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/origin/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/POST/api/v1/private/shipping/origin/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
@@ -58,8 +528,522 @@
                 "nature": "data entity"
               },
               {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shiping_origin",
+                "full_name": "salesmanager.shiping_origin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cReadableCountry\u003e",
+            "comment": "",
+            "type": "Java Instantiated Constructor",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/shipping/country/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/shipping/country/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "convert(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.references.ReadableCountry",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/shipping/country/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/shipping/country/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/shipping/country/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/shipping/country/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ArrayList\u003cReadableCountry\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/shipping/country/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/shipping/country/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "shipToCountry$lambda$0(com.salesmanager.core.model.reference.country.Country) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/shipping/country/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/shipping/country/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getExpeditionConfiguration$lambda$0(java.lang.String) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/expedition/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingExpeditionApi.java/api/v1/PORT/GET/api/v1/private/shipping/expedition/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "toPackageDetails(com.salesmanager.core.model.shipping.Package) return com.salesmanager.core.model.shipping.PackageDetails",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/shipping/packages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/packages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getPackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.PackageDetails",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/packages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/packages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listPackages$lambda$0(com.salesmanager.core.model.shipping.Package) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/packages/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/packages/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getShippingOrigin(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableAddress",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/origin/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/GET/api/v1/private/shipping/origin/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shiping_origin",
+                "full_name": "salesmanager.shiping_origin",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "deletePackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/DELETE/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "deletePackage$lambda$0(com.salesmanager.core.model.shipping.Package) return boolean",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/shipping/package/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shipping\\ShippingConfigurationApi.java/api/v1/PORT/DELETE/api/v1/private/shipping/package/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 1,
@@ -9,7 +9,7 @@
             "name": "loadUserByUsername(java.lang.String) return org.springframework.security.core.userdetails.UserDetails",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "merchant_store",
@@ -18,14 +18,20 @@
                 "nature": "data entity"
               },
               {
-                "name": "country",
-                "full_name": "salesmanager.country",
+                "name": "permission",
+                "full_name": "salesmanager.permission",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
               {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },

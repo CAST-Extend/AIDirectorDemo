@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,10 +8,6 @@
             "nb_elements": 19,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "exists",
-                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
-              },
               {
                 "name": "findOne",
                 "signature": "findOne(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.Product"
@@ -37,6 +33,10 @@
                 "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.c"
               },
               {
+                "name": "exists",
+                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
+              },
+              {
                 "name": "listByStore",
                 "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList"
               },
@@ -47,6 +47,10 @@
               {
                 "name": "retrieveById",
                 "signature": "retrieveById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
+              },
+              {
+                "name": "getProductDescription",
+                "signature": "getProductDescription(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.description.ProductDescription"
               },
               {
                 "name": "getProducts",
@@ -77,23 +81,8 @@
                 "signature": "getProductForLocale(long,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return com.salesmanager.core.model.catalog.product.Product"
               },
               {
-                "name": "getProductDescription",
-                "signature": "getProductDescription(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.description.ProductDescription"
-              },
-              {
                 "name": "addProductDescription",
                 "signature": "addProductDescription(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.description.ProductDescription) return void"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ProductService.java",
-                "signature": ""
               }
             ]
           },
@@ -104,6 +93,17 @@
             "elements": [
               {
                 "name": "ProductService",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "ProductService.java",
                 "signature": ""
               }
             ]

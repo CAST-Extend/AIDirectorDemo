@@ -1,8 +1,22 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java]": {
-    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByCodeLike(com.salesmanager.core.model.content.ContentType,java.lang.String,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
+            "to_name": "select c from Content",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Spring Data JPQL Query",
+            "from_name": "findByCode(java.lang.String,java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.content.Content",
+            "to_name": "select c from Content",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
@@ -20,14 +34,14 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findByCode(java.lang.String,java.lang.Integer,java.lang.Integer) return com.salesmanager.core.model.content.Content",
+            "from_name": "findByType(com.salesmanager.core.model.content.ContentType,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
             "to_name": "select c from Content",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findByCodeLike(com.salesmanager.core.model.content.ContentType,java.lang.String,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
+            "from_name": "findByType(com.salesmanager.core.model.content.ContentType,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
             "to_name": "select c from Content",
             "calling_type": "CALL"
           },
@@ -35,13 +49,6 @@
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
             "from_name": "findByCode(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.content.Content",
-            "to_name": "select c from Content",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByTypes(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
             "to_name": "select c from Content",
             "calling_type": "CALL"
           },
@@ -62,14 +69,7 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findByType(com.salesmanager.core.model.content.ContentType,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
-            "to_name": "select c from Content",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Spring Data JPQL Query",
-            "from_name": "findByType(com.salesmanager.core.model.content.ContentType,java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
+            "from_name": "findByTypes(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentType\u003e,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e",
             "to_name": "select c from Content",
             "calling_type": "CALL"
           }

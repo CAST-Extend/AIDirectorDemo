@@ -1,25 +1,25 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 3,
+        "nb_impacting_elements": 4,
         "impacting_elements": [
           {
-            "name": "listGroup(com.salesmanager.core.model.user.GroupType) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+            "name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
             "comment": "",
             "type": "Java Method",
             "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/private/customer/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
-                "type": "Spring MVC Post Operation",
+                "name": "api/v1/private/user/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
+                "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
-                "name": "api/v1/customer/register/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "name": "api/v1/private/user/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -29,30 +29,62 @@
             "name": "GroupService",
             "comment": "",
             "type": "Java Interface",
-            "nb_impacted_elements": 4,
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
+                "name": "api/v1/private/user/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/PUT/api/v1/private/user/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/user/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/POST/api/v1/private/user/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
                 "name": "api/v1/private/customer/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/customer/register/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/sec/private/groups/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/security/SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/groups/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\security\\SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/groups/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/sec/private/{}/permissions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/security/SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/{}/permissions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\security\\SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/{}/permissions/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "listGroup(com.salesmanager.core.model.user.GroupType) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/customer/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\CustomerApi.java/api/v1/PORT/POST/api/v1/private/customer/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -65,7 +97,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/sec/private/{}/permissions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/security/SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/{}/permissions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\security\\SecurityApi.java/api/v1/sec/PORT/GET/api/v1/sec/private/{}/permissions/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MultipleEntryPointsSecurityConfig.java] defines following code elements": [
       {
         "types": [
           {
@@ -37,6 +37,10 @@
                 "signature": "configure(org.springframework.security.config.annotation.web.builders.WebSecurity) return void"
               },
               {
+                "name": "passwordEncoder",
+                "signature": "passwordEncoder() return org.springframework.security.crypto.password.PasswordEncoder"
+              },
+              {
                 "name": "servicesAuthenticationEntryPoint",
                 "signature": "servicesAuthenticationEntryPoint() return org.springframework.security.web.AuthenticationEntryPoint"
               },
@@ -57,16 +61,166 @@
                 "signature": "userAuthenticationSuccessHandler() return com.salesmanager.shop.admin.security.UserAuthenticationSuccessHandler"
               },
               {
-                "name": "passwordEncoder",
-                "signature": "passwordEncoder() return org.springframework.security.crypto.password.PasswordEncoder"
-              },
-              {
                 "name": "credentialsService",
                 "signature": "credentialsService() return com.salesmanager.shop.store.security.services.CredentialsService"
               },
               {
                 "name": "authenticationTokenFilter",
                 "signature": "authenticationTokenFilter() return com.salesmanager.shop.store.security.AuthenticationTokenFilter"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 25,
+            "type": "",
+            "elements": [
+              {
+                "name": "jwtCustomerDetailsService",
+                "signature": ""
+              },
+              {
+                "name": "passwordEncoder",
+                "signature": ""
+              },
+              {
+                "name": "jwtAdminDetailsService",
+                "signature": ""
+              },
+              {
+                "name": "zoneService",
+                "signature": ""
+              },
+              {
+                "name": "shoppingCartService",
+                "signature": ""
+              },
+              {
+                "name": "permissionService",
+                "signature": ""
+              },
+              {
+                "name": "optinService",
+                "signature": ""
+              },
+              {
+                "name": "messages",
+                "signature": ""
+              },
+              {
+                "name": "languageService",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "groupService",
+                "signature": ""
+              },
+              {
+                "name": "emailUtils",
+                "signature": ""
+              },
+              {
+                "name": "emailTemplatesUtils",
+                "signature": ""
+              },
+              {
+                "name": "emailService",
+                "signature": ""
+              },
+              {
+                "name": "customerService",
+                "signature": ""
+              },
+              {
+                "name": "customerReviewService",
+                "signature": ""
+              },
+              {
+                "name": "customerPopulator",
+                "signature": ""
+              },
+              {
+                "name": "customerAuthenticationManager",
+                "signature": ""
+              },
+              {
+                "name": "countryService",
+                "signature": ""
+              },
+              {
+                "name": "coreConfiguration",
+                "signature": ""
+              },
+              {
+                "name": "jwtCustomCustomerAuthenticationManager",
+                "signature": ""
+              },
+              {
+                "name": "jwtCustomAdminAuthenticationManager",
+                "signature": ""
+              },
+              {
+                "name": "customerOptinService",
+                "signature": ""
+              },
+              {
+                "name": "MultipleEntryPointsSecurityConfig.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 11,
+            "type": "Spring Bean",
+            "elements": [
+              {
+                "name": "apiCustomerAuthenticationEntryPoint",
+                "signature": ""
+              },
+              {
+                "name": "apiAdminAuthenticationEntryPoint",
+                "signature": ""
+              },
+              {
+                "name": "authenticationProvider",
+                "signature": ""
+              },
+              {
+                "name": "servicesAuthenticationEntryPoint",
+                "signature": ""
+              },
+              {
+                "name": "shopAuthenticationEntryPoint",
+                "signature": ""
+              },
+              {
+                "name": "customerFacade",
+                "signature": ""
+              },
+              {
+                "name": "servicesAuthenticationSuccessHandler",
+                "signature": ""
+              },
+              {
+                "name": "userAuthenticationSuccessHandler",
+                "signature": ""
+              },
+              {
+                "name": "passwordEncoder",
+                "signature": ""
+              },
+              {
+                "name": "credentialsService",
+                "signature": ""
+              },
+              {
+                "name": "authenticationTokenFilter",
+                "signature": ""
               }
             ]
           },
@@ -155,17 +309,6 @@
               },
               {
                 "name": "MultipleEntryPointsSecurityConfig",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "MultipleEntryPointsSecurityConfig.java",
                 "signature": ""
               }
             ]

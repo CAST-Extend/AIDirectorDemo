@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/init/InitializationDatabaseImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 49,
         "files": [
@@ -142,7 +142,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 19,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -176,6 +176,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createModules() return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "createModules() return void",
                 "to_name": "ServiceException(java.lang.Throwable)",
@@ -191,13 +198,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "createModules() return void",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
                 "from_name": "createLanguages() return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
@@ -207,14 +207,14 @@
                 "to_type": "Java Class",
                 "from_name": "createZones() return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "createZones() return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -242,14 +242,14 @@
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -261,7 +261,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -345,154 +345,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "addZonesToDb(java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e) return void",
-                "to_name": "zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "createSubReferences() return void",
-                "to_name": "catalog",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "createCurrencies() return void",
-                "to_name": "currency",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "createSecurityGroups() return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "createSecurityGroups() return void",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "catalog",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "currency",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "zone",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 10,
-            "to_file": "/Salesmanager.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchant() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addZonesToDb(java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e) return void",
-                "to_name": "String",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCountries() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createSubReferences() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createLanguages() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "createZones() return void",
-                "to_name": "String",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createZones() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCurrencies() return void",
-                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "createSecurityGroups() return void",
-                "to_name": "String",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +415,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchant() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addZonesToDb(java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e) return void",
+                "to_name": "String",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCountries() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createSubReferences() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createLanguages() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createZones() return void",
+                "to_name": "String",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createZones() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCurrencies() return void",
+                "to_name": "format(java.lang.String,java.lang.Object[]) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 9,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -599,19 +522,19 @@
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Language",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Language",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -648,19 +571,19 @@
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Zone",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Zone",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -709,7 +632,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -751,7 +674,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/Optin.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/Optin.java"
           },
           {
             "calls_between_elements": [
@@ -793,7 +716,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/Manufacturer.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/Manufacturer.java"
           },
           {
             "calls_between_elements": [
@@ -835,7 +758,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/constants/SchemaConstant.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/constants/SchemaConstant.java"
           },
           {
             "calls_between_elements": [
@@ -877,7 +800,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -919,7 +842,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java"
           },
           {
             "calls_between_elements": [
@@ -949,19 +872,19 @@
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Permission",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "Permission",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/Permission.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Permission.java"
           },
           {
             "calls_between_elements": [
@@ -1003,7 +926,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/utils/SecurityGroupsBuilder.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/SecurityGroupsBuilder.java"
           },
           {
             "calls_between_elements": [
@@ -1038,7 +961,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java"
           },
           {
             "calls_between_elements": [
@@ -1073,7 +996,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/OptinType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/optin/OptinType.java"
           },
           {
             "calls_between_elements": [
@@ -1108,7 +1031,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -1131,19 +1054,19 @@
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "ZoneDescription",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "InitializationDatabaseImpl",
                 "to_name": "ZoneDescription",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/ZoneDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/ZoneDescription.java"
           },
           {
             "calls_between_elements": [
@@ -1178,7 +1101,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/type/ProductType.java"
           },
           {
             "calls_between_elements": [
@@ -1213,7 +1136,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/IntegrationModulesLoader.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/IntegrationModulesLoader.java"
           },
           {
             "calls_between_elements": [
@@ -1221,14 +1144,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCurrencies() return void",
-                "to_name": "getInstance(java.lang.String) return java.util.Currency",
+                "to_name": "getCurrencyCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCurrencies() return void",
-                "to_name": "getCurrencyCode() return java.lang.String",
+                "to_name": "getInstance(java.lang.String) return java.util.Currency",
                 "calling_type": "CALL"
               },
               {
@@ -1248,7 +1171,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Currency_92e9bff392512612.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Currency_92e9bff392512612.java"
           },
           {
             "calls_between_elements": [
@@ -1283,63 +1206,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchant() return void",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.zone.Zone",
-                "calling_type": "CALL"
+                "to_type": "PostgreSQL Table",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "content",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addZonesToDb(java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e) return void",
-                "to_name": "addDescription(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.reference.zone.ZoneDescription) return void",
-                "calling_type": "CALL"
+                "to_type": "PostgreSQL Table",
+                "from_name": "createSecurityGroups() return void",
+                "to_name": "customer",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
                 "from_name": "InitializationDatabaseImpl",
-                "to_name": "ZoneService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchant() return void",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCountries() return void",
-                "to_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
-                "calling_type": "CALL"
+                "to_name": "content",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "PostgreSQL Table",
                 "from_name": "InitializationDatabaseImpl",
-                "to_name": "CountryService",
-                "calling_type": "CALL"
+                "to_name": "customer",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "Salesmanager.sql"
           },
           {
             "calls_between_elements": [
@@ -1367,7 +1269,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/ManufacturerDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/manufacturer/ManufacturerDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchant() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.zone.Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addZonesToDb(java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e) return void",
+                "to_name": "addDescription(com.salesmanager.core.model.reference.zone.Zone,com.salesmanager.core.model.reference.zone.ZoneDescription) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "ZoneService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchant() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.country.Country",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCountries() return void",
+                "to_name": "addCountryDescription(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.reference.country.CountryDescription) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "CountryService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
           },
           {
             "calls_between_elements": [
@@ -1395,7 +1353,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1423,7 +1381,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1451,7 +1409,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -1479,7 +1437,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Locale_eca3cf2c5fb1b76b.java"
           },
           {
             "calls_between_elements": [
@@ -1507,7 +1465,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/GroupType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/GroupType.java"
           },
           {
             "calls_between_elements": [
@@ -1528,7 +1486,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -1549,7 +1507,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -1570,7 +1528,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -1591,28 +1549,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/sql/Date_7ec86f869a9ebb8b.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchant() return void",
-                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.currency.Currency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "InitializationDatabaseImpl",
-                "to_name": "CurrencyService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/currency/CurrencyService.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/sql/Date_7ec86f869a9ebb8b.java"
           },
           {
             "calls_between_elements": [
@@ -1633,7 +1570,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchant() return void",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.currency.Currency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "InitializationDatabaseImpl",
+                "to_name": "CurrencyService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/currency/CurrencyService.java"
           },
           {
             "calls_between_elements": [
@@ -1654,7 +1612,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1675,7 +1633,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/currency/CurrencyServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/currency/CurrencyServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1696,7 +1654,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/CountryDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/CountryDescription.java"
           },
           {
             "calls_between_elements": [
@@ -1717,7 +1675,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -1738,7 +1696,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationModule.java"
           },
           {
             "calls_between_elements": [
@@ -1752,7 +1710,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -1766,7 +1724,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/System_c5178e292449fdc.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/System_c5178e292449fdc.java"
           },
           {
             "calls_between_elements": [
@@ -1780,7 +1738,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/RuntimeException_85ef7a6ea06e5e54.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/RuntimeException_85ef7a6ea06e5e54.java"
           },
           {
             "calls_between_elements": [
@@ -1794,7 +1752,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Iterable_e3dd9875a2dc5283.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Iterable_e3dd9875a2dc5283.java"
           },
           {
             "calls_between_elements": [
@@ -1808,7 +1766,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/IllegalArgumentException_939fbdfc71f827a3.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/IllegalArgumentException_939fbdfc71f827a3.java"
           },
           {
             "calls_between_elements": [
@@ -1822,7 +1780,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

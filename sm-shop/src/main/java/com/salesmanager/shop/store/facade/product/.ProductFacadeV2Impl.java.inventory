@@ -1,8 +1,59 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductFacadeV2Impl.java] defines following code elements": [
       {
         "types": [
+          {
+            "comment": "",
+            "nb_elements": 11,
+            "type": "",
+            "elements": [
+              {
+                "name": "readableProductVariantMapper",
+                "signature": ""
+              },
+              {
+                "name": "readableProductMapper",
+                "signature": ""
+              },
+              {
+                "name": "productVariantService",
+                "signature": ""
+              },
+              {
+                "name": "productService",
+                "signature": ""
+              },
+              {
+                "name": "productRelationshipService",
+                "signature": ""
+              },
+              {
+                "name": "productAvailabilityService",
+                "signature": ""
+              },
+              {
+                "name": "productAttributeService",
+                "signature": ""
+              },
+              {
+                "name": "pricingService",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "categoryService",
+                "signature": ""
+              },
+              {
+                "name": "ProductFacadeV2Impl.java",
+                "signature": ""
+              }
+            ]
+          },
           {
             "comment": "",
             "nb_elements": 10,
@@ -56,6 +107,14 @@
             "type": "Java Method",
             "elements": [
               {
+                "name": "getProduct",
+                "signature": "getProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct"
+              },
+              {
+                "name": "productVariant",
+                "signature": "productVariant(com.salesmanager.core.model.catalog.product.variant.ProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.varian"
+              },
+              {
                 "name": "relatedItems",
                 "signature": "relatedItems(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadablePro"
               },
@@ -66,14 +125,6 @@
               {
                 "name": "getProductBySeUrl",
                 "signature": "getProductBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct"
-              },
-              {
-                "name": "getProduct",
-                "signature": "getProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct"
-              },
-              {
-                "name": "productVariant",
-                "signature": "productVariant(com.salesmanager.core.model.catalog.product.variant.ProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.varian"
               },
               {
                 "name": "getProductByCode",
@@ -114,21 +165,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Method",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "comparing\u003cT,U\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ProductFacadeV2Impl.java",
+                "name": "productFacadeV2",
                 "signature": ""
               }
             ]
@@ -151,6 +191,17 @@
             "elements": [
               {
                 "name": "ProductFacadeV2Impl",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Method",
+            "elements": [
+              {
+                "name": "comparing\u003cT,U\u003e",
                 "signature": ""
               }
             ]

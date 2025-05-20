@@ -1,9 +1,58 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 20,
         "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contact(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003cjava.lang.Void\u003e",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contact(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003cjava.lang.Void\u003e",
+                "to_name": "findByUserName(java.lang.String,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "contact(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003cjava.lang.Void\u003e",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "SearchToolsApi()",
+                "to_name": "UserFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchToolsApi",
+                "to_name": "UserFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchToolsApi",
+                "to_name": "UserFacadeImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java"
+          },
           {
             "calls_between_elements": [
               {
@@ -37,7 +86,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -72,7 +121,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
           },
           {
             "calls_between_elements": [
@@ -107,7 +156,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestApiException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/RestApiException.java"
           },
           {
             "calls_between_elements": [
@@ -142,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -177,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/user/facade/UserFacade.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/user/facade/UserFacade.java"
           },
           {
             "calls_between_elements": [
@@ -205,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -233,7 +282,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -254,7 +303,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_9876.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
           },
           {
             "calls_between_elements": [
@@ -275,7 +324,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletRequest_2598.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +345,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
           },
           {
             "calls_between_elements": [
@@ -317,7 +366,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResponseEntity_29174.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
           },
           {
             "calls_between_elements": [
@@ -338,7 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +408,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -380,42 +429,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "SearchToolsApi()",
-                "to_name": "UserFacadeImpl()",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SearchToolsApi",
-                "to_name": "UserFacadeImpl",
-                "calling_type": "FIRE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "contact(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003cjava.lang.Void\u003e",
-                "to_name": "Void",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Void_97fd0300c5e8a7bf.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
           },
           {
             "calls_between_elements": [
@@ -429,7 +443,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "contact(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003cjava.lang.Void\u003e",
+                "to_name": "Void",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Void_97fd0300c5e8a7bf.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +471,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +485,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
           },
           {
             "calls_between_elements": [
@@ -471,7 +499,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

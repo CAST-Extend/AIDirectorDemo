@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -19,36 +19,15 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
+            "to_type": "Java Method",
             "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-            "to_name": "images$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/auth/product/{}/image/{}/",
-            "to_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Method",
-            "from_name": "api/v1/private/product/{}/image/{}/",
-            "to_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "to_name": "image(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Lambda Expression",
             "to_type": "Java Method",
             "from_name": "images$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R",
-            "to_name": "image(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
             "to_name": "image(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage",
             "calling_type": "CALL"
           },
@@ -64,6 +43,20 @@
             "to_type": "Java Method",
             "from_name": "api/v1/product/{}/images/",
             "to_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/auth/product/{}/image/{}/",
+            "to_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Method",
+            "from_name": "api/v1/private/product/{}/image/{}/",
+            "to_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
@@ -109,20 +102,6 @@
             "calling_type": "PROTOTYPE"
           },
           {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/auth/product/{}/image/{}/",
-            "to_name": "ProductImageApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
-            "from_name": "api/v1/private/product/{}/image/{}/",
-            "to_name": "ProductImageApi",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/auth/product/{}/image/",
@@ -133,6 +112,20 @@
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/private/product/{}/image/",
+            "to_name": "ProductImageApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/auth/product/{}/image/{}/",
+            "to_name": "ProductImageApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/private/product/{}/image/{}/",
             "to_name": "ProductImageApi",
             "calling_type": "CALL"
           },
@@ -162,6 +155,13 @@
             "to_type": "Java Class",
             "from_name": "api/v1/private/product/image/{}/",
             "to_name": "ProductImageApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+            "to_name": "images$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R",
             "calling_type": "CALL"
           }
         ],

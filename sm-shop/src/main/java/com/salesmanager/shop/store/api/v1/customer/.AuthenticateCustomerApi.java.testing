@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 8,
@@ -9,13 +9,67 @@
             "name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/password/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -23,13 +77,67 @@
             "name": "api/v1/auth/customer/password/",
             "comment": "",
             "type": "Spring MVC Post Operation",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/password/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/auth/customer/password/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
               }
             ]
           },
@@ -41,7 +149,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/customer/login/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -55,7 +163,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/customer/login/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/login/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -65,11 +173,11 @@
             "name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 11,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/customer/register/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -92,8 +200,20 @@
                 "nature": "data entity"
               },
               {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "currency",
                 "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -106,6 +226,18 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_group",
+                "full_name": "salesmanager.sm_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -115,11 +247,11 @@
             "name": "api/v1/customer/register/",
             "comment": "",
             "type": "Spring MVC Post Operation",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 11,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/customer/register/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/POST/api/v1/customer/register/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
@@ -142,8 +274,20 @@
                 "nature": "data entity"
               },
               {
+                "name": "customer_option",
+                "full_name": "salesmanager.customer_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "currency",
                 "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer_option_value",
+                "full_name": "salesmanager.customer_option_value",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -156,6 +300,18 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_group",
+                "full_name": "salesmanager.sm_group",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -169,7 +325,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/refresh/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -183,7 +339,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/customer/refresh/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\customer\\AuthenticateCustomerApi.java/api/v1/PORT/GET/api/v1/auth/customer/refresh/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }

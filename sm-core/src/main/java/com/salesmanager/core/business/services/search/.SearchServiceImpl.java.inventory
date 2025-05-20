@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/search/SearchServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/search/SearchServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/search/SearchServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/search/SearchServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -96,6 +96,10 @@
             "type": "Java Field",
             "elements": [
               {
+                "name": "INDEX_PRODUCTS",
+                "signature": ""
+              },
+              {
                 "name": "searchModule",
                 "signature": ""
               },
@@ -144,10 +148,6 @@
                 "signature": ""
               },
               {
-                "name": "INDEX_PRODUCTS",
-                "signature": ""
-              },
-              {
                 "name": "LOGGER",
                 "signature": ""
               },
@@ -162,6 +162,14 @@
             "nb_elements": 9,
             "type": "Java Lambda Expression",
             "elements": [
+              {
+                "name": "config$lambda$0",
+                "signature": "config$lambda$0(java.lang.String) return void"
+              },
+              {
+                "name": "config$lambda$1",
+                "signature": "config$lambda$1(java.lang.String) return void"
+              },
               {
                 "name": "attribute$lambda$1",
                 "signature": "attribute$lambda$1(com.salesmanager.core.model.catalog.product.attribute.ProductOptionValueDescription) return boolean"
@@ -183,14 +191,6 @@
                 "signature": "languages$lambda$0(com.salesmanager.core.model.catalog.product.description.ProductDescription) return R"
               },
               {
-                "name": "config$lambda$1",
-                "signature": "config$lambda$1(java.lang.String) return void"
-              },
-              {
-                "name": "config$lambda$0",
-                "signature": "config$lambda$0(java.lang.String) return void"
-              },
-              {
                 "name": "indexProduct$lambda$0",
                 "signature": "indexProduct$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return boolean"
               },
@@ -202,23 +202,50 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 5,
+            "type": "",
             "elements": [
               {
-                "name": "SearchServiceImpl",
-                "signature": "SearchServiceImpl()"
+                "name": "searchModule",
+                "signature": ""
+              },
+              {
+                "name": "productInventoryService",
+                "signature": ""
+              },
+              {
+                "name": "configuration",
+                "signature": ""
+              },
+              {
+                "name": "applicationSearchConfiguration",
+                "signature": ""
+              },
+              {
+                "name": "SearchServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "SearchServiceImpl.java",
+                "name": "productSearchService",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "SearchServiceImpl",
+                "signature": "SearchServiceImpl()"
               }
             ]
           },

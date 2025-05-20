@@ -1,26 +1,165 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingConfigurationApi.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 6
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deletePackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "deletePackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updatePackage(java.lang.String,com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updatePackage(java.lang.String,com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "to_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.shipping.PackageDetails",
+                "to_name": "getPackage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.PackageDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveShippingOrigin(com.salesmanager.shop.model.references.PersistableAddress,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveShippingOrigin(com.salesmanager.shop.model.references.PersistableAddress,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "shippingOrigin(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.references.ReadableAddress",
+                "to_name": "getShippingOrigin(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.references.ReadableAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingConfigurationApi",
+                "to_name": "ShippingFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java",
+            "comment": "",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Method",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "listPackages(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Method",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Method",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "JWTTokenUtil",
+                "to_name": "ShippingFacadeImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "shipToCountry$lambda$0(com.salesmanager.core.model.reference.country.Country) return R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "listPackages$lambda$0(com.salesmanager.core.model.shipping.Package) return R",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Generic Java Method",
+                "to_type": "Java Lambda Expression",
+                "from_name": "getClaimFromToken\u003cT\u003e(java.lang.String,java.util.function.Function.Function\u003cClaims\u003cT\u003e,R\u003e) return java.lang.Object",
+                "to_name": "getExpeditionConfiguration$lambda$0(java.lang.String) return R",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shipping/ShippingExpeditionApi.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
+                "to_name": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveExpedition(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveExpeditionConfiguration(com.salesmanager.shop.model.shipping.ExpeditionConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "expedition(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+                "to_name": "getExpeditionConfiguration(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shipping.ExpeditionConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingExpeditionApi",
+                "to_name": "ShippingFacadeImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "nb_files_with_calling_elements": 3
       }
     ]
   }

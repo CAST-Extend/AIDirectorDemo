@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/store/MerchantStoreApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -15,10 +15,6 @@
               {
                 "name": "createInputContentFile",
                 "signature": "createInputContentFile(org.springframework.web.multipart.MultipartFile) return com.salesmanager.core.model.content.InputContentFile"
-              },
-              {
-                "name": "validateUserPermission",
-                "signature": "validateUserPermission(java.lang.String,java.lang.String) return void"
               },
               {
                 "name": "getUserFromRequest",
@@ -51,6 +47,10 @@
               {
                 "name": "getStoreMarketing",
                 "signature": "getStoreMarketing(java.lang.String,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.store.ReadableBrand"
+              },
+              {
+                "name": "validateUserPermission",
+                "signature": "validateUserPermission(java.lang.String,java.lang.String) return void"
               },
               {
                 "name": "update",
@@ -100,19 +100,7 @@
                 "signature": ""
               },
               {
-                "name": "api/v1/private/stores/names/",
-                "signature": ""
-              },
-              {
-                "name": "api/v1/private/stores/",
-                "signature": ""
-              },
-              {
                 "name": "api/v1/private/merchant/{}/children/",
-                "signature": ""
-              },
-              {
-                "name": "api/v1/private/merchant/{}/stores/",
                 "signature": ""
               },
               {
@@ -121,6 +109,18 @@
               },
               {
                 "name": "api/v1/store/languages/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/stores/names/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/stores/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/merchant/{}/stores/",
                 "signature": ""
               },
               {
@@ -143,30 +143,15 @@
                 "signature": ""
               },
               {
+                "name": "storeFacade",
+                "signature": ""
+              },
+              {
                 "name": "MAPPING_FIELDS",
                 "signature": ""
               },
               {
                 "name": "LOGGER",
-                "signature": ""
-              },
-              {
-                "name": "storeFacade",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 3,
-            "type": "",
-            "elements": [
-              {
-                "name": "/api/v1",
-                "signature": ""
-              },
-              {
-                "name": "MerchantStoreApi.java",
                 "signature": ""
               }
             ]
@@ -192,6 +177,21 @@
           },
           {
             "comment": "",
+            "nb_elements": 3,
+            "type": "",
+            "elements": [
+              {
+                "name": "MerchantStoreApi.java",
+                "signature": ""
+              },
+              {
+                "name": "/api/v1",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 2,
             "type": "Spring MVC Delete Operation",
             "elements": [
@@ -201,28 +201,6 @@
               },
               {
                 "name": "api/v1/private/store/{}/marketing/logo/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Interface",
-            "elements": [
-              {
-                "name": "List\u003cReadableMerchantStore\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
-            "elements": [
-              {
-                "name": "api/v1/private/store/{}/",
                 "signature": ""
               }
             ]
@@ -245,6 +223,28 @@
             "elements": [
               {
                 "name": "MerchantStoreApi",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v1/private/store/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Interface",
+            "elements": [
+              {
+                "name": "List\u003cReadableMerchantStore\u003e",
                 "signature": ""
               }
             ]

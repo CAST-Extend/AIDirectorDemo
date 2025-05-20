@@ -1,24 +1,75 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/security/facade/SecurityFacadeImpl.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "matchRawPasswords(java.lang.String,java.lang.String) return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "FIRE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword(java.lang.Long,java.lang.String,com.salesmanager.shop.model.user.UserPassword) return void",
+                "to_name": "matchPassword(java.lang.String,java.lang.String) return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword(java.lang.Long,java.lang.String,com.salesmanager.shop.model.user.UserPassword) return void",
+                "to_name": "encodePassword(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "encodePassword(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword(java.lang.Long,java.lang.String,com.salesmanager.shop.model.user.UserPassword) return void",
+                "to_name": "validateUserPassword(java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "validateUserPassword(java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "UserFacadeImpl()",
+                "to_name": "SecurityFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "SecurityFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserFacadeImpl",
+                "to_name": "SecurityFacadeImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 9
           }

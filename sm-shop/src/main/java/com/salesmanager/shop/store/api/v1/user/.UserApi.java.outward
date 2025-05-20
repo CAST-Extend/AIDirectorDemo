@@ -1,9 +1,233 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/UserApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/UserApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/UserApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/user/UserApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 22,
+        "nb_files_with_called_elements": 23,
         "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAuthUser(com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "findByUserName(java.lang.String,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
+                "to_name": "findByUserName(java.lang.String,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "userInRoles(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "delete(java.lang.Long,java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return void",
+                "to_name": "authorizedStore(java.lang.String,java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateEnabled(java.lang.Long,com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateEnabled(java.lang.Long,com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "updateEnabled(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.user.PersistableUser) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateEnabled(java.lang.Long,com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "userInRoles(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUserList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,java.lang.String) return com.salesmanager.shop.model.user.ReadableUserList",
+                "to_name": "authorizedStore(java.lang.String,java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "password(com.salesmanager.shop.model.user.UserPassword,java.lang.Long) return void",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "password(com.salesmanager.shop.model.user.UserPassword,java.lang.Long) return void",
+                "to_name": "changePassword(java.lang.Long,java.lang.String,com.salesmanager.shop.model.user.UserPassword) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.user.PersistableUser,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.user.PersistableUser,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authorizedGroups(java.lang.String,com.salesmanager.shop.model.user.PersistableUser) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.shop.model.user.PersistableUser,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "update(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.user.PersistableUser) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "userInRoles(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "create(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.user.PersistableUser,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authorizedStore(java.lang.String,java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authenticatedUser() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "findById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.user.ReadableUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Long,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.user.ReadableUser",
+                "to_name": "authorizedGroup(java.lang.String,java.util.List.List\u003cjava.lang.String\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "UserApi()",
+                "to_name": "UserFacadeImpl()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserApi",
+                "to_name": "UserFacadeImpl",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserApi",
+                "to_name": "UserFacadeImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 31,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java"
+          },
           {
             "calls_between_elements": [
               {
@@ -212,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 29,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/user/facade/UserFacade.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/user/facade/UserFacade.java"
           },
           {
             "calls_between_elements": [
@@ -345,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 18,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +681,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 15,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -541,7 +765,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -625,7 +849,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
           },
           {
             "calls_between_elements": [
@@ -681,7 +905,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
           },
           {
             "calls_between_elements": [
@@ -723,42 +947,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Instantiated Constructor",
-                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
-                "to_name": "EntityExists\u003cEntityExists\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
-                "to_name": "EntityExists",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserApi",
-                "to_name": "EntityExists",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserApi",
-                "to_name": "EntityExists",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantGroupApi.java"
           },
           {
             "calls_between_elements": [
@@ -793,7 +982,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -821,7 +1010,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/UniqueEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/UniqueEntity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
+                "to_name": "EntityExists",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserApi",
+                "to_name": "EntityExists",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserApi",
+                "to_name": "EntityExists",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
           },
           {
             "calls_between_elements": [
@@ -849,7 +1066,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/UserCriteria.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/UserCriteria.java"
           },
           {
             "calls_between_elements": [
@@ -870,7 +1087,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletRequest_2598.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
           },
           {
             "calls_between_elements": [
@@ -891,7 +1108,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/security/Principal_dc2f27855d8916f7.java"
           },
           {
             "calls_between_elements": [
@@ -912,7 +1129,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/ReadableUser.java"
           },
           {
             "calls_between_elements": [
@@ -933,28 +1150,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResponseEntity_29174.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
-                "to_name": "ResourceNotFoundException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserApi",
-                "to_name": "ResourceNotFoundException",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
           },
           {
             "calls_between_elements": [
@@ -975,7 +1171,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_9876.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
+                "to_name": "ResourceNotFoundException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserApi",
+                "to_name": "ResourceNotFoundException",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -996,7 +1213,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -1017,7 +1234,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -1038,28 +1255,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "UserApi()",
-                "to_name": "UserFacadeImpl()",
-                "calling_type": "FIRE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserApi",
-                "to_name": "UserFacadeImpl",
-                "calling_type": "FIRE"
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "exists(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.entity.UniqueEntity) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.en",
+                "to_name": "EntityExists\u003cEntityExists\u003e",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/user/UserFacadeImpl.java"
+            "nb_calls_between_elements": 1,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java"
           },
           {
             "calls_between_elements": [
@@ -1073,7 +1283,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

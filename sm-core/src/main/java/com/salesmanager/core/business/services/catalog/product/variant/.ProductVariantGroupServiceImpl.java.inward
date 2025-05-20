@@ -1,10 +1,60 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupServiceImpl.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupServiceImpl.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupServiceImpl.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantGroupServiceImpl.java]": [
       {
-        "files": [],
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantGroupFacadeImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addImage(org.springframework.web.multipart.MultipartFile,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(java.lang.Long,com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
+                "to_name": "saveOrUpdate(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pro",
+                "to_name": "getByProductId(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.catalog.product.variant.ProductV",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "group(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup",
+                "to_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantGroup\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductVariantGroupFacadeImpl",
+                "to_name": "ProductVariantGroupServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 6
+          }
+        ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 0
+        "nb_files_with_calling_elements": 1
       }
     ]
   }

@@ -1,18 +1,11 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/review/ProductReviewRepository.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 7,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Spring Data JPQL Query",
-                "to_type": "JPA Entity Operation",
-                "from_name": "select p from ProductReview",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -85,32 +78,32 @@
               },
               {
                 "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ProductReviewRepository",
+                "to_name": "ProductReview",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
                 "to_type": "JPA Entity",
                 "from_name": "ProductReviewRepository",
                 "to_name": "ProductReview",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "ProductReviewRepository",
-                "to_name": "ProductReview",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 18,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/review/ProductReview.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
                 "from_name": "select p from ProductReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 18,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/review/ProductReview.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -159,21 +152,21 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "MerchantStore",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 13,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
                 "from_name": "select p from ProductReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 13,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -222,21 +215,21 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "Product",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 13,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
                 "from_name": "select p from ProductReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 13,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -278,21 +271,21 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "Customer",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 11,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
                 "from_name": "select p from ProductReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 11,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -320,21 +313,21 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "CustomerOptionValue",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionValue.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
                 "from_name": "select p from ProductReview",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOptionValue.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -362,11 +355,18 @@
                 "from_name": "ProductReviewRepository",
                 "to_name": "CustomerOption",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductReview",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOption.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/attribute/CustomerOption.java"
           },
           {
             "calls_between_elements": [
@@ -380,7 +380,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -11,6 +11,10 @@
               {
                 "name": "updateProductImage",
                 "signature": "updateProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage) return void"
+              },
+              {
+                "name": "saveOrUpdate",
+                "signature": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage"
               },
               {
                 "name": "removeProductImage",
@@ -29,12 +33,12 @@
                 "signature": "getProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile"
               },
               {
-                "name": "saveOrUpdate",
-                "signature": "saveOrUpdate(com.salesmanager.core.model.catalog.product.image.ProductImage) return com.salesmanager.core.model.catalog.product.image.ProductImage"
-              },
-              {
                 "name": "addProductImage",
                 "signature": "addProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void"
+              },
+              {
+                "name": "getProductImage",
+                "signature": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e"
               },
               {
                 "name": "addProductImageDescription",
@@ -47,10 +51,6 @@
               {
                 "name": "getById",
                 "signature": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage"
-              },
-              {
-                "name": "getProductImage",
-                "signature": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e"
               }
             ]
           },
@@ -75,23 +75,42 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 3,
+            "type": "",
             "elements": [
               {
-                "name": "ProductImageServiceImpl",
-                "signature": "ProductImageServiceImpl(com.salesmanager.core.business.repositories.catalog.product.image.ProductImageRepository)"
+                "name": "productFileManager",
+                "signature": ""
+              },
+              {
+                "name": "eventPublisher",
+                "signature": ""
+              },
+              {
+                "name": "ProductImageServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "ProductImageServiceImpl.java",
+                "name": "productImage",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "ProductImageServiceImpl",
+                "signature": "ProductImageServiceImpl(com.salesmanager.core.business.repositories.catalog.product.image.ProductImageRepository)"
               }
             ]
           },

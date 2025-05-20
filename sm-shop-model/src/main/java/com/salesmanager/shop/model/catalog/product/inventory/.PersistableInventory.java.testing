@@ -1,9 +1,9 @@
 {
-  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/inventory/PersistableInventory.java]": {
-    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/inventory/PersistableInventory.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/inventory/PersistableInventory.java]": {
+    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/inventory/PersistableInventory.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 5,
+        "nb_impacting_elements": 7,
         "impacting_elements": [
           {
             "name": "setVariant(java.lang.Long) return void",
@@ -13,7 +13,7 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/{}/inventory/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -23,12 +23,18 @@
             "name": "getVariant() return java.lang.Long",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/{}/inventory/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
                 "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -41,13 +47,13 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/{}/inventory/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/{}/inventory/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -57,12 +63,38 @@
             "name": "getProductId() return java.lang.Long",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/{}/inventory/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
                 "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getPrices() return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.PersistableProductPrice\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -75,13 +107,33 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/{}/inventory/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/{}/inventory/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "List\u003cPersistableProductPrice\u003e",
+            "comment": "",
+            "type": "Java Instantiated Interface",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/{}/inventory/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/PUT/api/v1/private/product/{}/inventory/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/{}/inventory/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductInventoryApi.java/api/v1/PORT/POST/api/v1/private/product/{}/inventory/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }

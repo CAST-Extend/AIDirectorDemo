@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailTemplatesUtils.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailTemplatesUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/EmailTemplatesUtils.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/EmailTemplatesUtils.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 40,
+        "nb_files_with_called_elements": 42,
         "files": [
           {
             "calls_between_elements": [
@@ -199,13 +199,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "EMAIL_USER_NAME",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "EMAIL_CUSTOMER_TPL",
                 "calling_type": "READ"
               },
@@ -235,6 +228,13 @@
                 "to_type": "Java Field",
                 "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "LABEL_HI",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "EMAIL_USER_NAME",
                 "calling_type": "READ"
               },
               {
@@ -359,7 +359,7 @@
             ],
             "comment": "calls_between_elements list is truncated to first 50 items",
             "nb_calls_between_elements": 58,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/EmailConstants.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/EmailConstants.java"
           },
           {
             "calls_between_elements": [
@@ -667,504 +667,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 43,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.notification.title.passwordchanged",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.notification.message.passwordchanged",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessportal",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessnow",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.order.download.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.order.download.text",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.statustext",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.status.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.status",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.email",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.entity.name",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.contact.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.contact",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.username",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.password",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessportal",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessnow",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.newuser.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.customer.greeting",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.quantity",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.shippingmethod",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.paymentmode",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.details",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.customer.shippinginformation",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.customer.billinginformation",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.thanks",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.status",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.ordered",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.confirmation",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 35,
-            "to_file": "/sm-shop/src/main/resources/bundles/shopizer.properties"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.notification.title.passwordchanged",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.notification.message.passwordchanged",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessportal",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessnow",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.order.download.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.order.download.text",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.statustext",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.status.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "email.order.status",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.email",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.entity.name",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.contact.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.contact",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.username",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.password",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessportal",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "label.customer.accessnow",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "email.customer.greeting",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.paymentmode",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.quantity",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.shippingmethod",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.order.details",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.generic.hi",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.customer.shippinginformation",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "label.customer.billinginformation",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.title",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.thanks",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.status",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.ordered",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "email.order.confirmation",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 34,
-            "to_file": "/sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/email/Email.java"
           },
           {
             "calls_between_elements": [
@@ -1290,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 17,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -1416,7 +919,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 17,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LabelUtils.java"
           },
           {
             "calls_between_elements": [
@@ -1424,20 +927,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getFirstName() return java.lang.String",
+                "to_name": "getLastName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getLastName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1451,7 +947,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1460,13 +956,20 @@
                 "to_type": "Java Method",
                 "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "getLastName() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getFirstName() return java.lang.String",
+                "to_name": "getCompany() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -1515,14 +1018,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getCompany() return java.lang.String",
+                "to_name": "getAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getAddress() return java.lang.String",
+                "to_name": "getFirstName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -1535,7 +1038,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
           },
           {
             "calls_between_elements": [
@@ -1550,48 +1053,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "getStatus() return com.salesmanager.core.model.order.orderstatus.OrderStatus",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "getDatePurchased() return java.util.Date",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getOrderTotal() return java.util.Set.Set\u003ccom.salesmanager.core.model.order.OrderTotal\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getOrderProducts() return java.util.Set.Set\u003ccom.salesmanager.core.model.order.orderproduct.OrderProduct\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "getStatus() return com.salesmanager.core.model.order.orderstatus.OrderStatus",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
@@ -1631,6 +1106,34 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getOrderTotal() return java.util.Set.Set\u003ccom.salesmanager.core.model.order.OrderTotal\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getOrderProducts() return java.util.Set.Set\u003ccom.salesmanager.core.model.order.orderproduct.OrderProduct\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getStatus() return com.salesmanager.core.model.order.orderstatus.OrderStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EmailTemplatesUtils",
@@ -1640,7 +1143,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
           },
           {
             "calls_between_elements": [
@@ -1648,20 +1151,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getStorename() return java.lang.String",
+                "to_name": "getStoreEmailAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getStoreEmailAddress() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "getStorename() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1675,7 +1171,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "getStorename() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1684,6 +1180,13 @@
                 "to_type": "Java Method",
                 "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "getStoreEmailAddress() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "getStorename() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -1697,20 +1200,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getStorename() return java.lang.String",
+                "to_name": "getStoreEmailAddress() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getStoreEmailAddress() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
                 "to_name": "getStorename() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1719,6 +1215,13 @@
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
                 "to_name": "getStoreEmailAddress() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getStorename() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -1731,7 +1234,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -1739,6 +1242,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "String",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
                 "to_name": "String",
                 "calling_type": "USE"
               },
@@ -1759,7 +1269,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "String",
                 "calling_type": "USE"
               },
@@ -1769,13 +1279,6 @@
                 "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
                 "to_name": "valueOf(java.lang.Object) return java.lang.String",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "String",
-                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
@@ -1793,6 +1296,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "String",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
                 "to_name": "valueOf(java.lang.Object) return java.lang.String",
@@ -1804,18 +1314,11 @@
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
                 "to_name": "equals(java.lang.Object) return boolean",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "String",
-                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -1892,7 +1395,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
           },
           {
             "calls_between_elements": [
@@ -1962,7 +1465,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/EmailUtils.java"
           },
           {
             "calls_between_elements": [
@@ -2025,7 +1528,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -2088,7 +1591,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -2144,7 +1647,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePasswordNotificationEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "sendHtmlEmail(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.business.modules.email.Email) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "EmailServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/EmailServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -2200,7 +1759,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -2249,49 +1808,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "sendOrderDownloadEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "sendUpdateOrderStatusEmail(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "EmailTemplatesUtils",
-                "to_name": "customer",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -2299,14 +1816,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getComment() return java.lang.String",
+                "to_name": "getSubject() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -2320,7 +1830,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
-                "to_name": "getSubject() return java.lang.String",
+                "to_name": "getComment() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendContactEmail(com.salesmanager.shop.model.shop.ContactForm,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "getName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -2333,52 +1850,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/model/shop/ContactForm.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getModule() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getValue() return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getText() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "getOrderTotalCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "EmailTemplatesUtils",
-                "to_name": "OrderTotal",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
-          },
-          {
-            "calls_between_elements": [
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -2394,13 +1876,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "Country",
-                "calling_type": "USE"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EmailTemplatesUtils",
@@ -2417,10 +1892,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -2436,13 +1918,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EmailTemplatesUtils",
@@ -2459,7 +1934,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -2501,7 +1976,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProduct.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderproduct/OrderProduct.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getModule() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getValue() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getText() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getOrderTotalCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "OrderTotal",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
           },
           {
             "calls_between_elements": [
@@ -2536,7 +2053,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -2551,14 +2068,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "to_name": "isNotBlank(java.lang.CharSequence) return boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
-                "to_name": "isNotBlank(java.lang.CharSequence) return boolean",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
                 "calling_type": "CALL"
               },
               {
@@ -2571,7 +2088,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -2606,7 +2123,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java"
           },
           {
             "calls_between_elements": [
@@ -2641,7 +2158,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -2669,7 +2186,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/orderstatus/OrderStatusHistory.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/orderstatus/OrderStatusHistory.java"
           },
           {
             "calls_between_elements": [
@@ -2697,7 +2214,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
           },
           {
             "calls_between_elements": [
@@ -2718,7 +2235,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
@@ -2739,7 +2256,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendRegistrationEmail(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,java.util.Locale,java.lang.String) return void",
+                "to_name": "getPassword() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "SecuredCustomer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/SecuredCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -2760,7 +2298,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -2781,7 +2319,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneService.java"
           },
           {
             "calls_between_elements": [
@@ -2802,7 +2340,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryService.java"
           },
           {
             "calls_between_elements": [
@@ -2823,28 +2361,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Constructor",
-                "to_type": "Java Constructor",
-                "from_name": "EmailTemplatesUtils()",
-                "to_name": "LocalImageFilePathUtils()",
-                "calling_type": "FIRE"
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getZones(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EmailTemplatesUtils",
-                "to_name": "LocalImageFilePathUtils",
-                "calling_type": "FIRE"
+                "to_name": "ZoneServiceImpl",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/zone/ZoneServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getCountriesMap(com.salesmanager.core.model.reference.language.Language) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "CountryServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/country/CountryServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderEmail(java.lang.String,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,java.util.Locale,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Str",
+                "to_name": "getDisplayAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "PricingServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -2865,7 +2445,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -2886,7 +2466,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "EmailTemplatesUtils()",
+                "to_name": "LocalImageFilePathUtils()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EmailTemplatesUtils",
+                "to_name": "LocalImageFilePathUtils",
+                "calling_type": "FIRE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -2900,7 +2501,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/ApplicationConstants.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/ApplicationConstants.java"
           },
           {
             "calls_between_elements": [
@@ -2914,7 +2515,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

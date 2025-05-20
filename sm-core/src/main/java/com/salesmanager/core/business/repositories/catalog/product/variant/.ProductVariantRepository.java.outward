@@ -1,25 +1,11 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/variant/ProductVariantRepository.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 5,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Spring Data JPQL Query",
-                "to_type": "JPA Entity Operation",
-                "from_name": "select p from ProductVariant",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Spring Data JPQL Query",
-                "to_type": "JPA Entity Operation",
-                "from_name": "select distinct p from",
-                "to_name": "Select",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -110,14 +96,7 @@
                 "from_name": "ProductVariantRepository",
                 "to_name": "ProductVariant",
                 "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 19,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
@@ -131,7 +110,14 @@
                 "from_name": "select distinct p from",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 19,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/variant/ProductVariant.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -180,20 +166,6 @@
                 "from_name": "ProductVariantRepository",
                 "to_name": "Product",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 13,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Spring Data JPQL Query",
-                "to_type": "JPA Entity Operation",
-                "from_name": "select distinct p from",
-                "to_name": "Select",
-                "calling_type": "CALL"
               },
               {
                 "from_type": "Spring Data JPQL Query",
@@ -202,6 +174,20 @@
                 "to_name": "Select",
                 "calling_type": "CALL"
               },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 13,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -243,14 +229,7 @@
                 "from_name": "ProductVariantRepository",
                 "to_name": "ProductOptionValue",
                 "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 11,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOptionValue.java"
-          },
-          {
-            "calls_between_elements": [
+              },
               {
                 "from_type": "Spring Data JPQL Query",
                 "to_type": "JPA Entity Operation",
@@ -264,7 +243,14 @@
                 "from_name": "select p from ProductVariant",
                 "to_name": "Select",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 11,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOptionValue.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "JPA Entity Operation",
@@ -306,11 +292,25 @@
                 "from_name": "ProductVariantRepository",
                 "to_name": "ProductOption",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select distinct p from",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select p from ProductVariant",
+                "to_name": "Select",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOption.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductOption.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

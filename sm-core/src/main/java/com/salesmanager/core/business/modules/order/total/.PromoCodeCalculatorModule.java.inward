@@ -1,22 +1,53 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/ordertotal/OrderTotalServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "FIRE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findOrderTotalVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.m",
+                "to_name": "caculateProductPiceVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.m",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderTotalServiceImpl",
+                "to_name": "PromoCodeCalculatorModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/configuration/ProcessorsConfiguration.java",
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/configuration/ProcessorsConfiguration.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Constructor",
+                "from_name": "ProcessorsConfiguration()",
+                "to_name": "PromoCodeCalculatorModule()",
+                "calling_type": "FIRE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessorsConfiguration",
+                "to_name": "PromoCodeCalculatorModule",
+                "calling_type": "FIRE"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 1
+        "nb_files_with_calling_elements": 2
       }
     ]
   }

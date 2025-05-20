@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -97,6 +97,10 @@
                 "signature": "addOptionImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void"
               },
               {
+                "name": "addLogo",
+                "signature": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void"
+              },
+              {
                 "name": "addContentFile",
                 "signature": "addContentFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void"
               },
@@ -139,10 +143,6 @@
               {
                 "name": "listByType",
                 "signature": "listByType(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.content.Content\u003e"
-              },
-              {
-                "name": "addLogo",
-                "signature": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void"
               }
             ]
           },
@@ -171,23 +171,42 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 3,
+            "type": "",
             "elements": [
               {
-                "name": "ContentServiceImpl",
-                "signature": "ContentServiceImpl(com.salesmanager.core.business.repositories.content.ContentRepository)"
+                "name": "pageContentRepository",
+                "signature": ""
+              },
+              {
+                "name": "contentFileManager",
+                "signature": ""
+              },
+              {
+                "name": "ContentServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "ContentServiceImpl.java",
+                "name": "contentService",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "ContentServiceImpl",
+                "signature": "ContentServiceImpl(com.salesmanager.core.business.repositories.content.ContentRepository)"
               }
             ]
           },

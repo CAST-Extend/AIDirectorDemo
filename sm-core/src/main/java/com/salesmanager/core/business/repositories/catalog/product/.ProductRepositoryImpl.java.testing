@@ -1,9 +1,9 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 34,
+        "nb_impacting_elements": 35,
         "impacting_elements": [
           {
             "name": "select p from Product",
@@ -142,68 +142,6 @@
             ]
           },
           {
-            "name": "select count(p) from Product",
-            "comment": "",
-            "type": "JPQL Query",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
             "name": "select distinct p from",
             "comment": "",
             "type": "JPQL Query",
@@ -279,6 +217,68 @@
           },
           {
             "name": "select distinct p from",
+            "comment": "",
+            "type": "JPQL Query",
+            "nb_impacted_elements": 9,
+            "impacted_elements_to_test": [
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "select count(p) from Product",
             "comment": "",
             "type": "JPQL Query",
             "nb_impacted_elements": 9,
@@ -631,6 +631,74 @@
                 "name": "product_option_value",
                 "full_name": "salesmanager.product_option_value",
                 "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "manufacturer",
+                "full_name": "salesmanager.manufacturer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product",
+                "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "tax_class",
+                "full_name": "salesmanager.tax_class",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "customer",
+                "full_name": "salesmanager.customer",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "Unknown SQL Query",
+                "full_name": "_sm-core_3350454590_.Unknown SQL Query",
+                "type": "JPA Unknown SQL Query",
                 "nature": "data entity"
               }
             ]
@@ -1402,68 +1470,6 @@
             ]
           },
           {
-            "name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
             "name": "getProductsForLocale(com.salesmanager.core.model.merchant.MerchantStore,java.util.Set.Set\u003cjava.lang.Long\u003e,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Prod",
             "comment": "",
             "type": "Java Method",
@@ -1669,6 +1675,20 @@
                 "name": "product_option_value",
                 "full_name": "salesmanager.product_option_value",
                 "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "Unknown SQL Query",
+            "comment": "",
+            "type": "JPA Unknown SQL Query",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "Unknown SQL Query",
+                "full_name": "_sm-core_3350454590_.Unknown SQL Query",
+                "type": "JPA Unknown SQL Query",
                 "nature": "data entity"
               }
             ]

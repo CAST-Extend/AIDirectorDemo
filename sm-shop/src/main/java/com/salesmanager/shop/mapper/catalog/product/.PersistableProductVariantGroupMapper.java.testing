@@ -1,16 +1,28 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 2,
+        "nb_impacting_elements": 3,
         "impacting_elements": [
           {
             "name": "merge(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.re",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 15,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/productVariantGroup/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariantGroupApi.java/api/v2/PORT/PUT/api/v2/private/product/productVariantGroup/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v2/private/product/productVariantGroup/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariantGroupApi.java/api/v2/PORT/POST/api/v2/private/product/productVariantGroup/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "manufacturer",
                 "full_name": "salesmanager.manufacturer",
@@ -26,6 +38,18 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -64,6 +88,38 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "PersistableProductVariantGroupMapper",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/productVariantGroup/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariantGroupApi.java/api/v2/PORT/PUT/api/v2/private/product/productVariantGroup/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v2/private/product/productVariantGroup/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariantGroupApi.java/api/v2/PORT/POST/api/v2/private/product/productVariantGroup/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
@@ -71,8 +127,14 @@
             "name": "convert(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 14,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v2/private/product/productVariantGroup/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v2\\product\\ProductVariantGroupApi.java/api/v2/PORT/POST/api/v2/private/product/productVariantGroup/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "manufacturer",
                 "full_name": "salesmanager.manufacturer",
@@ -88,6 +150,18 @@
               {
                 "name": "product",
                 "full_name": "salesmanager.product",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option",
+                "full_name": "salesmanager.product_option",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variant_group",
+                "full_name": "salesmanager.product_variant_group",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -124,6 +198,18 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_option_value",
+                "full_name": "salesmanager.product_option_value",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "product_variation",
+                "full_name": "salesmanager.product_variation",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }

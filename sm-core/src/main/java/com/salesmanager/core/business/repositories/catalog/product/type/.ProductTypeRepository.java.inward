@@ -1,16 +1,54 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/ProductTypeRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/ProductTypeRepository.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/ProductTypeRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/type/ProductTypeRepository.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/type/ProductTypeServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listProductTypes(java.util.List.List\u003cjava.lang.Long\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
+                "to_name": "findByIds(java.util.List.List\u003cjava.lang.Long\u003e,java.lang.Integer,int) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.type.ProductType\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "findById(java.lang.Long,java.lang.Integer) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "findById(java.lang.Long,java.lang.Integer,int) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "findByCode(java.lang.String,java.lang.Integer) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductType(java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "to_name": "findByCode(java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductTypeServiceImpl",
+                "to_name": "ProductTypeRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/type/ProductTypeServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 6
           }

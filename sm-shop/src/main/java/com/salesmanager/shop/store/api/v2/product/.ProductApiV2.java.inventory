@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductApiV2.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductApiV2.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductApiV2.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductApiV2.java] defines following code elements": [
       {
         "types": [
           {
@@ -19,10 +19,6 @@
               {
                 "name": "list",
                 "signature": "list(java.lang.String,com.salesmanager.core.model.catalog.product.ProductCriteria,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.prod"
-              },
-              {
-                "name": "list",
-                "signature": "list(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProductList"
               },
               {
                 "name": "getByfriendlyUrl",
@@ -47,6 +43,41 @@
               {
                 "name": "create",
                 "signature": "create(com.salesmanager.shop.model.catalog.product.product.PersistableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity"
+              },
+              {
+                "name": "list",
+                "signature": "list(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProductList"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 7,
+            "type": "",
+            "elements": [
+              {
+                "name": "productFacadeV2",
+                "signature": ""
+              },
+              {
+                "name": "productDefinitionFacade",
+                "signature": ""
+              },
+              {
+                "name": "productCommonFacade",
+                "signature": ""
+              },
+              {
+                "name": "ProductApiV2.java",
+                "signature": ""
+              },
+              {
+                "name": "/api/v2",
+                "signature": ""
+              },
+              {
+                "name": "categoryFacade",
+                "signature": ""
               }
             ]
           },
@@ -56,11 +87,11 @@
             "type": "Spring MVC Get Operation",
             "elements": [
               {
-                "name": "api/v2/products/",
+                "name": "api/v2/product/{}/",
                 "signature": ""
               },
               {
-                "name": "api/v2/products/category/{}/",
+                "name": "api/v2/products/",
                 "signature": ""
               },
               {
@@ -68,15 +99,15 @@
                 "signature": ""
               },
               {
-                "name": "api/v2/product/name/{}/",
-                "signature": ""
-              },
-              {
                 "name": "api/v2/private/product/{}/",
                 "signature": ""
               },
               {
-                "name": "api/v2/product/{}/",
+                "name": "api/v2/products/category/{}/",
+                "signature": ""
+              },
+              {
+                "name": "api/v2/product/name/{}/",
                 "signature": ""
               }
             ]
@@ -91,10 +122,6 @@
                 "signature": ""
               },
               {
-                "name": "categoryFacade",
-                "signature": ""
-              },
-              {
                 "name": "productCommonFacade",
                 "signature": ""
               },
@@ -105,20 +132,9 @@
               {
                 "name": "productDefinitionFacade",
                 "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 3,
-            "type": "",
-            "elements": [
-              {
-                "name": "/api/v2",
-                "signature": ""
               },
               {
-                "name": "ProductApiV2.java",
+                "name": "categoryFacade",
                 "signature": ""
               }
             ]
@@ -129,11 +145,11 @@
             "type": "Spring MVC Post Operation",
             "elements": [
               {
-                "name": "api/v2/private/product/inventory/",
+                "name": "api/v2/private/product/",
                 "signature": ""
               },
               {
-                "name": "api/v2/private/product/",
+                "name": "api/v2/private/product/inventory/",
                 "signature": ""
               }
             ]
@@ -141,21 +157,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "api/v2/private/product/{}/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Any Operation",
-            "elements": [
-              {
-                "name": "api/v2/private/product/{}/",
+                "name": "productApiV2",
                 "signature": ""
               }
             ]
@@ -178,6 +183,28 @@
             "elements": [
               {
                 "name": "ProductApiV2",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v2/private/product/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Any Operation",
+            "elements": [
+              {
+                "name": "api/v2/private/product/{}/",
                 "signature": ""
               }
             ]

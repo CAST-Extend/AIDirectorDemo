@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 12,
         "files": [
@@ -10,6 +10,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -30,13 +37,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "IntegrationException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
                 "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
@@ -52,6 +52,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "initTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager",
+                "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -84,9 +91,9 @@
                 "calling_type": "RAISE"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "from_name": "MoneyOrderPayment",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -102,19 +109,12 @@
                 "to_type": "Java Class",
                 "from_name": "MoneyOrderPayment",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MoneyOrderPayment",
-                "to_name": "IntegrationException",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 15,
-            "to_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
+            "to_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
           },
           {
             "calls_between_elements": [
@@ -163,7 +163,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
           },
           {
             "calls_between_elements": [
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
@@ -233,7 +233,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
           },
           {
             "calls_between_elements": [
@@ -254,49 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "get(java.lang.Object) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "MoneyOrderPayment",
-                "to_name": "Map\u003cK,V\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MoneyOrderPayment",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
           },
           {
             "calls_between_elements": [
@@ -317,7 +275,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "get(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "MoneyOrderPayment",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderPayment",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -338,7 +338,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +359,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           }
         ],
         "files_list_comment": ""

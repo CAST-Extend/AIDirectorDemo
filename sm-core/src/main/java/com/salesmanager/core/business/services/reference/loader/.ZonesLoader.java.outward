@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/loader/ZonesLoader.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 26,
+        "nb_files_with_called_elements": 25,
         "files": [
           {
             "calls_between_elements": [
@@ -107,7 +107,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -141,17 +141,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "to_name": "setDescriptons(java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Zone",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "setDescriptons(java.util.List.List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e) return void",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -172,19 +172,19 @@
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Zone",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Zone",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -192,6 +192,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Country",
                 "calling_type": "USE"
               },
@@ -205,13 +212,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "to_name": "Country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
                 "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
                 "to_name": "Country",
                 "calling_type": "USE"
@@ -228,19 +228,19 @@
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Country",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Country",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -253,17 +253,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Language",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -284,68 +284,19 @@
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Language",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "Language",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
-                "to_name": "country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
-                "to_name": "zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "mapZone(com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,List\u003ccom.salesmanager.core.model.reference.zone.ZoneDescription\u003e\u003e,java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.country.Country\u003e,",
-                "to_name": "language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "ZonesLoader",
-                "to_name": "country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "ZonesLoader",
-                "to_name": "zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "ZonesLoader",
-                "to_name": "language",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 6,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -382,19 +333,19 @@
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "ZoneDescription",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ZonesLoader",
                 "to_name": "ZoneDescription",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/ZoneDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/ZoneDescription.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +443,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -522,19 +473,19 @@
                 "to_type": "Java Interface",
                 "from_name": "ZonesLoader",
                 "to_name": "Resource",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Interface",
                 "from_name": "ZonesLoader",
                 "to_name": "Resource",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Resource_1758.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Resource_1758.java"
           },
           {
             "calls_between_elements": [
@@ -543,14 +494,14 @@
                 "to_type": "Java Class",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Exception",
-                "calling_type": "CATCH"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Exception",
-                "calling_type": "THROW"
+                "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Method",
@@ -564,31 +515,24 @@
                 "to_type": "Java Class",
                 "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
                 "to_name": "Exception",
-                "calling_type": "CATCH"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
                 "to_name": "Exception",
-                "calling_type": "THROW"
+                "calling_type": "CATCH"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Instantiated Method",
-                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "to_name": "readValue\u003cMap\u003cString,Object\u003e\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "ObjectMapper()",
@@ -597,7 +541,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Instantiated Method",
-                "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "readValue\u003cMap\u003cString,Object\u003e\u003e",
                 "calling_type": "CALL"
               },
@@ -606,6 +550,13 @@
                 "to_type": "Java Constructor",
                 "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
                 "to_name": "ObjectMapper()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Method",
+                "from_name": "loadIndividualZones() return java.util.List.List\u003cMap\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e\u003e",
+                "to_name": "readValue\u003cMap\u003cString,Object\u003e\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -618,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ObjectMapper_23831.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ObjectMapper_23831.java"
           },
           {
             "calls_between_elements": [
@@ -653,7 +604,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -688,23 +639,23 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
-                "to_name": "getClass() return java.lang.Class.Class\u003c? extends\u003e",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
                 "to_name": "Object",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadZones(java.lang.String) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.reference.zone.Zone\u003e",
+                "to_name": "getClass() return java.lang.Class.Class\u003c? extends\u003e",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -723,7 +674,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
           },
           {
             "calls_between_elements": [
@@ -758,7 +709,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/LinkedHashMap_8ed7b6559d26731a.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/LinkedHashMap_8ed7b6559d26731a.java"
           },
           {
             "calls_between_elements": [
@@ -786,7 +737,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collections_b8f4114a0df501a.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collections_b8f4114a0df501a.java"
           },
           {
             "calls_between_elements": [
@@ -814,7 +765,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -842,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -870,7 +821,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "geZoneFiles(java.lang.String) return java.util.List.List\u003corg.springframework.core.io.Resource\u003e",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ZonesLoader",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
           },
           {
             "calls_between_elements": [
@@ -891,28 +863,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResourcePatternResolver_29954.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "geZoneFiles(java.lang.String) return java.util.List.List\u003corg.springframework.core.io.Resource\u003e",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ZonesLoader",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResourcePatternResolver_29954.java"
           },
           {
             "calls_between_elements": [
@@ -933,7 +884,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -954,7 +905,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
           },
           {
             "calls_between_elements": [
@@ -975,7 +926,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/ClassLoader_7fe3e8b59da7a0ec.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/ClassLoader_7fe3e8b59da7a0ec.java"
           },
           {
             "calls_between_elements": [
@@ -996,7 +947,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/InputStreamSource_14146.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/InputStreamSource_14146.java"
           },
           {
             "calls_between_elements": [
@@ -1010,7 +961,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

@@ -1,24 +1,10 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 8,
+        "nb_impacting_elements": 7,
         "impacting_elements": [
-          {
-            "name": "indexAllData$lambda$0(com.salesmanager.core.model.catalog.product.Product) return void",
-            "comment": "",
-            "type": "Java Lambda Expression",
-            "nb_impacted_elements": 1,
-            "impacted_elements_to_test": [
-              {
-                "name": "api/v1/private/system/search/index/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
-                "type": "Spring MVC Post Operation",
-                "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
           {
             "name": "indexAllData(com.salesmanager.core.model.merchant.MerchantStore) return void",
             "comment": "",
@@ -27,7 +13,21 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/system/search/index/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\system\\SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "indexAllData$lambda$0(com.salesmanager.core.model.catalog.product.Product) return void",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/system/search/index/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\system\\SearchToolsApi.java/api/v1/PORT/POST/api/v1/private/system/search/index/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -37,59 +37,55 @@
             "name": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 2,
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/search/autocomplete/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) return SearchResponse",
+            "name": "autocompleteRequest$lambda$0(modules.commons.search.request.SearchItem) return R",
             "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 2,
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
-                "name": "api/v1/search/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "name": "api/v1/search/autocomplete/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/autocomplete/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           },
           {
-            "name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cSearchItem\u003e",
+            "name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 2,
+            "nb_impacted_elements": 1,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/search/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              },
+              }
+            ]
+          },
+          {
+            "name": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) return modules.commons.search.request.SearchResponse",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
               {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/search/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           },
@@ -101,97 +97,9 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/search/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java/api/v1/PORT/POST/api/v1/search/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\search\\SearchApi.java/api/v1/PORT/POST/api/v1/search/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
-              }
-            ]
-          },
-          {
-            "name": "convertProductToReadableProduct(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 6,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "category",
-                "full_name": "salesmanager.category",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "convertCategoryToReadableCategory(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.Map.Map\u003cjava.lang.String,java.lang.Long\u003e,com.salesmanager.core.model.catalog.category.Category) return c",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 6,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "category",
-                "full_name": "salesmanager.category",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               }
             ]
           }

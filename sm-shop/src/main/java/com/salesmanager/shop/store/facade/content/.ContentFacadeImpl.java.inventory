@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/content/ContentFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,82 @@
             "nb_elements": 40,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "addContentFiles",
+                "signature": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void"
+              },
+              {
+                "name": "fixContentDescription",
+                "signature": "fixContentDescription(java.lang.String) return java.lang.String"
+              },
+              {
+                "name": "findAppropriateContentDescription",
+                "signature": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio"
+              },
+              {
+                "name": "convertContentToReadableLegacyContentBox",
+                "signature": "convertContentToReadableLegacyContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContent"
+              },
+              {
+                "name": "contentDescription",
+                "signature": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription"
+              },
+              {
+                "name": "convertContentToReadableContentPage",
+                "signature": "convertContentToReadableContentPage(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.page.ReadableContentPage"
+              },
+              {
+                "name": "setDescription",
+                "signature": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "convertContentToReadableContentBox",
+                "signature": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox"
+              },
+              {
+                "name": "getFileContentType",
+                "signature": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType"
+              },
+              {
+                "name": "getContentBoxes",
+                "signature": "getContentBoxes(com.salesmanager.core.model.content.ContentType,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityLi"
+              },
+              {
+                "name": "setContentDescriptionToContentModel",
+                "signature": "setContentDescriptionToContentModel(com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription,com.salesmanager.core.model.reference.language.Language) return void"
+              },
+              {
+                "name": "create",
+                "signature": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity"
+              },
+              {
+                "name": "createContentDescriptionEntitys",
+                "signature": "createContentDescriptionEntitys(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentD"
+              },
+              {
+                "name": "convertContentBoxToContent",
+                "signature": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content"
+              },
+              {
+                "name": "convertContentPageToContent",
+                "signature": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content"
+              },
+              {
+                "name": "convertContentToReadableContentEntity",
+                "signature": "convertContentToReadableContentEntity(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentEntity"
+              },
+              {
+                "name": "convertContentToReadableContentFull",
+                "signature": "convertContentToReadableContentFull(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentFull"
+              },
+              {
+                "name": "contentDescriptionToReadableContent",
+                "signature": "contentDescriptionToReadableContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.page.ReadableContentPage"
+              },
+              {
+                "name": "convertToContentImage",
+                "signature": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage"
+              },
               {
                 "name": "codeExist",
                 "signature": "codeExist(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
@@ -49,10 +125,6 @@
                 "signature": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return void"
               },
               {
-                "name": "addContentFiles",
-                "signature": "addContentFiles(java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentFile\u003e,java.lang.String) return void"
-              },
-              {
                 "name": "saveContentBox",
                 "signature": "saveContentBox(com.salesmanager.shop.model.content.box.PersistableContentBox,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long"
               },
@@ -61,40 +133,8 @@
                 "signature": "saveContentPage(com.salesmanager.shop.model.content.page.PersistableContentPage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long"
               },
               {
-                "name": "fixContentDescription",
-                "signature": "fixContentDescription(java.lang.String) return java.lang.String"
-              },
-              {
                 "name": "getContentBox",
                 "signature": "getContentBox(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.box.ReadableContentBox"
-              },
-              {
-                "name": "findAppropriateContentDescription",
-                "signature": "findAppropriateContentDescription(java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.content.ContentDescriptio"
-              },
-              {
-                "name": "convertContentToReadableLegacyContentBox",
-                "signature": "convertContentToReadableLegacyContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContent"
-              },
-              {
-                "name": "contentDescription",
-                "signature": "contentDescription(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.common.ContentDescription"
-              },
-              {
-                "name": "convertContentToReadableContentPage",
-                "signature": "convertContentToReadableContentPage(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.page.ReadableContentPage"
-              },
-              {
-                "name": "setDescription",
-                "signature": "setDescription(com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.ReadableContentBox,com.salesmanager.core.model.reference.language.Language) return void"
-              },
-              {
-                "name": "convertContentToReadableContentBox",
-                "signature": "convertContentToReadableContentBox(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.box.ReadableContentBox"
-              },
-              {
-                "name": "getFileContentType",
-                "signature": "getFileContentType(java.lang.String) return com.salesmanager.core.model.content.FileContentType"
               },
               {
                 "name": "addContentFile",
@@ -105,48 +145,12 @@
                 "signature": "getContentBoxes(com.salesmanager.core.model.content.ContentType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntity"
               },
               {
-                "name": "getContentBoxes",
-                "signature": "getContentBoxes(com.salesmanager.core.model.content.ContentType,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityLi"
-              },
-              {
                 "name": "getContentPage",
                 "signature": "getContentPage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.content.page.ReadableContentPage"
               },
               {
-                "name": "setContentDescriptionToContentModel",
-                "signature": "setContentDescriptionToContentModel(com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription,com.salesmanager.core.model.reference.language.Language) return void"
-              },
-              {
                 "name": "buildDescriptions",
                 "signature": "buildDescriptions(com.salesmanager.core.model.content.Content,java.util.List.List\u003ccom.salesmanager.shop.model.content.common.ContentDescription\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.content.ContentDescription\u003e"
-              },
-              {
-                "name": "create",
-                "signature": "create(com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.ContentDescriptionEntity"
-              },
-              {
-                "name": "createContentDescriptionEntitys",
-                "signature": "createContentDescriptionEntitys(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.content.ContentD"
-              },
-              {
-                "name": "convertContentBoxToContent",
-                "signature": "convertContentBoxToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.box.PersistableContentBox) return com.salesmanager.core.model.content.Content"
-              },
-              {
-                "name": "convertContentPageToContent",
-                "signature": "convertContentPageToContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.shop.model.content.page.PersistableContentPage) return com.salesmanager.core.model.content.Content"
-              },
-              {
-                "name": "convertContentToReadableContentEntity",
-                "signature": "convertContentToReadableContentEntity(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentEntity"
-              },
-              {
-                "name": "convertContentToReadableContentFull",
-                "signature": "convertContentToReadableContentFull(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.content.Content) return com.salesmanager.shop.model.content.ReadableContentFull"
-              },
-              {
-                "name": "contentDescriptionToReadableContent",
-                "signature": "contentDescriptionToReadableContent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.content.Content,com.salesmanager.core.model.content.ContentDescription) return com.salesmanager.shop.model.content.page.ReadableContentPage"
               },
               {
                 "name": "getContentPages",
@@ -157,16 +161,12 @@
                 "signature": "delete(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String) return void"
               },
               {
-                "name": "convertToContentImage",
-                "signature": "convertToContentImage(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentImage"
+                "name": "absolutePath",
+                "signature": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String"
               },
               {
                 "name": "getContentFolder",
                 "signature": "getContentFolder(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.content.ContentFolder"
-              },
-              {
-                "name": "absolutePath",
-                "signature": "absolutePath(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String"
               }
             ]
           },
@@ -266,6 +266,33 @@
           },
           {
             "comment": "",
+            "nb_elements": 5,
+            "type": "",
+            "elements": [
+              {
+                "name": "languageService",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "fileUtils",
+                "signature": ""
+              },
+              {
+                "name": "contentService",
+                "signature": ""
+              },
+              {
+                "name": "ContentFacadeImpl.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 4,
             "type": "Java Instantiated Method",
             "elements": [
@@ -312,15 +339,15 @@
             "type": "Java Instantiated Class",
             "elements": [
               {
-                "name": "ArrayList\u003cContentType\u003e",
-                "signature": ""
-              },
-              {
                 "name": "ArrayList\u003cContentDescriptionEntity\u003e",
                 "signature": ""
               },
               {
                 "name": "Optional\u003cContentDescription\u003e",
+                "signature": ""
+              },
+              {
+                "name": "ArrayList\u003cContentType\u003e",
                 "signature": ""
               }
             ]
@@ -343,10 +370,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "ContentFacadeImpl.java",
+                "name": "contentFacade",
                 "signature": ""
               }
             ]

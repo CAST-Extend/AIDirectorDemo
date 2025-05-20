@@ -1,9 +1,9 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java]": {
-    "00. elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java]": {
+    "00. elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 9,
+        "nb_impacting_elements": 20,
         "impacting_elements": [
           {
             "name": "getPaymentType() return com.salesmanager.core.model.payments.PaymentType",
@@ -13,19 +13,19 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -39,20 +39,84 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getTransactionDetails() return java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setDetails(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -65,20 +129,84 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setPaymentType(com.salesmanager.core.model.payments.PaymentType) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setTransactionType(com.salesmanager.core.model.payments.TransactionType) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -87,30 +215,68 @@
             "name": "getTransactionType() return com.salesmanager.core.model.payments.TransactionType",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 4,
+            "nb_impacted_elements": 5,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setTransactionDate(java.util.Date) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -123,20 +289,52 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setAmount(java.math.BigDecimal) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -145,23 +343,29 @@
             "name": "getOrder() return com.salesmanager.core.model.order.Order",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 3,
+            "nb_impacted_elements": 4,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
@@ -171,24 +375,68 @@
             "name": "getId() return java.lang.Long",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 3,
+            "nb_impacted_elements": 5,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "Transaction()",
+            "comment": "",
+            "type": "Java Constructor",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -197,30 +445,138 @@
             "name": "Transaction",
             "comment": "",
             "type": "Java Class",
-            "nb_impacted_elements": 4,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/auth/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/cart/{}/payment/init/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
                 "name": "api/v1/private/orders/{}/payment/transactions/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/orders/{}/payment/nextTransaction/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "SalesManagerEntity\u003cLong,Transaction\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setOrder(com.salesmanager.core.model.order.Order) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "toJSONString() return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -229,8 +585,26 @@
             "name": "Select",
             "comment": "",
             "type": "JPA Entity Operation",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/payment/capturable/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/payment/capturable/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/orders/{}/payment/nextTransaction/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/nextTransaction/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -272,6 +646,20 @@
                 "full_name": "salesmanager.sm_transaction",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "setTransactionDetails(java.util.Map.Map\u003cjava.lang.String,java.lang.String\u003e) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/orders/{}/payment/transactions/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/GET/api/v1/private/orders/{}/payment/transactions/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }

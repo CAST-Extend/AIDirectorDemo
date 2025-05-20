@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/utils/DataUtils.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 6,
         "files": [
@@ -10,14 +10,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
+                "to_name": "doubleValue() return double",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "doubleValue() return double",
+                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
                 "calling_type": "CALL"
               },
               {
@@ -38,14 +38,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
+                "to_name": "doubleValue() return double",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "doubleValue() return double",
+                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
                 "calling_type": "CALL"
               },
               {
@@ -72,7 +72,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
@@ -80,20 +80,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "valueOf(double) return java.lang.String",
+                "to_name": "equals(java.lang.Object) return boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
                 "to_name": "valueOf(double) return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -102,6 +95,13 @@
                 "to_type": "Java Method",
                 "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
                 "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
+                "to_name": "valueOf(double) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -114,7 +114,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "DataUtils",
+                "to_name": "MeasureUnit",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/constants/MeasureUnit.java"
           },
           {
             "calls_between_elements": [
@@ -142,35 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "getMeasure(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "MeasureUnit",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "getWeight(double,com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return double",
-                "to_name": "MeasureUnit",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "DataUtils",
-                "to_name": "MeasureUnit",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/constants/MeasureUnit.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -212,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/RoundingMode_b2acb68817e441ac.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/RoundingMode_b2acb68817e441ac.java"
           }
         ],
         "files_list_comment": ""

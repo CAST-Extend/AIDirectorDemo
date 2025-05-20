@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,12 +9,20 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "taxRates",
-                "signature": "taxRates(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxRate\u003e"
-              },
-              {
                 "name": "existsTaxRate",
                 "signature": "existsTaxRate(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return boolean"
+              },
+              {
+                "name": "taxRate",
+                "signature": "taxRate(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxRate"
+              },
+              {
+                "name": "convertToReadableTaxClass",
+                "signature": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass"
+              },
+              {
+                "name": "taxRates",
+                "signature": "taxRates(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxRate\u003e"
               },
               {
                 "name": "updateTaxRate",
@@ -23,10 +31,6 @@
               {
                 "name": "createTaxRate",
                 "signature": "createTaxRate(com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity"
-              },
-              {
-                "name": "taxRate",
-                "signature": "taxRate(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxRate"
               },
               {
                 "name": "deleteTaxRate",
@@ -51,10 +55,6 @@
               {
                 "name": "updateTaxClass",
                 "signature": "updateTaxClass(java.lang.Long,com.salesmanager.shop.model.tax.PersistableTaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void"
-              },
-              {
-                "name": "convertToReadableTaxClass",
-                "signature": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass"
               },
               {
                 "name": "taxClasses",
@@ -107,15 +107,65 @@
           },
           {
             "comment": "",
+            "nb_elements": 7,
+            "type": "",
+            "elements": [
+              {
+                "name": "taxRateService",
+                "signature": ""
+              },
+              {
+                "name": "taxClassService",
+                "signature": ""
+              },
+              {
+                "name": "readableTaxRateMapper",
+                "signature": ""
+              },
+              {
+                "name": "readableTaxClassMapper",
+                "signature": ""
+              },
+              {
+                "name": "persistableTaxRateMapper",
+                "signature": ""
+              },
+              {
+                "name": "persistableTaxClassMapper",
+                "signature": ""
+              },
+              {
+                "name": "TaxFacadeImpl.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 2,
+            "type": "Java Instantiated Constructor",
+            "elements": [
+              {
+                "name": "ReadableEntityList\u003cReadableTaxRate\u003e",
+                "signature": ""
+              },
+              {
+                "name": "ReadableEntityList\u003cReadableTaxClass\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 2,
             "type": "Java Instantiated Interface",
             "elements": [
               {
-                "name": "List\u003cReadableTaxRate\u003e",
+                "name": "List\u003cReadableTaxClass\u003e",
                 "signature": ""
               },
               {
-                "name": "List\u003cReadableTaxClass\u003e",
+                "name": "List\u003cReadableTaxRate\u003e",
                 "signature": ""
               }
             ]
@@ -137,26 +187,11 @@
           },
           {
             "comment": "",
-            "nb_elements": 2,
-            "type": "Java Instantiated Constructor",
-            "elements": [
-              {
-                "name": "ReadableEntityList\u003cReadableTaxRate\u003e",
-                "signature": ""
-              },
-              {
-                "name": "ReadableEntityList\u003cReadableTaxClass\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "TaxFacadeImpl.java",
+                "name": "taxFacadeImpl",
                 "signature": ""
               }
             ]

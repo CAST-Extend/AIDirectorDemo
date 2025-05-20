@@ -1,16 +1,26 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/utils/SanitizeUtils.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/filter/XssHttpServletRequestWrapper.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanXSS(java.lang.String) return java.lang.String",
+                "to_name": "getSafeString(java.lang.String) return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "XssHttpServletRequestWrapper",
+                "to_name": "SanitizeUtils",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/filter/XssHttpServletRequestWrapper.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

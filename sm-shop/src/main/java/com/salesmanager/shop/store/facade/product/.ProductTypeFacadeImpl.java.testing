@@ -1,83 +1,21 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductTypeFacadeImpl.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductTypeFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductTypeFacadeImpl.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductTypeFacadeImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 8,
         "impacting_elements": [
           {
-            "name": "getByMerchant$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductType) return R",
-            "comment": "",
-            "type": "Java Lambda Expression",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "get(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.type.ReadableProductType",
+            "name": "update(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/product/type/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/PUT/api/v1/private/product/type/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
                 "name": "merchant_store",
@@ -86,26 +24,8 @@
                 "nature": "data entity"
               },
               {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -133,13 +53,19 @@
             "name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return boolean",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/product/type/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/POST/api/v1/private/product/type/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/type/unique/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/type/unique/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
                 "name": "merchant_store",
@@ -148,150 +74,8 @@
                 "nature": "data entity"
               },
               {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "update(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -319,13 +103,13 @@
             "name": "save(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.lang.Long",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/product/type/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/POST/api/v1/private/product/type/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
                 "name": "merchant_store",
@@ -334,26 +118,8 @@
                 "nature": "data entity"
               },
               {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -381,13 +147,13 @@
             "name": "get(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.type.ReadableProductType",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/product/type/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/type/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
                 "name": "merchant_store",
@@ -396,26 +162,8 @@
                 "nature": "data entity"
               },
               {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -443,29 +191,17 @@
             "name": "getByMerchant(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.catalog.product.type.ReadableProductTypeList",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 9,
+            "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/product/types/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
               },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -476,8 +212,134 @@
                 "nature": "data entity"
               },
               {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getByMerchant$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductType) return R",
+            "comment": "",
+            "type": "Java Lambda Expression",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/types/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/GET/api/v1/private/product/types/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "get(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.type.ReadableProductType",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/type/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductTypeApi.java/api/v1/PORT/DELETE/api/v1/private/product/type/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },

@@ -1,8 +1,22 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/utils/FilePathUtils.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "buildAdminUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
+            "to_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "buildStoreUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
+            "to_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -41,6 +55,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
+            "to_name": "normalizePath(java.lang.String) return java.lang.String",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "buildRelativeStoreUri(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
             "to_name": "normalizePath(java.lang.String) return java.lang.String",
             "calling_type": "CALL"
@@ -49,13 +70,6 @@
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "buildStoreUri(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return java.lang.String",
-            "to_name": "normalizePath(java.lang.String) return java.lang.String",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
             "to_name": "normalizePath(java.lang.String) return java.lang.String",
             "calling_type": "CALL"
           },
@@ -85,20 +99,6 @@
             "to_type": "Java Method",
             "from_name": "buildStoreForwardedUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
             "to_name": "buildStoreUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "buildAdminUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
-            "to_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "buildStoreUri(com.salesmanager.core.model.merchant.MerchantStore,javax.servlet.http.HttpServletRequest) return java.lang.String",
-            "to_name": "buildBaseUrl(javax.servlet.http.HttpServletRequest,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
             "calling_type": "CALL"
           },
           {

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/tax/ReadableTaxRateMapper.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 18,
         "files": [
@@ -72,15 +72,22 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Lambda Expression",
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
-                "to_name": "getLanguage() return com.salesmanager.core.model.reference.language.Language",
+                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
+                "to_name": "getTitle() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -95,20 +102,6 @@
                 "to_type": "Java Method",
                 "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
                 "to_name": "getName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
-                "to_name": "getId() return java.lang.Long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
-                "to_name": "getTitle() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -131,11 +124,18 @@
                 "from_name": "ReadableTaxRateMapper",
                 "to_name": "Description",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
+                "to_name": "getLanguage() return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxRate.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxRate.java"
           },
           {
             "calls_between_elements": [
@@ -240,7 +240,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -282,42 +282,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxRateDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ReadableTaxRateMapper",
-                "to_name": "Language",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxRateDescription.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +317,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/NamedEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/NamedEntity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return com.salesmanager.shop.model.tax.ReadableTaxRateDescription",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableTaxRateMapper",
+                "to_name": "Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -380,35 +380,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
-                "to_name": "findAny() return java.util.Optional.Optional\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
-                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "ReadableTaxRateMapper",
-                "to_name": "Stream\u003cT\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -436,7 +408,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
+                "to_name": "findAny() return java.util.Optional.Optional\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
+                "to_name": "filter(java.util.function.Predicate.Predicate\u003cT\u003e) return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ReadableTaxRateMapper",
+                "to_name": "Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
           },
           {
             "calls_between_elements": [
@@ -464,28 +464,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/TaxRateEntity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Lambda Expression",
-                "to_type": "Java Method",
-                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
-                "to_name": "equals(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/TaxRateEntity.java"
           },
           {
             "calls_between_elements": [
@@ -506,7 +485,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/ShopEntity.java"
           },
           {
             "calls_between_elements": [
@@ -527,7 +506,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRateDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRateDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "convertDescription(java.util.List.List\u003ccom.salesmanager.core.model.tax.taxrate.TaxRateDescription\u003e,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model.tax.ReadableTaxRateDescription\u003e",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "convertDescription$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRateDescription) return boolean",
+                "to_name": "equals(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
           },
           {
             "calls_between_elements": [
@@ -569,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
@@ -590,7 +590,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/country/Country.java"
           },
           {
             "calls_between_elements": [
@@ -611,7 +611,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           }
         ],
         "files_list_comment": ""

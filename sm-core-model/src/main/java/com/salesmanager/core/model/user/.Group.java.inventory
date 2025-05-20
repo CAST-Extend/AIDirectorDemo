@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java]": {
-    "00. file [/sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java] defines following code elements": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java]": {
+    "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java] defines following code elements": [
       {
         "types": [
           {
@@ -21,6 +21,10 @@
                 "signature": "getPermissions() return java.util.Set.Set\u003ccom.salesmanager.core.model.user.Permission\u003e"
               },
               {
+                "name": "getGroupName",
+                "signature": "getGroupName() return java.lang.String"
+              },
+              {
                 "name": "setId",
                 "signature": "setId(java.lang.Integer) return void"
               },
@@ -33,20 +37,16 @@
                 "signature": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection"
               },
               {
+                "name": "setPermissions",
+                "signature": "setPermissions(java.util.Set.Set\u003ccom.salesmanager.core.model.user.Permission\u003e) return void"
+              },
+              {
                 "name": "setGroupType",
                 "signature": "setGroupType(com.salesmanager.core.model.user.GroupType) return void"
               },
               {
                 "name": "setGroupName",
                 "signature": "setGroupName(java.lang.String) return void"
-              },
-              {
-                "name": "getGroupName",
-                "signature": "getGroupName() return java.lang.String"
-              },
-              {
-                "name": "setPermissions",
-                "signature": "setPermissions(java.util.Set.Set\u003ccom.salesmanager.core.model.user.Permission\u003e) return void"
               }
             ]
           },
@@ -98,11 +98,15 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Interface",
+            "nb_elements": 2,
+            "type": "Java Instantiated Class",
             "elements": [
               {
-                "name": "Set\u003cPermission\u003e",
+                "name": "HashSet\u003cPermission\u003e",
+                "signature": ""
+              },
+              {
+                "name": "SalesManagerEntity\u003cInteger,Group\u003e",
                 "signature": ""
               }
             ]
@@ -114,28 +118,6 @@
             "elements": [
               {
                 "name": "HashSet\u003cPermission\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Class",
-            "elements": [
-              {
-                "name": "HashSet\u003cPermission\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "Group.java",
                 "signature": ""
               }
             ]
@@ -169,6 +151,28 @@
             "elements": [
               {
                 "name": "Group",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Interface",
+            "elements": [
+              {
+                "name": "Set\u003cPermission\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "Group.java",
                 "signature": ""
               }
             ]

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -39,6 +39,41 @@
               {
                 "name": "calculateVariant",
                 "signature": "calculateVariant(java.lang.Long,com.salesmanager.shop.model.catalog.product.attribute.ReadableSelectedProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletR"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 8,
+            "type": "",
+            "elements": [
+              {
+                "name": "productVariationFacade",
+                "signature": ""
+              },
+              {
+                "name": "productService",
+                "signature": ""
+              },
+              {
+                "name": "pricingService",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "categoryFacade",
+                "signature": ""
+              },
+              {
+                "name": "ProductVariationApi.java",
+                "signature": ""
+              },
+              {
+                "name": "/api/v2",
+                "signature": ""
               }
             ]
           },
@@ -98,21 +133,6 @@
           },
           {
             "comment": "",
-            "nb_elements": 3,
-            "type": "",
-            "elements": [
-              {
-                "name": "/api/v2",
-                "signature": ""
-              },
-              {
-                "name": "ProductVariationApi.java",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
             "nb_elements": 2,
             "type": "Spring MVC Post Operation",
             "elements": [
@@ -128,11 +148,15 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
+            "nb_elements": 2,
             "type": "Java Instantiated Interface",
             "elements": [
               {
                 "name": "List\u003cReadableProductVariantValue\u003e",
+                "signature": ""
+              },
+              {
+                "name": "List\u003cReadableProductVariant\u003e",
                 "signature": ""
               }
             ]
@@ -140,10 +164,21 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
+            "type": "Java Instantiated Constructor",
             "elements": [
               {
-                "name": "api/v2/private/product/variation/{}/",
+                "name": "EntityExists\u003cEntityExists\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring Bean",
+            "elements": [
+              {
+                "name": "productVariationApi",
                 "signature": ""
               }
             ]
@@ -173,10 +208,32 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v2/private/product/variation/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Spring MVC Delete Operation",
             "elements": [
               {
                 "name": "api/v2/private/product/variation/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "ReadableEntityList\u003cReadableProductVariation\u003e",
                 "signature": ""
               }
             ]

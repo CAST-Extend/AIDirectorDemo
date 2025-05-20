@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductMapper.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductMapper.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,18 +8,6 @@
             "nb_elements": 10,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "optionValue",
-                "signature": "optionValue(com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model"
-              },
-              {
-                "name": "convertImage",
-                "signature": "convertImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.ReadableImage"
-              },
-              {
-                "name": "merge",
-                "signature": "merge(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.shop.model.catalog.product.ReadableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop."
-              },
               {
                 "name": "createOption",
                 "signature": "createOption(com.salesmanager.core.model.catalog.product.attribute.ProductOption,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.attribute.ReadableProductOption"
@@ -47,37 +35,53 @@
               {
                 "name": "convert",
                 "signature": "convert(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProduct"
+              },
+              {
+                "name": "optionValue",
+                "signature": "optionValue(com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.Optional.Optional\u003ccom.salesmanager.shop.model"
+              },
+              {
+                "name": "convertImage",
+                "signature": "convertImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.ReadableImage"
+              },
+              {
+                "name": "merge",
+                "signature": "merge(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.shop.model.catalog.product.ReadableProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop."
               }
             ]
           },
           {
             "comment": "",
-            "nb_elements": 6,
-            "type": "Java Lambda Expression",
+            "nb_elements": 7,
+            "type": "",
             "elements": [
               {
-                "name": "addOptionValue$lambda$0",
-                "signature": "addOptionValue$lambda$0(com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductOptionValue) return boolean"
+                "name": "readableProductVariantMapper",
+                "signature": ""
               },
               {
-                "name": "merge$lambda$4",
-                "signature": "merge$lambda$4(com.salesmanager.core.model.catalog.product.price.ProductPriceDescription) return boolean"
+                "name": "readableProductTypeMapper",
+                "signature": ""
               },
               {
-                "name": "merge$lambda$3",
-                "signature": "merge$lambda$3(com.salesmanager.core.model.catalog.product.price.ProductPrice) return boolean"
+                "name": "readableManufacturerMapper",
+                "signature": ""
               },
               {
-                "name": "merge$lambda$2",
-                "signature": "merge$lambda$2(com.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant) return boolean"
+                "name": "readableCategoryMapper",
+                "signature": ""
               },
               {
-                "name": "merge$lambda$1",
-                "signature": "merge$lambda$1(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return R"
+                "name": "pricingService",
+                "signature": ""
               },
               {
-                "name": "merge$lambda$0",
-                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R"
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "ReadableProductMapper.java",
+                "signature": ""
               }
             ]
           },
@@ -109,6 +113,37 @@
               {
                 "name": "imageUtils",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 6,
+            "type": "Java Lambda Expression",
+            "elements": [
+              {
+                "name": "addOptionValue$lambda$0",
+                "signature": "addOptionValue$lambda$0(com.salesmanager.shop.model.catalog.product.attribute.api.ReadableProductOptionValue) return boolean"
+              },
+              {
+                "name": "merge$lambda$4",
+                "signature": "merge$lambda$4(com.salesmanager.core.model.catalog.product.price.ProductPriceDescription) return boolean"
+              },
+              {
+                "name": "merge$lambda$3",
+                "signature": "merge$lambda$3(com.salesmanager.core.model.catalog.product.price.ProductPrice) return boolean"
+              },
+              {
+                "name": "merge$lambda$2",
+                "signature": "merge$lambda$2(com.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant) return boolean"
+              },
+              {
+                "name": "merge$lambda$1",
+                "signature": "merge$lambda$1(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return R"
+              },
+              {
+                "name": "merge$lambda$0",
+                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R"
               }
             ]
           },
@@ -157,21 +192,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Method",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "of\u003cReadableProductOptionValue\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ReadableProductMapper.java",
+                "name": "readableProductMapper",
                 "signature": ""
               }
             ]
@@ -194,6 +218,17 @@
             "elements": [
               {
                 "name": "ReadableProductMapper",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Method",
+            "elements": [
+              {
+                "name": "of\u003cReadableProductOptionValue\u003e",
                 "signature": ""
               }
             ]

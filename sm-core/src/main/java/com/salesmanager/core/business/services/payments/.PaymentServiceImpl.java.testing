@@ -1,190 +1,22 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 13,
+        "nb_impacting_elements": 18,
         "impacting_elements": [
           {
-            "name": "processRefund(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return com.salesmanager.core.model.payments.Transaction",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "orders",
-                "full_name": "salesmanager.orders",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "sm_transaction",
-                "full_name": "salesmanager.sm_transaction",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "processCapturePayment(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 9,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "orders",
-                "full_name": "salesmanager.orders",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "sm_transaction",
-                "full_name": "salesmanager.sm_transaction",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+            "name": "savePaymentModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
             "comment": "",
             "type": "Java Method",
             "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
               {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/modules/payment/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/POST/api/v1/private/modules/payment/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "removePaymentModuleConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 6,
-            "impacted_elements_to_test": [
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -204,12 +36,6 @@
                 "nature": "data entity"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -220,48 +46,10 @@
                 "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "savePaymentModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 6,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
               },
               {
                 "name": "merchant_configuration",
                 "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -271,8 +59,50 @@
             "name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 13,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/modules/payment/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/POST/api/v1/private/modules/payment/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/modules/payment/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/modules/payment/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -292,12 +122,6 @@
                 "nature": "data entity"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -306,6 +130,68 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.system.IntegrationModule\u003e",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/modules/payment/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/POST/api/v1/private/modules/payment/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/modules/payment/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/modules/payment/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -315,8 +201,20 @@
             "name": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 9,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -336,8 +234,114 @@
                 "nature": "data entity"
               },
               {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "merchant_configuration",
                 "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 6,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/auth/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/payment/init/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderPaymentApi.java/api/v1/PORT/POST/api/v1/cart/{}/payment/init/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/modules/payment/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -354,8 +358,164 @@
                 "nature": "data entity"
               },
               {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "module_configuration",
                 "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "luhnValidate(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "validateCreditCardNumber(java.lang.String,com.salesmanager.core.model.payments.CreditCardType) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "validateCreditCardDate(int,int) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "validateCreditCard(java.lang.String,com.salesmanager.core.model.payments.CreditCardType,java.lang.String,java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "PaymentServiceImpl",
+            "comment": "",
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/auth/cart/{}/checkout/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\order\\OrderApi.java/api/v1/PORT/POST/api/v1/auth/cart/{}/checkout/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getPaymentConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.IntegrationConfiguration",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/modules/payment/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\payment\\PaymentApi.java/api/v1/PORT/GET/api/v1/private/modules/payment/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -386,8 +546,64 @@
                 "nature": "data entity"
               },
               {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "merchant_configuration",
                 "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "processRefund(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return com.salesmanager.core.model.payments.Transaction",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -404,15 +620,95 @@
                 "nature": "data entity"
               },
               {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
                 "name": "module_configuration",
                 "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
             ]
           },
           {
-            "name": "getPaymentConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.IntegrationConfiguration",
+            "name": "processCapturePayment(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "orders",
+                "full_name": "salesmanager.orders",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "content",
+                "full_name": "salesmanager.content",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "module_configuration",
+                "full_name": "salesmanager.module_configuration",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "sm_transaction",
+                "full_name": "salesmanager.sm_transaction",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "removePaymentModuleConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return void",
             "comment": "",
             "type": "Java Method",
             "nb_impacted_elements": 6,
@@ -436,12 +732,6 @@
                 "nature": "data entity"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -450,6 +740,12 @@
               {
                 "name": "language",
                 "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               }
@@ -480,12 +776,6 @@
                 "nature": "data entity"
               },
               {
-                "name": "merchant_configuration",
-                "full_name": "salesmanager.merchant_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
                 "name": "geozone",
                 "full_name": "salesmanager.geozone",
                 "type": "PostgreSQL Table",
@@ -498,33 +788,11 @@
                 "nature": "data entity"
               },
               {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
+                "name": "merchant_configuration",
+                "full_name": "salesmanager.merchant_configuration",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.system.IntegrationModule\u003e",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 1,
-            "impacted_elements_to_test": [
-              {
-                "name": "module_configuration",
-                "full_name": "salesmanager.module_configuration",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
-            "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 1,
-            "impacted_elements_to_test": [
+              },
               {
                 "name": "module_configuration",
                 "full_name": "salesmanager.module_configuration",

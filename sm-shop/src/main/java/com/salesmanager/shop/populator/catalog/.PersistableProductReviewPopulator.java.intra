@@ -1,15 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductReviewPopulator.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductReviewPopulator.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductReviewPopulator.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableProductReviewPopulator.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
-            "to_name": "languageService",
-            "calling_type": "READ"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
@@ -20,9 +13,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLanguageService(com.salesmanager.core.business.services.reference.language.LanguageService) return void",
+            "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
             "to_name": "languageService",
-            "calling_type": "WRITE"
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -41,13 +34,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProductService(com.salesmanager.core.business.services.catalog.product.ProductService) return void",
-            "to_name": "productService",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getCustomerService() return com.salesmanager.core.business.services.customer.CustomerService",
             "to_name": "customerService",
             "calling_type": "READ"
@@ -58,17 +44,10 @@
             "from_name": "populate(com.salesmanager.shop.model.catalog.product.PersistableProductReview,com.salesmanager.core.model.catalog.product.review.ProductReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) retu",
             "to_name": "customerService",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCustomerService(com.salesmanager.core.business.services.customer.CustomerService) return void",
-            "to_name": "customerService",
-            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 9
+        "nb_calls_between_elements": 6
       }
     ]
   }

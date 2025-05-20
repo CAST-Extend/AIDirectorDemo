@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPriceApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -17,6 +17,10 @@
                 "signature": "list(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e"
               },
               {
+                "name": "list",
+                "signature": "list(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e"
+              },
+              {
                 "name": "get",
                 "signature": "get(java.lang.String,java.lang.Long,com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog."
               },
@@ -31,24 +35,24 @@
               {
                 "name": "save",
                 "signature": "save(java.lang.String,java.lang.Long,com.salesmanager.shop.model.catalog.product.PersistableProductPrice,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity."
-              },
-              {
-                "name": "list",
-                "signature": "list(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableProductPrice\u003e"
               }
             ]
           },
           {
             "comment": "",
-            "nb_elements": 3,
+            "nb_elements": 4,
             "type": "",
             "elements": [
               {
-                "name": "/api/v1",
+                "name": "productPriceFacade",
                 "signature": ""
               },
               {
                 "name": "ProductPriceApi.java",
+                "signature": ""
+              },
+              {
+                "name": "/api/v1",
                 "signature": ""
               }
             ]
@@ -75,21 +79,6 @@
           {
             "comment": "",
             "nb_elements": 2,
-            "type": "Spring MVC Post Operation",
-            "elements": [
-              {
-                "name": "api/v1/private/product/{}/inventory/{}/price/",
-                "signature": ""
-              },
-              {
-                "name": "api/v1/private/product/{}/price/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 2,
             "type": "Java Field",
             "elements": [
               {
@@ -104,11 +93,26 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
+            "nb_elements": 2,
+            "type": "Spring MVC Post Operation",
             "elements": [
               {
-                "name": "api/v1/private/product/{}/inventory/{}/price/{}/",
+                "name": "api/v1/private/product/{}/price/",
+                "signature": ""
+              },
+              {
+                "name": "api/v1/private/product/{}/inventory/{}/price/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring Bean",
+            "elements": [
+              {
+                "name": "productPriceApi",
                 "signature": ""
               }
             ]
@@ -131,6 +135,17 @@
             "elements": [
               {
                 "name": "ProductPriceApi",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v1/private/product/{}/inventory/{}/price/{}/",
                 "signature": ""
               }
             ]

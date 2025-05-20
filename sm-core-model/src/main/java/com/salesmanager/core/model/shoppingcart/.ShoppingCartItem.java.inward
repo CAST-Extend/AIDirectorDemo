@@ -1,491 +1,1880 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java]": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 5
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setVariant(java.lang.Long) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "isProductVirtual() return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 4
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "isProductVirtual() return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setSku(java.lang.String) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
+                "to_name": "addAttributes(com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "addAttributes(com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "addAttributes(com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
+                "to_name": "setShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItems(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItem(java.lang.Long,java.lang.String,long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItems(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return",
+                "to_name": "setItemPrice(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItem(java.lang.Long,java.lang.String,long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+                "to_name": "setItemPrice(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getEntryToUpdate(long,com.salesmanager.core.model.shoppingcart.ShoppingCart) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeShoppingCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeCartItem(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "modifyCartMulti$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeShoppingCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItems(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCartItem(java.lang.Long,java.lang.String,long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartFacadeImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addItemsToShoppingCart(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.sales",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "modifyCartMulti(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.langua",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "modifyCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sa",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "readableShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ret",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeShoppingCartItem(java.lang.String,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,boolean) return com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "updateCartItems(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeCartItem(java.lang.Long,java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.shoppingcart.ShoppingCartData",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,java.util.List.List\u003ccom.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartFacadeImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shoppingCart/facade/ShoppingCartFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 49
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 12
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setSku(java.lang.String) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populateShoppingCartItem(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setSku(java.lang.String) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 6
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
+                "to_name": "getFinalPrice() return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 4
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "addAttributes(com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "setShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setItemPrice(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populateShoppingCartItem(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setItemPrice(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteShoppingCartItem(java.lang.Long) return void",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setAttributes(java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setProductVirtual(boolean) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setObsolete(boolean) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "isObsolete() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setFinalPrice(com.salesmanager.core.model.catalog.product.price.FinalPrice) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setSubTotal(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPopulatedItem(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "populateShoppingCartItem(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "ShoppingCartItem(com.salesmanager.core.model.catalog.product.Product)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShoppingCartItems(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.Shopping",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "mergeShoppingCarts(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createShippingProduct(com.salesmanager.core.model.shoppingcart.ShoppingCart) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPopulatedShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 37
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/shoppingCart/ShoppingCartModelPopulator.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 7
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "HashSet\u003cShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 6
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "HashSet\u003cShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "removeAllAttributes() return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setSku(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "addAttributes(com.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "setQuantity(java.lang.Integer) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "setItemPrice(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "setAttributes(java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "ShoppingCartItem(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.catalog.product.Product)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartModelPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartModelPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/shoppingCart/ShoppingCartModelPopulator.java",
             "comment": "",
             "nb_calls_between_elements": 16
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 4
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateOrder(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order",
+                "to_name": "getFinalPrice() return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateOrder(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateOrder(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "caculateShoppingCart$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateOrder(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order",
+                "to_name": "setSubTotal(java.math.BigDecimal) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "caculateShoppingCart(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.co",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "process(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.pa",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 12
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/shoppingCart/ShoppingCartDataPopulator.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 7
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "isProductVirtual() return boolean",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getSubTotal() return java.math.BigDecimal",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getId() return java.lang.Long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Lambda Expression",
+                "to_type": "Java Method",
+                "from_name": "populate$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartDataPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ShoppingCartData,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.sh",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartDataPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/shoppingCart/ShoppingCartDataPopulator.java",
             "comment": "",
             "nb_calls_between_elements": 11
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "getShoppingCart() return com.salesmanager.core.model.shoppingcart.ShoppingCart",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "ShoppingCartItem()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "refreshOrder(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.reference.language.",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateOrderTotal(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.shop.model.order.v0.PersistableOrder,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.order.OrderTotalSummary",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initializeOrder(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.mo",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processOrder(com.salesmanager.shop.model.order.v1.PersistableOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return com.salesm",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processOrderModel(com.salesmanager.shop.model.order.ShopOrder,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderFacadeImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/order/facade/OrderFacadeImpl.java",
             "comment": "",
             "nb_calls_between_elements": 11
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getFinalPrice() return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java",
             "comment": "",
             "nb_calls_between_elements": 9
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/cart/ReadableShoppingCartMapper.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 5
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "getVariant() return java.lang.Long",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableShoppingCartMapper",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "merge(com.salesmanager.core.model.shoppingcart.ShoppingCart,com.salesmanager.shop.model.shoppingcart.ReadableShoppingCart,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.s",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReadableShoppingCartMapper",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/cart/ReadableShoppingCartMapper.java",
             "comment": "",
             "nb_calls_between_elements": 8
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/OrderProductPopulator.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 6
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getFinalPrice() return com.salesmanager.core.model.catalog.product.price.FinalPrice",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartAttributeItem\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.order.orderproduct.OrderProduct,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderProductPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderProductPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/order/OrderProductPopulator.java",
             "comment": "",
             "nb_calls_between_elements": 8
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 3
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getItemPrice() return java.math.BigDecimal",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartItemRepository",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "deleteById(java.lang.Long) return void",
+                "to_name": "Remove",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "delete from ShoppingCartItem i",
+                "to_name": "Remove",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "JPA Entity Operation",
+                "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Spring Data JPQL Query",
+                "to_type": "JPA Entity Operation",
+                "from_name": "select i from ShoppingCartItem",
+                "to_name": "Select",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "JPA Entity",
+                "from_name": "ShoppingCartItemRepository",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java",
             "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 2
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onUpdate(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "onSave(java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuditListener",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/audit/AuditListener.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/ordertotal/OrderTotalServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findOrderTotalVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.m",
+                "to_name": "getSku() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderTotalServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrderTotalVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.m",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderTotalServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/order/ordertotal/OrderTotalServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "requiresShipping(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "to_name": "getProduct() return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
               },
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "requiresShipping(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/PersistableAuditAspect.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "setAuditSection(com.salesmanager.core.model.common.audit.AuditSection) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "afterReturning(org.aspectj.lang.JoinPoint,java.lang.Object) return void",
+                "to_name": "getAuditSection() return com.salesmanager.core.model.common.audit.AuditSection",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableAuditAspect",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setLineItems(java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e) return void",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getLineItems() return java.util.Set.Set\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCart",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setProducts(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e) return void",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProducts() return java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderSummary",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCart.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/payment/model/PaymentModule.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/payment/model/PaymentModule.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "PaymentModule",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderTotalApi.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/order/OrderTotalApi.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateTotal(java.lang.String,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.model.order.ReadableOrderTotalSu",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "payment(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return com.salesmanager.shop.mod",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderTotalApi",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/ShopOrder.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/ShopOrder.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShoppingCartItems() return java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShoppingCartItems(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e) return void",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShopOrder",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StripePayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Stripe3Payment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalRestPayment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalRestPayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalRestPayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/MoneyOrderPayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderPayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BraintreePayment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BraintreePayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "BraintreePayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorizeAndCapture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.P",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authorize(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "BeanStreamPayment",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java",
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/PromoCodeCalculatorModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateProductPiceVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.m",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PromoCodeCalculatorModule",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/ManufacturerShippingCodeOrderTotalModuleImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "caculateProductPiceVariation(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.m",
+                "to_name": "getQuantity() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ManufacturerShippingCodeOrderTotalModuleImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/order/total/ManufacturerShippingCodeOrderTotalModuleImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "requiresShipping(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ShippingService",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentServiceImpl",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentService.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java",
+            "calls_between_elements": [
               {
-                "calling_type": "USE",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartItemPopulator",
+                "to_name": "ShoppingCartItem",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java",
             "comment": "",
             "nb_calls_between_elements": 1
           }
         ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 32
+        "nb_files_with_calling_elements": 33
       }
     ]
   }

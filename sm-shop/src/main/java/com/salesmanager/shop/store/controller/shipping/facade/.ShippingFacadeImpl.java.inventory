@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/shipping/facade/ShippingFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -11,10 +11,6 @@
               {
                 "name": "convert",
                 "signature": "convert(com.salesmanager.core.model.reference.country.Country,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.references.ReadableCountry"
-              },
-              {
-                "name": "shipToCountry",
-                "signature": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e"
               },
               {
                 "name": "toPackage",
@@ -51,6 +47,10 @@
               {
                 "name": "createPackage",
                 "signature": "createPackage(com.salesmanager.core.model.shipping.PackageDetails,com.salesmanager.core.model.merchant.MerchantStore) return void"
+              },
+              {
+                "name": "shipToCountry",
+                "signature": "shipToCountry(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.references.ReadableCountry\u003e"
               },
               {
                 "name": "getDbConfig",
@@ -142,6 +142,33 @@
           },
           {
             "comment": "",
+            "nb_elements": 5,
+            "type": "",
+            "elements": [
+              {
+                "name": "zoneService",
+                "signature": ""
+              },
+              {
+                "name": "shippingService",
+                "signature": ""
+              },
+              {
+                "name": "shippingOriginService",
+                "signature": ""
+              },
+              {
+                "name": "countryService",
+                "signature": ""
+              },
+              {
+                "name": "ShippingFacadeImpl.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 1,
             "type": "Java Instantiated Constructor",
             "elements": [
@@ -154,21 +181,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Class",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "ArrayList\u003cReadableCountry\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ShippingFacadeImpl.java",
+                "name": "shippingFacade",
                 "signature": ""
               }
             ]
@@ -191,6 +207,17 @@
             "elements": [
               {
                 "name": "ShippingFacadeImpl",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "ArrayList\u003cReadableCountry\u003e",
                 "signature": ""
               }
             ]

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxRatesApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -25,27 +25,12 @@
                 "signature": "update(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.tax.PersistableTaxRate) return void"
               },
               {
-                "name": "exists",
-                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e"
-              },
-              {
                 "name": "create",
                 "signature": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.tax.PersistableTaxRate) return com.salesmanager.shop.model.entity.Entity"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 3,
-            "type": "",
-            "elements": [
-              {
-                "name": "/api/v1",
-                "signature": ""
               },
               {
-                "name": "TaxRatesApi.java",
-                "signature": ""
+                "name": "exists",
+                "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e"
               }
             ]
           },
@@ -70,37 +55,30 @@
           },
           {
             "comment": "",
+            "nb_elements": 3,
+            "type": "",
+            "elements": [
+              {
+                "name": "TaxRatesApi.java",
+                "signature": ""
+              },
+              {
+                "name": "/api/v1",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 2,
             "type": "Java Field",
             "elements": [
               {
-                "name": "LOGGER",
+                "name": "taxFacade",
                 "signature": ""
               },
               {
-                "name": "taxFacade",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
-            "elements": [
-              {
-                "name": "api/v1/private/tax/rate/{}/",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Post Operation",
-            "elements": [
-              {
-                "name": "api/v1/private/tax/rate/",
+                "name": "LOGGER",
                 "signature": ""
               }
             ]
@@ -130,10 +108,43 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v1/private/tax/rate/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Post Operation",
+            "elements": [
+              {
+                "name": "api/v1/private/tax/rate/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Spring MVC Delete Operation",
             "elements": [
               {
                 "name": "api/v1/private/tax/rate/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "ReadableEntityList\u003cReadableTaxRate\u003e",
                 "signature": ""
               }
             ]

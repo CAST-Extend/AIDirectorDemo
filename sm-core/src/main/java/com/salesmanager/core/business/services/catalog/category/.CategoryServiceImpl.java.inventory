@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/category/CategoryServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -11,6 +11,10 @@
               {
                 "name": "delete",
                 "signature": "delete(com.salesmanager.core.model.catalog.category.Category) return void"
+              },
+              {
+                "name": "getById",
+                "signature": "getById(java.lang.Long,int) return com.salesmanager.core.model.catalog.category.Category"
               },
               {
                 "name": "getByProductId",
@@ -27,6 +31,10 @@
               {
                 "name": "getListByDepth",
                 "signature": "getListByDepth(com.salesmanager.core.model.merchant.MerchantStore,int,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
+              },
+              {
+                "name": "listByParent",
+                "signature": "listByParent(com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
               },
               {
                 "name": "getListByDepth",
@@ -81,20 +89,12 @@
                 "signature": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
               },
               {
-                "name": "getById",
-                "signature": "getById(java.lang.Long,int) return com.salesmanager.core.model.catalog.category.Category"
-              },
-              {
                 "name": "getByCode",
                 "signature": "getByCode(java.lang.String,java.lang.String) return com.salesmanager.core.model.catalog.category.Category"
               },
               {
                 "name": "getByCode",
                 "signature": "getByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.catalog.category.Category"
-              },
-              {
-                "name": "getBySeUrl",
-                "signature": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.category.Category"
               },
               {
                 "name": "listBySeUrl",
@@ -133,8 +133,8 @@
                 "signature": "create(com.salesmanager.core.model.catalog.category.Category) return void"
               },
               {
-                "name": "listByParent",
-                "signature": "listByParent(com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e"
+                "name": "getBySeUrl",
+                "signature": "getBySeUrl(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.category.Category"
               }
             ]
           },
@@ -163,23 +163,46 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 4,
+            "type": "",
             "elements": [
               {
-                "name": "CategoryServiceImpl",
-                "signature": "CategoryServiceImpl(com.salesmanager.core.business.repositories.catalog.category.CategoryRepository)"
+                "name": "productService",
+                "signature": ""
+              },
+              {
+                "name": "pageableCategoryRepository",
+                "signature": ""
+              },
+              {
+                "name": "categoryDescriptionRepository",
+                "signature": ""
+              },
+              {
+                "name": "CategoryServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "CategoryServiceImpl.java",
+                "name": "categoryService",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "CategoryServiceImpl",
+                "signature": "CategoryServiceImpl(com.salesmanager.core.business.repositories.catalog.category.CategoryRepository)"
               }
             ]
           },

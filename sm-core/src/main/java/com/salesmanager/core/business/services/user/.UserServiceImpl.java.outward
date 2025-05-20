@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 16,
         "files": [
@@ -9,14 +9,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "from_name": "saveOrUpdate(com.salesmanager.core.model.user.User) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "saveOrUpdate(com.salesmanager.core.model.user.User) return void",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -50,6 +50,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "ServiceException(java.lang.Throwable)",
@@ -65,7 +72,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -82,13 +89,6 @@
                 "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -109,14 +109,14 @@
                 "to_type": "Java Class",
                 "from_name": "UserServiceImpl",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "UserServiceImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -128,7 +128,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 17,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -183,14 +183,14 @@
               },
               {
                 "from_type": "Java Class",
-                "to_type": "JPA Entity",
+                "to_type": "Java Class",
                 "from_name": "UserServiceImpl",
                 "to_name": "User",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "JPA Entity",
                 "from_name": "UserServiceImpl",
                 "to_name": "User",
                 "calling_type": "CALL"
@@ -198,7 +198,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +261,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +296,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +359,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -387,7 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Criteria.java"
           },
           {
             "calls_between_elements": [
@@ -408,7 +408,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -429,28 +429,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UserServiceImpl",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreService.java"
           },
           {
             "calls_between_elements": [
@@ -471,7 +450,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PageRequest_12637.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageRequest_12637.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByCriteria(com.salesmanager.core.model.user.UserCriteria,int,int) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UserServiceImpl",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +492,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/UserCriteria.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/UserCriteria.java"
           },
           {
             "calls_between_elements": [
@@ -513,7 +513,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepositoryCustom.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepositoryCustom.java"
           },
           {
             "calls_between_elements": [
@@ -534,7 +534,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CrudRepository_21098.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CrudRepository_21098.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +562,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

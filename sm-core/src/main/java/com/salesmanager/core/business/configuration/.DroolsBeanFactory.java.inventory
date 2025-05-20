@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/configuration/DroolsBeanFactory.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/configuration/DroolsBeanFactory.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/configuration/DroolsBeanFactory.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/configuration/DroolsBeanFactory.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,18 @@
             "nb_elements": 6,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "getKieFileSystem",
+                "signature": "getKieFileSystem() return KieFileSystem"
+              },
+              {
+                "name": "getKieContainer",
+                "signature": "getKieContainer() return KieContainer"
+              },
+              {
+                "name": "getDrlFromExcel",
+                "signature": "getDrlFromExcel(java.lang.String) return java.lang.String"
+              },
               {
                 "name": "getKieSession",
                 "signature": "getKieSession(Resource) return KieSession"
@@ -17,20 +29,8 @@
                 "signature": "getKieSession() return KieSession"
               },
               {
-                "name": "getDrlFromExcel",
-                "signature": "getDrlFromExcel(java.lang.String) return java.lang.String"
-              },
-              {
                 "name": "getKieRepository",
                 "signature": "getKieRepository() return void"
-              },
-              {
-                "name": "getKieContainer",
-                "signature": "getKieContainer() return KieContainer"
-              },
-              {
-                "name": "getKieFileSystem",
-                "signature": "getKieFileSystem() return KieFileSystem"
               }
             ]
           },
@@ -60,10 +60,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "DroolsBeanFactory.java",
+                "name": "droolsBeanFactory",
                 "signature": ""
               }
             ]
@@ -86,6 +86,17 @@
             "elements": [
               {
                 "name": "DroolsBeanFactory",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "DroolsBeanFactory.java",
                 "signature": ""
               }
             ]

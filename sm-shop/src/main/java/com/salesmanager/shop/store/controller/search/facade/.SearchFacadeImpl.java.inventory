@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -52,10 +52,6 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "autocompleteRequest",
-                "signature": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList"
-              },
-              {
                 "name": "convertProductToReadableProduct",
                 "signature": "convertProductToReadableProduct(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableProd"
               },
@@ -65,15 +61,19 @@
               },
               {
                 "name": "getCategoryFacets",
-                "signature": "getCategoryFacets(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.List.List\u003cAggregation\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.category.ReadableCategory\u003e"
+                "signature": "getCategoryFacets(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.List.List\u003cmodules.commons.search.request.Aggregation\u003e) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.ca"
               },
               {
                 "name": "search",
-                "signature": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) return SearchResponse"
+                "signature": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e"
+              },
+              {
+                "name": "autocompleteRequest",
+                "signature": "autocompleteRequest(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ValueList"
               },
               {
                 "name": "search",
-                "signature": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cSearchItem\u003e"
+                "signature": "search(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer) return modules.commons.search.request.SearchResponse"
               },
               {
                 "name": "indexAllData",
@@ -83,15 +83,46 @@
           },
           {
             "comment": "",
+            "nb_elements": 6,
+            "type": "",
+            "elements": [
+              {
+                "name": "searchService",
+                "signature": ""
+              },
+              {
+                "name": "productService",
+                "signature": ""
+              },
+              {
+                "name": "pricingService",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "categoryService",
+                "signature": ""
+              },
+              {
+                "name": "SearchFacadeImpl.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
             "nb_elements": 2,
             "type": "Java Instantiated Interface",
             "elements": [
               {
-                "name": "Map\u003cString,Long\u003e",
+                "name": "List\u003cAggregation\u003e",
                 "signature": ""
               },
               {
-                "name": "List\u003cAggregation\u003e",
+                "name": "Map\u003cString,Long\u003e",
                 "signature": ""
               }
             ]
@@ -103,7 +134,7 @@
             "elements": [
               {
                 "name": "autocompleteRequest$lambda$0",
-                "signature": "autocompleteRequest$lambda$0(???) return ???"
+                "signature": "autocompleteRequest$lambda$0(modules.commons.search.request.SearchItem) return R"
               },
               {
                 "name": "indexAllData$lambda$0",
@@ -114,10 +145,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "SearchFacadeImpl.java",
+                "name": "searchFacade",
                 "signature": ""
               }
             ]

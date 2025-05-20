@@ -1,10 +1,67 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/MerchantStoreArgumentResolver.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/application/config/MerchantStoreArgumentResolver.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MerchantStoreArgumentResolver.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/application/config/MerchantStoreArgumentResolver.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 0,
-        "impacting_elements": []
+        "nb_impacting_elements": 1,
+        "impacting_elements": [
+          {
+            "name": "resolveArgument(org.springframework.core.MethodParameter,org.springframework.web.method.support.ModelAndViewContainer,org.springframework.web.context.request.NativeWebRequest,org.springframework.web.bind.support.WebDataBinderFactory) return java.lang.Obje",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 8,
+            "impacted_elements_to_test": [
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "permission",
+                "full_name": "salesmanager.permission",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "zone",
+                "full_name": "salesmanager.zone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          }
+        ]
       }
     ]
   }

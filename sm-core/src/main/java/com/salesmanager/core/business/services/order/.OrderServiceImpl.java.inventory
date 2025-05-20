@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/order/OrderServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -27,10 +27,6 @@
               {
                 "name": "process",
                 "signature": "process(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.pa"
-              },
-              {
-                "name": "addOrderStatusHistory",
-                "signature": "addOrderStatusHistory(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return void"
               },
               {
                 "name": "hasDownloadFiles",
@@ -75,6 +71,10 @@
               {
                 "name": "processOrder",
                 "signature": "processOrder(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.mod"
+              },
+              {
+                "name": "addOrderStatusHistory",
+                "signature": "addOrderStatusHistory(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.order.orderstatus.OrderStatusHistory) return void"
               }
             ]
           },
@@ -84,7 +84,11 @@
             "type": "Java Field",
             "elements": [
               {
-                "name": "orderRepository",
+                "name": "paymentService",
+                "signature": ""
+              },
+              {
+                "name": "shippingService",
                 "signature": ""
               },
               {
@@ -104,7 +108,11 @@
                 "signature": ""
               },
               {
-                "name": "shippingService",
+                "name": "taxService",
+                "signature": ""
+              },
+              {
+                "name": "productService",
                 "signature": ""
               },
               {
@@ -116,7 +124,30 @@
                 "signature": ""
               },
               {
+                "name": "orderRepository",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 10,
+            "type": "",
+            "elements": [
+              {
                 "name": "taxService",
+                "signature": ""
+              },
+              {
+                "name": "transactionService",
+                "signature": ""
+              },
+              {
+                "name": "shoppingCartService",
+                "signature": ""
+              },
+              {
+                "name": "shippingService",
                 "signature": ""
               },
               {
@@ -126,17 +157,33 @@
               {
                 "name": "paymentService",
                 "signature": ""
+              },
+              {
+                "name": "orderTotalService",
+                "signature": ""
+              },
+              {
+                "name": "invoiceModule",
+                "signature": ""
+              },
+              {
+                "name": "customerService",
+                "signature": ""
+              },
+              {
+                "name": "OrderServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Lambda Expression",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "caculateShoppingCart$lambda$0",
-                "signature": "caculateShoppingCart$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean"
+                "name": "orderService",
+                "signature": ""
               }
             ]
           },
@@ -154,10 +201,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Java Class",
             "elements": [
               {
-                "name": "OrderServiceImpl.java",
+                "name": "OrderServiceImpl",
                 "signature": ""
               }
             ]
@@ -165,11 +212,11 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Class",
+            "type": "Java Lambda Expression",
             "elements": [
               {
-                "name": "OrderServiceImpl",
-                "signature": ""
+                "name": "caculateShoppingCart$lambda$0",
+                "signature": "caculateShoppingCart$lambda$0(com.salesmanager.core.model.shoppingcart.ShoppingCartItem) return boolean"
               }
             ]
           }

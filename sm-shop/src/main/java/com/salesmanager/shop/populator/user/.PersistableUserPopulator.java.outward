@@ -1,11 +1,18 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/user/PersistableUserPopulator.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 18,
+        "nb_files_with_called_elements": 20,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "setLastName(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -38,13 +45,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "setLastName(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
                 "to_name": "setFirstName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
@@ -59,14 +59,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "setAdminName(java.lang.String) return void",
+                "to_name": "setAdminEmail(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "setAdminEmail(java.lang.String) return void",
+                "to_name": "setAdminName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -81,19 +81,19 @@
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "User",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "User",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/User.java"
           },
           {
             "calls_between_elements": [
@@ -137,19 +137,19 @@
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "PersistableUser",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "PersistableUser",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/PersistableUser.java"
           },
           {
             "calls_between_elements": [
@@ -158,14 +158,14 @@
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -179,14 +179,14 @@
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -198,24 +198,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "getDefaultLanguage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "getEmailAddress() return java.lang.String",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -231,6 +217,20 @@
                 "calling_type": "CALL"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getDefaultLanguage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getEmailAddress() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
@@ -240,7 +240,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/user/UserEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/user/UserEntity.java"
           },
           {
             "calls_between_elements": [
@@ -268,49 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "PersistableUserPopulator",
-                "to_name": "language",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/Salesmanager.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "Group",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableUserPopulator",
-                "to_name": "Group",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +289,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "Group",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableUserPopulator",
+                "to_name": "Group",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/user/Group.java"
           },
           {
             "calls_between_elements": [
@@ -352,28 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PersistableUserPopulator",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -415,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PasswordEncoder_29309.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PasswordEncoder_10940.java"
           },
           {
             "calls_between_elements": [
@@ -423,20 +381,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "Java Class",
                 "from_name": "PersistableUserPopulator",
-                "to_name": "GroupService",
+                "to_name": "StringUtils",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +415,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PersistableUserPopulator",
+                "to_name": "GroupService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupService.java"
           },
           {
             "calls_between_elements": [
@@ -478,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreService.java"
           },
           {
             "calls_between_elements": [
@@ -499,21 +478,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/security/GroupEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/security/GroupEntity.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
+                "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
-                "to_name": "String",
-                "calling_type": "USE"
+                "to_name": "listGroupByNames(java.util.List.List\u003cjava.lang.String\u003e) return java.util.List.List\u003ccom.salesmanager.core.model.user.Group\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableUserPopulator",
+                "to_name": "GroupServiceImpl",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/user/GroupServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableUserPopulator",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableUserPopulator",
+                "to_name": "MerchantStoreServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/merchant/MerchantStoreServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -527,7 +555,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "populate(com.salesmanager.shop.model.user.PersistableUser,com.salesmanager.core.model.user.User,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.user.User",
+                "to_name": "String",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           }
         ],
         "files_list_comment": ""

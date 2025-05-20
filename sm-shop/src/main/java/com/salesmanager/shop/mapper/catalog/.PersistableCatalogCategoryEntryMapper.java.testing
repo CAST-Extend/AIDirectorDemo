@@ -1,37 +1,19 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableCatalogCategoryEntryMapper.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableCatalogCategoryEntryMapper.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableCatalogCategoryEntryMapper.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableCatalogCategoryEntryMapper.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 2,
         "impacting_elements": [
           {
-            "name": "merge(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ",
+            "name": "convert(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.catalog.CatalogCateg",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 11,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -44,12 +26,6 @@
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -80,32 +56,14 @@
             ]
           },
           {
-            "name": "convert(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.catalog.CatalogCateg",
+            "name": "merge(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.catalog.catalog.CatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) ",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 11,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
-              {
-                "name": "manufacturer",
-                "full_name": "salesmanager.manufacturer",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "product",
-                "full_name": "salesmanager.product",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "tax_class",
-                "full_name": "salesmanager.tax_class",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },
@@ -118,12 +76,6 @@
               {
                 "name": "country",
                 "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "customer",
-                "full_name": "salesmanager.customer",
                 "type": "PostgreSQL Table",
                 "nature": "data entity"
               },

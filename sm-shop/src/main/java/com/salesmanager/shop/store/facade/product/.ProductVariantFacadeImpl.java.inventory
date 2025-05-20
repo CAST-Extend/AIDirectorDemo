@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantFacadeImpl.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantFacadeImpl.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantFacadeImpl.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/product/ProductVariantFacadeImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,10 @@
             "nb_elements": 7,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "get",
+                "signature": "get(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant"
+              },
               {
                 "name": "list",
                 "signature": "list(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.catalog.pro"
@@ -31,10 +35,41 @@
               {
                 "name": "exists",
                 "signature": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language) return boolean"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 7,
+            "type": "",
+            "elements": [
+              {
+                "name": "readableProductVariantMapper",
+                "signature": ""
               },
               {
-                "name": "get",
-                "signature": "get(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variant.ReadableProductVariant"
+                "name": "productVariationService",
+                "signature": ""
+              },
+              {
+                "name": "productVariantService",
+                "signature": ""
+              },
+              {
+                "name": "productFacade",
+                "signature": ""
+              },
+              {
+                "name": "productCommonFacade",
+                "signature": ""
+              },
+              {
+                "name": "persistableProductVariantMapper",
+                "signature": ""
+              },
+              {
+                "name": "ProductVariantFacadeImpl.java",
+                "signature": ""
               }
             ]
           },
@@ -72,6 +107,21 @@
           {
             "comment": "",
             "nb_elements": 2,
+            "type": "Java Instantiated Method",
+            "elements": [
+              {
+                "name": "asList\u003cLong\u003e",
+                "signature": ""
+              },
+              {
+                "name": "createReadableList\u003cProductVariant,ReadableProductVariant\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 2,
             "type": "Java Lambda Expression",
             "elements": [
               {
@@ -87,21 +137,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Method",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "asList\u003cLong\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ProductVariantFacadeImpl.java",
+                "name": "productVariantFacadeImpl",
                 "signature": ""
               }
             ]

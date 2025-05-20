@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 43,
         "files": [
@@ -10,20 +10,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "removeImages(java.lang.String) return void",
-                "to_name": "currentDirectory() return com.google.cloud.storage.Storage.BlobListOption",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeImages(java.lang.String) return void",
-                "to_name": "prefix(java.lang.String) return com.google.cloud.storage.Storage.BlobListOption",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeImages(java.lang.String) return void",
                 "to_name": "delete(com.google.cloud.storage.BlobId) return boolean",
                 "calling_type": "CALL"
               },
@@ -37,14 +23,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "from_name": "removeImages(java.lang.String) return void",
                 "to_name": "currentDirectory() return com.google.cloud.storage.Storage.BlobListOption",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "from_name": "removeImages(java.lang.String) return void",
                 "to_name": "prefix(java.lang.String) return com.google.cloud.storage.Storage.BlobListOption",
                 "calling_type": "CALL"
               },
@@ -60,6 +46,20 @@
                 "to_type": "Java Method",
                 "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
                 "to_name": "list(java.lang.String,com.google.cloud.storage.Storage.BlobListOption[]) return com.google.api.gax.paging.Page.Page\u003ccom.google.cloud.storage.Blob\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "currentDirectory() return com.google.cloud.storage.Storage.BlobListOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "prefix(java.lang.String) return com.google.cloud.storage.Storage.BlobListOption",
                 "calling_type": "CALL"
               },
               {
@@ -87,6 +87,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
+                "to_name": "list(java.lang.String,com.google.cloud.storage.Storage.BlobListOption[]) return com.google.api.gax.paging.Page.Page\u003ccom.google.cloud.storage.Blob\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
                 "to_name": "currentDirectory() return com.google.cloud.storage.Storage.BlobListOption",
                 "calling_type": "CALL"
               },
@@ -100,13 +107,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
-                "to_name": "list(java.lang.String,com.google.cloud.storage.Storage.BlobListOption[]) return com.google.api.gax.paging.Page.Page\u003ccom.google.cloud.storage.Blob\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "createBucket(com.google.cloud.storage.Storage,java.lang.String) return com.google.cloud.storage.Bucket",
                 "to_name": "create(com.google.cloud.storage.BucketInfo,com.google.cloud.storage.Storage.BucketTargetOption[]) return com.google.cloud.storage.Bucket",
                 "calling_type": "CALL"
@@ -115,14 +115,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "bucketExists(com.google.cloud.storage.Storage,java.lang.String) return boolean",
-                "to_name": "fields(com.google.cloud.storage.Storage.BucketField[]) return com.google.cloud.storage.Storage.BucketGetOption",
+                "to_name": "get(java.lang.String,com.google.cloud.storage.Storage.BucketGetOption[]) return com.google.cloud.storage.Bucket",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "bucketExists(com.google.cloud.storage.Storage,java.lang.String) return boolean",
-                "to_name": "get(java.lang.String,com.google.cloud.storage.Storage.BucketGetOption[]) return com.google.cloud.storage.Bucket",
+                "to_name": "fields(com.google.cloud.storage.Storage.BucketField[]) return com.google.cloud.storage.Storage.BucketGetOption",
                 "calling_type": "CALL"
               },
               {
@@ -155,8 +155,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 21,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Storage_21718.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Storage_21718.java",
+            "nb_calls_between_elements": 21
           },
           {
             "calls_between_elements": [
@@ -186,14 +186,14 @@
                 "to_type": "Java Class",
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -207,14 +207,14 @@
                 "to_type": "Java Class",
                 "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getImages(java.lang.String,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -242,14 +242,14 @@
                 "to_type": "Java Class",
                 "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getProductImage(java.lang.String,java.lang.String,java.lang.String,com.salesmanager.core.model.catalog.product.file.ProductImageSize) return com.salesmanager.core.model.content.OutputContentFile",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -270,14 +270,14 @@
                 "to_type": "Java Class",
                 "from_name": "GCPProductContentFileManager",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "GCPProductContentFileManager",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -288,8 +288,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 18,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java",
+            "nb_calls_between_elements": 18
           },
           {
             "calls_between_elements": [
@@ -358,8 +358,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java",
+            "nb_calls_between_elements": 9
           },
           {
             "calls_between_elements": [
@@ -421,8 +421,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 8,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BlobInfo_30145.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BlobInfo_30145.java",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
@@ -484,8 +484,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 8,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
@@ -540,8 +540,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ServiceOptions_12423.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ServiceOptions_12423.java",
+            "nb_calls_between_elements": 7
           },
           {
             "calls_between_elements": [
@@ -596,8 +596,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StorageOptions_3753.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StorageOptions_3753.java",
+            "nb_calls_between_elements": 7
           },
           {
             "calls_between_elements": [
@@ -645,8 +645,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -687,8 +687,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java",
+            "nb_calls_between_elements": 5
           },
           {
             "calls_between_elements": [
@@ -729,8 +729,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java",
+            "nb_calls_between_elements": 5
           },
           {
             "calls_between_elements": [
@@ -764,8 +764,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Page_16549.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Page_16549.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -799,8 +799,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java\n/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java\nsm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -834,8 +834,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BlobId_9512.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BlobId_9512.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -869,8 +869,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Acl_25996.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Acl_25996.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -904,8 +904,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/IOUtils_28745.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/IOUtils_28745.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -932,8 +932,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Arrays_4104c3d3138f8a43.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -960,8 +960,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -988,8 +988,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Blob_7441.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Blob_7441.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -1016,8 +1016,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -1044,8 +1044,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/nio/channels/Channels_99f4e229a27b8d1.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/nio/channels/Channels_99f4e229a27b8d1.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -1072,8 +1072,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/ByteArrayOutputStream_5fcc221abc7b953d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/ByteArrayOutputStream_5fcc221abc7b953d.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -1093,8 +1093,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1114,8 +1114,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StoreCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StoreCacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1135,8 +1135,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StaticContentCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StaticContentCacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1156,8 +1156,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/S3CacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/S3CacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1177,8 +1177,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/LocalCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/LocalCacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1198,8 +1198,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/GCPCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/GCPCacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1219,8 +1219,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1240,8 +1240,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/CMSManager.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/CMSManager.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1261,8 +1261,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1282,8 +1282,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1303,8 +1303,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1324,8 +1324,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1345,8 +1345,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1366,8 +1366,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1387,8 +1387,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1408,8 +1408,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1429,8 +1429,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1450,8 +1450,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1471,8 +1471,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BucketInfo_16279.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BucketInfo_16279.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1492,8 +1492,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Bucket_18060.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Bucket_18060.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1513,8 +1513,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -1527,8 +1527,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java",
+            "nb_calls_between_elements": 1
           }
         ],
         "files_list_comment": ""

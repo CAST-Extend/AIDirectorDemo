@@ -1,15 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/shoppingCart/ShoppingCartApi.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Instantiated Method",
-            "from_name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
-            "to_name": "asList\u003cPersistableShoppingCartItem[]\u003e",
-            "calling_type": "CALL"
-          },
           {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Method",
@@ -81,6 +74,13 @@
             "calling_type": "PROTOTYPE"
           },
           {
+            "from_type": "Spring MVC Put Operation",
+            "to_type": "Java Class",
+            "from_name": "api/v1/cart/{}/",
+            "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "Spring MVC Post Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/customers/{}/cart/",
@@ -111,13 +111,6 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/auth/customer/{}/cart/",
-            "to_name": "ShoppingCartApi",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Get Operation",
-            "to_type": "Java Class",
             "from_name": "api/v1/auth/customer/cart/",
             "to_name": "ShoppingCartApi",
             "calling_type": "CALL"
@@ -125,12 +118,12 @@
           {
             "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
-            "from_name": "api/v1/cart/{}/",
+            "from_name": "api/v1/auth/customer/{}/cart/",
             "to_name": "ShoppingCartApi",
             "calling_type": "CALL"
           },
           {
-            "from_type": "Spring MVC Put Operation",
+            "from_type": "Spring MVC Get Operation",
             "to_type": "Java Class",
             "from_name": "api/v1/cart/{}/",
             "to_name": "ShoppingCartApi",
@@ -141,6 +134,13 @@
             "to_type": "Java Class",
             "from_name": "api/v1/cart/{}/product/{}/",
             "to_name": "ShoppingCartApi",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Instantiated Method",
+            "from_name": "modifyCart(java.lang.String,com.salesmanager.shop.model.shoppingcart.PersistableShoppingCartItem[],com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.R",
+            "to_name": "asList\u003cPersistableShoppingCartItem[]\u003e",
             "calling_type": "CALL"
           }
         ],

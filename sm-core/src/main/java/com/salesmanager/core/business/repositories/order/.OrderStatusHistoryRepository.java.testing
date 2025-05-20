@@ -1,14 +1,14 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderStatusHistoryRepository.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderStatusHistoryRepository.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderStatusHistoryRepository.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/order/OrderStatusHistoryRepository.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
         "nb_impacting_elements": 2,
         "impacting_elements": [
           {
-            "name": "select osh from OrderStatusHistory",
+            "name": "findByOrderId(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.order.orderstatus.OrderStatusHistory\u003e",
             "comment": "",
-            "type": "Spring Data JPQL Query",
+            "type": "Java Method",
             "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {
@@ -50,9 +50,9 @@
             ]
           },
           {
-            "name": "findByOrderId(java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.order.orderstatus.OrderStatusHistory\u003e",
+            "name": "select osh from OrderStatusHistory",
             "comment": "",
-            "type": "Java Method",
+            "type": "Spring Data JPQL Query",
             "nb_impacted_elements": 6,
             "impacted_elements_to_test": [
               {

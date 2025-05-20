@@ -1,60 +1,22 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/PageableUserRepository.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 6,
+        "nb_impacting_elements": 7,
         "impacting_elements": [
-          {
-            "name": "select distinct u from",
-            "comment": "",
-            "type": "Spring Data JPQL Query",
-            "nb_impacted_elements": 6,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "users",
-                "full_name": "salesmanager.users",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
           {
             "name": "listByStoreIds(java.util.List.List\u003cjava.lang.Integer\u003e,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/users/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/GET/api/v1/private/users/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -97,8 +59,14 @@
             "name": "listAll(java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/users/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/GET/api/v1/private/users/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -141,8 +109,78 @@
             "name": "listByStore(java.lang.String,java.lang.String,org.springframework.data.domain.Pageable) return org.springframework.data.domain.Page.Page\u003ccom.salesmanager.core.model.user.User\u003e",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 7,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/users/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/GET/api/v1/private/users/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "users",
+                "full_name": "salesmanager.users",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "PageableUserRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/users/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/GET/api/v1/private/users/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "select distinct u from",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 7,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/users/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\user\\UserApi.java/api/v1/PORT/GET/api/v1/private/users/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",

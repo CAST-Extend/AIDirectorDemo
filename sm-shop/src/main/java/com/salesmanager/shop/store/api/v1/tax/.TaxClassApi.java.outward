@@ -1,9 +1,65 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxClassApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxClassApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxClassApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/tax/TaxClassApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 7,
+        "nb_files_with_called_elements": 9,
         "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "deleteTaxClass(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "get(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
+                "to_name": "taxClass(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "list(int,int,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
+                "to_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "update(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.tax.PersistableTaxClass) return void",
+                "to_name": "updateTaxClass(java.lang.Long,com.salesmanager.shop.model.tax.PersistableTaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+                "to_name": "existsTaxClass(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "create(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.tax.PersistableTaxClass) return com.salesmanager.shop.model.entity.Entity",
+                "to_name": "createTaxClass(com.salesmanager.shop.model.tax.PersistableTaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.Entity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxClassApi",
+                "to_name": "TaxFacadeImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java"
+          },
           {
             "calls_between_elements": [
               {
@@ -58,17 +114,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/tax/facade/TaxFacade.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/tax/facade/TaxFacade.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Instantiated Constructor",
-                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
-                "to_name": "EntityExists\u003cEntityExists\u003e",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -92,8 +141,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
           },
           {
             "calls_between_elements": [
@@ -114,7 +163,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxClass.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/tax/ReadableTaxClass.java"
           },
           {
             "calls_between_elements": [
@@ -135,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -156,7 +205,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResponseEntity_29174.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
           },
           {
             "calls_between_elements": [
@@ -177,7 +226,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_9876.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+                "to_name": "EntityExists\u003cEntityExists\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

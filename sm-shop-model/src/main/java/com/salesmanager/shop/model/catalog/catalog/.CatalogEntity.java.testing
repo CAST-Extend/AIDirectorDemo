@@ -1,20 +1,122 @@
 {
-  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java]": {
-    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java]": {
+    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 2,
+        "nb_impacting_elements": 7,
         "impacting_elements": [
+          {
+            "name": "setCode(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
           {
             "name": "getCode() return java.lang.String",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/catalog/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
                 "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setDefaultCatalog(boolean) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setVisible(boolean) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 4,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -27,32 +129,72 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/catalog/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/{}/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/catalog/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/catalog/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
                 "type": "Spring MVC Any Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/catalog/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalog/{}/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/catalogs/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/GET/api/v1/private/catalogs/",
                 "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "isDefaultCatalog() return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Any Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "isVisible() return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/catalog/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/POST/api/v1/private/catalog/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/catalog/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\catalog\\CatalogApi.java/api/v1/PORT/ANY/api/v1/private/catalog/{}/",
+                "type": "Spring MVC Any Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]

@@ -1,25 +1,11 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxServiceImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 37,
         "files": [
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -36,9 +22,16 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
+                "to_type": "Java Method",
                 "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "BigDecimal(double)",
+                "to_name": "add(java.math.BigDecimal) return java.math.BigDecimal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "setScale(int,java.math.RoundingMode) return java.math.BigDecimal",
                 "calling_type": "CALL"
               },
               {
@@ -46,6 +39,13 @@
                 "to_type": "Java Constructor",
                 "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
                 "to_name": "BigDecimal(int)",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "BigDecimal(double)",
                 "calling_type": "CALL"
               },
               {
@@ -72,7 +72,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
           },
           {
             "calls_between_elements": [
@@ -92,22 +92,29 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
                 "to_name": "ServiceException(java.lang.String)",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
-                "to_name": "ServiceException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
+                "from_name": "TaxServiceImpl",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -117,13 +124,6 @@
                 "from_name": "TaxServiceImpl",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -135,7 +135,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -191,7 +191,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -247,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxrate/TaxRate.java"
           },
           {
             "calls_between_elements": [
@@ -303,7 +303,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxConfiguration.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +359,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxItem.java"
           },
           {
             "calls_between_elements": [
@@ -408,7 +408,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/MerchantConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -499,7 +499,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/taxclass/TaxClass.java"
           },
           {
             "calls_between_elements": [
@@ -534,10 +534,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxBasisCalculation.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/tax/TaxBasisCalculation.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "size() return int",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -553,13 +560,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "size() return int",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Generic Java Interface",
                 "from_name": "TaxServiceImpl",
@@ -569,77 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getState() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getZone() return com.salesmanager.core.model.reference.zone.Zone",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "Billing",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getStorestateprovince() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getZone() return com.salesmanager.core.model.reference.zone.Zone",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -674,7 +604,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Delivery.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getState() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getZone() return com.salesmanager.core.model.reference.zone.Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "Billing",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/Billing.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getStorestateprovince() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getZone() return com.salesmanager.core.model.reference.zone.Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "getCountry() return com.salesmanager.core.model.reference.country.Country",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -709,7 +709,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationService.java"
           },
           {
             "calls_between_elements": [
@@ -744,7 +744,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/system/MerchantConfigurationServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -765,7 +765,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -793,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -821,7 +821,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shipping/ShippingSummary.java"
           },
           {
             "calls_between_elements": [
@@ -849,7 +849,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/zone/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -877,7 +877,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -905,7 +905,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotalItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotalItem.java"
           },
           {
             "calls_between_elements": [
@@ -933,7 +933,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderSummary.java"
           },
           {
             "calls_between_elements": [
@@ -961,7 +961,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -989,22 +989,22 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxRateService.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Instantiated Method",
+                "to_type": "Java Constructor",
                 "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
-                "to_name": "readValue\u003cTaxConfiguration\u003e",
+                "to_name": "ObjectMapper()",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
+                "to_type": "Java Instantiated Method",
                 "from_name": "getTaxConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.tax.TaxConfiguration",
-                "to_name": "ObjectMapper()",
+                "to_name": "readValue\u003cTaxConfiguration\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -1017,49 +1017,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ObjectMapper_23831.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "longValue() return long",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "Long",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TaxServiceImpl",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ObjectMapper_23831.java"
           },
           {
             "calls_between_elements": [
@@ -1080,7 +1038,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxServiceImpl",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "longValue() return long",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "calculateTax(com.salesmanager.core.model.order.OrderSummary,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanag",
+                "to_name": "Long",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           },
           {
             "calls_between_elements": [
@@ -1101,7 +1101,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/TreeMap_dc9c9cb98c7f286d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/TreeMap_dc9c9cb98c7f286d.java"
           },
           {
             "calls_between_elements": [
@@ -1122,7 +1122,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -1143,7 +1143,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -1164,7 +1164,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1185,7 +1185,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/tax/TaxClassService.java"
           },
           {
             "calls_between_elements": [
@@ -1199,7 +1199,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/RoundingMode_b2acb68817e441ac.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/RoundingMode_b2acb68817e441ac.java"
           },
           {
             "calls_between_elements": [
@@ -1213,7 +1213,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -1227,7 +1227,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           }
         ],
         "files_list_comment": ""

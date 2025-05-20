@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java]": {
-    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/customer/review/CustomerReviewRepository.java]": [
       {
         "calls_between_elements": [
           {
@@ -20,15 +20,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findByRevieweAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
-            "to_name": "select distinct r from",
+            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
+            "to_name": "select r from CustomerReview",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Spring Data JPQL Query",
-            "from_name": "findOne(java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
-            "to_name": "select r from CustomerReview",
+            "from_name": "findByRevieweAndReviewed(java.lang.Long,java.lang.Long) return com.salesmanager.core.model.customer.review.CustomerReview",
+            "to_name": "select distinct r from",
             "calling_type": "CALL"
           }
         ],

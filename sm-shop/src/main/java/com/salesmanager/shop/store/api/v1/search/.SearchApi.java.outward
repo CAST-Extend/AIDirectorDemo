@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/search/SearchApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 3,
+        "nb_files_with_called_elements": 4,
         "files": [
           {
             "calls_between_elements": [
@@ -16,8 +16,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cSearchItem\u003e",
-                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cSearchItem\u003e",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -44,7 +44,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -58,8 +58,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cSearchItem\u003e",
-                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cSearchItem\u003e",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "search(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.shop.model.catalog.SearchProductRequest) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -72,7 +72,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/search/facade/SearchFacade.java"
           },
           {
             "calls_between_elements": [
@@ -93,7 +93,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/SearchProductRequest.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/SearchProductRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "search(com.salesmanager.shop.model.catalog.SearchProductRequest,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003cmodules.commons.search.request.SearchItem\u003e",
+                "to_name": "SearchItem",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchApi",
+                "to_name": "SearchItem",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SearchItem_11643.java"
           }
         ],
         "files_list_comment": ""

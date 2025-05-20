@@ -1,116 +1,34 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java]": {
-    "00. elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java]": {
+    "00. elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/shoppingcart/ShoppingCartItemRepository.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 4,
+        "nb_impacting_elements": 5,
         "impacting_elements": [
-          {
-            "name": "delete from ShoppingCartItem i",
-            "comment": "",
-            "type": "Spring Data JPQL Query",
-            "nb_impacted_elements": 7,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
-          {
-            "name": "select i from ShoppingCartItem",
-            "comment": "",
-            "type": "Spring Data JPQL Query",
-            "nb_impacted_elements": 7,
-            "impacted_elements_to_test": [
-              {
-                "name": "merchant_store",
-                "full_name": "salesmanager.merchant_store",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart_item",
-                "full_name": "salesmanager.shopping_cart_item",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "country",
-                "full_name": "salesmanager.country",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "currency",
-                "full_name": "salesmanager.currency",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "geozone",
-                "full_name": "salesmanager.geozone",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              },
-              {
-                "name": "shopping_cart",
-                "full_name": "salesmanager.shopping_cart",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
-              }
-            ]
-          },
           {
             "name": "deleteById(java.lang.Long) return void",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -159,8 +77,188 @@
             "name": "findOne(java.lang.Long) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 7,
+            "nb_impacted_elements": 10,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "ShoppingCartItemRepository",
+            "comment": "",
+            "type": "Java Interface",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "delete from ShoppingCartItem i",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "merchant_store",
+                "full_name": "salesmanager.merchant_store",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart_item",
+                "full_name": "salesmanager.shopping_cart_item",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "country",
+                "full_name": "salesmanager.country",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "currency",
+                "full_name": "salesmanager.currency",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "geozone",
+                "full_name": "salesmanager.geozone",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              },
+              {
+                "name": "shopping_cart",
+                "full_name": "salesmanager.shopping_cart",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
+          {
+            "name": "select i from ShoppingCartItem",
+            "comment": "",
+            "type": "Spring Data JPQL Query",
+            "nb_impacted_elements": 10,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/cart/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/PUT/api/v1/cart/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/multi/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/POST/api/v1/cart/{}/multi/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/cart/{}/product/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\shoppingCart\\ShoppingCartApi.java/api/v1/PORT/DELETE/api/v1/cart/{}/product/{}/",
+                "type": "Spring MVC Delete Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",

@@ -1,11 +1,18 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 29,
+        "nb_files_with_called_elements": 30,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "ProductImage",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -23,13 +30,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "ProductImage",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
                 "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ProductImage",
                 "calling_type": "USE"
@@ -40,27 +40,6 @@
                 "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ProductImage",
                 "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "isDefaultImage() return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "setProductImage(java.lang.String) return void",
-                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -81,6 +60,27 @@
                 "to_type": "Java Method",
                 "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "setDefaultImage(boolean) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setProduct(com.salesmanager.core.model.catalog.product.Product) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "isDefaultImage() return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "setProductImage(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -107,27 +107,13 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ResourceNotFoundException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ResourceNotFoundException(java.lang.String)",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
                 "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
                 "to_name": "ResourceNotFoundException",
                 "calling_type": "RAISE"
@@ -142,9 +128,16 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ResourceNotFoundException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ResourceNotFoundException(java.lang.String)",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -152,6 +145,13 @@
                 "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ResourceNotFoundException(java.lang.String)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ResourceNotFoundException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -204,17 +204,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "ServiceRuntimeException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "ServiceRuntimeException(java.lang.String,java.lang.Throwable)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "ServiceRuntimeException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -247,21 +247,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "getCode() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getId() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductImageApi",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "getById(java.io.Serializable) return com.salesmanager.core.model.generic.SalesManagerEntity",
                 "calling_type": "CALL"
               },
@@ -303,73 +359,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getId() return java.lang.Integer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "getId() return java.lang.Integer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getId() return java.lang.Integer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductImageApi",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -381,6 +374,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
                 "to_name": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore",
                 "calling_type": "CALL"
               },
@@ -408,49 +408,56 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java Method",
                 "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "product",
-                "calling_type": "USE"
+                "to_name": "updateProductImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "product",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java Method",
                 "from_name": "deleteImage(java.lang.Long,java.lang.Long,com.salesmanager.shop.model.entity.NameEntity,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "product",
-                "calling_type": "USE"
+                "to_name": "getProductImage(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.Optional.Optional\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java Method",
+                "from_name": "deleteImage(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.image.ProductImage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "product",
-                "calling_type": "USE"
+                "to_name": "addProductImages(com.salesmanager.core.model.catalog.product.Product,java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.image.ProductImage\u003e) return void",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java Class",
                 "from_name": "ProductImageApi",
-                "to_name": "product",
-                "calling_type": "USE"
+                "to_name": "ProductImageServiceImpl",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/Salesmanager.sql"
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -492,7 +499,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -534,7 +541,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -576,52 +583,10 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/image/ProductImageService.java"
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteImage(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteImage(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "ReadableImage",
-                "calling_type": "USE"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -630,9 +595,9 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "ProductImageApi",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
                 "to_name": "ReadableImage",
                 "calling_type": "USE"
               },
@@ -642,11 +607,18 @@
                 "from_name": "ProductImageApi",
                 "to_name": "ReadableImage",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductImageApi",
+                "to_name": "ReadableImage",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
           },
           {
             "calls_between_elements": [
@@ -681,7 +653,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Stream_acd8fba46ed2250d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteImage(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteImage(java.lang.Long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -716,7 +723,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/UnauthorizedException.java"
           },
           {
             "calls_between_elements": [
@@ -751,35 +758,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/MultipartFile_11333.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductImageApi",
-                "to_name": "IOException",
-                "calling_type": "THROW"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/MultipartFile_4084.java"
           },
           {
             "calls_between_elements": [
@@ -807,7 +786,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/stream/Collectors_e0dff9915da796c9.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "imageDetails(java.lang.Long,java.lang.Long,java.lang.Integer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductImageApi",
+                "to_name": "IOException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "isNotEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadImage(java.lang.Long,org.springframework.web.multipart.MultipartFile[],java.lang.Integer,boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "isEmpty(java.util.Collection.Collection\u003c? extends\u003e) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductImageApi",
+                "to_name": "CollectionUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_5021.java"
           },
           {
             "calls_between_elements": [
@@ -828,49 +863,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "stream() return java.util.stream.Stream.Stream\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "ProductImageApi",
-                "to_name": "Collection\u003cE\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Generic Java Interface",
-                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
-                "to_name": "Comparator\u003cT\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "ProductImageApi",
-                "to_name": "Comparator\u003cT\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Comparator_4d82878d1e85bb0d.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java"
           },
           {
             "calls_between_elements": [
@@ -891,7 +884,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "stream() return java.util.stream.Stream.Stream\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductImageApi",
+                "to_name": "Collection\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Collection_e2a8ddba03e69e0d.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Generic Java Interface",
+                "from_name": "images(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.shop.model.catalog.product.ReadableImage\u003e",
+                "to_name": "Comparator\u003cT\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "ProductImageApi",
+                "to_name": "Comparator\u003cT\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Comparator_4d82878d1e85bb0d.java"
           },
           {
             "calls_between_elements": [
@@ -912,7 +947,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -933,7 +968,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletResponse_3309.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletResponse_27830.java"
           },
           {
             "calls_between_elements": [
@@ -954,7 +989,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -968,7 +1003,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/facade/order/OrderFacadeImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/order/OrderFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -982,7 +1017,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
           },
           {
             "calls_between_elements": [
@@ -996,7 +1031,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           },
           {
             "calls_between_elements": [
@@ -1010,7 +1045,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           },
           {
             "calls_between_elements": [
@@ -1024,7 +1059,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           }
         ],
         "files_list_comment": ""

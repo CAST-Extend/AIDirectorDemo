@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java]": {
-    "00. file [/sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java] defines following code elements": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java]": {
+    "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/customer/Customer.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,40 +9,8 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "setCustomerReviewCount",
-                "signature": "setCustomerReviewCount(java.lang.Integer) return void"
-              },
-              {
-                "name": "getCustomerReviewCount",
-                "signature": "getCustomerReviewCount() return java.lang.Integer"
-              },
-              {
-                "name": "setCustomerReviewAvg",
-                "signature": "setCustomerReviewAvg(java.math.BigDecimal) return void"
-              },
-              {
-                "name": "getCustomerReviewAvg",
-                "signature": "getCustomerReviewAvg() return java.math.BigDecimal"
-              },
-              {
-                "name": "getBilling",
-                "signature": "getBilling() return com.salesmanager.core.model.common.Billing"
-              },
-              {
-                "name": "getDelivery",
-                "signature": "getDelivery() return com.salesmanager.core.model.common.Delivery"
-              },
-              {
-                "name": "getMerchantStore",
-                "signature": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore"
-              },
-              {
-                "name": "getEmailAddress",
-                "signature": "getEmailAddress() return java.lang.String"
-              },
-              {
-                "name": "getAttributes",
-                "signature": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e"
+                "name": "setMerchantStore",
+                "signature": "setMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void"
               },
               {
                 "name": "setCredentialsResetRequest",
@@ -73,6 +41,10 @@
                 "signature": "setGender(com.salesmanager.core.model.customer.CustomerGender) return void"
               },
               {
+                "name": "getAttributes",
+                "signature": "getAttributes() return java.util.Set.Set\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e"
+              },
+              {
                 "name": "setDefaultLanguage",
                 "signature": "setDefaultLanguage(com.salesmanager.core.model.reference.language.Language) return void"
               },
@@ -95,10 +67,6 @@
               {
                 "name": "setDelivery",
                 "signature": "setDelivery(com.salesmanager.core.model.common.Delivery) return void"
-              },
-              {
-                "name": "setMerchantStore",
-                "signature": "setMerchantStore(com.salesmanager.core.model.merchant.MerchantStore) return void"
               },
               {
                 "name": "setAnonymous",
@@ -133,16 +101,40 @@
                 "signature": "setId(java.lang.Long) return void"
               },
               {
-                "name": "getId",
-                "signature": "getId() return java.lang.Long"
+                "name": "setCustomerReviewCount",
+                "signature": "setCustomerReviewCount(java.lang.Integer) return void"
               },
               {
-                "name": "getShowBillingStateList",
-                "signature": "getShowBillingStateList() return java.lang.String"
+                "name": "getCustomerReviewCount",
+                "signature": "getCustomerReviewCount() return java.lang.Integer"
               },
               {
-                "name": "setShowBillingStateList",
-                "signature": "setShowBillingStateList(java.lang.String) return void"
+                "name": "setCustomerReviewAvg",
+                "signature": "setCustomerReviewAvg(java.math.BigDecimal) return void"
+              },
+              {
+                "name": "getCustomerReviewAvg",
+                "signature": "getCustomerReviewAvg() return java.math.BigDecimal"
+              },
+              {
+                "name": "getBilling",
+                "signature": "getBilling() return com.salesmanager.core.model.common.Billing"
+              },
+              {
+                "name": "getDelivery",
+                "signature": "getDelivery() return com.salesmanager.core.model.common.Delivery"
+              },
+              {
+                "name": "getMerchantStore",
+                "signature": "getMerchantStore() return com.salesmanager.core.model.merchant.MerchantStore"
+              },
+              {
+                "name": "getEmailAddress",
+                "signature": "getEmailAddress() return java.lang.String"
+              },
+              {
+                "name": "setShowDeliveryStateList",
+                "signature": "setShowDeliveryStateList(java.lang.String) return void"
               },
               {
                 "name": "setAuditSection",
@@ -153,12 +145,16 @@
                 "signature": "setAttributes(java.util.Set.Set\u003ccom.salesmanager.core.model.customer.attribute.CustomerAttribute\u003e) return void"
               },
               {
-                "name": "setShowDeliveryStateList",
-                "signature": "setShowDeliveryStateList(java.lang.String) return void"
-              },
-              {
                 "name": "getShowDeliveryStateList",
                 "signature": "getShowDeliveryStateList() return java.lang.String"
+              },
+              {
+                "name": "setShowBillingStateList",
+                "signature": "setShowBillingStateList(java.lang.String) return void"
+              },
+              {
+                "name": "getShowBillingStateList",
+                "signature": "getShowBillingStateList() return java.lang.String"
               },
               {
                 "name": "setShowCustomerStateList",
@@ -191,6 +187,10 @@
               {
                 "name": "getDateOfBirth",
                 "signature": "getDateOfBirth() return java.util.Date"
+              },
+              {
+                "name": "getId",
+                "signature": "getId() return java.lang.Long"
               }
             ]
           },
@@ -200,15 +200,11 @@
             "type": "Java Field",
             "elements": [
               {
-                "name": "showBillingStateList",
+                "name": "customerReviewAvg",
                 "signature": ""
               },
               {
-                "name": "emailAddress",
-                "signature": ""
-              },
-              {
-                "name": "gender",
+                "name": "showDeliveryStateList",
                 "signature": ""
               },
               {
@@ -216,7 +212,7 @@
                 "signature": ""
               },
               {
-                "name": "showDeliveryStateList",
+                "name": "showBillingStateList",
                 "signature": ""
               },
               {
@@ -256,10 +252,6 @@
                 "signature": ""
               },
               {
-                "name": "customerReviewAvg",
-                "signature": ""
-              },
-              {
                 "name": "anonymous",
                 "signature": ""
               },
@@ -276,7 +268,15 @@
                 "signature": ""
               },
               {
+                "name": "emailAddress",
+                "signature": ""
+              },
+              {
                 "name": "dateOfBirth",
+                "signature": ""
+              },
+              {
+                "name": "gender",
                 "signature": ""
               },
               {
@@ -299,15 +299,19 @@
           },
           {
             "comment": "",
-            "nb_elements": 2,
-            "type": "Java Instantiated Constructor",
+            "nb_elements": 3,
+            "type": "Java Instantiated Class",
             "elements": [
+              {
+                "name": "HashSet\u003cCustomerAttribute\u003e",
+                "signature": ""
+              },
               {
                 "name": "ArrayList\u003cProductReview\u003e",
                 "signature": ""
               },
               {
-                "name": "HashSet\u003cCustomerAttribute\u003e",
+                "name": "SalesManagerEntity\u003cLong,Customer\u003e",
                 "signature": ""
               }
             ]
@@ -315,7 +319,7 @@
           {
             "comment": "",
             "nb_elements": 2,
-            "type": "Java Instantiated Class",
+            "type": "Java Instantiated Constructor",
             "elements": [
               {
                 "name": "ArrayList\u003cProductReview\u003e",
@@ -345,33 +349,11 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Interface",
-            "elements": [
-              {
-                "name": "Set\u003cCustomerAttribute\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
             "type": "Java Constructor",
             "elements": [
               {
                 "name": "Customer",
                 "signature": "Customer()"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "Customer.java",
-                "signature": ""
               }
             ]
           },
@@ -393,6 +375,28 @@
             "elements": [
               {
                 "name": "Customer",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Interface",
+            "elements": [
+              {
+                "name": "Set\u003cCustomerAttribute\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "Customer.java",
                 "signature": ""
               }
             ]

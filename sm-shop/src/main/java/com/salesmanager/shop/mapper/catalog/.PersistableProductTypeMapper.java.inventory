@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/PersistableProductTypeMapper.java] defines following code elements": [
       {
         "types": [
           {
@@ -13,10 +13,6 @@
                 "signature": "findAppropriateDescription(com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription"
               },
               {
-                "name": "typeDescription",
-                "signature": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription"
-              },
-              {
                 "name": "type",
                 "signature": "type(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.catalog.product.type.ProductType) return com.salesmanager.core.model.catalog.product.type.ProductType"
               },
@@ -27,6 +23,10 @@
               {
                 "name": "convert",
                 "signature": "convert(com.salesmanager.shop.model.catalog.product.type.PersistableProductType,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.type.ProductType"
+              },
+              {
+                "name": "typeDescription",
+                "signature": "typeDescription(com.salesmanager.shop.model.catalog.product.type.ProductTypeDescription,com.salesmanager.core.model.catalog.product.type.ProductType,java.lang.String) return com.salesmanager.core.model.catalog.product.type.ProductTypeDescription"
               }
             ]
           },
@@ -62,23 +62,16 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Interface",
+            "nb_elements": 2,
+            "type": "",
             "elements": [
               {
-                "name": "List\u003cProductTypeDescription\u003e",
+                "name": "languageService",
                 "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "Java Lambda Expression",
-            "elements": [
+              },
               {
-                "name": "findAppropriateDescription$lambda$0",
-                "signature": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean"
+                "name": "PersistableProductTypeMapper.java",
+                "signature": ""
               }
             ]
           },
@@ -96,10 +89,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "PersistableProductTypeMapper.java",
+                "name": "persistableProductTypeMapper",
                 "signature": ""
               }
             ]
@@ -123,6 +116,28 @@
               {
                 "name": "PersistableProductTypeMapper",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Interface",
+            "elements": [
+              {
+                "name": "List\u003cProductTypeDescription\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Lambda Expression",
+            "elements": [
+              {
+                "name": "findAppropriateDescription$lambda$0",
+                "signature": "findAppropriateDescription$lambda$0(com.salesmanager.core.model.catalog.product.type.ProductTypeDescription) return boolean"
               }
             ]
           }

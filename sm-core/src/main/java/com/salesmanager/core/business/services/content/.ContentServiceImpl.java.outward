@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/content/ContentServiceImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 40,
+        "nb_files_with_called_elements": 39,
         "files": [
           {
             "calls_between_elements": [
@@ -18,14 +18,14 @@
                 "to_type": "Java Class",
                 "from_name": "renameFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String,java.lang.String) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "renameFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String,java.lang.String) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -50,6 +50,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "addFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
                 "to_name": "ServiceException(java.lang.String)",
@@ -61,13 +68,6 @@
                 "from_name": "addFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addFolder(com.salesmanager.core.model.merchant.MerchantStore,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String) return void",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -116,14 +116,14 @@
                 "to_type": "Java Class",
                 "from_name": "addContentFiles(java.lang.String,java.util.List.List\u003ccom.salesmanager.core.model.content.InputContentFile\u003e) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addContentFiles(java.lang.String,java.util.List.List\u003ccom.salesmanager.core.model.content.InputContentFile\u003e) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -137,14 +137,14 @@
                 "to_type": "Java Class",
                 "from_name": "addFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -158,14 +158,14 @@
                 "to_type": "Java Class",
                 "from_name": "addImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -199,6 +199,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addOptionImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -273,9 +280,9 @@
                 "calling_type": "THROW"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "from_name": "ContentServiceImpl",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -291,19 +298,12 @@
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ContentServiceImpl",
-                "to_name": "ServiceException",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 42,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 21,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -590,7 +590,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 18,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -605,14 +605,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "renameFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String,java.lang.String) return void",
-                "to_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "renameFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.String,java.lang.String) return void",
-                "to_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
+                "to_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
                 "calling_type": "CALL"
               },
               {
@@ -709,7 +709,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/StaticContentFileManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/StaticContentFileManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -821,7 +821,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 15,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -900,19 +900,19 @@
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "Content",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "Content",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/Content.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/Content.java"
           },
           {
             "calls_between_elements": [
@@ -1003,7 +1003,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 12,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepository.java"
           },
           {
             "calls_between_elements": [
@@ -1066,14 +1066,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addContentFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "notNull(java.lang.Object,java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "from_name": "addContentFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "notNull(java.lang.Object,java.lang.String) return void",
                 "calling_type": "CALL"
               },
@@ -1087,7 +1087,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Assert_5049.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Assert_5049.java"
           },
           {
             "calls_between_elements": [
@@ -1145,19 +1145,19 @@
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "InputContentFile",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "InputContentFile",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1173,6 +1173,13 @@
                 "to_type": "Java Enum Item",
                 "from_name": "addOptionImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "PROPERTY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "to_name": "LOGO",
                 "calling_type": "READ"
               },
               {
@@ -1197,13 +1204,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "LOGO",
-                "calling_type": "READ"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Enum",
                 "from_name": "ContentServiceImpl",
@@ -1220,7 +1220,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
           },
           {
             "calls_between_elements": [
@@ -1276,7 +1276,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -1332,7 +1332,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
           },
           {
             "calls_between_elements": [
@@ -1381,7 +1381,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1402,6 +1402,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
+                "to_name": "setFileContentType(com.salesmanager.core.model.content.FileContentType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "addContentFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "setFileContentType(com.salesmanager.core.model.content.FileContentType) return void",
                 "calling_type": "CALL"
@@ -1414,13 +1421,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addLogo(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "setFileContentType(com.salesmanager.core.model.content.FileContentType) return void",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
@@ -1430,7 +1430,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1472,7 +1472,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FileRemove.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FileRemove.java"
           },
           {
             "calls_between_elements": [
@@ -1514,7 +1514,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FilePut.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FilePut.java"
           },
           {
             "calls_between_elements": [
@@ -1556,49 +1556,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FileGet.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String) return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "addContentFiles(java.lang.String,java.util.List.List\u003ccom.salesmanager.core.model.content.InputContentFile\u003e) return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "addFile(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "addImage(java.lang.String,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "ContentServiceImpl",
-                "to_name": "content",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FileGet.java"
           },
           {
             "calls_between_elements": [
@@ -1640,7 +1598,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1663,19 +1621,19 @@
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "OutputContentFile",
-                "calling_type": "USE"
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ContentServiceImpl",
                 "to_name": "OutputContentFile",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1710,7 +1668,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -1745,7 +1703,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
           },
           {
             "calls_between_elements": [
@@ -1773,7 +1731,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/net/URLConnection_bcbebd27d6eb2587.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/net/URLConnection_bcbebd27d6eb2587.java"
           },
           {
             "calls_between_elements": [
@@ -1801,7 +1759,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -1829,7 +1787,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PageRequest_12637.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PageRequest_12637.java"
           },
           {
             "calls_between_elements": [
@@ -1857,7 +1815,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/PageContentRepository.java"
           },
           {
             "calls_between_elements": [
@@ -1885,7 +1843,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/regex/Pattern_c8ed48e9985e85a4.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Pattern_c8ed48e9985e85a4.java"
           },
           {
             "calls_between_elements": [
@@ -1913,7 +1871,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepositoryCustom.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/repositories/content/ContentRepositoryCustom.java"
           },
           {
             "calls_between_elements": [
@@ -1934,7 +1892,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           },
           {
             "calls_between_elements": [
@@ -1955,7 +1913,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/ByteArrayOutputStream_5fcc221abc7b953d.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/ByteArrayOutputStream_5fcc221abc7b953d.java"
           },
           {
             "calls_between_elements": [
@@ -1976,7 +1934,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/ByteArrayInputStream_36c562e7cf9c7d5c.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/ByteArrayInputStream_36c562e7cf9c7d5c.java"
           },
           {
             "calls_between_elements": [
@@ -1997,7 +1955,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderRemove.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderRemove.java"
           },
           {
             "calls_between_elements": [
@@ -2018,7 +1976,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderList.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderList.java"
           },
           {
             "calls_between_elements": [
@@ -2039,7 +1997,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderPut.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/FolderPut.java"
           },
           {
             "calls_between_elements": [
@@ -2060,7 +2018,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -2081,7 +2039,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/regex/Matcher_f6408c04ae6a3694.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/regex/Matcher_f6408c04ae6a3694.java"
           },
           {
             "calls_between_elements": [
@@ -2102,7 +2060,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentDescription.java"
           },
           {
             "calls_between_elements": [
@@ -2116,7 +2074,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -2130,7 +2088,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           },
           {
             "calls_between_elements": [
@@ -2144,7 +2102,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           }
         ],
         "files_list_comment": ""

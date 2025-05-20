@@ -1,9 +1,93 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/catalog/CatalogApi.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 15,
+        "nb_files_with_called_elements": 16,
         "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCatalogEntry(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletRequest) return com.salesmanager.shop.model.entity.",
+                "to_name": "listCatalogEntry(java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeCatalogEntry(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "removeCatalogEntry(java.lang.Long,java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCatalogEntry(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catal",
+                "to_name": "addCatalogEntry(com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.Read",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addCatalogEntry(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catal",
+                "to_name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "deleteCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+                "to_name": "getCatalog(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "to_name": "updateCatalog(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+                "to_name": "saveCatalog(com.salesmanager.shop.model.catalog.catalog.PersistableCatalog,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.catalog.ReadableCatalog",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+                "to_name": "uniqueCatalog(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCatalogs(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,java.util.Optional.Optional\u003cjava.lang.String\u003e,java.lang.Integer,java.lang.Integer) return com.salesmanager.shop.model.entity.ReadableEnt",
+                "to_name": "getListCatalogs(java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,int,int) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityLi",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogApi",
+                "to_name": "CatalogFacadeImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 11,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/facade/catalog/CatalogFacadeImpl.java"
+          },
           {
             "calls_between_elements": [
               {
@@ -86,7 +170,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/catalog/facade/CatalogFacade.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/store/controller/catalog/facade/CatalogFacade.java"
           },
           {
             "calls_between_elements": [
@@ -128,7 +212,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Optional_189b8b933a5f4945.java"
           },
           {
             "calls_between_elements": [
@@ -163,42 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Instantiated Constructor",
-                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
-                "to_name": "EntityExists\u003cEntityExists\u003e",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
-                "to_name": "EntityExists",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CatalogApi",
-                "to_name": "EntityExists",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CatalogApi",
-                "to_name": "EntityExists",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -226,7 +275,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ServletRequest_26667.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ServletRequest_20448.java"
           },
           {
             "calls_between_elements": [
@@ -254,7 +303,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+                "to_name": "EntityExists",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogApi",
+                "to_name": "EntityExists",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogApi",
+                "to_name": "EntityExists",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/EntityExists.java"
           },
           {
             "calls_between_elements": [
@@ -275,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/ReadableCatalogCategoryEntry.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/ReadableCatalogCategoryEntry.java"
           },
           {
             "calls_between_elements": [
@@ -296,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntity.java"
           },
           {
             "calls_between_elements": [
@@ -317,28 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntryEntity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "addCatalogEntry(java.lang.Long,com.salesmanager.shop.model.catalog.catalog.PersistableCatalogCategoryEntry,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catal",
-                "to_name": "catalog",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "CatalogApi",
-                "to_name": "catalog",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/CatalogEntryEntity.java"
           },
           {
             "calls_between_elements": [
@@ -359,7 +415,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -380,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResponseEntity_29174.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
           },
           {
             "calls_between_elements": [
@@ -401,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_9876.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
           },
           {
             "calls_between_elements": [
@@ -422,7 +478,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/ReadableCatalog.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/catalog/ReadableCatalog.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Instantiated Constructor",
+                "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+                "to_name": "EntityExists\u003cEntityExists\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java"
           },
           {
             "calls_between_elements": [
@@ -436,7 +506,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

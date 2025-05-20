@@ -1,16 +1,26 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacade.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacade.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacade.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/controller/system/MerchantConfigurationFacade.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/PublicConfigsApi.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
+                "to_name": "getMerchantConfig(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.system.Configs",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PublicConfigsApi",
+                "to_name": "MerchantConfigurationFacade",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/system/PublicConfigsApi.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

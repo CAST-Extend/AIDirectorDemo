@@ -1,16 +1,54 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionValueRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionValueRepository.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionValueRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/attribute/ProductOptionValueRepository.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/attribute/ProductOptionValueServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStoreNoReadOnly(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "to_name": "findByReadOnly(java.lang.Integer,java.lang.Integer,boolean) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByName(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "to_name": "findByName(java.lang.Integer,java.lang.String,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
+                "to_name": "findByCode(java.lang.Integer,java.lang.String) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "to_name": "findByStoreId(java.lang.Integer,java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.attribute.ProductOptionValue\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
+                "to_name": "findOne(java.lang.Integer,java.lang.Long) return com.salesmanager.core.model.catalog.product.attribute.ProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ProductOptionValueServiceImpl",
+                "to_name": "ProductOptionValueRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/attribute/ProductOptionValueServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 6
           }

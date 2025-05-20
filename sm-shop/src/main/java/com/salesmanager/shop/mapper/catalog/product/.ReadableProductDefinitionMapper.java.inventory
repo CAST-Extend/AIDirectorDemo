@@ -1,8 +1,39 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductDefinitionMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductDefinitionMapper.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductDefinitionMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductDefinitionMapper.java] defines following code elements": [
       {
         "types": [
+          {
+            "comment": "",
+            "nb_elements": 6,
+            "type": "",
+            "elements": [
+              {
+                "name": "readableProductTypeMapper",
+                "signature": ""
+              },
+              {
+                "name": "readableManufacturerMapper",
+                "signature": ""
+              },
+              {
+                "name": "readableInventoryMapper",
+                "signature": ""
+              },
+              {
+                "name": "readableCategoryMapper",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "ReadableProductDefinitionMapper.java",
+                "signature": ""
+              }
+            ]
+          },
           {
             "comment": "",
             "nb_elements": 5,
@@ -36,10 +67,6 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "convertImage",
-                "signature": "convertImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.ReadableImage"
-              },
-              {
                 "name": "populateDescription",
                 "signature": "populateDescription(com.salesmanager.core.model.catalog.product.description.ProductDescription) return com.salesmanager.shop.model.catalog.product.ProductDescription"
               },
@@ -50,6 +77,10 @@
               {
                 "name": "convert",
                 "signature": "convert(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.definition.ReadableProductDe"
+              },
+              {
+                "name": "convertImage",
+                "signature": "convertImage(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.shop.model.catalog.product.ReadableImage"
               }
             ]
           },
@@ -71,21 +102,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Lambda Expression",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "merge$lambda$0",
-                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ReadableProductDefinitionMapper.java",
+                "name": "readableProductDefinitionMapper",
                 "signature": ""
               }
             ]
@@ -109,6 +129,17 @@
               {
                 "name": "ReadableProductDefinitionMapper",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Lambda Expression",
+            "elements": [
+              {
+                "name": "merge$lambda$0",
+                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.image.ProductImage) return R"
               }
             ]
           }

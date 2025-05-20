@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/local/CmsImageFileManagerImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/local/CmsImageFileManagerImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/local/CmsImageFileManagerImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/local/CmsImageFileManagerImpl.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 30,
         "files": [
@@ -36,6 +36,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
                 "to_name": "ServiceException(java.lang.Throwable)",
@@ -51,7 +58,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "removeProductImages(com.salesmanager.core.model.catalog.product.Product) return void",
+                "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -64,17 +71,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
                 "to_name": "ServiceException(java.lang.Throwable)",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeImages(java.lang.String) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -89,13 +96,6 @@
                 "from_name": "removeImages(java.lang.String) return void",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "removeImages(java.lang.String) return void",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -123,14 +123,14 @@
                 "to_type": "Java Class",
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -144,14 +144,14 @@
                 "to_type": "Java Class",
                 "from_name": "CmsImageFileManagerImpl",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "CmsImageFileManagerImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -163,7 +163,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 22,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -227,14 +227,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
-                "to_name": "StringBuilder(java.lang.CharSequence)",
+                "to_name": "StringBuilder()",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "removeProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage) return void",
-                "to_name": "StringBuilder()",
+                "to_name": "StringBuilder(java.lang.CharSequence)",
                 "calling_type": "CALL"
               },
               {
@@ -282,7 +282,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -338,7 +338,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/nio/file/Files_fda7bb5f03c6a21e.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/nio/file/Files_fda7bb5f03c6a21e.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -436,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
           },
           {
             "calls_between_elements": [
@@ -478,7 +478,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/nio/file/Paths_4ef68edc2c7bf319.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/nio/file/Paths_4ef68edc2c7bf319.java"
           },
           {
             "calls_between_elements": [
@@ -513,7 +513,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -548,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -583,7 +583,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -618,7 +618,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
           },
           {
             "calls_between_elements": [
@@ -646,7 +646,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -667,7 +667,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -688,7 +688,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StoreCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StoreCacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -709,7 +709,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StaticContentCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/StaticContentCacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -730,7 +730,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/S3CacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/S3CacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -751,7 +751,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/LocalCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/LocalCacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -772,7 +772,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/GCPCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/GCPCacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -793,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/DownloadCacheManagerImpl.java"
           },
           {
             "calls_between_elements": [
@@ -814,7 +814,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/CMSManager.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/impl/CMSManager.java"
           },
           {
             "calls_between_elements": [
@@ -835,7 +835,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
           },
           {
             "calls_between_elements": [
@@ -856,7 +856,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/ProductImageSize.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/file/ProductImageSize.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
+                "to_name": "FileContentType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "CmsImageFileManagerImpl",
+                "to_name": "FileContentType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
           },
           {
             "calls_between_elements": [
@@ -877,28 +898,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "addProductImage(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.content.ImageContentFile) return void",
-                "to_name": "FileContentType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "CmsImageFileManagerImpl",
-                "to_name": "FileContentType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/FileContentType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -919,7 +919,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -940,7 +940,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -954,7 +954,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Class_74b50bb9260e31ff.java"
           },
           {
             "calls_between_elements": [
@@ -968,7 +968,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Object_d734ceb4c3e9d1da.java"
           },
           {
             "calls_between_elements": [
@@ -982,7 +982,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/nio/file/StandardCopyOption_65c4837274a53756.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/nio/file/StandardCopyOption_65c4837274a53756.java"
           },
           {
             "calls_between_elements": [
@@ -996,7 +996,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -1010,7 +1010,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

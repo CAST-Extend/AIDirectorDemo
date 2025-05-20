@@ -1,11 +1,32 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableProductImageMapper.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 11,
         "files": [
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "convert(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage",
+                "to_name": "ReadableImage()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "setOrder(int) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "setDefaultImage(boolean) return void",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -42,27 +63,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
-                "to_name": "setOrder(int) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
-                "to_name": "setDefaultImage(boolean) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "convert(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.ReadableImage",
-                "to_name": "ReadableImage()",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableProductImageMapper",
@@ -79,10 +79,24 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/ReadableImage.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getProductImageUrl() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
+                "to_name": "getSortOrder() return java.lang.Integer",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -119,20 +133,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
-                "to_name": "getProductImageUrl() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "merge(com.salesmanager.core.model.catalog.product.image.ProductImage,com.salesmanager.shop.model.catalog.product.ReadableImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmana",
-                "to_name": "getSortOrder() return java.lang.Integer",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ReadableProductImageMapper",
@@ -149,7 +149,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/image/ProductImage.java"
           },
           {
             "calls_between_elements": [
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/LocalImageFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -219,7 +219,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -254,7 +254,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/CloudFilePathUtils.java"
           },
           {
             "calls_between_elements": [
@@ -282,7 +282,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
           },
           {
             "calls_between_elements": [
@@ -310,7 +310,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/ImageFilePath.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +331,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +352,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/AbstractimageFilePath.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/AbstractimageFilePath.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -387,7 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Integer_5783c1503b45be65.java"
           }
         ],
         "files_list_comment": ""

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,12 +9,12 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "defaultLanguage",
-                "signature": "defaultLanguage() return com.salesmanager.core.model.reference.language.Language"
-              },
-              {
                 "name": "getLanguages",
                 "signature": "getLanguages() return java.util.List.List\u003ccom.salesmanager.core.model.reference.language.Language\u003e"
+              },
+              {
+                "name": "defaultLanguage",
+                "signature": "defaultLanguage() return com.salesmanager.core.model.reference.language.Language"
               },
               {
                 "name": "getLanguagesMap",
@@ -55,23 +55,38 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 2,
+            "type": "",
             "elements": [
               {
-                "name": "LanguageServiceImpl",
-                "signature": "LanguageServiceImpl(com.salesmanager.core.business.repositories.reference.language.LanguageRepository)"
+                "name": "cache",
+                "signature": ""
+              },
+              {
+                "name": "LanguageServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "LanguageServiceImpl.java",
+                "name": "languageService",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "LanguageServiceImpl",
+                "signature": "LanguageServiceImpl(com.salesmanager.core.business.repositories.reference.language.LanguageRepository)"
               }
             ]
           },

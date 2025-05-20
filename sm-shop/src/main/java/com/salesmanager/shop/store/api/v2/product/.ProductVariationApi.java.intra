@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariationApi.java]": [
       {
         "calls_between_elements": [
           {
@@ -67,6 +67,13 @@
             "calling_type": "READ"
           },
           {
+            "from_type": "Java Method",
+            "to_type": "Java Instantiated Constructor",
+            "from_name": "exists(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003ccom.salesmanager.shop.model.entity.EntityExists\u003e",
+            "to_name": "EntityExists\u003cEntityExists\u003e",
+            "calling_type": "CALL"
+          },
+          {
             "from_type": "",
             "to_type": "Java Class",
             "from_name": "/api/v2",
@@ -131,7 +138,7 @@
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 18
+        "nb_calls_between_elements": 19
       }
     ]
   }

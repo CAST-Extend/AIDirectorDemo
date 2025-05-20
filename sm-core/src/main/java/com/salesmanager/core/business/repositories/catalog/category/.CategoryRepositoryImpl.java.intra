@@ -1,20 +1,20 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": {
-    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java]": [
       {
         "calls_between_elements": [
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
-            "to_name": "select c from Category",
+            "from_name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+            "to_name": "select category from Product",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "listByProduct(com.salesmanager.core.model.merchant.MerchantStore,java.lang.Long) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
-            "to_name": "select category from Product",
+            "from_name": "listByStoreAndParent(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.catalog.category.Category) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.category.Category\u003e",
+            "to_name": "select c from Category",
             "calling_type": "CALL"
           },
           {

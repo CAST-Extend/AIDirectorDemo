@@ -1,9 +1,9 @@
 {
-  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentEntity.java]": {
-    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentEntity.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentEntity.java]": {
+    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/content/ContentEntity.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 1,
+        "nb_impacting_elements": 5,
         "impacting_elements": [
           {
             "name": "ContentEntity",
@@ -13,13 +13,69 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/content/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/PUT/api/v1/private/content/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/contents/any/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/content/ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setCode(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setVisible(boolean) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setDisplayedInMenu(boolean) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setContentType(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 1,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/contents/any/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\content\\ContentApi.java/api/v1/PORT/GET/api/v1/private/contents/any/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }

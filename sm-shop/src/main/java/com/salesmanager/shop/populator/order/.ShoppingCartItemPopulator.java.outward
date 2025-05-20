@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/order/ShoppingCartItemPopulator.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 18,
+        "nb_files_with_called_elements": 20,
         "files": [
           {
             "calls_between_elements": [
@@ -11,14 +11,14 @@
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -39,14 +39,14 @@
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartItemPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartItemPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -58,7 +58,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
@@ -93,7 +93,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ServiceRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -128,7 +128,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -156,7 +156,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -184,28 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/PersistableOrderProduct.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
-                "to_name": "product",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "ShoppingCartItemPopulator",
-                "to_name": "product",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/PersistableOrderProduct.java"
           },
           {
             "calls_between_elements": [
@@ -226,7 +205,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -247,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -268,7 +247,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +268,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/attribute/ProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -310,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartService.java"
           },
           {
             "calls_between_elements": [
@@ -331,7 +310,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
@@ -352,7 +331,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+                "to_name": "populateShoppingCartItem(com.salesmanager.core.model.catalog.product.Product,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shoppingcart.ShoppingCartItem",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartItemPopulator",
+                "to_name": "ShoppingCartServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/shoppingcart/ShoppingCartServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -373,7 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProduct.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProduct.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/order/OrderProductEntity.java"
           },
           {
             "calls_between_elements": [
@@ -415,7 +415,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+                "to_name": "getById(java.lang.Long) return com.salesmanager.core.model.catalog.product.attribute.ProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartItemPopulator",
+                "to_name": "ProductAttributeServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/attribute/ProductAttributeServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.order.PersistableOrderProduct,com.salesmanager.core.model.shoppingcart.ShoppingCartItem,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanage",
+                "to_name": "getBySku(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.catalog.product.Product",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartItemPopulator",
+                "to_name": "ProductServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -429,7 +471,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           },
           {
             "calls_between_elements": [
@@ -443,7 +485,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
           }
         ],
         "files_list_comment": ""

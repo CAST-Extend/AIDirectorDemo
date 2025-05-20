@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/PayPalExpressCheckoutPayment.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 73,
+        "nb_files_with_called_elements": 71,
         "files": [
           {
             "calls_between_elements": [
@@ -11,14 +11,14 @@
                 "to_type": "Java Class",
                 "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
                 "to_name": "IntegrationException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -39,14 +39,14 @@
                 "to_type": "Java Class",
                 "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
                 "to_name": "IntegrationException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -67,14 +67,14 @@
                 "to_type": "Java Class",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
                 "to_name": "IntegrationException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -95,14 +95,14 @@
                 "to_type": "Java Class",
                 "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "IntegrationException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -134,6 +134,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager",
+                "to_name": "IntegrationException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "initTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager",
                 "to_name": "IntegrationException(java.lang.String)",
@@ -149,7 +156,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "initTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.math.BigDecimal,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -182,9 +189,9 @@
                 "calling_type": "RAISE"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "from_name": "PayPalExpressCheckoutPayment",
                 "to_name": "IntegrationException",
                 "calling_type": "THROW"
               },
@@ -200,19 +207,12 @@
                 "to_type": "Java Class",
                 "from_name": "PayPalExpressCheckoutPayment",
                 "to_name": "IntegrationException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "IntegrationException",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 29,
-            "to_file": "/sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
+            "to_file": "sm-core-modules/src/main/java/com/salesmanager/core/modules/integration/IntegrationException.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 25,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Transaction.java"
           },
           {
             "calls_between_elements": [
@@ -513,7 +513,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 16,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PaymentDetailsType_17870.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PaymentDetailsType_17870.java"
           },
           {
             "calls_between_elements": [
@@ -611,7 +611,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 13,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BasicAmountType_20175.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BasicAmountType_20175.java"
           },
           {
             "calls_between_elements": [
@@ -668,13 +668,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "endsWith(java.lang.String) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "equalsIgnoreCase(java.lang.String) return boolean",
                 "calling_type": "CALL"
               },
@@ -687,6 +680,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "endsWith(java.lang.String) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
                 "to_name": "String",
@@ -695,7 +695,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 11,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -772,7 +772,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
           },
           {
             "calls_between_elements": [
@@ -849,7 +849,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PayPalAPIInterfaceServiceService_4675.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PayPalAPIInterfaceServiceService_4675.java"
           },
           {
             "calls_between_elements": [
@@ -926,7 +926,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/system/IntegrationConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -948,13 +948,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "Constants",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "Constants",
                 "calling_type": "CALL"
               },
@@ -994,6 +987,13 @@
                 "calling_type": "READ"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "Constants",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PayPalExpressCheckoutPayment",
@@ -1003,7 +1003,77 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/constants/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "CurrencyCodeType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 9,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CurrencyCodeType_23850.java"
           },
           {
             "calls_between_elements": [
@@ -1032,6 +1102,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "getErrors() return java.util.List.List\u003curn.ebay.apis.eBLBaseComponents.ErrorType\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
                 "to_name": "getCorrelationID() return java.lang.String",
                 "calling_type": "CALL"
               },
@@ -1040,13 +1117,6 @@
                 "to_type": "Java Method",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
                 "to_name": "getAck() return urn.ebay.apis.eBLBaseComponents.AckCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "getErrors() return java.util.List.List\u003curn.ebay.apis.eBLBaseComponents.ErrorType\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -1073,77 +1143,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractResponseType_12193.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "fromValue(java.lang.String) return urn.ebay.apis.eBLBaseComponents.CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "CurrencyCodeType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "CurrencyCodeType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 9,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CurrencyCodeType_23850.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractResponseType_12193.java"
           },
           {
             "calls_between_elements": [
@@ -1213,7 +1213,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 9,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/shoppingcart/ShoppingCartItem.java"
           },
           {
             "calls_between_elements": [
@@ -1240,17 +1240,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Enum",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "TransactionType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Enum Item",
                 "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "INIT",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "TransactionType",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
@@ -1269,7 +1269,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/TransactionType.java"
           },
           {
             "calls_between_elements": [
@@ -1325,7 +1325,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -1381,7 +1381,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PaymentActionCodeType_31783.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PaymentActionCodeType_31783.java"
           },
           {
             "calls_between_elements": [
@@ -1437,7 +1437,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PaymentDetailsItemType_3221.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PaymentDetailsItemType_3221.java"
           },
           {
             "calls_between_elements": [
@@ -1486,7 +1486,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -1528,7 +1528,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaymentType.java"
           },
           {
             "calls_between_elements": [
@@ -1570,7 +1570,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -1612,7 +1612,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AckCodeType_15881.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AckCodeType_15881.java"
           },
           {
             "calls_between_elements": [
@@ -1654,7 +1654,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
           },
           {
             "calls_between_elements": [
@@ -1696,49 +1696,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "PricingService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
@@ -1780,49 +1738,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/currency/Currency.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "setPaymentDetails(java.util.List.List\u003curn.ebay.apis.eBLBaseComponents.PaymentDetailsType\u003e) return void",
+                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
+                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "setPayerID(java.lang.String) return void",
+                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "setToken(java.lang.String) return void",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "DoExpressCheckoutPaymentRequestDetailsType()",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getStringAmount(java.math.BigDecimal,com.salesmanager.core.model.merchant.MerchantStore) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Interface",
                 "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "DoExpressCheckoutPaymentRequestDetailsType",
+                "to_name": "PricingService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoExpressCheckoutPaymentRequestDetailsType_17825.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingService.java"
           },
           {
             "calls_between_elements": [
@@ -1864,7 +1822,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "setPaymentDetails(java.util.List.List\u003curn.ebay.apis.eBLBaseComponents.PaymentDetailsType\u003e) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "setPayerID(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "setToken(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "DoExpressCheckoutPaymentRequestDetailsType()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "DoExpressCheckoutPaymentRequestDetailsType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoExpressCheckoutPaymentRequestDetailsType_17825.java"
           },
           {
             "calls_between_elements": [
@@ -1906,7 +1906,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -1948,7 +1948,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/RefundTransactionRequestType_2223.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/RefundTransactionRequestType_2223.java"
           },
           {
             "calls_between_elements": [
@@ -1990,10 +1990,17 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotal.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "setReturnURL(java.lang.String) return void",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -2006,13 +2013,6 @@
                 "to_type": "Java Method",
                 "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
                 "to_name": "setCancelURL(java.lang.String) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "setReturnURL(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
@@ -2032,7 +2032,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SetExpressCheckoutRequestDetailsType_15205.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SetExpressCheckoutRequestDetailsType_15205.java"
           },
           {
             "calls_between_elements": [
@@ -2074,7 +2074,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -2109,7 +2109,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotalSummary.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/OrderTotalSummary.java"
           },
           {
             "calls_between_elements": [
@@ -2144,7 +2144,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -2179,7 +2179,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/order/Order.java"
           },
           {
             "calls_between_elements": [
@@ -2214,7 +2214,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PaymentInfoType_1626.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PaymentInfoType_1626.java"
           },
           {
             "calls_between_elements": [
@@ -2249,7 +2249,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AbstractRequestType_22279.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AbstractRequestType_22279.java"
           },
           {
             "calls_between_elements": [
@@ -2284,7 +2284,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaypalPayment.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/PaypalPayment.java"
           },
           {
             "calls_between_elements": [
@@ -2319,35 +2319,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "currency",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "currency",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "currency",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/payments/Payment.java"
           },
           {
             "calls_between_elements": [
@@ -2375,63 +2347,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoCaptureReq_14369.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "setGetExpressCheckoutDetailsRequest(urn.ebay.api.PayPalAPI.GetExpressCheckoutDetailsRequestType) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "GetExpressCheckoutDetailsReq()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "GetExpressCheckoutDetailsReq",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/GetExpressCheckoutDetailsReq_11635.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "setDoExpressCheckoutPaymentRequest(urn.ebay.api.PayPalAPI.DoExpressCheckoutPaymentRequestType) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "DoExpressCheckoutPaymentReq()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "DoExpressCheckoutPaymentReq",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoExpressCheckoutPaymentReq_2607.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoCaptureReq_14369.java"
           },
           {
             "calls_between_elements": [
@@ -2459,7 +2375,63 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/GetExpressCheckoutDetailsResponseDetailsType_14413.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/GetExpressCheckoutDetailsResponseDetailsType_14413.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "setGetExpressCheckoutDetailsRequest(urn.ebay.api.PayPalAPI.GetExpressCheckoutDetailsRequestType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "GetExpressCheckoutDetailsReq()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "GetExpressCheckoutDetailsReq",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/GetExpressCheckoutDetailsReq_11635.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "setDoExpressCheckoutPaymentRequest(urn.ebay.api.PayPalAPI.DoExpressCheckoutPaymentRequestType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "DoExpressCheckoutPaymentReq()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "DoExpressCheckoutPaymentReq",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoExpressCheckoutPaymentReq_2607.java"
           },
           {
             "calls_between_elements": [
@@ -2467,14 +2439,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Enum Item",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "FULL",
+                "to_name": "PARTIAL",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Enum Item",
                 "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "PARTIAL",
+                "to_name": "FULL",
                 "calling_type": "READ"
               },
               {
@@ -2487,7 +2459,35 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/RefundType_31934.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/RefundType_31934.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "getShortMessage() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
+                "to_name": "getErrorCode() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "ErrorType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ErrorType_300.java"
           },
           {
             "calls_between_elements": [
@@ -2515,119 +2515,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/RefundTransactionReq_12938.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "getErrorCode() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "getShortMessage() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "ErrorType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ErrorType_300.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "toString() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "StringBuilder()",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "setSetExpressCheckoutRequest(urn.ebay.api.PayPalAPI.SetExpressCheckoutRequestType) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "SetExpressCheckoutReq()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "SetExpressCheckoutReq",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SetExpressCheckoutReq_23754.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/RefundTransactionReq_12938.java"
           },
           {
             "calls_between_elements": [
@@ -2655,7 +2543,91 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/math/BigDecimal_eae82a787ee29fd6.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "setSetExpressCheckoutRequest(urn.ebay.api.PayPalAPI.SetExpressCheckoutRequestType) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "SetExpressCheckoutReq()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "SetExpressCheckoutReq",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SetExpressCheckoutReq_23754.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "toString() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "append(java.lang.String) return java.lang.StringBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "StringBuilder()",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/StringBuilder_563a9673c4e624ff.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateModuleConfiguration(com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -2683,7 +2655,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -2704,7 +2676,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/RefundTransactionResponseType_22142.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/RefundTransactionResponseType_22142.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "URL_EXTENSION",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Property Mapping",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "SHOP_SCHEME",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/main/resources/shopizer-properties.properties"
           },
           {
             "calls_between_elements": [
@@ -2725,7 +2718,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SetExpressCheckoutResponseType_22741.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SetExpressCheckoutResponseType_22741.java"
           },
           {
             "calls_between_elements": [
@@ -2746,49 +2739,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/SetExpressCheckoutRequestType_6511.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "getName() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "Description",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "getProductDescription() return com.salesmanager.core.model.catalog.product.description.ProductDescription",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "Product",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/SetExpressCheckoutRequestType_6511.java"
           },
           {
             "calls_between_elements": [
@@ -2809,49 +2760,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "refund",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getName() return java.lang.String",
+                "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "refund",
-                "calling_type": "USE"
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Description",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/resources/bundles/shopizer_fr.properties"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "capture(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.order.Order,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.system.IntegrationConfiguration,c",
-                "to_name": "refund",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "getProductDescription() return com.salesmanager.core.model.catalog.product.description.ProductDescription",
+                "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Property Mapping",
-                "from_name": "refund(boolean,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Transaction,com.salesmanager.core.model.order.Order,java.math.BigDecimal,com.salesmanager.core.model.system.IntegrationConfiguration,com.salesmanager.co",
-                "to_name": "refund",
-                "calling_type": "USE"
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "Product",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/resources/bundles/shopizer.properties"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/Product.java"
           },
           {
             "calls_between_elements": [
@@ -2872,7 +2823,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CompleteCodeType_21459.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CompleteCodeType_21459.java"
           },
           {
             "calls_between_elements": [
@@ -2893,7 +2844,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoCaptureResponseDetailsType_24855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoCaptureResponseDetailsType_24855.java"
           },
           {
             "calls_between_elements": [
@@ -2914,7 +2865,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoCaptureResponseType_2963.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoCaptureResponseType_2963.java"
           },
           {
             "calls_between_elements": [
@@ -2935,70 +2886,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoCaptureRequestType_22532.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "name() return java.lang.String",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
-                "to_name": "name() return java.lang.String",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "getGetExpressCheckoutDetailsResponseDetails() return urn.ebay.apis.eBLBaseComponents.GetExpressCheckoutDetailsResponseDetailsType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "GetExpressCheckoutDetailsResponseType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/GetExpressCheckoutDetailsResponseType_22848.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
-                "to_name": "getDoExpressCheckoutPaymentResponseDetails() return urn.ebay.apis.eBLBaseComponents.DoExpressCheckoutPaymentResponseDetailsType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutPayment",
-                "to_name": "DoExpressCheckoutPaymentResponseType",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoExpressCheckoutPaymentResponseType_911.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoCaptureRequestType_22532.java"
           },
           {
             "calls_between_elements": [
@@ -3019,7 +2907,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoExpressCheckoutPaymentResponseDetailsType_19855.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoExpressCheckoutPaymentResponseDetailsType_19855.java"
           },
           {
             "calls_between_elements": [
@@ -3040,7 +2928,70 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/PayerInfoType_16641.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/PayerInfoType_16641.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "getGetExpressCheckoutDetailsResponseDetails() return urn.ebay.apis.eBLBaseComponents.GetExpressCheckoutDetailsResponseDetailsType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "GetExpressCheckoutDetailsResponseType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/GetExpressCheckoutDetailsResponseType_22848.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "getDoExpressCheckoutPaymentResponseDetails() return urn.ebay.apis.eBLBaseComponents.DoExpressCheckoutPaymentResponseDetailsType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutPayment",
+                "to_name": "DoExpressCheckoutPaymentResponseType",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoExpressCheckoutPaymentResponseType_911.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.customer.Customer,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,java.math.BigDecimal,com.salesmanager.core.model.payments.Pa",
+                "to_name": "name() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initPaypalTransaction(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.order.OrderTotalSummary,com.salesmanager.core.model.payments.Payment,com.sa",
+                "to_name": "name() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -3061,7 +3012,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/GetExpressCheckoutDetailsRequestType_10067.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/GetExpressCheckoutDetailsRequestType_10067.java"
           },
           {
             "calls_between_elements": [
@@ -3082,7 +3033,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/DoExpressCheckoutPaymentRequestType_2483.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/DoExpressCheckoutPaymentRequestType_2483.java"
           },
           {
             "calls_between_elements": [
@@ -3096,7 +3047,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -3110,7 +3061,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
           },
           {
             "calls_between_elements": [
@@ -3124,7 +3075,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 50 items"

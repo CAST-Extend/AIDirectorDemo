@@ -1,8 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 18,
+        "nb_files_with_called_elements": 19,
         "files": [
           {
             "calls_between_elements": [
@@ -31,13 +31,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "setCustomer(com.salesmanager.core.model.customer.Customer) return void",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
                 "to_name": "setReviewRating(java.lang.Double) return void",
                 "calling_type": "CALL"
               },
@@ -46,6 +39,13 @@
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
                 "to_name": "setId(java.lang.Long) return void",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
+                "to_name": "setCustomer(com.salesmanager.core.model.customer.Customer) return void",
                 "calling_type": "CALL"
               },
               {
@@ -79,7 +79,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReview.java"
           },
           {
             "calls_between_elements": [
@@ -88,14 +88,14 @@
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -116,14 +116,14 @@
                 "to_type": "Java Class",
                 "from_name": "PersistableCustomerReviewPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PersistableCustomerReviewPopulator",
                 "to_name": "ConversionException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -135,7 +135,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 7,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ConversionException.java"
           },
           {
             "calls_between_elements": [
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerReviewEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerReviewEntity.java"
           },
           {
             "calls_between_elements": [
@@ -226,7 +226,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReviewDescription.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/customer/review/CustomerReviewDescription.java"
           },
           {
             "calls_between_elements": [
@@ -261,7 +261,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/common/description/Description.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
           },
           {
             "calls_between_elements": [
@@ -297,14 +297,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "formatDate(java.util.Date) return java.lang.String",
+                "to_name": "getDate(java.lang.String) return java.util.Date",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "getDate(java.lang.String) return java.util.Date",
+                "to_name": "formatDate(java.util.Date) return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -317,7 +317,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/utils/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -345,7 +345,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomerReview.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomerReview.java"
           },
           {
             "calls_between_elements": [
@@ -353,14 +353,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "setId(java.lang.Long) return void",
+                "to_name": "getId() return java.lang.Long",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "getId() return java.lang.Long",
+                "to_name": "setId(java.lang.Long) return void",
                 "calling_type": "CALL"
               },
               {
@@ -373,28 +373,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-                "to_name": "language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "PersistableCustomerReviewPopulator",
-                "to_name": "language",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -415,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Set_6c6e95639124730f.java"
           },
           {
             "calls_between_elements": [
@@ -436,7 +415,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Date_7e6146cf49a738d5.java"
           },
           {
             "calls_between_elements": [
@@ -457,7 +436,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageService.java"
           },
           {
             "calls_between_elements": [
@@ -478,7 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/common/generic/SalesManagerEntityService.java"
           },
           {
             "calls_between_elements": [
@@ -499,7 +478,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/reference/language/Language.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
+                "to_name": "getByCode(java.lang.String) return com.salesmanager.core.model.reference.language.Language",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableCustomerReviewPopulator",
+                "to_name": "LanguageServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/reference/language/LanguageServiceImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
+                "to_name": "getById(java.lang.Long) return com.salesmanager.core.model.customer.Customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableCustomerReviewPopulator",
+                "to_name": "CustomerServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/services/customer/CustomerServiceImpl.java"
           },
           {
             "calls_between_elements": [
@@ -513,7 +534,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -527,7 +548,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Long_347203ad533f2d13.java"
           },
           {
             "calls_between_elements": [
@@ -541,7 +562,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashSet_501b64dfacabf1a3.java"
           }
         ],
         "files_list_comment": ""

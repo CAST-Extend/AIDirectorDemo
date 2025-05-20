@@ -1,20 +1,118 @@
 {
-  "main facts about source code file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/optionset/ProductOptionSetEntity.java]": {
-    "00. elements defined in file [/sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/optionset/ProductOptionSetEntity.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/optionset/ProductOptionSetEntity.java]": {
+    "00. elements defined in file [sm-shop-model/src/main/java/com/salesmanager/shop/model/catalog/product/attribute/optionset/ProductOptionSetEntity.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 2,
+        "nb_impacting_elements": 7,
         "impacting_elements": [
+          {
+            "name": "getCode() return java.lang.String",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "isReadOnly() return boolean",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setCode(java.lang.String) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
           {
             "name": "setId(java.lang.Long) return void",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "nb_impacted_elements": 3,
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/property/set/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
                 "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "getId() return java.lang.Long",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               }
             ]
@@ -27,25 +125,45 @@
             "impacted_elements_to_test": [
               {
                 "name": "api/v1/private/product/property/set/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/PUT/api/v1/private/product/property/set/{}/",
                 "type": "Spring MVC Put Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/property/set/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/POST/api/v1/private/product/property/set/",
                 "type": "Spring MVC Post Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/property/set/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               },
               {
                 "name": "api/v1/private/product/property/set/{}/",
-                "full_name": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "setReadOnly(boolean) return void",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/product/property/set/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/",
+                "type": "Spring MVC Get Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/product/property/set/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\product\\ProductPropertySetApi.java/api/v1/PORT/GET/api/v1/private/product/property/set/{}/",
                 "type": "Spring MVC Get Operation",
                 "nature": "user transaction / API endpoint"
               }

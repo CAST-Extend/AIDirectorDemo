@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/customer/AuthenticateCustomerApi.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 28,
         "files": [
@@ -59,14 +59,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "notFound() return org.springframework.http.ResponseEntity.HeadersBuilder.HeadersBuilder\u003c? extends\u003e",
+                "to_name": "badRequest() return org.springframework.http.ResponseEntity.BodyBuilder\u003cT\u003e",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "badRequest() return org.springframework.http.ResponseEntity.BodyBuilder\u003cT\u003e",
+                "to_name": "notFound() return org.springframework.http.ResponseEntity.HeadersBuilder.HeadersBuilder\u003c? extends\u003e",
                 "calling_type": "CALL"
               },
               {
@@ -128,7 +128,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 18,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ResponseEntity_29174.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ResponseEntity_17692.java"
           },
           {
             "calls_between_elements": [
@@ -179,19 +179,19 @@
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "JWTTokenUtil",
-                "calling_type": "CALL"
+                "calling_type": "FIRE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "JWTTokenUtil",
-                "calling_type": "FIRE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/JWTTokenUtil.java"
           },
           {
             "calls_between_elements": [
@@ -242,19 +242,19 @@
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "CustomerFacadeImpl",
-                "calling_type": "CALL"
+                "calling_type": "FIRE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "CustomerFacadeImpl",
-                "calling_type": "FIRE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 8,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -303,7 +303,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/customer/facade/CustomerFacade.java"
           },
           {
             "calls_between_elements": [
@@ -345,7 +345,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationRequest.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationRequest.java"
           },
           {
             "calls_between_elements": [
@@ -367,14 +367,14 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "getUserName() return java.lang.String",
+                "to_name": "setUserName(java.lang.String) return void",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "setUserName(java.lang.String) return void",
+                "to_name": "getUserName() return java.lang.String",
                 "calling_type": "CALL"
               },
               {
@@ -387,7 +387,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/CustomerEntity.java"
           },
           {
             "calls_between_elements": [
@@ -422,7 +422,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/user/JWTUser.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/user/JWTUser.java"
           },
           {
             "calls_between_elements": [
@@ -457,42 +457,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "Exception",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationResponse.java"
           },
           {
             "calls_between_elements": [
@@ -527,7 +492,42 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_9876.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_958.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "authenticate(com.salesmanager.shop.store.security.AuthenticationRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "Exception",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "Exception",
+                "calling_type": "CATCH"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
@@ -562,7 +562,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/ResourceNotFoundException.java"
           },
           {
             "calls_between_elements": [
@@ -585,54 +585,19 @@
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "StoreFacadeImpl",
-                "calling_type": "CALL"
+                "calling_type": "FIRE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "AuthenticateCustomerApi",
                 "to_name": "StoreFacadeImpl",
-                "calling_type": "FIRE"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "customer",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "AuthenticateCustomerApi",
-                "to_name": "country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
-                "from_name": "AuthenticateCustomerApi",
-                "to_name": "customer",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacadeImpl.java"
           },
           {
             "calls_between_elements": [
@@ -667,7 +632,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/api/exception/GenericRuntimeException.java"
           },
           {
             "calls_between_elements": [
@@ -695,7 +660,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/PasswordRequest.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/PasswordRequest.java"
           },
           {
             "calls_between_elements": [
@@ -716,7 +681,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpServletRequest_2598.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpServletRequest_4098.java"
           },
           {
             "calls_between_elements": [
@@ -737,7 +702,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/AuthenticationException_19695.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/AuthenticationException_23856.java"
           },
           {
             "calls_between_elements": [
@@ -758,7 +723,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacade.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/controller/store/facade/StoreFacade.java"
           },
           {
             "calls_between_elements": [
@@ -779,7 +744,28 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Validate_24229.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Validate_24229.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "register(com.salesmanager.shop.model.customer.PersistableCustomer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getPassword() return java.lang.String",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateCustomerApi",
+                "to_name": "SecuredCustomer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/SecuredCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -800,7 +786,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/PersistableCustomer.java"
           },
           {
             "calls_between_elements": [
@@ -821,7 +807,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/customer/address/Address.java"
           },
           {
             "calls_between_elements": [
@@ -842,7 +828,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
+            "to_file": "sm-shop-model/src/main/java/com/salesmanager/shop/model/entity/Entity.java"
           },
           {
             "calls_between_elements": [
@@ -863,7 +849,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/admin/JWTAdminServicesImpl.java"
           },
           {
             "calls_between_elements": [
@@ -884,7 +870,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/store/security/SocialCustomerServicesImpl.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/store/security/SocialCustomerServicesImpl.java"
           },
           {
             "calls_between_elements": [
@@ -905,21 +891,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
-                "to_name": "getMessage() return java.lang.String",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/admin/security/UserServicesImpl.java"
           },
           {
             "calls_between_elements": [
@@ -933,7 +905,21 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword(com.salesmanager.shop.store.security.PasswordRequest,javax.servlet.http.HttpServletRequest) return org.springframework.http.ResponseEntity.ResponseEntity\u003c? extends\u003e",
+                "to_name": "getMessage() return java.lang.String",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 1,
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Throwable_59bd5118ab8c02bb.java"
           },
           {
             "calls_between_elements": [
@@ -947,7 +933,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

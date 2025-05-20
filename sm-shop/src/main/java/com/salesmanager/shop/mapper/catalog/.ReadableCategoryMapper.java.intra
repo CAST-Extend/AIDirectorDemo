@@ -1,8 +1,22 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableCategoryMapper.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableCategoryMapper.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableCategoryMapper.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/ReadableCategoryMapper.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "convert(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
+            "to_name": "convertDescription(com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.shop.model.catalog.category.CategoryDescription",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "createReadable(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
+            "to_name": "convertDescription(com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.shop.model.catalog.category.CategoryDescription",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Lambda Expression",
@@ -34,28 +48,14 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "createReadable(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
-            "to_name": "convertDescription(com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.shop.model.catalog.category.CategoryDescription",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
             "from_name": "convert(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
-            "to_name": "convertDescription(com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.shop.model.catalog.category.CategoryDescription",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "createReadable(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
             "to_name": "fillReadableCategory(com.salesmanager.shop.model.catalog.category.ReadableCategory,com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "convert(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
+            "from_name": "createReadable(com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.category.ReadableCategory",
             "to_name": "fillReadableCategory(com.salesmanager.shop.model.catalog.category.ReadableCategory,com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.reference.language.Language) return void",
             "calling_type": "CALL"
           }

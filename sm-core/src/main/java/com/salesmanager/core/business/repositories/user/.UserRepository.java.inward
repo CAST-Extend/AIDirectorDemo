@@ -1,16 +1,68 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/repositories/user/UserRepository.java]": [
       {
         "files": [
           {
-            "calling_types": [
+            "from_file": "sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java",
+            "calls_between_elements": [
               {
-                "calling_type": "CALL",
-                "nb_calls_between_elements": 1
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByPasswordResetToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByResetPasswordToken(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "findByStore(java.lang.Integer) return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "listUser() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "to_name": "findAll() return java.util.List.List\u003ccom.salesmanager.core.model.user.User\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByStore(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findOne(java.lang.Long) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserName(java.lang.String,java.lang.String) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserId(java.lang.Long,java.lang.String) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
+                "to_name": "findByUserName(java.lang.String) return com.salesmanager.core.model.user.User",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "UserServiceImpl",
+                "to_name": "UserRepository",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "/sm-core/src/main/java/com/salesmanager/core/business/services/user/UserServiceImpl.java",
             "comment": "",
             "nb_calls_between_elements": 8
           }

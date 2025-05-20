@@ -1,21 +1,21 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java]": {
-    "00. dependencies between elements defined in file [/sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java]": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java]": {
+    "00. dependencies between elements defined in file [sm-core-model/src/main/java/com/salesmanager/core/model/catalog/product/price/FinalPrice.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOriginalPrice() return java.math.BigDecimal",
+            "to_name": "originalPrice",
+            "calling_type": "READ"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "getAdditionalPrices() return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.FinalPrice\u003e",
             "to_name": "additionalPrices",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setAdditionalPrices(java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.price.FinalPrice\u003e) return void",
-            "to_name": "additionalPrices",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,23 +27,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProductPrice(com.salesmanager.core.model.catalog.product.price.ProductPrice) return void",
-            "to_name": "productPrice",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "isDefaultPrice() return boolean",
             "to_name": "defaultPrice",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDefaultPrice(boolean) return void",
-            "to_name": "defaultPrice",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -55,23 +41,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setDiscountEndDate(java.util.Date) return void",
-            "to_name": "discountEndDate",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getStringDiscountedPrice() return java.lang.String",
             "to_name": "stringDiscountedPrice",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setStringDiscountedPrice(java.lang.String) return void",
-            "to_name": "stringDiscountedPrice",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -83,23 +55,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setStringPrice(java.lang.String) return void",
-            "to_name": "stringPrice",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getDiscountPercent() return int",
             "to_name": "discountPercent",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDiscountPercent(int) return void",
-            "to_name": "discountPercent",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -111,13 +69,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setDiscounted(boolean) return void",
-            "to_name": "discounted",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getFinalPrice() return java.math.BigDecimal",
             "to_name": "finalPrice",
             "calling_type": "READ"
@@ -125,37 +76,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setFinalPrice(java.math.BigDecimal) return void",
-            "to_name": "finalPrice",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getOriginalPrice() return java.math.BigDecimal",
-            "to_name": "originalPrice",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setOriginalPrice(java.math.BigDecimal) return void",
-            "to_name": "originalPrice",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getDiscountedPrice() return java.math.BigDecimal",
             "to_name": "discountedPrice",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDiscountedPrice(java.math.BigDecimal) return void",
-            "to_name": "discountedPrice",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -173,7 +96,7 @@
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 24
+        "nb_calls_between_elements": 13
       }
     ]
   }

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java]": {
-    "00. file [/sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java] defines following code elements": [
+  "main facts about source code file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java]": {
+    "00. file [sm-core-model/src/main/java/com/salesmanager/core/model/shipping/Quote.java] defines following code elements": [
       {
         "types": [
           {
@@ -9,8 +9,12 @@
             "type": "Java Method",
             "elements": [
               {
-                "name": "getCustomerId",
-                "signature": "getCustomerId() return java.lang.Long"
+                "name": "setCustomerId",
+                "signature": "setCustomerId(java.lang.Long) return void"
+              },
+              {
+                "name": "getOptionDeliveryDate",
+                "signature": "getOptionDeliveryDate() return java.util.Date"
               },
               {
                 "name": "getIpAddress",
@@ -45,12 +49,8 @@
                 "signature": "setOptionDeliveryDate(java.util.Date) return void"
               },
               {
-                "name": "getOptionDeliveryDate",
-                "signature": "getOptionDeliveryDate() return java.util.Date"
-              },
-              {
-                "name": "setCustomerId",
-                "signature": "setCustomerId(java.lang.Long) return void"
+                "name": "getCustomerId",
+                "signature": "getCustomerId() return java.lang.Long"
               },
               {
                 "name": "setOrderId",
@@ -61,8 +61,16 @@
                 "signature": "getOrderId() return java.lang.Long"
               },
               {
-                "name": "setOptionCode",
-                "signature": "setOptionCode(java.lang.String) return void"
+                "name": "setModule",
+                "signature": "setModule(java.lang.String) return void"
+              },
+              {
+                "name": "getModule",
+                "signature": "getModule() return java.lang.String"
+              },
+              {
+                "name": "getOptionName",
+                "signature": "getOptionName() return java.lang.String"
               },
               {
                 "name": "setIpAddress",
@@ -117,24 +125,16 @@
                 "signature": "setOptionShippingDate(java.util.Date) return void"
               },
               {
+                "name": "setOptionCode",
+                "signature": "setOptionCode(java.lang.String) return void"
+              },
+              {
                 "name": "getOptionCode",
                 "signature": "getOptionCode() return java.lang.String"
               },
               {
                 "name": "setOptionName",
                 "signature": "setOptionName(java.lang.String) return void"
-              },
-              {
-                "name": "getOptionName",
-                "signature": "getOptionName() return java.lang.String"
-              },
-              {
-                "name": "setModule",
-                "signature": "setModule(java.lang.String) return void"
-              },
-              {
-                "name": "getModule",
-                "signature": "getModule() return java.lang.String"
               }
             ]
           },
@@ -143,14 +143,6 @@
             "nb_elements": 17,
             "type": "Java Field",
             "elements": [
-              {
-                "name": "delivery",
-                "signature": ""
-              },
-              {
-                "name": "ipAddress",
-                "signature": ""
-              },
               {
                 "name": "freeShipping",
                 "signature": ""
@@ -210,16 +202,13 @@
               {
                 "name": "serialVersionUID",
                 "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
+              },
               {
-                "name": "Quote.java",
+                "name": "delivery",
+                "signature": ""
+              },
+              {
+                "name": "ipAddress",
                 "signature": ""
               }
             ]
@@ -264,6 +253,28 @@
             "elements": [
               {
                 "name": "Quote",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "Quote.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "SalesManagerEntity\u003cLong,Quote\u003e",
                 "signature": ""
               }
             ]

@@ -1,18 +1,39 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/utils/CaptchaRequestUtils.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/utils/CaptchaRequestUtils.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/utils/CaptchaRequestUtils.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/utils/CaptchaRequestUtils.java] defines elements relying on elements defined following source files": [
       {
         "nb_files_with_called_elements": 25,
         "files": [
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Instantiated Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "TypeReference\u003cHashMap\u003cString,String\u003e\u003e",
-                "to_name": "String",
-                "calling_type": "USE"
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "Exception",
+                "calling_type": "THROW"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "Exception",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "Exception(java.lang.String)",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -26,67 +47,18 @@
                 "from_name": "checkCaptcha(java.lang.String) return boolean",
                 "to_name": "String(byte[])",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Instantiated Class",
+                "to_type": "Java Class",
+                "from_name": "TypeReference\u003cHashMap\u003cString,String\u003e\u003e",
+                "to_name": "String",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "Exception",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "Exception",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "Exception(java.lang.String)",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "build() return org.apache.http.impl.client.CloseableHttpClient",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "create() return org.apache.http.impl.client.HttpClientBuilder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "HttpClientBuilder",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpClientBuilder_28583.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -113,8 +85,36 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpResponse_18786.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpResponse_18786.java",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "build() return org.apache.http.impl.client.CloseableHttpClient",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "create() return org.apache.http.impl.client.HttpClientBuilder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "HttpClientBuilder",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpClientBuilder_2742.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -134,113 +134,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/NameValuePair_29331.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "get(java.lang.Object) return java.lang.Object",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "Map\u003cK,V\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "isBlank(java.lang.CharSequence) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "StringUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "toByteArray(org.apache.http.HttpEntity) return byte[]",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "EntityUtils",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/EntityUtils_6077.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "execute(org.apache.http.client.methods.HttpUriRequest) return org.apache.http.HttpResponse",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "HttpClient",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpClient_4084.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "add(java.lang.Object) return boolean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Generic Java Interface",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "List\u003cE\u003e",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/NameValuePair_25783.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -260,8 +155,29 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StatusLine_15498.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StatusLine_15498.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "toByteArray(org.apache.http.HttpEntity) return byte[]",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "EntityUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/EntityUtils_6077.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -281,8 +197,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpRequestBase_8683.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpRequestBase_8683.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -302,8 +218,92 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpEntityEnclosingRequestBase_20215.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpEntityEnclosingRequestBase_20215.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "execute(org.apache.http.client.methods.HttpUriRequest) return org.apache.http.HttpResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "HttpClient",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpClient_4084.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "add(java.lang.Object) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "List\u003cE\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "get(java.lang.Object) return java.lang.Object",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Generic Java Interface",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "Map\u003cK,V\u003e",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/Map_c31b3763c2405855.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "isBlank(java.lang.CharSequence) return boolean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "StringUtils",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -323,8 +323,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/HashMap_d5ef36df67371111.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -344,8 +344,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BasicNameValuePair_26948.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BasicNameValuePair_8610.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -365,29 +365,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/UrlEncodedFormEntity_2376.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "checkCaptcha(java.lang.String) return boolean",
-                "to_name": "ObjectMapper()",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CaptchaRequestUtils",
-                "to_name": "ObjectMapper",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ObjectMapper_23831.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/UrlEncodedFormEntity_21286.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -407,8 +386,29 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpPost_29541.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpPost_29541.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "checkCaptcha(java.lang.String) return boolean",
+                "to_name": "ObjectMapper()",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CaptchaRequestUtils",
+                "to_name": "ObjectMapper",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ObjectMapper_23831.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -428,8 +428,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/utils/CoreConfiguration.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -442,8 +442,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/HttpStatus_26222.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/HttpStatus_9860.java",
+            "nb_calls_between_elements": 1
           },
           {
             "calls_between_elements": [
@@ -456,8 +456,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/nio/charset/StandardCharsets_700f3c25c4b11383.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/nio/charset/StandardCharsets_700f3c25c4b11383.java",
+            "nb_calls_between_elements": 1
           },
           {
             "calls_between_elements": [
@@ -470,8 +470,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "/sm-shop/src/main/java/com/salesmanager/shop/constants/ApplicationConstants.java"
+            "to_file": "sm-shop/src/main/java/com/salesmanager/shop/constants/ApplicationConstants.java",
+            "nb_calls_between_elements": 1
           },
           {
             "calls_between_elements": [
@@ -484,8 +484,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Boolean_143a00ffcaeffdf.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Boolean_143a00ffcaeffdf.java",
+            "nb_calls_between_elements": 1
           },
           {
             "calls_between_elements": [
@@ -498,8 +498,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java",
+            "nb_calls_between_elements": 1
           },
           {
             "calls_between_elements": [
@@ -512,8 +512,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/TypeReference_19497.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/TypeReference_19497.java",
+            "nb_calls_between_elements": 1
           }
         ],
         "files_list_comment": ""

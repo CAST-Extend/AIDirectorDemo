@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/services/shipping/ShippingServiceImpl.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,6 +8,14 @@
             "nb_elements": 20,
             "type": "Java Method",
             "elements": [
+              {
+                "name": "getShippingMetaData",
+                "signature": "getShippingMetaData(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingMetaData"
+              },
+              {
+                "name": "getPackagesDetails",
+                "signature": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e"
+              },
               {
                 "name": "setSupportedCountries",
                 "signature": "setSupportedCountries(com.salesmanager.core.model.merchant.MerchantStore,java.util.List.List\u003cjava.lang.String\u003e) return void"
@@ -53,6 +61,10 @@
                 "signature": "saveShippingConfiguration(com.salesmanager.core.model.shipping.ShippingConfiguration,com.salesmanager.core.model.merchant.MerchantStore) return void"
               },
               {
+                "name": "getCustomShippingConfiguration",
+                "signature": "getCustomShippingConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.CustomIntegrationConfiguration"
+              },
+              {
                 "name": "getShippingConfiguration",
                 "signature": "getShippingConfiguration(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingConfiguration"
               },
@@ -61,16 +73,8 @@
                 "signature": "hasTaxOnShipping(com.salesmanager.core.model.merchant.MerchantStore) return boolean"
               },
               {
-                "name": "getShippingMetaData",
-                "signature": "getShippingMetaData(com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.shipping.ShippingMetaData"
-              },
-              {
                 "name": "requiresShipping",
                 "signature": "requiresShipping(java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.core.model.merchant.MerchantStore) return boolean"
-              },
-              {
-                "name": "getPackagesDetails",
-                "signature": "getPackagesDetails(java.util.List.List\u003ccom.salesmanager.core.model.shipping.ShippingProduct\u003e,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.shipping.PackageDetails\u003e"
               },
               {
                 "name": "calculateOrderTotal",
@@ -79,10 +83,6 @@
               {
                 "name": "getShippingSummary",
                 "signature": "getShippingSummary(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.shipping.ShippingQuote,com.salesmanager.core.model.shipping.ShippingOption) return com.salesmanager.core.model.shipping.ShippingSummary"
-              },
-              {
-                "name": "getCustomShippingConfiguration",
-                "signature": "getCustomShippingConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.CustomIntegrationConfiguration"
               },
               {
                 "name": "getShippingConfiguration",
@@ -163,23 +163,82 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Constructor",
+            "nb_elements": 13,
+            "type": "",
             "elements": [
               {
-                "name": "ShippingServiceImpl",
-                "signature": "ShippingServiceImpl()"
+                "name": "shippingQuoteService",
+                "signature": ""
+              },
+              {
+                "name": "shippingOriginService",
+                "signature": ""
+              },
+              {
+                "name": "shippingModules",
+                "signature": ""
+              },
+              {
+                "name": "shippingModulePreProcessors",
+                "signature": ""
+              },
+              {
+                "name": "shippingModulePostProcessors",
+                "signature": ""
+              },
+              {
+                "name": "pricingService",
+                "signature": ""
+              },
+              {
+                "name": "packaging",
+                "signature": ""
+              },
+              {
+                "name": "moduleConfigurationService",
+                "signature": ""
+              },
+              {
+                "name": "merchantConfigurationService",
+                "signature": ""
+              },
+              {
+                "name": "languageService",
+                "signature": ""
+              },
+              {
+                "name": "encryption",
+                "signature": ""
+              },
+              {
+                "name": "countryService",
+                "signature": ""
+              },
+              {
+                "name": "ShippingServiceImpl.java",
+                "signature": ""
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "ShippingServiceImpl.java",
+                "name": "shippingService",
                 "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "ShippingServiceImpl",
+                "signature": "ShippingServiceImpl()"
               }
             ]
           },

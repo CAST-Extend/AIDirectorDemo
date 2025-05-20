@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/controller/ImagesController.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/controller/ImagesController.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/controller/ImagesController.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/controller/ImagesController.java]": [
       {
         "calls_between_elements": [
           {
@@ -60,18 +60,18 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "init() return void",
-            "to_name": "tempImage",
-            "calling_type": "WRITE"
-          },
-          {
             "from_type": "",
             "to_type": "Java Class",
             "from_name": "/",
             "to_name": "ImagesController",
             "calling_type": "PROTOTYPE"
+          },
+          {
+            "from_type": "Spring MVC Any Operation",
+            "to_type": "Java Class",
+            "from_name": "static/{}/{}/{}/{}/",
+            "to_name": "ImagesController",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Spring MVC Any Operation",
@@ -90,20 +90,13 @@
           {
             "from_type": "Spring MVC Any Operation",
             "to_type": "Java Class",
-            "from_name": "static/{}/{}/{}/{}/",
-            "to_name": "ImagesController",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Spring MVC Any Operation",
-            "to_type": "Java Class",
             "from_name": "static/files/{}/{}/{}/",
             "to_name": "ImagesController",
             "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 14
+        "nb_calls_between_elements": 13
       }
     ]
   }

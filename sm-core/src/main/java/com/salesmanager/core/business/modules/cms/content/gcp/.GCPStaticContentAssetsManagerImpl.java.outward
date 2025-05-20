@@ -1,13 +1,20 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java] defines elements relying on elements defined following source files": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java] defines elements relying on elements defined following source files": [
       {
-        "nb_files_with_called_elements": 28,
+        "nb_files_with_called_elements": 27,
         "files": [
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
                 "to_name": "ServiceException(java.lang.Throwable)",
@@ -23,9 +30,16 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -37,14 +51,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
-                "to_name": "ServiceException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "from_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
               },
@@ -54,13 +61,6 @@
                 "from_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -102,14 +102,14 @@
                 "to_type": "Java Class",
                 "from_name": "getFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -123,14 +123,14 @@
                 "to_type": "Java Class",
                 "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -144,14 +144,14 @@
                 "to_type": "Java Class",
                 "from_name": "getFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -165,14 +165,14 @@
                 "to_type": "Java Class",
                 "from_name": "GCPStaticContentAssetsManagerImpl",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "GCPStaticContentAssetsManagerImpl",
                 "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Class",
@@ -184,7 +184,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 25,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/business/exception/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -289,7 +289,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Logger_8723.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Logger_8723.java"
           },
           {
             "calls_between_elements": [
@@ -394,7 +394,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 14,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/ContentAssetsManager.java"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/ContentAssetsManager.java"
           },
           {
             "calls_between_elements": [
@@ -430,6 +430,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
+                "to_name": "get(java.lang.String,com.google.cloud.storage.Storage.BucketGetOption[]) return com.google.cloud.storage.Bucket",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
                 "to_name": "metagenerationMatch(long) return com.google.cloud.storage.Storage.BucketGetOption",
                 "calling_type": "CALL"
               },
@@ -445,13 +452,6 @@
                 "to_type": "Java Method",
                 "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
                 "to_name": "prefix(java.lang.String) return com.google.cloud.storage.Storage.BlobListOption",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "get(java.lang.String,com.google.cloud.storage.Storage.BucketGetOption[]) return com.google.cloud.storage.Bucket",
                 "calling_type": "CALL"
               },
               {
@@ -492,7 +492,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 13,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Storage_21718.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Storage_21718.java"
           },
           {
             "calls_between_elements": [
@@ -569,7 +569,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 10,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/String_bce7fff4709de738.java"
           },
           {
             "calls_between_elements": [
@@ -618,7 +618,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/ServiceOptions_12423.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/ServiceOptions_12423.java"
           },
           {
             "calls_between_elements": [
@@ -667,49 +667,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 6,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StorageOptions_3753.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java GCP Cloud Storage Bucket",
-                "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
-                "to_name": "shopizer",
-                "calling_type": "DELETE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java GCP Cloud Storage Bucket",
-                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
-                "to_name": "shopizer",
-                "calling_type": "DELETE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java GCP Cloud Storage Bucket",
-                "from_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "shopizer",
-                "calling_type": "INSERT"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java GCP Cloud Storage Bucket",
-                "from_name": "GCPStaticContentAssetsManagerImpl",
-                "to_name": "shopizer",
-                "calling_type": "DELETE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java GCP Cloud Storage Bucket",
-                "from_name": "GCPStaticContentAssetsManagerImpl",
-                "to_name": "shopizer",
-                "calling_type": "INSERT"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java\n/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StorageOptions_3753.java"
           },
           {
             "calls_between_elements": [
@@ -751,49 +709,49 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Exception_c676f99c656d5636.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java GCP Cloud Storage Bucket",
+                "from_name": "removeFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "shopizer",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java GCP Cloud Storage Bucket",
+                "from_name": "removeFile(java.lang.String,com.salesmanager.core.model.content.FileContentType,java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e) return void",
+                "to_name": "shopizer",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java GCP Cloud Storage Bucket",
                 "from_name": "addFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.InputContentFile) return void",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "getFiles(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003ccom.salesmanager.core.model.content.OutputContentFile\u003e",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "getFileNames(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType) return java.util.List.List\u003cjava.lang.String\u003e",
-                "to_name": "content",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "PostgreSQL Table",
-                "from_name": "getFile(java.lang.String,java.util.Optional.Optional\u003cjava.lang.String\u003e,com.salesmanager.core.model.content.FileContentType,java.lang.String) return com.salesmanager.core.model.content.OutputContentFile",
-                "to_name": "content",
-                "calling_type": "USE"
+                "to_name": "shopizer",
+                "calling_type": "INSERT"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "PostgreSQL Table",
+                "to_type": "Java GCP Cloud Storage Bucket",
                 "from_name": "GCPStaticContentAssetsManagerImpl",
-                "to_name": "content",
-                "calling_type": "USE"
+                "to_name": "shopizer",
+                "calling_type": "DELETE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java GCP Cloud Storage Bucket",
+                "from_name": "GCPStaticContentAssetsManagerImpl",
+                "to_name": "shopizer",
+                "calling_type": "INSERT"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "/Salesmanager.sql"
+            "to_file": "sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/gcp/GCPStaticContentAssetsManagerImpl.java\nsm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java"
           },
           {
             "calls_between_elements": [
@@ -835,7 +793,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BlobInfo_30145.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BlobInfo_30145.java"
           },
           {
             "calls_between_elements": [
@@ -870,7 +828,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/InputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -898,7 +856,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/BlobId_9512.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/BlobId_9512.java"
           },
           {
             "calls_between_elements": [
@@ -926,7 +884,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/InputStream_33f18215e13e6137.java"
           },
           {
             "calls_between_elements": [
@@ -954,7 +912,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/List_64677f8dab63b405.java"
           },
           {
             "calls_between_elements": [
@@ -982,7 +940,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/util/ArrayList_4b5760f0c092fcfe.java"
           },
           {
             "calls_between_elements": [
@@ -1010,7 +968,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Blob_7441.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Blob_7441.java"
           },
           {
             "calls_between_elements": [
@@ -1031,7 +989,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/io/IOException_87afe59a2cbc2396.java"
           },
           {
             "calls_between_elements": [
@@ -1052,7 +1010,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/ContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1073,7 +1031,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/StaticContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1094,7 +1052,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/CollectionUtils_5021.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/CollectionUtils_5021.java"
           },
           {
             "calls_between_elements": [
@@ -1115,7 +1073,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "/sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
+            "to_file": "sm-core-model/src/main/java/com/salesmanager/core/model/content/OutputContentFile.java"
           },
           {
             "calls_between_elements": [
@@ -1136,7 +1094,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Bucket_18060.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Bucket_18060.java"
           },
           {
             "calls_between_elements": [
@@ -1157,7 +1115,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Page_16549.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Page_16549.java"
           },
           {
             "calls_between_elements": [
@@ -1178,7 +1136,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/StringUtils_22386.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/StringUtils_22386.java"
           },
           {
             "calls_between_elements": [
@@ -1199,7 +1157,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/net/URLConnection_bcbebd27d6eb2587.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/net/URLConnection_bcbebd27d6eb2587.java"
           },
           {
             "calls_between_elements": [
@@ -1213,7 +1171,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/Classes/java/lang/Enum_a162e065282dce60.java"
           },
           {
             "calls_between_elements": [
@@ -1227,7 +1185,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 1,
-            "to_file": "§\u003cLISA\u003e§Scrd7de98cb50c54ea19b2b1d318623ec8c/JavaExtractedFiles/LoggerFactory_27529.java"
+            "to_file": "C:/ProgramData/CAST/CAST/CASTMS/LISA/f71398c81ccf4c44aa25fb7c5d391703/Scr1584b91c4bb941978fe142e5951b79ad/JavaExtractedFiles/LoggerFactory_27529.java"
           }
         ],
         "files_list_comment": ""

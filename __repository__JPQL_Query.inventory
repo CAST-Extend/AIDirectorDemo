@@ -1,167 +1,167 @@
 {
   "main facts about type [JPQL Query]": {
-    "00. samples of [JPQL Query] element type in application [AIDirectorDemo]": {
+    "00. samples of [JPQL Query] element type in application [ShopizerBackend]": {
       "elements": [
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByType.select distinct pr from ProductRelationship as pr left join fetch pr.product p join fetch pr.relatedProduct rp left join fetch rp.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch rp.categories rpc left join fetch rpc.descriptions rpcd left join fetch rp.descriptions rpd left join fetch rp.owner rpo left join fetch rp.images pd left join fetch rp.merchantStore rpm left join fetch rpm.currency rpmc left join fetch rp.availabilities pa left join fetch rp.manufacturer m left join fetch m.descriptions md left join fetch pa.prices pap left join fetch pap.descriptions papd where pr.code\u003d:code and pr.store.id\u003d:storeId and rpd.language.id\u003d:langId",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByType.select distinct pr from ProductRelationship as pr left join fetch pr.product p join fetch pr.relatedProduct rp left join fetch rp.attribut",
           "signature": "",
           "name": "select distinct pr from",
           "nb_callers": 1,
-          "used_in_graphs": 12,
+          "used_in_graphs": 13,
           "main_properties": [
             {}
           ],
           "nb_callees": 7
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByCategories.select distinct p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd join fetch p.categories categs left join fetch pap.descriptions papd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where categs.id in (:cid) and pd.language.id\u003d:lang and papd.language.id\u003d:lang and p.available\u003dtrue and p.dateAvailable\u003c\u003d:dt ",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByCategories.select distinct p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.de",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByCategories.select distinct p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd join fetch p.categories categs left join fetch pap.descriptions papd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.manufacturer manuf left join fetch p.type type left join fetch p.taxClass tx where categs.id in (:cid)",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByCategories.select distinct p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.de",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductForLocale.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices pap left join fetch pap.descriptions papd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where p.id\u003d:pid and pa.region in (:lid) and pd.language.id\u003d:lang and papd.language.id\u003d:lang and p.available\u003dtrue and p.dateAvailable\u003c\u003d:dt ",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductForLocale.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices p",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByFriendlyUrl.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices pap left join fetch pap.descriptions papd left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where pa.region in (:lid) and pd.seUrl\u003d:seUrl and p.available\u003dtrue and p.dateAvailable\u003c\u003d:dt order by pattr.productOptionSortOrder ",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByFriendlyUrl.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices pap ",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByCode.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices pap left join fetch pap.descriptions papd left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where p.sku\u003d:code and pd.language.id\u003d:lang and papd.language.id\u003d:lang",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByCode.select distinct p from Product as p join fetch p.availabilities pa join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch pa.prices pap left jo",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.listByTaxClass.select p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd join fetch p.categories categs left join fetch pap.descriptions papd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where tx.id\u003d:tid",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.listByTaxClass.select p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd join fet",
           "signature": "",
           "name": "select p from Product",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.listByStore.select p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd left join fetch p.categories categs left join fetch pap.descriptions papd left join fetch p.images images left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.taxClass tx where merch.id\u003d:mid",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.listByStore.select p from Product as p join fetch p.merchantStore merch join fetch p.availabilities pa left join fetch pa.prices pap join fetch p.descriptions pd left join f",
           "signature": "",
           "name": "select p from Product",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 6
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByIds.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetch p.type type left join fetch p.images images left join fetch pavail.prices pavailpr left join fetch pavailpr.descriptions pavailprdesc left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.variants pinst left join fetch pinst.variation pv left join fetch pv.productOption pvpo left join fetch pv.productOptionValue pvpov left join fetch pvpo.descriptions pvpod left",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getProductsListByIds.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetc",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getById.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch p.availabilities pavail left join fetch p.type type left join fetch pavail.prices pavailpr left join fetch pavailpr.descriptions pavailprdesc left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.variants pinst left join fetch pinst.variation pv left join fetch pv.productOption pvpo left join fetch pv.productOptionValue pvpov left join fetch pvpo.descriptions pvpod left join fetch pvpov.descriptions pvpovd left join ",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getById.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch p.availabilities pavail left join fetch p.type type le",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByCode.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type where p.sku\u003d:code and pm.id\u003d:id",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.getByCode.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore pm left join fetch p.categories categs left join fetch categs.descripti",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.get.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetch p.type type left join fetch p.images images left join fetch pavail.prices pavailpr left join fetch pavailpr.descriptions pavailprdesc left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.variants pinst left join fetch pinst.variation pv left join fetch pv.productOption pvpo left join fetch pv.productOptionValue pvpov left join fetch pvpo.descriptions pvpod left join fetch pvpov",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.get.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetch p.type type lef",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.get.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetch p.type type left join fetch p.images images left join fetch pavail.prices pavailpr left join fetch pavailpr.descriptions pavailprdesc left join fetch p.categories categs left join fetch categs.descriptions categsd left join fetch p.attributes pattr left join fetch pattr.productOption po left join fetch po.descriptions pod left join fetch pattr.productOptionValue pov left join fetch pov.descriptions povd left join fetch p.relationships pr left join fetch p.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch p.type type left join fetch p.variants pinst left join fetch pinst.variation pv left join fetch pv.productOption pvpo left join fetch pv.productOptionValue pvpov left join fetch pvpo.descriptions pvpod left join fetch pvpov",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.ProductRepositoryImpl.get.select distinct p from Product as p join fetch p.descriptions pd join fetch p.merchantStore merch left join fetch p.availabilities pavail left join fetch p.type type lef",
           "signature": "",
           "name": "select distinct p from",
           "nb_callers": 1,
-          "used_in_graphs": 11,
+          "used_in_graphs": 12,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByType.select distinct pr from ProductRelationship as pr left join fetch pr.product p left join fetch pr.relatedProduct rp left join fetch rp.attributes pattr left join fetch rp.categories rpc left join fetch rpc.descriptions rpcd left join fetch rp.descriptions rpd left join fetch rp.owner rpo left join fetch rp.images pd left join fetch rp.merchantStore rpm left join fetch rpm.currency rpmc left join fetch rp.availabilities pa left join fetch pa.prices pap left join fetch pap.descriptions papd left join fetch rp.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch rp.type type where pr.code\u003d:code and rp.available\u003d:available and p.id\u003d:pId",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByType.select distinct pr from ProductRelationship as pr left join fetch pr.product p left join fetch pr.relatedProduct rp left join fetch rp.att",
           "signature": "",
           "name": "select distinct pr from",
           "nb_callers": 1,
-          "used_in_graphs": 10,
+          "used_in_graphs": 11,
           "main_properties": [
             {}
           ],
           "nb_callees": 5
         },
         {
-          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByGroup.select distinct pr from ProductRelationship as pr left join fetch pr.product p left join fetch pr.relatedProduct rp left join fetch rp.attributes pattr left join fetch rp.categories rpc left join fetch rpc.descriptions rpcd left join fetch rp.descriptions rpd left join fetch rp.owner rpo left join fetch rp.images pd left join fetch rp.merchantStore rpm left join fetch rpm.currency rpmc left join fetch rp.availabilities pa left join fetch pa.prices pap left join fetch pap.descriptions papd left join fetch rp.manufacturer manuf left join fetch manuf.descriptions manufd left join fetch rp.type type where pr.code\u003d:code and pr.store.id\u003d:storeId ",
+          "full_name": "com.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl.getByGroup.select distinct pr from ProductRelationship as pr left join fetch pr.product p left join fetch pr.relatedProduct rp left join fetch rp.at",
           "signature": "",
           "name": "select distinct pr from",
           "nb_callers": 1,
-          "used_in_graphs": 10,
+          "used_in_graphs": 11,
           "main_properties": [
             {}
           ],

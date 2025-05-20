@@ -1,10 +1,32 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantImageServiceImpl.java]": {
-    "00. source files defining elements dependent on elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantImageServiceImpl.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantImageServiceImpl.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/variant/ProductVariantImageServiceImpl.java]": [
       {
-        "files": [],
+        "files": [
+          {
+            "from_file": "sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/PersistableProductVariantGroupMapper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "merge(com.salesmanager.shop.model.catalog.product.product.variantGroup.PersistableProductVariantGroup,com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.re",
+                "to_name": "listByProductVariantGroup(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.variant.ProductVariantImage\u003e",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PersistableProductVariantGroupMapper",
+                "to_name": "ProductVariantImageServiceImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
         "files_list_comment": "",
-        "nb_files_with_calling_elements": 0
+        "nb_files_with_calling_elements": 1
       }
     ]
   }

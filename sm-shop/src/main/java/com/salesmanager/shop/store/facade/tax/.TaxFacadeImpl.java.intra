@@ -1,20 +1,20 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/store/facade/tax/TaxFacadeImpl.java]": [
       {
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "taxRates(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxRate\u003e",
-            "to_name": "taxRates$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRate) return R",
+            "to_type": "Java Method",
+            "from_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
+            "to_name": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
             "calling_type": "CALL"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Lambda Expression",
-            "from_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
-            "to_name": "taxClasses$lambda$0(com.salesmanager.core.model.tax.taxclass.TaxClass) return R",
+            "from_type": "Java Lambda Expression",
+            "to_type": "Java Method",
+            "from_name": "taxClasses$lambda$0(com.salesmanager.core.model.tax.taxclass.TaxClass) return R",
+            "to_name": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
             "calling_type": "CALL"
           },
           {
@@ -27,14 +27,14 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "updateTaxRate(java.lang.Long,com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
+            "from_name": "taxRate(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxRate",
             "to_name": "taxRateById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "taxRate(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxRate",
+            "from_name": "updateTaxRate(java.lang.Long,com.salesmanager.shop.model.tax.PersistableTaxRate,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return void",
             "to_name": "taxRateById(java.lang.Long,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.core.model.tax.taxrate.TaxRate",
             "calling_type": "CALL"
           },
@@ -63,20 +63,6 @@
             "from_type": "Java Lambda Expression",
             "to_type": "Java Method",
             "from_name": "taxClasses$lambda$0(com.salesmanager.core.model.tax.taxclass.TaxClass) return R",
-            "to_name": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
-            "to_name": "convertToReadableTaxClass(com.salesmanager.core.model.tax.taxclass.TaxClass,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.tax.ReadableTaxClass",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Lambda Expression",
-            "to_type": "Java Method",
-            "from_name": "taxClasses$lambda$0(com.salesmanager.core.model.tax.taxclass.TaxClass) return R",
             "to_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
             "calling_type": "READ"
           },
@@ -92,6 +78,20 @@
             "to_type": "Java Instantiated Constructor",
             "from_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
             "to_name": "ReadableEntityList\u003cReadableTaxClass\u003e",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "taxRates(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxRate\u003e",
+            "to_name": "taxRates$lambda$0(com.salesmanager.core.model.tax.taxrate.TaxRate) return R",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Lambda Expression",
+            "from_name": "taxClasses(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.entity.ReadableEntityList.ReadableEntityList\u003ccom.salesmanager.shop.model.tax.ReadableTaxClass\u003e",
+            "to_name": "taxClasses$lambda$0(com.salesmanager.core.model.tax.taxclass.TaxClass) return R",
             "calling_type": "CALL"
           }
         ],

@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/mapper/catalog/product/ReadableProductVariantGroupMapper.java] defines following code elements": [
       {
         "types": [
           {
@@ -8,10 +8,6 @@
             "nb_elements": 4,
             "type": "Java Method",
             "elements": [
-              {
-                "name": "image",
-                "signature": "image(java.util.Map.Map\u003cjava.lang.Long,com.salesmanager.shop.model.catalog.product.ReadableImage\u003e,com.salesmanager.core.model.catalog.product.variant.ProductVariantImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.refere"
-              },
               {
                 "name": "instance",
                 "signature": "instance(com.salesmanager.core.model.catalog.product.variant.ProductVariant,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variant.Read"
@@ -23,6 +19,29 @@
               {
                 "name": "convert",
                 "signature": "convert(com.salesmanager.core.model.catalog.product.variant.ProductVariantGroup,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesmanager.shop.model.catalog.product.product.variantG"
+              },
+              {
+                "name": "image",
+                "signature": "image(java.util.Map.Map\u003cjava.lang.Long,com.salesmanager.shop.model.catalog.product.ReadableImage\u003e,com.salesmanager.core.model.catalog.product.variant.ProductVariantImage,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.refere"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 3,
+            "type": "",
+            "elements": [
+              {
+                "name": "readableProductVariantMapper",
+                "signature": ""
+              },
+              {
+                "name": "imageUtils",
+                "signature": ""
+              },
+              {
+                "name": "ReadableProductVariantGroupMapper.java",
+                "signature": ""
               }
             ]
           },
@@ -44,21 +63,6 @@
           {
             "comment": "",
             "nb_elements": 2,
-            "type": "Java Lambda Expression",
-            "elements": [
-              {
-                "name": "merge$lambda$1",
-                "signature": "merge$lambda$1(com.salesmanager.core.model.catalog.product.variant.ProductVariantImage) return R"
-              },
-              {
-                "name": "merge$lambda$0",
-                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return R"
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 2,
             "type": "Java Field",
             "elements": [
               {
@@ -73,33 +77,26 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Java Instantiated Interface",
+            "nb_elements": 2,
+            "type": "Java Lambda Expression",
             "elements": [
               {
-                "name": "Map\u003cLong,ReadableImage\u003e",
-                "signature": ""
+                "name": "merge$lambda$1",
+                "signature": "merge$lambda$1(com.salesmanager.core.model.catalog.product.variant.ProductVariantImage) return R"
+              },
+              {
+                "name": "merge$lambda$0",
+                "signature": "merge$lambda$0(com.salesmanager.core.model.catalog.product.variant.ProductVariant) return R"
               }
             ]
           },
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Java Instantiated Class",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "HashMap\u003cLong,ReadableImage\u003e",
-                "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 1,
-            "type": "",
-            "elements": [
-              {
-                "name": "ReadableProductVariantGroupMapper.java",
+                "name": "readableProductVariantGroupMapper",
                 "signature": ""
               }
             ]
@@ -122,6 +119,28 @@
             "elements": [
               {
                 "name": "ReadableProductVariantGroupMapper",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Interface",
+            "elements": [
+              {
+                "name": "Map\u003cLong,ReadableImage\u003e",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "HashMap\u003cLong,ReadableImage\u003e",
                 "signature": ""
               }
             ]

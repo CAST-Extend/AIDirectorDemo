@@ -1,8 +1,22 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
-    "00. dependencies between elements defined in file [/sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/main/java/com/salesmanager/core/business/services/payments/PaymentServiceImpl.java]": [
       {
         "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
+            "calling_type": "CALL"
+          },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
@@ -27,14 +41,7 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
-            "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "from_name": "getAcceptedPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.payments.PaymentMethod\u003e",
             "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
             "calling_type": "CALL"
           },
@@ -42,13 +49,6 @@
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "getPaymentConfiguration(java.lang.String,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.system.IntegrationConfiguration",
-            "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getAcceptedPaymentMethods(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.payments.PaymentMethod\u003e",
             "to_name": "getPaymentModulesConfigured(com.salesmanager.core.model.merchant.MerchantStore) return java.util.Map.Map\u003cjava.lang.String,com.salesmanager.core.model.system.IntegrationConfiguration\u003e",
             "calling_type": "CALL"
           },
@@ -97,6 +97,20 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
+            "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "processRefund(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal) return com.salesmanager.core.model.payments.Transaction",
             "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
             "calling_type": "CALL"
@@ -112,20 +126,6 @@
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "processPayment(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.payments.Payment,java.util.List.List\u003ccom.salesmanager.core.model.shoppingcart.ShoppingCartItem\u003e,com.salesmanager.co",
-            "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initTransaction(com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
-            "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initTransaction(com.salesmanager.core.model.order.Order,com.salesmanager.core.model.customer.Customer,com.salesmanager.core.model.payments.Payment,com.salesmanager.core.model.merchant.MerchantStore) return com.salesmanager.core.model.payments.Transaction",
             "to_name": "getPaymentMethodByCode(com.salesmanager.core.model.merchant.MerchantStore,java.lang.String) return com.salesmanager.core.model.system.IntegrationModule",
             "calling_type": "CALL"
           },

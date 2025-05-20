@@ -1,11 +1,11 @@
 {
-  "main facts about source code file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
-    "00. file [/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java] defines following code elements": [
+  "main facts about source code file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java]": {
+    "00. file [sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/ProductRepositoryImpl.java] defines following code elements": [
       {
         "types": [
           {
-            "comment": "",
             "nb_elements": 19,
+            "comment": "",
             "type": "Java Method",
             "elements": [
               {
@@ -23,6 +23,10 @@
               {
                 "name": "listByStore",
                 "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Product\u003e"
+              },
+              {
+                "name": "listByStore",
+                "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList"
               },
               {
                 "name": "getProductsListForLocale",
@@ -69,10 +73,6 @@
                 "signature": "productQueryV1() return java.lang.String"
               },
               {
-                "name": "listByStore",
-                "signature": "listByStore(com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language,com.salesmanager.core.model.catalog.product.ProductCriteria) return com.salesmanager.core.model.catalog.product.ProductList"
-              },
-              {
                 "name": "getProductsForLocale",
                 "signature": "getProductsForLocale(com.salesmanager.core.model.merchant.MerchantStore,java.util.Set.Set\u003cjava.lang.Long\u003e,com.salesmanager.core.model.reference.language.Language,java.util.Locale) return java.util.List.List\u003ccom.salesmanager.core.model.catalog.product.Prod"
               },
@@ -87,8 +87,8 @@
             ]
           },
           {
-            "comment": "",
             "nb_elements": 15,
+            "comment": "",
             "type": "JPQL Query",
             "elements": [
               {
@@ -96,18 +96,18 @@
                 "signature": ""
               },
               {
-                "name": "select count(p) from Product",
+                "name": "select distinct p from",
                 "signature": ""
               },
               {
-                "name": "select distinct p from",
+                "name": "select count(p) from Product",
                 "signature": ""
               }
             ]
           },
           {
-            "comment": "",
             "nb_elements": 2,
+            "comment": "",
             "type": "Java Field",
             "elements": [
               {
@@ -121,8 +121,19 @@
             ]
           },
           {
-            "comment": "",
             "nb_elements": 1,
+            "comment": "",
+            "type": "JPA Unknown SQL Query",
+            "elements": [
+              {
+                "name": "Unknown SQL Query",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "nb_elements": 1,
+            "comment": "",
             "type": "Java Constructor",
             "elements": [
               {
@@ -132,23 +143,23 @@
             ]
           },
           {
-            "comment": "",
             "nb_elements": 1,
-            "type": "",
+            "comment": "",
+            "type": "Java Class",
             "elements": [
               {
-                "name": "ProductRepositoryImpl.java",
+                "name": "ProductRepositoryImpl",
                 "signature": ""
               }
             ]
           },
           {
-            "comment": "",
             "nb_elements": 1,
-            "type": "Java Class",
+            "comment": "",
+            "type": "",
             "elements": [
               {
-                "name": "ProductRepositoryImpl",
+                "name": "ProductRepositoryImpl.java",
                 "signature": ""
               }
             ]

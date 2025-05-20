@@ -1,16 +1,54 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableCategoryPopulator.java]": {
-    "00. elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableCategoryPopulator.java] impacting data elements and user transactions / API endpoints": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableCategoryPopulator.java]": {
+    "00. elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/catalog/PersistableCategoryPopulator.java] impacting data elements and user transactions / API endpoints": [
       {
         "impacting_elements_list_comment": "",
-        "nb_impacting_elements": 2,
+        "nb_impacting_elements": 4,
         "impacting_elements": [
+          {
+            "name": "buildDescription(com.salesmanager.shop.model.catalog.category.CategoryDescription,com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.core.model.catalog.category.CategoryDescription",
+            "comment": "",
+            "type": "Java Method",
+            "nb_impacted_elements": 3,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/PUT/api/v1/private/category/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/category/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/POST/api/v1/private/category/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "language",
+                "full_name": "salesmanager.language",
+                "type": "PostgreSQL Table",
+                "nature": "data entity"
+              }
+            ]
+          },
           {
             "name": "populate(com.salesmanager.shop.model.catalog.category.PersistableCategory,com.salesmanager.core.model.catalog.category.Category,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.salesman",
             "comment": "",
             "type": "Java Method",
-            "nb_impacted_elements": 6,
+            "nb_impacted_elements": 8,
             "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/PUT/api/v1/private/category/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/category/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/POST/api/v1/private/category/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              },
               {
                 "name": "merchant_store",
                 "full_name": "salesmanager.merchant_store",
@@ -50,16 +88,42 @@
             ]
           },
           {
-            "name": "buildDescription(com.salesmanager.shop.model.catalog.category.CategoryDescription,com.salesmanager.core.model.catalog.category.CategoryDescription) return com.salesmanager.core.model.catalog.category.CategoryDescription",
+            "name": "PersistableCategoryPopulator",
             "comment": "",
-            "type": "Java Method",
-            "nb_impacted_elements": 1,
+            "type": "Java Class",
+            "nb_impacted_elements": 2,
             "impacted_elements_to_test": [
               {
-                "name": "language",
-                "full_name": "salesmanager.language",
-                "type": "PostgreSQL Table",
-                "nature": "data entity"
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/PUT/api/v1/private/category/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/category/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/POST/api/v1/private/category/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
+              }
+            ]
+          },
+          {
+            "name": "AbstractDataPopulator\u003cPersistableCategory,Category\u003e",
+            "comment": "",
+            "type": "Java Instantiated Class",
+            "nb_impacted_elements": 2,
+            "impacted_elements_to_test": [
+              {
+                "name": "api/v1/private/category/{}/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/PUT/api/v1/private/category/{}/",
+                "type": "Spring MVC Put Operation",
+                "nature": "user transaction / API endpoint"
+              },
+              {
+                "name": "api/v1/private/category/",
+                "full_name": "C:\\cast-node\\common-data\\upload\\ShopizerBackend\\main_sources\\sm-shop\\src\\main\\java\\com\\salesmanager\\shop\\store\\api\\v1\\category\\CategoryApi.java/api/v1/PORT/POST/api/v1/private/category/",
+                "type": "Spring MVC Post Operation",
+                "nature": "user transaction / API endpoint"
               }
             ]
           }

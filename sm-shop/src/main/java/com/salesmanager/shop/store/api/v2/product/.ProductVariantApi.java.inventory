@@ -1,6 +1,6 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantApi.java]": {
-    "00. file [/sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantApi.java] defines following code elements": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantApi.java]": {
+    "00. file [sm-shop/src/main/java/com/salesmanager/shop/store/api/v2/product/ProductVariantApi.java] defines following code elements": [
       {
         "types": [
           {
@@ -36,34 +36,23 @@
           },
           {
             "comment": "",
-            "nb_elements": 3,
+            "nb_elements": 5,
             "type": "",
             "elements": [
               {
-                "name": "/api/v2",
+                "name": "userFacade",
+                "signature": ""
+              },
+              {
+                "name": "productVariantFacade",
                 "signature": ""
               },
               {
                 "name": "ProductVariantApi.java",
                 "signature": ""
-              }
-            ]
-          },
-          {
-            "comment": "",
-            "nb_elements": 3,
-            "type": "Spring MVC Get Operation",
-            "elements": [
-              {
-                "name": "api/v2/private/product/{}/variants/",
-                "signature": ""
               },
               {
-                "name": "api/v2/private/product/{}/variant/{}/",
-                "signature": ""
-              },
-              {
-                "name": "api/v2/private/product/{}/variant/{}/unique/",
+                "name": "/api/v2",
                 "signature": ""
               }
             ]
@@ -89,11 +78,19 @@
           },
           {
             "comment": "",
-            "nb_elements": 1,
-            "type": "Spring MVC Put Operation",
+            "nb_elements": 3,
+            "type": "Spring MVC Get Operation",
             "elements": [
               {
+                "name": "api/v2/private/product/{}/variants/",
+                "signature": ""
+              },
+              {
                 "name": "api/v2/private/product/{}/variant/{}/",
+                "signature": ""
+              },
+              {
+                "name": "api/v2/private/product/{}/variant/{}/unique/",
                 "signature": ""
               }
             ]
@@ -101,10 +98,10 @@
           {
             "comment": "",
             "nb_elements": 1,
-            "type": "Spring MVC Post Operation",
+            "type": "Spring Bean",
             "elements": [
               {
-                "name": "api/v2/private/product/{}/variant/",
+                "name": "productVariantApi",
                 "signature": ""
               }
             ]
@@ -134,10 +131,43 @@
           {
             "comment": "",
             "nb_elements": 1,
+            "type": "Spring MVC Put Operation",
+            "elements": [
+              {
+                "name": "api/v2/private/product/{}/variant/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Spring MVC Post Operation",
+            "elements": [
+              {
+                "name": "api/v2/private/product/{}/variant/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
             "type": "Spring MVC Delete Operation",
             "elements": [
               {
                 "name": "api/v2/private/product/{}/variant/{}/",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Instantiated Class",
+            "elements": [
+              {
+                "name": "ReadableEntityList\u003cReadableProductVariant\u003e",
                 "signature": ""
               }
             ]

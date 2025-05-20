@@ -1,15 +1,8 @@
 {
-  "main facts about source code file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": {
-    "00. dependencies between elements defined in file [/sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": [
+  "main facts about source code file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/main/java/com/salesmanager/shop/populator/customer/PersistableCustomerReviewPopulator.java]": [
       {
         "calls_between_elements": [
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
-            "to_name": "languageService",
-            "calling_type": "READ"
-          },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
@@ -20,9 +13,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLanguageService(com.salesmanager.core.business.services.reference.language.LanguageService) return void",
+            "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
             "to_name": "languageService",
-            "calling_type": "WRITE"
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -37,17 +30,10 @@
             "from_name": "populate(com.salesmanager.shop.model.customer.PersistableCustomerReview,com.salesmanager.core.model.customer.review.CustomerReview,com.salesmanager.core.model.merchant.MerchantStore,com.salesmanager.core.model.reference.language.Language) return com.sales",
             "to_name": "customerService",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCustomerService(com.salesmanager.core.business.services.customer.CustomerService) return void",
-            "to_name": "customerService",
-            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "",
-        "nb_calls_between_elements": 6
+        "nb_calls_between_elements": 4
       }
     ]
   }
