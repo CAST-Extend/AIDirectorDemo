@@ -1,0 +1,182 @@
+
+diff --git a/API_Endpoints_Using_Deprecated_Method.md b/API_Endpoints_Using_Deprecated_Method.md
+new file mode 100644
+index 0000000..01f1634
+--- /dev/null
++++ b/API_Endpoints_Using_Deprecated_Method.md
+@@ -0,0 +1,13 @@
++
++# API Endpoints Using Deprecated Method
++
++The following API endpoints are impacted by the usage of the deprecated method `getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal)`:
++
++1. `api/v1/private/product/{}/attribute/{}/` - Spring MVC Put Operation
++2. `api/v1/private/product/{}/attribute/` - Spring MVC Post Operation
++3. `api/v1/cart/{}/shipping/` - Spring MVC Post Operation
++4. `api/v1/cart/{}/checkout/` - Spring MVC Post Operation
++5. `api/v1/auth/cart/{}/checkout/` - Spring MVC Post Operation
++6. `api/v1/private/product/{}/attribute/{}/` - Spring MVC Get Operation
++7. `api/v1/private/product/{}/attributes/` - Spring MVC Get Operation
++8. `api/v1/auth/cart/{}/shipping/` - Spring MVC Get Operation
+\ No newline at end of file
+diff --git a/Code_Modifications.md b/Code_Modifications.md
+new file mode 100644
+index 0000000..f686263
+--- /dev/null
++++ b/Code_Modifications.md
+@@ -0,0 +1,22 @@
++
++# Code Modifications
++
++The following changes were made to address the tech debt of removing the deprecated method `getAdminFormatedAmount(com.salesmanager.core.model.merchant.MerchantStore,java.math.BigDecimal)`:
++
++1. **PricingServiceImpl.java**
++   - Replaced the call to `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `getStringAmount` method.
++
++2. **StripePayment.java**
++   - Replaced all calls to `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `authorize`, `authorizeAndCapture`, and `refund` methods.
++
++3. **Stripe3Payment.java**
++   - Replaced all calls to `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `capture`, `authorizeAndCapture`, and `refund` methods.
++
++4. **BeanStreamPayment.java**
++   - Replaced all calls to `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `capture`, `refund`, and `processTransaction` methods.
++
++5. **USPSShippingQuote.java**
++   - Replaced the call to `getAdminFormatedAmount` with `getStoreFormatedAmountWithCurrency` in the `getShippingQuotes` method.
++
++6. **ProductPriceUtils.java**
++   - Made the `getStoreFormatedAmountWithCurrency` method static.
+\ No newline at end of file
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+index 70f7230..aa0eaf1 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+@@ -92,7 +92,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
+ 
+ 				BigDecimal amount = order.getTotal();
+-				String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++				String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 				
+ 				/**
+ 				merchant_id=123456789&requestType=BACKEND
+@@ -181,7 +181,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRANSACTIONID");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			/**
+ 			merchant_id=123456789&requestType=BACKEND
+@@ -498,7 +498,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 			
+ 		String orderNumber = uniqueId;
+ 		
+-		String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++		String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 		
+ 		
+ 		StringBuilder messageString = new StringBuilder();
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+index d89a8a9..b1f2551 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+@@ -235,7 +235,7 @@ public class Stripe3Payment implements PaymentModule {
+ 			}
+ 			
+ 			BigDecimal amount = order.getTotal();
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			String strAmount = String.valueOf(amnt);
+ 			strAmount = strAmount.replace(".","");
+ 
+@@ -311,7 +311,7 @@ public class Stripe3Payment implements PaymentModule {
+ 		Transaction transaction = new Transaction();
+ 		try {
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+@@ -397,7 +397,7 @@ public class Stripe3Payment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRNORDERNUMBER");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			Stripe.apiKey = apiKey;
+ 			
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
+index eacc34c..f096699 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/StripePayment.java
+@@ -140,7 +140,7 @@ public class StripePayment implements PaymentModule {
+ 			}
+ 			
+ 
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+@@ -284,7 +284,7 @@ public class StripePayment implements PaymentModule {
+ 		Transaction transaction = new Transaction();
+ 		try {
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			//stripe does not support floating point
+ 			//so amnt * 100 or remove floating point
+@@ -353,7 +353,7 @@ public class StripePayment implements PaymentModule {
+ 
+ 			String trnID = transaction.getTransactionDetails().get("TRNORDERNUMBER");
+ 			
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, amount);
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, amount);
+ 			
+ 			Stripe.apiKey = apiKey;
+ 			
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java
+index 3ebd741..18728b6 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/USPSShippingQuote.java
+@@ -380,7 +380,7 @@ public class USPSShippingQuote implements ShippingQuoteModule {
+ 				xmldatabuffer.append(pack);
+ 				xmldatabuffer.append("</MailType>");
+ 				xmldatabuffer.append("<ValueOfContents>");
+-				xmldatabuffer.append(productPriceUtils.getAdminFormatedAmount(store, orderTotal));
++				xmldatabuffer.append(productPriceUtils.getStoreFormatedAmountWithCurrency(store, orderTotal));
+ 				xmldatabuffer.append("</ValueOfContents>");
+ 				xmldatabuffer.append("<Country>");
+ 				xmldatabuffer.append(destination.getName());
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java b/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java
+index 2ad9e0a..1656b7f 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/pricing/PricingServiceImpl.java
+@@ -87,7 +87,7 @@ public class PricingServiceImpl implements PricingService {
+ 	public String getStringAmount(BigDecimal amount, MerchantStore store)
+ 			throws ServiceException {
+ 		try {
+-			return priceUtil.getAdminFormatedAmount(store, amount);
++			return priceUtil.getStoreFormatedAmountWithCurrency(store, amount);
+ 		} catch (Exception e) {
+ 			LOGGER.error("An error occured when trying to format an amount " + amount.toString());
+ 			throw new ServiceException(e);
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+index 63af24b..1d29a83 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/utils/ProductPriceUtils.java
+@@ -291,7 +291,7 @@ public class ProductPriceUtils {
+ 	 * @throws Exception
+ 	 */
+ 	// Utility
+-	public String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
++	public static String getStoreFormatedAmountWithCurrency(MerchantStore store, BigDecimal amount) throws Exception {
+ 		if (amount == null) {
+ 			return "";
+ 		}
