@@ -1,0 +1,14 @@
+
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+index 49040e9..79a1dba 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/BeanStreamPayment.java
+@@ -91,7 +91,7 @@ public class BeanStreamPayment implements PaymentModule {
+ 		
+ 				String trnID = capturableTransaction.getTransactionDetails().get("TRANSACTIONID");
+ 				
+-				String amnt = productPriceUtils.getAdminFormatedAmount(store, order.getTotal());
++				String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, order.getTotal());
+ 				
+ 				/**
+ 				merchant_id=123456789&requestType=BACKEND
