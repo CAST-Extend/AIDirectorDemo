@@ -234,7 +234,7 @@ public class Stripe3Payment implements PaymentModule {
 				throw te;
 			}
 
-			String amnt = productPriceUtils.getAdminFormatedAmount(store, order.getTotal());
+			String amnt = ProductPriceUtils.getStoreFormatedAmountWithCurrency(store, order.getTotal());
 			String strAmount = String.valueOf(amnt);
 			strAmount = strAmount.replace(".","");
 
