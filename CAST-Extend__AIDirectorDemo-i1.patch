@@ -1,0 +1,14 @@
+
+diff --git a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+index b9bf4f6..d1823bf 100755
+--- a/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
++++ b/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/payment/impl/Stripe3Payment.java
+@@ -234,7 +234,7 @@ public class Stripe3Payment implements PaymentModule {
+ 				throw te;
+ 			}
+ 
+-			String amnt = productPriceUtils.getAdminFormatedAmount(store, order.getTotal());
++			String amnt = productPriceUtils.getStoreFormatedAmountWithCurrency(store, order.getTotal());
+ 			String strAmount = String.valueOf(amnt);
+ 			strAmount = strAmount.replace(".","");
+ 
